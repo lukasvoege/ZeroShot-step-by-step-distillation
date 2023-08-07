@@ -1,0 +1,10 @@
+dataset: cqa
+templates:
+  1:
+    id: 1
+    system_message: ''
+    user_message: '{question}\n\na){choice_a}\nb){choice_b}\nc){choice_c}\nd){choice_d}\ne){choice_e}'
+  2:
+    id: 2
+    system_message: ''
+    user_message: '{question}\n\na){choice_a}\nb){choice_b}\nc){choice_c}\nd){choice_d}\ne){choice_e}\n\nExplain your answer with one sentence.'

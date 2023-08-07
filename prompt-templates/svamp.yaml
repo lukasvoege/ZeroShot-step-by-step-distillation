@@ -1,0 +1,14 @@
+dataset: anli1
+templates:
+  1:
+    id: 1
+    system_message: ''
+    user_message: '{question}'
+  2:
+    id: 2
+    system_message: ''
+    user_message: '{question}\n\nThink step by step.'
+  3:
+    id: 3
+    system_message: ''
+    user_message: '{question}\n\nAnswer with one sentence.'

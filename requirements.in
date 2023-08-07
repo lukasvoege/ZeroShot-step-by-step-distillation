@@ -1,0 +1,7 @@
+# Basics
+python-dotenv
+
+# Teacher Querier dependencies
+langchain
+datasets
+openai
