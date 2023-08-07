@@ -48,14 +48,13 @@ On Windows
 .\.venv\Scripts\activate
 ```
 
-
 3. Install requirements
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-4. Create .env file in the root directory and add the following variable
-```bash
+4. Create ```.env``` file in the root directory and add the following variable
+```
 OPENAI_API_KEY="your-openai-api-key"
 ```
