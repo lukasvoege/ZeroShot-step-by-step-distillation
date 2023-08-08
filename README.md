@@ -35,6 +35,8 @@
 
 1. Clone this repository
 
+1.5 init the submodule
+
 2. Create a virtual environment and activate it (Python 3.8.10)
 ```bash
 python -m venv .venv
