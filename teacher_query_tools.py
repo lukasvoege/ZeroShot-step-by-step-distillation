@@ -1,4 +1,5 @@
 from typing import List, Dict, Union, Tuple
+import importlib
 import datetime
 import json
 import os
@@ -17,34 +18,21 @@ from datasets import load_dataset, DatasetDict
 
 from dotenv import load_dotenv
 
+dsbs_du = importlib.import_module("distilling-step-by-step.data_utils")
 load_dotenv()
 
 
 class TeacherQuerier:
-    def __init__(self, chat_model: str, dataset_name: str, has_valid: bool):
+    def __init__(self, chat_model: str, dataset_name: str, dataloader: dsbs_du.DatasetLoader, has_valid: bool):
         self.chat_model = ChatOpenAI(model=chat_model)
         self.prompt_templates_folder = "./prompt-templates"
-        self.dataset_folder = "../data/dsbs-datasets/datasets"
+        self.dataset_folder = "./datasets"
         self.queries_save_folder = "./querie-results"
 
         self.dataset_name = dataset_name
         self.has_valid = has_valid
 
-        self.datasets = self.load_data_from_json()
-
-    def load_data_from_json(self) -> DatasetDict:
-        data_files = {
-            "train": f"{self.dataset_folder}/{self.dataset_name}/{self.dataset_name}_train.json",
-            "test": f"{self.dataset_folder}/{self.dataset_name}/{self.dataset_name}_test.json",
-        }
-
-        if self.has_valid:
-            data_files.update({"valid": f"{self.dataset_folder}/{self.dataset_name}/{self.dataset_name}_valid.json"})
-
-        datasets = load_dataset("json", data_files=data_files)
-        datasets = self._post_process_data(datasets)
-
-        return datasets
+        self.datasets = dataloader.load_from_json()
 
     def read_yaml_prompts(self, yaml_file: str = None) -> Dict:
         if not yaml_file:
@@ -239,7 +227,8 @@ class ANLITeacherQuerier(TeacherQuerier):
     def __init__(self, chat_model: str = "gpt-3.5-turbo"):
         dataset_name = "anli1"
         has_valid = True
-        super().__init__(chat_model, dataset_name, has_valid)
+        dataloader = dsbs_du.ANLI1DatasetLoader()
+        super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
         self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False
@@ -271,7 +260,8 @@ class CQATeacherQuerier(TeacherQuerier):
     def __init__(self, chat_model: str = "gpt-3.5-turbo"):
         dataset_name = "cqa"
         has_valid = False
-        super().__init__(chat_model, dataset_name, has_valid)
+        dataloader = dsbs_du.CQADatasetLoader()
+        super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
         self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False
@@ -317,7 +307,8 @@ class ESNLITeacherQuerier(TeacherQuerier):
     def __init__(self, chat_model: str = "gpt-3.5-turbo"):
         dataset_name = "esnli"
         has_valid = True
-        super().__init__(chat_model, dataset_name, has_valid)
+        dataloader = dsbs_du.ESNLIDatasetLoader(subset="small")
+        super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
         self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False
@@ -350,7 +341,8 @@ class SVAMPTeacherQuerier(TeacherQuerier):
     def __init__(self, chat_model: str = "gpt-3.5-turbo"):
         dataset_name = "svamp"
         has_valid = False
-        super().__init__(chat_model, dataset_name, has_valid)
+        dataloader = dsbs_du.SVAMPDatasetLoader()
+        super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
         self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False

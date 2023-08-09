@@ -4,6 +4,8 @@ templates:
     id: 1
     system_message: ''
     user_message: '{premise} Based on that information, is the claim: {hypothesis} true, false, or inconclusive? Answer with a one sentence explanation.'
+    parse_for: ['true', 'false', 'inconclusive']
+    explanation: true
   2:
     id: 2
     system_message: 'You are given a context in the form of a short premise and a hypothesis about the premise. Your task is to label if the hypothesis is a "contradiction" (if the hypothesis contradicts the premise), an "entailment" (if the hypothesis entails the premise), or "neutral" (if the hypothesis does not contradict or entail the premise) to the premise. Also, explain very briefly (one sentence, maximum twenty words) why it is that label, but do not repeat the whole hypothesis in your explanation.'
