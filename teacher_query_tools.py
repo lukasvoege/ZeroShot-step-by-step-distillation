@@ -32,7 +32,7 @@ class TeacherQuerier:
         self.dataset_name = dataset_name
         self.has_valid = has_valid
 
-        self.datasets = dataloader.load_from_json()
+        self.datasets = dataloader.load_from_json(TQ_post_process=True)
 
     def read_yaml_prompts(self, yaml_file: str = None) -> Dict:
         if not yaml_file:

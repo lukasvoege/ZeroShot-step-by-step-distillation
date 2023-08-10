@@ -1,0 +1,1 @@
+{"split": "train", "idx": 0, "prompt_template_id": 1, "complete_prompt": "\n\"There are 10 apples on an apple tree.  Three fall off.  Now there are X apples.\"  What is this an example of?\\n\\na)park\\nb)coloring book\\nc)garden center\\nd)math problem\\ne)gravity", "response": "d) math problem"}
