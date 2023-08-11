@@ -24,7 +24,9 @@ class ANLITeacherResponseParser():
 
     def parse_response(self, response: str, prompt_template_id: int) -> Dict:
         prompt_template = self.read_yaml_prompts()["templates"][prompt_template_id]
-        pattern = re.compile(prompt_template["label_parse"] + prompt_template["explanation_parse"], re.IGNORECASE)
-        print(pattern)
+        pattern = re.compile(prompt_template["label_parse"] + prompt_template["explanation_parse"], re.IGNORECASE | re.DOTALL)
         match = pattern.search(response)
-        print(match)
+        if match:
+            return {"label": match.group(1), "explanation": match.group(2)}
+        else:
+            return {"label": None, "explanation": None}	
