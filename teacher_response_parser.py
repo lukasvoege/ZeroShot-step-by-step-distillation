@@ -59,16 +59,14 @@ class ANLITeacherResponseParser:
 
         label = None
         explanation = None
-        if match:
-            try:
+        try:
+            if len(match.groups()) > 0:
                 label = match.group(1)
-                explanation = match.group(2)
-                ## Clean up
                 label = label.lower().strip()
+            if len(match.groups()) > 1:
+                explanation = match.group(2)
                 explanation = self.clean_explanation(explanation)
-            except IndexError:
-                print(f"Could not fully parse '{response}' with pattern '{pattern}'")
-        else:
+        except IndexError or AttributeError:
             print(f"Could not parse '{response}' with pattern '{pattern}'")
 
         return label, explanation
