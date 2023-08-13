@@ -157,6 +157,7 @@ class TeacherQuerier:
                         "split": split,
                         "idx": idx,
                         "prompt_template_id": prompt_template_id,
+                        "prompt_values": {tup[0]: example[tup[1]] for tup in template_tuple},
                         "complete_prompt": self.stringify_prompt(
                             chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple})
                         ),
@@ -201,6 +202,7 @@ class TeacherQuerier:
                         "split": split,
                         "idx": idx,
                         "prompt_template_id": prompt_template_id,
+                        "prompt_values": {tup[0]: example[tup[1]] for tup in template_tuple},
                         "complete_prompt": self.stringify_prompt(
                             chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple})
                         ),
