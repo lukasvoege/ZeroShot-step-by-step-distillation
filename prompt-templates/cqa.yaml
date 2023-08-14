@@ -4,11 +4,15 @@ templates:
     id: 1
     system_message: ''
     user_message: '{question}\n\na){choice_a}\nb){choice_b}\nc){choice_c}\nd){choice_d}\ne){choice_e}'
-    label_parse: '(a\) {choice_a}|b\) {choice_b}|c\) {choice_c}|d\) {choice_d}|e\) {choice_e}|{choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
     explanation_parse: ''
   2:
     id: 2
     system_message: ''
     user_message: '{question}\n\na){choice_a}\nb){choice_b}\nc){choice_c}\nd){choice_d}\ne){choice_e}\n\nExplain your answer with one sentence.'
-    label_parse: '(a\) {choice_a}|b\) {choice_b}|c\) {choice_c}|d\) {choice_d}|e\) {choice_e})'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
     explanation_parse: '.(.*)'
+  3:
+    id: 3
+    system_message: ''
+    user_message: 'Given the following options, what do you think is the correct answer to the question below:\n\n{question}\n\nOptions:\na){choice_a}\nb){choice_b}\nc){choice_c}\nd){choice_d}\ne){choice_e}\n\nExplain your answer with one sentence.'

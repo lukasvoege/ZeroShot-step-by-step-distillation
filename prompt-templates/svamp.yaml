@@ -4,11 +4,17 @@ templates:
     id: 1
     system_message: ''
     user_message: '{question}'
+    label_parse: '(\d*\.?\d+)'
+    explanation_parse: '(.+[\s{])'
   2:
     id: 2
     system_message: ''
-    user_message: '{question}\n\nThink step by step.'
+    user_message: '{question}\n\nGo step by step, but clearly state your final answer.'
+    label_parse: '(\d*\.?\d+)'
+    explanation_parse: '(.+[\s{])'
   3:
     id: 3
     system_message: ''
     user_message: '{question}\n\nAnswer with one sentence.'
+    label_parse: '(\d*\.?\d+)'
+    explanation_parse: '(.+[\s\{])'

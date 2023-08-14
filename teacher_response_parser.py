@@ -2,9 +2,9 @@ from typing import Dict, Tuple
 import yaml
 import json
 import re
-import importlib
+#import importlib
 
-dsbs = importlib.import_module("distilling-step-by-step.data_utils")
+#dsbs = importlib.import_module("distilling-step-by-step.data_utils")
 
 
 class TeacherResponseParser:
@@ -25,11 +25,14 @@ class TeacherResponseParser:
 
     def clean_explanation(self, explanation: str) -> str:
         explanation = re.sub(r"explanation[\.:\-,\s]*", "", explanation, flags=re.IGNORECASE)
+        explanation = re.sub(r"\. Answer[\.:\-,\s]*", "", explanation)
         explanation = re.sub(r"^[^\w]+", "", explanation)  # remove leading non-word characters like .,;:- etc.
+        explanation = re.sub(r"<<(.+)>>\d+", r"\1", explanation) # remove math expression formatting
+        explanation = re.sub(r"\\+\w+{|}", "", explanation, flags=re.IGNORECASE) # remove math expression formatting
         explanation = re.sub(r"\s+", " ", explanation)
         explanation = explanation.strip()
         ## vllt noch pruning wenn hier so arschlange erklärungen kommen
-        if len(explanation) < 5:
+        if len(explanation.split()) < 6:
             explanation = None
         return explanation
 
@@ -42,6 +45,7 @@ class TeacherResponseParser:
         return pattern
 
     def parse_response_batch(self, split: str, prompt_template_id: int) -> Dict[int, Tuple[str, str]]:
+        self.yaml_prompts = self.read_yaml_prompts() # reload yaml prompts in case they were changed
         parsed_responses = {}
         with open(
             f"{self.queries_save_folder}/{self.dataset_name}/{split}/{prompt_template_id}/responses.json", "r"
@@ -71,6 +75,55 @@ class TeacherResponseParser:
                 explanation = match.group(2)
                 explanation = self.clean_explanation(explanation)
         except IndexError or AttributeError:
+            print(f"Could not parse '{response}' with pattern '{pattern}'")
+
+        return label, explanation
+
+class ANLITeacherResponseParser(TeacherResponseParser):
+    def __init__(self,):
+        dataset_name = "anli1"
+        super().__init__(dataset_name)
+
+class CQATeacherResponseParser(TeacherResponseParser):
+    def __init__(self,):
+        dataset_name = "cqa"
+        super().__init__(dataset_name)
+
+class ESNLITeacherResponseParser(TeacherResponseParser):
+    def __init__(self,):
+        dataset_name = "esnli"
+        super().__init__(dataset_name)
+
+class SVAMPTeacherResponseParser(TeacherResponseParser):
+    def __init__(self,):
+        dataset_name = "svamp"
+        super().__init__(dataset_name)
+
+    def get_pattern_from_template(self, prompt_template_id: int, prompt_values: Dict = None) -> re.Pattern:
+        prompt_template = self.yaml_prompts["templates"][prompt_template_id]
+        parse_pattern = prompt_template["explanation_parse"] + prompt_template["label_parse"]
+        if prompt_values:
+            pass # Prompt values are not used for SVAMP
+        pattern = re.compile(parse_pattern, re.IGNORECASE | re.DOTALL)
+        return pattern
+
+    def parse_response(
+        self, response: str, prompt_template_id: int = None, pattern: re.Pattern = None
+    ) -> Tuple[str, str]:
+        if not pattern:
+            pattern = self.get_pattern_from_template(prompt_template_id)
+        match = pattern.search(response)
+
+        label = None
+        explanation = None
+        try:
+            if len(match.groups()) > 0:
+                explanation = match.group(1)
+                explanation = self.clean_explanation(explanation)
+            if len(match.groups()) > 1:
+                label = match.group(2)
+                label = label.lower().strip()
+        except (IndexError, AttributeError):
             print(f"Could not parse '{response}' with pattern '{pattern}'")
 
         return label, explanation
