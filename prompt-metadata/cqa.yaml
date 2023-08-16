@@ -1,0 +1,12 @@
+1:
+  costs:
+    total_accumulated_costs: 0.000976
+    total_performed_queries: 10
+    total_tokens_received: 98
+    total_tokens_sent: 520
+2:
+  costs:
+    total_accumulated_costs: 0.0015270000000000001
+    total_performed_queries: 10
+    total_tokens_received: 282
+    total_tokens_sent: 642

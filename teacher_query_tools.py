@@ -18,6 +18,8 @@ from datasets import load_dataset, DatasetDict
 
 from dotenv import load_dotenv
 
+from utils import Metadata
+
 dsbs_du = importlib.import_module("distilling-step-by-step.data_utils")
 load_dotenv()
 
@@ -32,6 +34,7 @@ class TeacherQuerier:
         self.dataset_name = dataset_name
         self.has_valid = has_valid
 
+        self.metadata = Metadata(dataset_name)
         self.datasets = dataloader.load_from_json(TQ_post_process=True)
 
     def read_yaml_prompts(self, yaml_file: str = None) -> Dict:
@@ -122,6 +125,9 @@ class TeacherQuerier:
         if n > 100:
             n = 10
 
+        SAVE_BATCH_SIZE = 10
+        last_save_idx = 0
+
         # build prompt template and chain
         chain = self.build_chain_from_prompt_template(prompt_template_id)
 
@@ -147,32 +153,41 @@ class TeacherQuerier:
                 print(f"SKIPPING EXAMPLE {idx + 1}/{n}...", end="\r")
                 responses.append(None)  # to keep the same length as examples
                 skipped.append(idx)
+
+            # save results every 10 examples or at the end (everything is offset by 1 to save in the actual SAVE_BATCH_SIZE)
+            if (idx + 1) % SAVE_BATCH_SIZE == 0 or idx == n - 1:
+                last_save_batch_size = idx + 1 - last_save_idx
+                if not dont_save and len(responses) > 0:
+                    self.save_querie_results(
+                        queries=[
+                            {
+                                "split": split,
+                                "idx": id + idx + 1 - last_save_batch_size,
+                                "prompt_template_id": prompt_template_id,
+                                "prompt_values": {tup[0]: example[tup[1]] for tup in template_tuple},
+                                "complete_prompt": self.stringify_prompt(
+                                    chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple})
+                                ),
+                                "response": responses[id + idx + 1 - last_save_batch_size],
+                            }
+                            for id, example in enumerate(
+                                examples.select(range(idx + 1 - last_save_batch_size, idx + 1))
+                            )
+                            if id + idx + 1 - last_save_batch_size not in skipped
+                        ],
+                        split=split,
+                        prompt_template_id=prompt_template_id,
+                    )
+                last_save_idx = idx + 1
+
         print(f"QUERYING EXAMPLE {n}/{n}...")
-
-        # save results
-        if not dont_save and len(responses) > 0:
-            self.save_querie_results(
-                queries=[
-                    {
-                        "split": split,
-                        "idx": idx,
-                        "prompt_template_id": prompt_template_id,
-                        "prompt_values": {tup[0]: example[tup[1]] for tup in template_tuple},
-                        "complete_prompt": self.stringify_prompt(
-                            chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple})
-                        ),
-                        "response": responses[idx],
-                    }
-                    for idx, example in enumerate(examples)
-                    if idx not in skipped
-                ],
-                split=split,
-                prompt_template_id=prompt_template_id,
-            )
-
         total_prompt_tokens, total_completion_tokens, total_costs = self.calculate_batch_query_metrics(callbacks)
         print(
             f"Batch Query completed! (Skipped {len(skipped)} queries as they were already queried and stored.)\nTotal Prompt Tokens: {total_prompt_tokens}\nTotal Completion Tokens: {total_completion_tokens}\nTotal Costs: ${total_costs}"
+        )
+        # update metadata
+        self.metadata.update_from_callback(
+            prompt_template_id, total_prompt_tokens, total_completion_tokens, total_costs, n - len(skipped)
         )
 
     def query(

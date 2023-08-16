@@ -2,9 +2,10 @@ from typing import Dict, Tuple
 import yaml
 import json
 import re
-#import importlib
 
-#dsbs = importlib.import_module("distilling-step-by-step.data_utils")
+# import importlib
+
+# dsbs = importlib.import_module("distilling-step-by-step.data_utils")
 
 
 class TeacherResponseParser:
@@ -27,8 +28,8 @@ class TeacherResponseParser:
         explanation = re.sub(r"explanation[\.:\-,\s]*", "", explanation, flags=re.IGNORECASE)
         explanation = re.sub(r"\. Answer[\.:\-,\s]*", "", explanation)
         explanation = re.sub(r"^[^\w]+", "", explanation)  # remove leading non-word characters like .,;:- etc.
-        explanation = re.sub(r"<<(.+)>>\d+", r"\1", explanation) # remove math expression formatting
-        explanation = re.sub(r"\\+\w+{|}", "", explanation, flags=re.IGNORECASE) # remove math expression formatting
+        explanation = re.sub(r"<<(.+)>>\d+", r"\1", explanation)  # remove math expression formatting
+        explanation = re.sub(r"\\+\w+{|}", "", explanation, flags=re.IGNORECASE)  # remove math expression formatting
         explanation = re.sub(r"\s+", " ", explanation)
         explanation = explanation.strip()
         ## vllt noch pruning wenn hier so arschlange erklärungen kommen
@@ -45,7 +46,7 @@ class TeacherResponseParser:
         return pattern
 
     def parse_response_batch(self, split: str, prompt_template_id: int) -> Dict[int, Tuple[str, str]]:
-        self.yaml_prompts = self.read_yaml_prompts() # reload yaml prompts in case they were changed
+        self.yaml_prompts = self.read_yaml_prompts()  # reload yaml prompts in case they were changed
         parsed_responses = {}
         with open(
             f"{self.queries_save_folder}/{self.dataset_name}/{split}/{prompt_template_id}/responses.json", "r"
@@ -79,23 +80,35 @@ class TeacherResponseParser:
 
         return label, explanation
 
+
 class ANLITeacherResponseParser(TeacherResponseParser):
-    def __init__(self,):
+    def __init__(
+        self,
+    ):
         dataset_name = "anli1"
         super().__init__(dataset_name)
 
+
 class CQATeacherResponseParser(TeacherResponseParser):
-    def __init__(self,):
+    def __init__(
+        self,
+    ):
         dataset_name = "cqa"
         super().__init__(dataset_name)
 
+
 class ESNLITeacherResponseParser(TeacherResponseParser):
-    def __init__(self,):
+    def __init__(
+        self,
+    ):
         dataset_name = "esnli"
         super().__init__(dataset_name)
 
+
 class SVAMPTeacherResponseParser(TeacherResponseParser):
-    def __init__(self,):
+    def __init__(
+        self,
+    ):
         dataset_name = "svamp"
         super().__init__(dataset_name)
 
@@ -103,7 +116,7 @@ class SVAMPTeacherResponseParser(TeacherResponseParser):
         prompt_template = self.yaml_prompts["templates"][prompt_template_id]
         parse_pattern = prompt_template["explanation_parse"] + prompt_template["label_parse"]
         if prompt_values:
-            pass # Prompt values are not used for SVAMP
+            pass  # Prompt values are not used for SVAMP
         pattern = re.compile(parse_pattern, re.IGNORECASE | re.DOTALL)
         return pattern
 

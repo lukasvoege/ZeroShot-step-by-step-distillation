@@ -35,9 +35,15 @@
 
 1. Clone this repository
 
-1.5 init the submodule
+2. Initialize and clone submodule
+```bash
+git submodule update --init
+```
 
-2. Create a virtual environment and activate it (Python 3.8.10)
+2.5 unzip the datasets.zip file in the root directory
+win PS: Expand-Archive .\datasets.zip .       , unix: unzip
+
+3. Create a virtual environment and activate it (Python 3.8.10)
 ```bash
 python -m venv .venv
 ```
@@ -50,13 +56,13 @@ On Windows
 .\.venv\Scripts\activate
 ```
 
-3. Install requirements
+4. Install requirements
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-4. Create ```.env``` file in the root directory and add the following variable
+5. Create ```.env``` file in the root directory and add the following variable
 ```
 OPENAI_API_KEY="your-openai-api-key"
 ```
