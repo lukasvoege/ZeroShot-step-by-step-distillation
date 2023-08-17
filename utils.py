@@ -78,3 +78,14 @@ class Metadata:
 
         # save updated metadata
         self.save_updated_metadata(self.current_metadata)
+
+    def update_from_evaluator(self, prompt_id: int, total_reponses: float, n_none_responses: int, total_length_of_explanations: int):
+        # update current_metadata
+        self.current_metadata = self.load_current_metadata()
+
+        self.update_field(prompt_id, "characteristics", "total_reponses", total_reponses)
+        self.update_field(prompt_id, "characteristics", "n_none_responses", n_none_responses)
+        self.update_field(prompt_id, "characteristics", "total_length_of_explanations", total_length_of_explanations)
+
+        # save updated metadata
+        self.save_updated_metadata(self.current_metadata)
