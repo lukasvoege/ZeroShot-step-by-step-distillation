@@ -3,10 +3,6 @@ import yaml
 import json
 import re
 
-# import importlib
-
-# dsbs = importlib.import_module("distilling-step-by-step.data_utils")
-
 
 class TeacherResponseParser:
     def __init__(self, dataset_name: str):
@@ -71,7 +67,7 @@ class TeacherResponseParser:
         try:
             if len(match.groups()) > 0:
                 label = match.group(1)
-                label = label.lower().strip()
+                label = self.conform_label(label)
             if len(match.groups()) > 1:
                 explanation = match.group(2)
                 explanation = self.clean_explanation(explanation)
@@ -88,6 +84,16 @@ class ANLITeacherResponseParser(TeacherResponseParser):
         dataset_name = "anli1"
         super().__init__(dataset_name)
 
+    def conform_label(self, label: str) -> str:
+        label = label.lower().strip()
+        if label in ["contradiction", "false"]:
+            label = "contradiction"
+        elif label in ["neutral", "inconclusive"]:
+            label = "neutral"
+        elif label in ["entailment", "true"]:
+            label = "entailment"
+        return label
+
 
 class CQATeacherResponseParser(TeacherResponseParser):
     def __init__(
@@ -95,6 +101,9 @@ class CQATeacherResponseParser(TeacherResponseParser):
     ):
         dataset_name = "cqa"
         super().__init__(dataset_name)
+    
+    def conform_label(self, label: str) -> str:
+        return label.lower().strip()
 
 
 class ESNLITeacherResponseParser(TeacherResponseParser):
@@ -103,6 +112,16 @@ class ESNLITeacherResponseParser(TeacherResponseParser):
     ):
         dataset_name = "esnli"
         super().__init__(dataset_name)
+    
+    def conform_label(self, label: str) -> str:
+        label = label.lower().strip()
+        if label in ["contradiction", "false"]:
+            label = "contradiction"
+        elif label in ["neutral", "inconclusive"]:
+            label = "neutral"
+        elif label in ["entailment", "true"]:
+            label = "entailment"
+        return label
 
 
 class SVAMPTeacherResponseParser(TeacherResponseParser):
@@ -111,6 +130,9 @@ class SVAMPTeacherResponseParser(TeacherResponseParser):
     ):
         dataset_name = "svamp"
         super().__init__(dataset_name)
+
+    def conform_label(self, label: str) -> str:
+        return label.lower().strip()
 
     def get_pattern_from_template(self, prompt_template_id: int, prompt_values: Dict = None) -> re.Pattern:
         prompt_template = self.yaml_prompts["templates"][prompt_template_id]
@@ -135,7 +157,7 @@ class SVAMPTeacherResponseParser(TeacherResponseParser):
                 explanation = self.clean_explanation(explanation)
             if len(match.groups()) > 1:
                 label = match.group(2)
-                label = label.lower().strip()
+                label = self.conform_label(label)
         except (IndexError, AttributeError):
             print(f"Could not parse '{response}' with pattern '{pattern}'")
 

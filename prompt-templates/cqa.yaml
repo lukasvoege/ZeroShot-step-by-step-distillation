@@ -16,3 +16,5 @@ templates:
     id: 3
     system_message: ''
     user_message: 'Given the following options, what do you think is the correct answer to the question below:\n\n{question}\n\nOptions:\na){choice_a}\nb){choice_b}\nc){choice_c}\nd){choice_d}\ne){choice_e}\n\nExplain your answer with one sentence.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'

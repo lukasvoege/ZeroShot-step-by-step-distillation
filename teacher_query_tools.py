@@ -14,7 +14,7 @@ from langchain.prompts.chat import (
     HumanMessagePromptTemplate,
 )
 import yaml
-from datasets import load_dataset, DatasetDict
+from datasets import DatasetDict
 
 from dotenv import load_dotenv
 
