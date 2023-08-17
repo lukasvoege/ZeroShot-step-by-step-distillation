@@ -1,0 +1,27 @@
+1:
+  costs:
+    avg_cost_per_query: 0.000204275
+    avg_nr_tokens_received: 65.65
+    avg_nr_tokens_sent: 48.65
+    total_accumulated_costs: 0.0040855
+    total_performed_queries: 20
+    total_tokens_received: 1313
+    total_tokens_sent: 973
+2:
+  costs:
+    avg_cost_per_query: 0.00031257500000000005
+    avg_nr_tokens_received: 109.3
+    avg_nr_tokens_sent: 62.65
+    total_accumulated_costs: 0.006251500000000001
+    total_performed_queries: 20
+    total_tokens_received: 2186
+    total_tokens_sent: 1253
+3:
+  costs:
+    avg_cost_per_query: 0.000106675
+    avg_nr_tokens_received: 11.6
+    avg_nr_tokens_sent: 55.65
+    total_accumulated_costs: 0.0021335
+    total_performed_queries: 20
+    total_tokens_received: 232
+    total_tokens_sent: 1113
