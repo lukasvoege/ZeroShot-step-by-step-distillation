@@ -34,7 +34,7 @@ class Metadata:
         self.current_metadata[prompt_id][category][field] = (
             self.current_metadata[prompt_id][category].get(field, 0) + value
         )
-    
+
     def write_filed(self, prompt_id: int, category: str, field: str, value: Union[int, float]) -> None:
         if prompt_id not in self.current_metadata:
             self.current_metadata[prompt_id] = {}
@@ -62,6 +62,22 @@ class Metadata:
             )
             self.write_filed(prompt_id, category, "avg_nr_tokens_received", avg_nr_tokens_received)
 
+        elif category == "characteristics":
+            try:
+                avg_len_of_explanations = self.current_metadata[prompt_id][category]["total_length_of_explanations"] / (
+                    self.current_metadata[prompt_id][category]["total_reponses"]
+                )
+            except ZeroDivisionError:
+                avg_len_of_explanations = 0
+            self.write_filed(prompt_id, category, "avg_len_of_explanations", avg_len_of_explanations)
+
+        elif category == "performance":
+            accuracy = self.current_metadata[prompt_id][category]["n_correct"] / (
+                self.current_metadata[prompt_id][category]["n_correct"]
+                + self.current_metadata[prompt_id][category]["n_wrong"]
+            )
+            self.write_filed(prompt_id, category, "accuracy", accuracy)
+
     def update_from_callback(
         self, prompt_id: int, total_prompt_tokens: int, total_completion_tokens: int, total_costs: float, n: int
     ):
@@ -79,13 +95,28 @@ class Metadata:
         # save updated metadata
         self.save_updated_metadata(self.current_metadata)
 
-    def update_from_evaluator(self, prompt_id: int, total_reponses: float, n_none_responses: int, total_length_of_explanations: int):
+    def update_from_evaluator(
+        self,
+        prompt_id: int,
+        total_reponses: float,
+        n_none_responses: int,
+        total_length_of_explanations: int,
+        n_correct: int,
+        n_wrong: int,
+    ):
         # update current_metadata
         self.current_metadata = self.load_current_metadata()
 
-        self.update_field(prompt_id, "characteristics", "total_reponses", total_reponses)
-        self.update_field(prompt_id, "characteristics", "n_none_responses", n_none_responses)
-        self.update_field(prompt_id, "characteristics", "total_length_of_explanations", total_length_of_explanations)
+        self.write_filed(prompt_id, "characteristics", "total_reponses", total_reponses)
+        self.write_filed(prompt_id, "characteristics", "n_none_responses", n_none_responses)
+        self.write_filed(prompt_id, "characteristics", "total_length_of_explanations", total_length_of_explanations)
+
+        self.update_field(prompt_id, "performance", "n_correct", n_correct)
+        self.update_field(prompt_id, "performance", "n_wrong", n_wrong)
+
+        # update averages
+        self.calculate_and_and_update_averages(prompt_id, "characteristics")
+        self.calculate_and_and_update_averages(prompt_id, "performance")
 
         # save updated metadata
         self.save_updated_metadata(self.current_metadata)

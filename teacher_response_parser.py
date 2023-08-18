@@ -44,14 +44,17 @@ class TeacherResponseParser:
     def parse_response_batch(self, split: str, prompt_template_id: int) -> Dict[int, Tuple[str, str]]:
         self.yaml_prompts = self.read_yaml_prompts()  # reload yaml prompts in case they were changed
         parsed_responses = {}
-        with open(
-            f"{self.queries_save_folder}/{self.dataset_name}/{split}/{prompt_template_id}/responses.json", "r"
-        ) as f:
-            for line in f:
-                response = json.loads(line)
-                if response["idx"] not in parsed_responses:
-                    pattern = self.get_pattern_from_template(prompt_template_id, response["prompt_values"])
-                    parsed_responses[response["idx"]] = self.parse_response(response["response"], pattern=pattern)
+        try:
+            with open(
+                f"{self.queries_save_folder}/{self.dataset_name}/{split}/{prompt_template_id}/responses.json", "r"
+            ) as f:
+                for line in f:
+                    response = json.loads(line)
+                    if response["idx"] not in parsed_responses:
+                        pattern = self.get_pattern_from_template(prompt_template_id, response["prompt_values"])
+                        parsed_responses[response["idx"]] = self.parse_response(response["response"], pattern=pattern)
+        except FileNotFoundError:
+            print(f"No responses found for prompt template {prompt_template_id} in split {split}")
 
         return parsed_responses
 

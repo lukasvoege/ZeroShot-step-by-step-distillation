@@ -1,12 +1,30 @@
 1:
+  characteristics:
+    avg_len_of_explanations: 0
+    n_none_responses: 20
+    total_length_of_explanations: 0
+    total_reponses: 0
   costs:
     total_accumulated_costs: 0.000976
     total_performed_queries: 10
     total_tokens_received: 98
     total_tokens_sent: 520
+  performance:
+    accuracy: 0.65
+    n_correct: 39
+    n_wrong: 21
 2:
+  characteristics:
+    avg_len_of_explanations: 118.20833333333333
+    n_none_responses: 1
+    total_length_of_explanations: 2837
+    total_reponses: 24
   costs:
     total_accumulated_costs: 0.0015270000000000001
     total_performed_queries: 10
     total_tokens_received: 282
     total_tokens_sent: 642
+  performance:
+    accuracy: 0.76
+    n_correct: 57
+    n_wrong: 18

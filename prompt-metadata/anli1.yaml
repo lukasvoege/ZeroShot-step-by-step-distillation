@@ -1,0 +1,30 @@
+1:
+  characteristics:
+    avg_len_of_explanations: 126.12
+    n_none_responses: 0
+    total_length_of_explanations: 3153
+    total_reponses: 25
+  performance:
+    accuracy: 0.6
+    n_correct: 15
+    n_wrong: 10
+2:
+  characteristics:
+    avg_len_of_explanations: 184.6315789473684
+    n_none_responses: 0
+    total_length_of_explanations: 3508
+    total_reponses: 19
+  performance:
+    accuracy: 0.47368421052631576
+    n_correct: 9
+    n_wrong: 10
+3:
+  characteristics:
+    avg_len_of_explanations: 0
+    n_none_responses: 15
+    total_length_of_explanations: 0
+    total_reponses: 0
+  performance:
+    accuracy: 0.6666666666666666
+    n_correct: 10
+    n_wrong: 5
