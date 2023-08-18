@@ -1,30 +1,54 @@
 1:
   characteristics:
-    avg_len_of_explanations: 126.12
+    avg_len_of_explanations: 124.675
     n_none_responses: 0
-    total_length_of_explanations: 3153
-    total_reponses: 25
+    total_length_of_explanations: 4987
+    total_reponses: 40
+  costs:
+    avg_cost_per_query: 0.0002498
+    avg_nr_tokens_received: 34.0
+    avg_nr_tokens_sent: 121.2
+    total_accumulated_costs: 0.0037470000000000003
+    total_performed_queries: 15
+    total_tokens_received: 510
+    total_tokens_sent: 1818
   performance:
-    accuracy: 0.6
-    n_correct: 15
-    n_wrong: 10
+    accuracy: 0.6307692307692307
+    n_correct: 41
+    n_wrong: 24
 2:
   characteristics:
-    avg_len_of_explanations: 184.6315789473684
+    avg_len_of_explanations: 177.35
     n_none_responses: 0
-    total_length_of_explanations: 3508
-    total_reponses: 19
+    total_length_of_explanations: 7094
+    total_reponses: 40
+  costs:
+    avg_cost_per_query: 0.0004063809523809524
+    avg_nr_tokens_received: 42.61904761904762
+    avg_nr_tokens_sent: 214.0952380952381
+    total_accumulated_costs: 0.008534
+    total_performed_queries: 21
+    total_tokens_received: 895
+    total_tokens_sent: 4496
   performance:
-    accuracy: 0.47368421052631576
-    n_correct: 9
-    n_wrong: 10
+    accuracy: 0.4576271186440678
+    n_correct: 27
+    n_wrong: 32
 3:
   characteristics:
     avg_len_of_explanations: 0
-    n_none_responses: 15
+    n_none_responses: 40
     total_length_of_explanations: 0
     total_reponses: 0
+  costs:
+    avg_cost_per_query: 0.00018617999999999998
+    avg_nr_tokens_received: 1.68
+    avg_nr_tokens_sent: 121.88
+    total_accumulated_costs: 0.0046545
+    total_performed_queries: 25
+    total_tokens_received: 42
+    total_tokens_sent: 3047
   performance:
-    accuracy: 0.6666666666666666
-    n_correct: 10
-    n_wrong: 5
+    accuracy: 0.6727272727272727
+    n_correct: 37
+    n_wrong: 18
