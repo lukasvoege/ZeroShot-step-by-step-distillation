@@ -114,3 +114,5 @@ class TeacherResponseEvaluator:
         best_prompt_template_id = max(evals, key=lambda x: evals[x]["accuracy"])
 
         print(f"Best prompt template for {self.dataset_name} is {best_prompt_template_id}, with accuracy: {evals[best_prompt_template_id]['accuracy']}")
+
+        return best_prompt_template_id

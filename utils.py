@@ -111,8 +111,8 @@ class Metadata:
         self.write_filed(prompt_id, "characteristics", "n_none_responses", n_none_responses)
         self.write_filed(prompt_id, "characteristics", "total_length_of_explanations", total_length_of_explanations)
 
-        self.update_field(prompt_id, "performance", "n_correct", n_correct)
-        self.update_field(prompt_id, "performance", "n_wrong", n_wrong)
+        self.write_filed(prompt_id, "performance", "n_correct", n_correct)
+        self.write_filed(prompt_id, "performance", "n_wrong", n_wrong)
 
         # update averages
         self.calculate_and_and_update_averages(prompt_id, "characteristics")
