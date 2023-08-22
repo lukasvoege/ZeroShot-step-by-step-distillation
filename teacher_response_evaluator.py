@@ -9,7 +9,7 @@ from teacher_response_parser import (
     ESNLITeacherResponseParser,
     SVAMPTeacherResponseParser,
 )
-from utils import Metadata
+from metadata import Metadata
 
 import importlib
 

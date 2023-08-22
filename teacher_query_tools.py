@@ -18,7 +18,7 @@ from datasets import DatasetDict
 
 from dotenv import load_dotenv
 
-from utils import Metadata
+from metadata import Metadata
 
 dsbs_du = importlib.import_module("distilling-step-by-step.data_utils")
 load_dotenv()
