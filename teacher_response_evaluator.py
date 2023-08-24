@@ -62,7 +62,7 @@ class TeacherResponseEvaluator:
 
         return acc, n_correct, n_wrong
 
-    def get_explanation_characteristics(self, split: str, parsed_responses: Dict) -> [int, int]:
+    def get_explanation_characteristics(self, parsed_responses: Dict) -> [int, int]:
         response_explanations = [response[1] for response in parsed_responses.values()]
 
         n_none_responses = response_explanations.count(None)
@@ -81,7 +81,7 @@ class TeacherResponseEvaluator:
             return {}
         acc, n_correct, n_wrong = self.get_label_accuracy(split, parsed_responses)
         n_none_responses, total_repsonses, total_length_of_explanations = self.get_explanation_characteristics(
-            split, parsed_responses
+            parsed_responses
         )
 
         return {
