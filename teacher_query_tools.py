@@ -112,82 +112,67 @@ class TeacherQuerier:
                 stored_results.add(f"{result['split']}_{result['idx']}_{result['prompt_template_id']}")
 
         return stored_results
-
+    
     def batch_query(
         self,
         split: str,
-        n: int,
+        idxs: List[int],
         prompt_template_id: int,
         template_tuple: List[Tuple[str, str]],
         dont_save: bool = False,
-        force_query: bool = False,
+        force_query: bool = False
     ) -> None:
-        if n > 100:
-            n = 10
-
-        SAVE_BATCH_SIZE = 10
-        last_save_idx = 0
 
         # build prompt template and chain
         chain = self.build_chain_from_prompt_template(prompt_template_id)
 
-        # get examples from dataset split
-        examples = self.datasets[split].select(range(n))
-        responses = []
+        examples = self.datasets[split].select(idxs)
         callbacks = []
 
         # get already stored results
         stored_results = self.get_already_stored_results(split, prompt_template_id)
         skipped = []
-        for idx, example in enumerate(examples):
+
+        n = 0
+        for idx, example in zip(idxs, examples):
+            n += 1
             if f"{split}_{idx}_{prompt_template_id}" not in stored_results or force_query:
-                print(f"QUERYING EXAMPLE {idx + 1}/{n}...", end="\r")
+                print(f"QUERYING EXAMPLE {n}/{len(idxs)} ({idx})...", end="\r")
                 response, callback = self.run_chain_with_callback(
                     chain,
                     {tup[0]: example[tup[1]] for tup in template_tuple}
-                    # chain, {"premise": example["premise"], "hypothesis": example["hypothesis"]}
+                    #{"premise": example["premise"], "hypothesis": example["hypothesis"]}
                 )
-                responses.append(response)
                 callbacks.append(callback)
-            else:
-                print(f"SKIPPING EXAMPLE {idx + 1}/{n}...", end="\r")
-                responses.append(None)  # to keep the same length as examples
-                skipped.append(idx)
-
-            # save results every 10 examples or at the end (everything is offset by 1 to save in the actual SAVE_BATCH_SIZE)
-            if (idx + 1) % SAVE_BATCH_SIZE == 0 or idx == n - 1:
-                last_save_batch_size = idx + 1 - last_save_idx
-                if not dont_save and len(responses) > 0:
+                stored_results.add(f"{split}_{idx}_{prompt_template_id}") # add to stored results in case it was queried in this batch already (should never happen)
+                if not dont_save:
                     self.save_querie_results(
                         queries=[
                             {
                                 "split": split,
-                                "idx": id + idx + 1 - last_save_batch_size,
+                                "idx": idx,
                                 "prompt_template_id": prompt_template_id,
                                 "prompt_values": {tup[0]: example[tup[1]] for tup in template_tuple},
                                 "complete_prompt": self.stringify_prompt(
                                     chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple})
                                 ),
-                                "response": responses[id + idx + 1 - last_save_batch_size],
+                                "response": response,
                             }
-                            for id, example in enumerate(
-                                examples.select(range(idx + 1 - last_save_batch_size, idx + 1))
-                            )
-                            if id + idx + 1 - last_save_batch_size not in skipped
                         ],
                         split=split,
                         prompt_template_id=prompt_template_id,
                     )
-                last_save_idx = idx + 1
+            else:
+                print(f"SKIPPING EXAMPLE {n}/{len(idxs)} ({idx})...", end="\r")
+                skipped.append(idx)
 
-        print(f"QUERYING EXAMPLE {n}/{n}...")
         total_prompt_tokens, total_completion_tokens, total_costs = self.calculate_batch_query_metrics(callbacks)
         print(
             f"Batch Query completed! (Skipped {len(skipped)} queries as they were already queried and stored.)\nTotal Prompt Tokens: {total_prompt_tokens}\nTotal Completion Tokens: {total_completion_tokens}\nTotal Costs: ${total_costs}"
         )
         # update metadata
         self.metadata.update_from_callback(
-            prompt_template_id, total_prompt_tokens, total_completion_tokens, total_costs, n - len(skipped)
+            prompt_template_id, total_prompt_tokens, total_completion_tokens, total_costs, len(idxs) - len(skipped)
         )
 
     def query(
@@ -248,10 +233,10 @@ class ANLITeacherQuerier(TeacherQuerier):
         super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
-        self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False
+        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False
     ) -> None:
         template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
-        self.batch_query(split, n, prompt_template_id, template_tuple, dont_save, force_query)
+        self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
         template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
@@ -281,7 +266,7 @@ class CQATeacherQuerier(TeacherQuerier):
         super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
-        self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False
+        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False
     ) -> None:
         template_tuple = [
             ("question", "question"),
@@ -291,7 +276,7 @@ class CQATeacherQuerier(TeacherQuerier):
             ("choice_d", "c_3"),
             ("choice_e", "c_4"),
         ]
-        self.batch_query(split, n, prompt_template_id, template_tuple, dont_save, force_query)
+        self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
         template_tuple = [
@@ -328,10 +313,10 @@ class ESNLITeacherQuerier(TeacherQuerier):
         super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
-        self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False
+        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False
     ) -> None:
         template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
-        self.batch_query(split, n, prompt_template_id, template_tuple, dont_save, force_query)
+        self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
         template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
@@ -362,10 +347,10 @@ class SVAMPTeacherQuerier(TeacherQuerier):
         super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
-        self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False
+        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False
     ) -> None:
         template_tuple = [("question", "input")]
-        self.batch_query(split, n, prompt_template_id, template_tuple, dont_save, force_query)
+        self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
         template_tuple = [("question", "input")]
