@@ -112,7 +112,7 @@ class TeacherQuerier:
                 stored_results.add(f"{result['split']}_{result['idx']}_{result['prompt_template_id']}")
 
         return stored_results
-    
+
     def batch_query(
         self,
         split: str,
@@ -120,9 +120,8 @@ class TeacherQuerier:
         prompt_template_id: int,
         template_tuple: List[Tuple[str, str]],
         dont_save: bool = False,
-        force_query: bool = False
+        force_query: bool = False,
     ) -> None:
-
         # build prompt template and chain
         chain = self.build_chain_from_prompt_template(prompt_template_id)
 
@@ -141,10 +140,11 @@ class TeacherQuerier:
                 response, callback = self.run_chain_with_callback(
                     chain,
                     {tup[0]: example[tup[1]] for tup in template_tuple}
-                    #{"premise": example["premise"], "hypothesis": example["hypothesis"]}
+                    # {"premise": example["premise"], "hypothesis": example["hypothesis"]}
                 )
                 callbacks.append(callback)
-                stored_results.add(f"{split}_{idx}_{prompt_template_id}") # add to stored results in case it was queried in this batch already (should never happen)
+                # add to stored results in case it was queried in this batch already (should never happen)
+                stored_results.add(f"{split}_{idx}_{prompt_template_id}")
                 if not dont_save:
                     self.save_querie_results(
                         queries=[

@@ -104,7 +104,7 @@ class CQATeacherResponseParser(TeacherResponseParser):
     ):
         dataset_name = "cqa"
         super().__init__(dataset_name)
-    
+
     def conform_label(self, label: str) -> str:
         return label.lower().strip()
 
@@ -115,7 +115,7 @@ class ESNLITeacherResponseParser(TeacherResponseParser):
     ):
         dataset_name = "esnli"
         super().__init__(dataset_name)
-    
+
     def conform_label(self, label: str) -> str:
         label = label.lower().strip()
         if label in ["contradiction", "false"]:

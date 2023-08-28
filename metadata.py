@@ -103,7 +103,7 @@ class Metadata:
         total_length_of_explanations: int,
         n_correct: int,
         n_wrong: int,
-        n_parse_errors: int
+        n_parse_errors: int,
     ):
         # update current_metadata
         self.current_metadata = self.load_current_metadata()

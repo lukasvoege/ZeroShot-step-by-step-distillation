@@ -111,12 +111,14 @@ class TeacherResponseEvaluator:
                 evaluation_results["total_length_of_explanations"],
                 evaluation_results["n_correct"],
                 evaluation_results["n_wrong"],
-                evaluation_results["n_parse_errors"]
+                evaluation_results["n_parse_errors"],
             )
             evals[prompt_template_id] = evaluation_results
 
         best_prompt_template_id = max(evals, key=lambda x: evals[x]["accuracy"])
 
-        print(f"Best prompt template for {self.dataset_name} is {best_prompt_template_id}, with accuracy: {evals[best_prompt_template_id]['accuracy']}")
+        print(
+            f"Best prompt template for {self.dataset_name} is {best_prompt_template_id}, with accuracy: {evals[best_prompt_template_id]['accuracy']}"
+        )
 
         return best_prompt_template_id
