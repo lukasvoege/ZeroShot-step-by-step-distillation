@@ -103,6 +103,7 @@ class Metadata:
         total_length_of_explanations: int,
         n_correct: int,
         n_wrong: int,
+        n_parse_errors: int
     ):
         # update current_metadata
         self.current_metadata = self.load_current_metadata()
@@ -110,6 +111,7 @@ class Metadata:
         self.write_filed(prompt_id, "characteristics", "total_reponses", total_reponses)
         self.write_filed(prompt_id, "characteristics", "n_none_responses", n_none_responses)
         self.write_filed(prompt_id, "characteristics", "total_length_of_explanations", total_length_of_explanations)
+        self.write_filed(prompt_id, "characteristics", "n_parse_errors", n_parse_errors)
 
         self.write_filed(prompt_id, "performance", "n_correct", n_correct)
         self.write_filed(prompt_id, "performance", "n_wrong", n_wrong)
