@@ -42,7 +42,7 @@ class TeacherResponseEvaluator:
         response_labels = [response[0] for response in parsed_responses.values()]
         ground_truth_labels = self.ground_truth[split]["label"]
 
-        ground_truth_labels = np.take(ground_truth_labels, [idx for idx in parsed_responses.keys()])
+        ground_truth_labels = np.take(ground_truth_labels, list(parsed_responses.keys()))
 
         if self.dataset_name in ["svamp"]:
             response_labels = [dsbs_metrics.eval_equation(response_label) for response_label in response_labels]
@@ -79,6 +79,8 @@ class TeacherResponseEvaluator:
         parsed_responses = self.parser.parse_response_batch(split, prompt_template_id)
         if parsed_responses == {}:
             return {}
+        ## TODO: Also save how many parse errors per prompt where label could not be retrieved
+        n_parse_errors = [response[0] for response in parsed_responses.values()].count(None)
         acc, n_correct, n_wrong = self.get_label_accuracy(split, parsed_responses)
         n_none_responses, total_repsonses, total_length_of_explanations = self.get_explanation_characteristics(
             parsed_responses
@@ -88,6 +90,7 @@ class TeacherResponseEvaluator:
             "accuracy": acc,
             "n_correct": n_correct,
             "n_wrong": n_wrong,
+            "n_parse_errors": n_parse_errors,
             "n_none_responses": n_none_responses,
             "total_reponses": total_repsonses,
             "total_length_of_explanations": total_length_of_explanations,
@@ -108,6 +111,7 @@ class TeacherResponseEvaluator:
                 evaluation_results["total_length_of_explanations"],
                 evaluation_results["n_correct"],
                 evaluation_results["n_wrong"],
+                evaluation_results["n_parse_errors"]
             )
             evals[prompt_template_id] = evaluation_results
 

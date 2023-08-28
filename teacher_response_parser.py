@@ -74,7 +74,7 @@ class TeacherResponseParser:
             if len(match.groups()) > 1:
                 explanation = match.group(2)
                 explanation = self.clean_explanation(explanation)
-        except IndexError or AttributeError:
+        except (IndexError, AttributeError):
             print(f"Could not parse '{response}' with pattern '{pattern}'")
 
         return label, explanation
