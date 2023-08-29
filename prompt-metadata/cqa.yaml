@@ -1,33 +1,57 @@
 1:
   characteristics:
     avg_len_of_explanations: 0
-    n_none_responses: 20
+    n_none_responses: 30
+    n_parse_errors: 0
     total_length_of_explanations: 0
     total_reponses: 0
   costs:
-    total_accumulated_costs: 0.000976
-    total_performed_queries: 10
-    total_tokens_received: 98
-    total_tokens_sent: 520
+    avg_cost_per_query: 9.692500000000001e-05
+    avg_nr_tokens_received: 7.85
+    avg_nr_tokens_sent: 54.15
+    total_accumulated_costs: 0.0019385000000000001
+    total_performed_queries: 20
+    total_tokens_received: 157
+    total_tokens_sent: 1083
   performance:
-    accuracy: 0.65
-    n_correct: 39
-    n_wrong: 21
+    accuracy: 0.5666666666666667
+    n_correct: 17
+    n_wrong: 13
 2:
   characteristics:
-    avg_len_of_explanations: 118.20833333333333
-    n_none_responses: 1
-    total_length_of_explanations: 2837
-    total_reponses: 24
+    avg_len_of_explanations: 114.8
+    n_none_responses: 2
+    n_parse_errors: 1
+    total_length_of_explanations: 4018
+    total_reponses: 35
   costs:
-    avg_cost_per_query: 0.00015541666666666669
-    avg_nr_tokens_received: 28.333333333333332
-    avg_nr_tokens_sent: 65.83333333333333
-    total_accumulated_costs: 0.0018650000000000001
-    total_performed_queries: 12
-    total_tokens_received: 340
-    total_tokens_sent: 790
+    avg_cost_per_query: 0.00015270454545454547
+    avg_nr_tokens_received: 26.818181818181817
+    avg_nr_tokens_sent: 66.04545454545455
+    total_accumulated_costs: 0.0033595000000000005
+    total_performed_queries: 22
+    total_tokens_received: 590
+    total_tokens_sent: 1453
   performance:
-    accuracy: 0.76
-    n_correct: 57
-    n_wrong: 18
+    accuracy: 0.7297297297297297
+    n_correct: 27
+    n_wrong: 10
+3:
+  characteristics:
+    avg_len_of_explanations: 92.2
+    n_none_responses: 0
+    n_parse_errors: 0
+    total_length_of_explanations: 922
+    total_reponses: 10
+  costs:
+    avg_cost_per_query: 0.00018105
+    avg_nr_tokens_received: 24.3
+    avg_nr_tokens_sent: 88.3
+    total_accumulated_costs: 0.0018105
+    total_performed_queries: 10
+    total_tokens_received: 243
+    total_tokens_sent: 883
+  performance:
+    accuracy: 0.5
+    n_correct: 5
+    n_wrong: 5

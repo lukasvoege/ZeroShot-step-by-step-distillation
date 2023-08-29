@@ -96,7 +96,7 @@ class TeacherResponseEvaluator:
             "total_length_of_explanations": total_length_of_explanations,
         }
 
-    def evaluate_train(self) -> None:
+    def evaluate_train(self) -> int:
         evals = {}
         split = "train"
         for prompt_template_id in os.listdir(f"./querie-results/{self.dataset_name}/{split}/"):

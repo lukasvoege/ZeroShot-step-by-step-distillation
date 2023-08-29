@@ -121,7 +121,8 @@ class TeacherQuerier:
         template_tuple: List[Tuple[str, str]],
         dont_save: bool = False,
         force_query: bool = False,
-    ) -> None:
+        verbosity: int = 2,
+    ) -> Tuple[int, int, float]:
         # build prompt template and chain
         chain = self.build_chain_from_prompt_template(prompt_template_id)
 
@@ -132,11 +133,13 @@ class TeacherQuerier:
         stored_results = self.get_already_stored_results(split, prompt_template_id)
         skipped = []
 
+        end = "\r"
         n = 0
         for idx, example in zip(idxs, examples):
             n += 1
+            if n == len(idxs): end = "\n"
             if f"{split}_{idx}_{prompt_template_id}" not in stored_results or force_query:
-                print(f"QUERYING EXAMPLE {n}/{len(idxs)} ({idx})...", end="\r")
+                if verbosity > 0: print(f"QUERYING EXAMPLE {n}/{len(idxs)} ({idx})...", end=end)
                 response, callback = self.run_chain_with_callback(
                     chain,
                     {tup[0]: example[tup[1]] for tup in template_tuple}
@@ -163,17 +166,20 @@ class TeacherQuerier:
                         prompt_template_id=prompt_template_id,
                     )
             else:
-                print(f"SKIPPING EXAMPLE {n}/{len(idxs)} ({idx})...", end="\r")
+                print(f"SKIPPING EXAMPLE {n}/{len(idxs)} ({idx})...", end=end)
                 skipped.append(idx)
 
         total_prompt_tokens, total_completion_tokens, total_costs = self.calculate_batch_query_metrics(callbacks)
-        print(
-            f"Batch Query completed! (Skipped {len(skipped)} queries as they were already queried and stored.)\nTotal Prompt Tokens: {total_prompt_tokens}\nTotal Completion Tokens: {total_completion_tokens}\nTotal Costs: ${total_costs}"
-        )
+        if verbosity > 1:
+            print(
+                f"Batch Query completed! (Skipped {len(skipped)} queries as they were already queried and stored.)\nTotal Prompt Tokens: {total_prompt_tokens}\nTotal Completion Tokens: {total_completion_tokens}\nTotal Costs: ${total_costs}"
+            )
         # update metadata
         self.metadata.update_from_callback(
             prompt_template_id, total_prompt_tokens, total_completion_tokens, total_costs, len(idxs) - len(skipped)
         )
+
+        return total_prompt_tokens, total_completion_tokens, total_costs
 
     def query(
         self,
@@ -215,7 +221,7 @@ class TeacherQuerier:
 
     def _batch_query(
         self, split: str, n: int, prompt_template_id: int, dont_save: bool = False, force_query: bool = False
-    ) -> None:
+    ) -> Tuple[int, int, float]:
         raise NotImplementedError
 
     def _query(self, split: str, prompt_template_id: int, dont_save: bool = False) -> None:
@@ -233,10 +239,10 @@ class ANLITeacherQuerier(TeacherQuerier):
         super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
-        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False
-    ) -> None:
+        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False, verbosity: int = 2
+    ) -> Tuple[int, int, float]:
         template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
-        self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query)
+        return self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query, verbosity)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
         template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
@@ -266,8 +272,8 @@ class CQATeacherQuerier(TeacherQuerier):
         super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
-        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False
-    ) -> None:
+        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False, verbosity: int = 2
+    ) -> Tuple[int, int, float]:
         template_tuple = [
             ("question", "question"),
             ("choice_a", "c_0"),
@@ -276,7 +282,7 @@ class CQATeacherQuerier(TeacherQuerier):
             ("choice_d", "c_3"),
             ("choice_e", "c_4"),
         ]
-        self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query)
+        return self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query, verbosity)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
         template_tuple = [
@@ -313,10 +319,10 @@ class ESNLITeacherQuerier(TeacherQuerier):
         super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
-        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False
-    ) -> None:
+        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False, verbosity: int = 2
+    ) -> Tuple[int, int, float]:
         template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
-        self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query)
+        return self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query, verbosity)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
         template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
@@ -347,10 +353,10 @@ class SVAMPTeacherQuerier(TeacherQuerier):
         super().__init__(chat_model, dataset_name, dataloader, has_valid)
 
     def _batch_query(
-        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False
-    ) -> None:
+        self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False, verbosity: int = 2
+    ) -> Tuple[int, int, float]:
         template_tuple = [("question", "input")]
-        self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query)
+        return self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query, verbosity)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
         template_tuple = [("question", "input")]
