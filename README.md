@@ -33,36 +33,52 @@
 
 ### Setup
 
-1. Clone this repository
-
-2. Initialize and clone submodule
+Clone this repository and initialize the submodule
 ```bash
+git clone .
 git submodule update --init
 ```
 
-2.5 unzip the datasets.zip file in the root directory
-win PS: Expand-Archive .\datasets.zip .       , unix: unzip
+Unzip the `datasets.zip` file in the root directory
+```bash
+# on Linux / Mac / WSL on Windows
+unzip datasets.zip
 
-3. Create a virtual environment and activate it (Python 3.8.10)
+# on Windows
+Expand-Archive .\datasets.zip .
+```	
+
+Create a virtual environment and activate it (Python 3.8.10)
 ```bash
 python -m venv .venv
-```
-On Linux
-```bash
-source thesis-env/bin/activate
-```
-On Windows
-```
+
+# on Linux / Mac / WSL on Windows
+source .venv/bin/activate
+
+# on Windows
 .\.venv\Scripts\activate
 ```
 
-4. Install requirements
+Install requirements
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-5. Create ```.env``` file in the root directory and add the following variable
-```
+Create `.env` file in the root directory and add the following variable
+```.env
 OPENAI_API_KEY="your-openai-api-key"
+```
+
+### Usage
+#### Args usages
+ - `--experiment`: run a Prompt experiment
+ - `--dataset`: `esnli`, `anli1`, `cqa`, `svamp`
+ - `--test_size`: float between 0 and 1 to specify the test set size based on the train set size, or an integer to specify the test set size in absolute numbers
+ - `--seed`: random seed to use
+
+ #### Run a Prompt experiment
+ The following command runs a Prompt experiment on the CQA dataset with a test set size of 100 samples and a random seed of 42. It will query and evaluate the same 100 samples for all available prompt templates for the CQA dataset.
+ ```bash
+python run.py --experiment --dataset cqa --test_size 100 --seed 42
 ```
