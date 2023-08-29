@@ -6,13 +6,13 @@
     total_length_of_explanations: 4834
     total_reponses: 40
   costs:
-    avg_cost_per_query: 0.00015240000000000005
-    avg_nr_tokens_received: 29.3
-    avg_nr_tokens_sent: 62.53333333333333
-    total_accumulated_costs: 0.004572000000000001
-    total_performed_queries: 30
-    total_tokens_received: 879
-    total_tokens_sent: 1876
+    avg_cost_per_query: 0.00015217142857142863
+    avg_nr_tokens_received: 28.942857142857143
+    avg_nr_tokens_sent: 62.857142857142854
+    total_accumulated_costs: 0.005326000000000002
+    total_performed_queries: 35
+    total_tokens_received: 1013
+    total_tokens_sent: 2200
   performance:
     accuracy: 0.625
     n_correct: 25
@@ -25,13 +25,13 @@
     total_length_of_explanations: 6346
     total_reponses: 41
   costs:
-    avg_cost_per_query: 0.0002970625
-    avg_nr_tokens_received: 35.46875
-    avg_nr_tokens_sent: 150.75
-    total_accumulated_costs: 0.009506
-    total_performed_queries: 32
-    total_tokens_received: 1135
-    total_tokens_sent: 4824
+    avg_cost_per_query: 0.0002970945945945946
+    avg_nr_tokens_received: 35.21621621621622
+    avg_nr_tokens_sent: 151.1081081081081
+    total_accumulated_costs: 0.0109925
+    total_performed_queries: 37
+    total_tokens_received: 1303
+    total_tokens_sent: 5591
   performance:
     accuracy: 0.6428571428571429
     n_correct: 27
@@ -44,13 +44,13 @@
     total_length_of_explanations: 0
     total_reponses: 0
   costs:
-    avg_cost_per_query: 9.564062500000001e-05
-    avg_nr_tokens_received: 2.5625
-    avg_nr_tokens_sent: 60.34375
-    total_accumulated_costs: 0.0030605000000000003
-    total_performed_queries: 32
-    total_tokens_received: 82
-    total_tokens_sent: 1931
+    avg_cost_per_query: 9.582432432432432e-05
+    avg_nr_tokens_received: 2.4054054054054053
+    avg_nr_tokens_sent: 60.67567567567568
+    total_accumulated_costs: 0.0035455
+    total_performed_queries: 37
+    total_tokens_received: 89
+    total_tokens_sent: 2245
   performance:
     accuracy: 0.5714285714285714
     n_correct: 24
