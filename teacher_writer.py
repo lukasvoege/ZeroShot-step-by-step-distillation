@@ -1,6 +1,3 @@
-## parsedet und schreibt die teacher responses als liste in eine json datei wie die andern llm responses
-## kann split und eine prompt Id oder ein mix an prompt ids kriegen
-
 from typing import Dict, List
 
 import os
@@ -28,24 +25,27 @@ class TeacherWriter:
 
         self.parser = parser
 
-    # TODO: add layer to prompt_template_id_mix to specify different templates for label and explanation
+    # prompt_template_id_mix = {"label": {1: [1, 2, 5], 2: [0, 3, 4]}, "explanation": {1: [0, 1, 2], 2: [3, 4, 5]}}
 
     def write_teacher_responses(self, split: str, prompt_template_id_mix: Dict[int, List[int]]) -> None:
-        parsed_responses = {id: self.parser.parse_response_batch(split, id) for id in prompt_template_id_mix.keys()}
+        all_used_Prompt_ids = set([id for ids in prompt_template_id_mix.values() for id in ids])
+        parsed_responses = {id: self.parser.parse_response_batch(split, id) for id in all_used_Prompt_ids}
+
         # get overall highest value in the dict
-        max_idx = max([max(v) for v in prompt_template_id_mix.values()])
+        max_idx = max([max(ids[id]) for ids in prompt_template_id_mix.values() for id in ids])
 
         write_location = f"./datasets/{self.dataset_name}/gpt_35_turbo/"
         if not os.path.exists(write_location):
             os.makedirs(write_location)
 
         to_write = [None for _ in range(max_idx + 1)]
-        for prompt_id, idxs in prompt_template_id_mix.items():
-            for idx in idxs:
-                to_write[idx] = {
-                    "label": parsed_responses[prompt_id][idx][0],
-                    "explanation": parsed_responses[prompt_id][idx][1],
-                }
+        for i, field in enumerate(["label", "explanation"]):
+            for prompt_id, idxs in prompt_template_id_mix[field].items():
+                for idx in idxs:
+                    if to_write[idx] is None:
+                        to_write[idx] = {field: parsed_responses[prompt_id][idx][i]}
+                    else:
+                        to_write[idx][field] = parsed_responses[prompt_id][idx][i]
 
         # check if and where there are still None values in the list
         none_idxs = [i for i, x in enumerate(to_write) if x == None]
