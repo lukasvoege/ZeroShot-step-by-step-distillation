@@ -3,13 +3,13 @@
 from typing import Dict
 import numpy as np
 import os
-from teacher_response_parser import (
+from src.teacher_response_parser import (
     ANLITeacherResponseParser,
     CQATeacherResponseParser,
     ESNLITeacherResponseParser,
     SVAMPTeacherResponseParser,
 )
-from metadata import Metadata
+from src.metadata import Metadata
 
 import importlib
 

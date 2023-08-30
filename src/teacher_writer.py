@@ -2,7 +2,7 @@ from typing import Dict, List
 
 import os
 import json
-from teacher_response_parser import (
+from src.teacher_response_parser import (
     ANLITeacherResponseParser,
     CQATeacherResponseParser,
     ESNLITeacherResponseParser,

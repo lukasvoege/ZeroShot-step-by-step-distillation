@@ -78,7 +78,7 @@ OPENAI_API_KEY="your-openai-api-key"
  - `--seed`: random seed to use
 
  #### Run a Prompt experiment
- The following command runs a Prompt experiment on the CQA dataset with a test set size of 100 samples and a random seed of 42. It will query and evaluate the same 100 samples for all available prompt templates for the CQA dataset.
+ The following command runs a Prompt experiment on the CQA dataset with a test set size of 100 samples and a random seed of 42. It will query and evaluate the same 100 random samples for all available prompt templates for the CQA dataset.
  ```bash
 python run.py --experiment --dataset cqa --test_size 100 --seed 42
 ```

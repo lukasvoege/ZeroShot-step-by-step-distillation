@@ -18,7 +18,8 @@ from datasets import DatasetDict
 
 from dotenv import load_dotenv
 
-from metadata import Metadata
+from src.metadata import Metadata
+from src.utils import read_yaml_prompts
 
 dsbs_du = importlib.import_module("distilling-step-by-step.data_utils")
 load_dotenv()
@@ -36,15 +37,7 @@ class TeacherQuerier:
 
         self.metadata = Metadata(dataset_name)
         self.datasets = dataloader.load_from_json(TQ_post_process=True)
-
-    def read_yaml_prompts(self, yaml_file: str = None) -> Dict:
-        if not yaml_file:
-            yaml_file = f"{self.prompt_templates_folder}/{self.dataset_name}.yaml"
-        with open(yaml_file, "r") as yf:
-            try:
-                return yaml.safe_load(yf)
-            except yaml.YAMLError as exc:
-                print(exc)
+    
 
     def save_querie_results(
         self,
@@ -74,7 +67,8 @@ class TeacherQuerier:
         print(self.datasets[split][idx])
 
     def build_chain_from_prompt_template(self, prompt_template_id: int) -> LLMChain:
-        prompt_template = self.read_yaml_prompts()["templates"][prompt_template_id]
+        yaml_file = f"{self.prompt_templates_folder}/{self.dataset_name}.yaml"
+        prompt_template = read_yaml_prompts(yaml_file)["templates"][prompt_template_id]
 
         system_message_prompt = SystemMessagePromptTemplate.from_template(prompt_template["system_message"])
         human_message_prompt = HumanMessagePromptTemplate.from_template(prompt_template["user_message"])
