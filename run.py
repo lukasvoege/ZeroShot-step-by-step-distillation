@@ -1,5 +1,6 @@
+from typing import List
+
 import argparse
-import yaml
 import numpy as np
 
 from src.teacher_query_tools import ANLITeacherQuerier, CQATeacherQuerier, ESNLITeacherQuerier, SVAMPTeacherQuerier
@@ -62,6 +63,10 @@ def run_experiment(dataset_name: str, test_size: float):
     print(f"Total prompt tokens: {total_prompt_tokens}\nTotal completion tokens: {total_completion_tokens}\nTotal costs: ${total_costs}")
 
 
+def generate_trainingdata(dataset_name: str, splits: List[str]):
+    pass
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
@@ -81,5 +86,5 @@ if __name__ == "__main__":
 
     if args.experiment:
         run_experiment(args.dataset, args.test_size)
-
-    print(args.splits)
+    elif args.generate_trainingdata:
+        generate_trainingdata(args.dataset, args.splits)

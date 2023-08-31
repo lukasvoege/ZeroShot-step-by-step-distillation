@@ -36,6 +36,7 @@
 Clone this repository and initialize the submodule
 ```bash
 git clone .
+cd ZeroShot-step-by-step-distillation
 git submodule update --init
 ```
 

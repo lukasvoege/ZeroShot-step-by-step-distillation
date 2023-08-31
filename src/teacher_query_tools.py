@@ -13,7 +13,7 @@ from langchain.prompts.chat import (
     HumanMessage,
     HumanMessagePromptTemplate,
 )
-import yaml
+
 from datasets import DatasetDict
 
 from dotenv import load_dotenv
@@ -85,7 +85,8 @@ class TeacherQuerier:
         self, chain: LLMChain, template_args: Dict[str, str]
     ) -> Tuple[str, OpenAICallbackHandler]:
         with get_openai_callback() as callback:
-            response = chain.run(template_args)
+            ## TODO: run chain with timeout
+            response = chain.run(template_args)	
         return response, callback
 
     def calculate_batch_query_metrics(self, callbacks: List[OpenAICallbackHandler]) -> Tuple[int, int, float]:
