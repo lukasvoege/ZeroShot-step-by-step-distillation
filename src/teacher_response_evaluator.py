@@ -3,17 +3,11 @@
 from typing import Dict
 import numpy as np
 import os
-from src.teacher_response_parser import (
-    ANLITeacherResponseParser,
-    CQATeacherResponseParser,
-    ESNLITeacherResponseParser,
-    SVAMPTeacherResponseParser,
-)
+from src.factories import teacherResponseParserFactory, dataLoaderFactory
 from src.metadata import Metadata
 
 import importlib
 
-dsbs_data_utils = importlib.import_module("distilling-step-by-step.data_utils")
 dsbs_metrics = importlib.import_module("distilling-step-by-step.metrics")
 
 
@@ -21,21 +15,9 @@ class TeacherResponseEvaluator:
     def __init__(self, dataset_name) -> None:
         self.dataset_name = dataset_name
 
-        if dataset_name == "anli1":
-            dataloader = dsbs_data_utils.ANLI1DatasetLoader()
-            parser = ANLITeacherResponseParser()
-        elif dataset_name == "cqa":
-            dataloader = dsbs_data_utils.CQADatasetLoader()
-            parser = CQATeacherResponseParser()
-        elif dataset_name == "esnli":
-            dataloader = dsbs_data_utils.ESNLIDatasetLoader()
-            parser = ESNLITeacherResponseParser()
-        elif dataset_name == "svamp":
-            dataloader = dsbs_data_utils.SVAMPDatasetLoader()
-            parser = SVAMPTeacherResponseParser()
-
+        dataloader = dataLoaderFactory(dataset_name)
         self.ground_truth = dataloader.load_from_json()
-        self.parser = parser
+        self.parser = teacherResponseParserFactory(dataset_name)
         self.metadata = Metadata(dataset_name)
 
     def get_label_accuracy(self, split: str, parsed_responses: Dict) -> float:

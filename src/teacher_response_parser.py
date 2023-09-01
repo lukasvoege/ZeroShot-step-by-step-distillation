@@ -3,14 +3,14 @@ import yaml
 import json
 import re
 
-from src.utils import read_yaml_prompts
+from src.utils import read_yaml
 
 class TeacherResponseParser:
     def __init__(self, dataset_name: str):
         self.dataset_name = dataset_name
         self.prompt_templates_folder = "./prompt-templates"
         self.queries_save_folder = "./querie-results"
-        self.yaml_prompts = read_yaml_prompts(f"{self.prompt_templates_folder}/{self.dataset_name}.yaml")
+        self.yaml_prompts = read_yaml(f"{self.prompt_templates_folder}/{self.dataset_name}.yaml")
 
     def clean_explanation(self, explanation: str) -> str:
         explanation = re.sub(r"explanation[\.:\-,\s]*", "", explanation, flags=re.IGNORECASE)
@@ -35,7 +35,7 @@ class TeacherResponseParser:
 
     def parse_response_batch(self, split: str, prompt_template_id: int) -> Dict[int, Tuple[str, str]]:
         yaml_file = f"{self.prompt_templates_folder}/{self.dataset_name}.yaml"
-        self.yaml_prompts = read_yaml_prompts(yaml_file)  # reload yaml prompts in case they were changed
+        self.yaml_prompts = read_yaml(yaml_file)  # reload yaml prompts in case they were changed
         parsed_responses = {}
         try:
             with open(

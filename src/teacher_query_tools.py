@@ -19,7 +19,7 @@ from datasets import DatasetDict
 from dotenv import load_dotenv
 
 from src.metadata import Metadata
-from src.utils import read_yaml_prompts
+from src.utils import read_yaml
 
 dsbs_du = importlib.import_module("distilling-step-by-step.data_utils")
 load_dotenv()
@@ -68,7 +68,7 @@ class TeacherQuerier:
 
     def build_chain_from_prompt_template(self, prompt_template_id: int) -> LLMChain:
         yaml_file = f"{self.prompt_templates_folder}/{self.dataset_name}.yaml"
-        prompt_template = read_yaml_prompts(yaml_file)["templates"][prompt_template_id]
+        prompt_template = read_yaml(yaml_file)["templates"][prompt_template_id]
 
         system_message_prompt = SystemMessagePromptTemplate.from_template(prompt_template["system_message"])
         human_message_prompt = HumanMessagePromptTemplate.from_template(prompt_template["user_message"])

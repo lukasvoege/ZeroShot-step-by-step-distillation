@@ -1,14 +1,12 @@
-from typing import Dict, Union
+from typing import Dict
 import yaml
 
-
-
-def read_yaml_prompts(yaml_file: str) -> Dict:
-        with open(yaml_file, "r") as yf:
-            try:
-                return yaml.safe_load(yf)
-            except yaml.YAMLError as exc:
-                print(exc)
+def read_yaml(yaml_file: str) -> Dict:
+    with open(yaml_file, "r") as yf:
+        try:
+            return yaml.safe_load(yf)
+        except yaml.YAMLError as exc:
+            print(exc)
 
 
 ## custom print function to print in color
@@ -22,4 +20,4 @@ def print_c(text: str, c: str = None) -> None:
     elif c == "blue":
         print("\033[94m" + text + "\033[0m")
     else:
-        print(text)	
+        print(text)

@@ -2,28 +2,13 @@ from typing import Dict, List
 
 import os
 import json
-from src.teacher_response_parser import (
-    ANLITeacherResponseParser,
-    CQATeacherResponseParser,
-    ESNLITeacherResponseParser,
-    SVAMPTeacherResponseParser,
-)
+from src.factories import teacherResponseParserFactory
 
 
 class TeacherWriter:
     def __init__(self, dataset_name: str) -> None:
         self.dataset_name = dataset_name
-
-        if dataset_name == "anli1":
-            parser = ANLITeacherResponseParser()
-        elif dataset_name == "cqa":
-            parser = CQATeacherResponseParser()
-        elif dataset_name == "esnli":
-            parser = ESNLITeacherResponseParser()
-        elif dataset_name == "svamp":
-            parser = SVAMPTeacherResponseParser()
-
-        self.parser = parser
+        self.parser = teacherResponseParserFactory(dataset_name)
 
     # prompt_template_id_mix = {"label": {1: [1, 2, 5], 2: [0, 3, 4]}, "explanation": {1: [0, 1, 2], 2: [3, 4, 5]}}
 
