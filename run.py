@@ -66,7 +66,7 @@ def run_experiment(dataset_name: str, test_size: float) -> None:
 
 def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int, n_samples: int) -> None:
     print(f"Generating training data for {dataset_name}...")
-    print_c(f"PHASE 1: Loading prompt mix {prompt_mix} and setting seed...", c="green")
+    print_c(f"PHASE 1: Loading Prompt-Mix {prompt_mix} and setting seed...", c="green")
 
     prompt_mix_info = read_yaml(f"./prompt-mixes/{prompt_mix}.yaml")
 
@@ -83,7 +83,29 @@ def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int,
         print_c(f"{split.upper()}", c="blue")
         if n_samples == None or n_samples > len(datsets[split]):
             n_samples = len(datsets[split])
-            ## hier muss jz das bisschen komplizierte sampling hin...
+            
+            for part in ["label", "explanation"]:
+                # shuffle idxs
+                idxs = list(range(n_samples + 1))
+                np.random.shuffle(idxs)
+
+                # determin how many samples to query for each prompt and correct for rounding errors
+                sizes = {key: int(percentage * n_samples) for key, percentage in prompt_mix_info[part].items()}
+                sizes[list(sizes.keys())[-1]] += n_samples - sum(sizes.values())
+
+                prompt_idxs = {key: [] for key in prompt_mix_info[part].keys()}
+                start = 0
+                for key, size in sizes.items():
+                    end = start + size
+                    prompt_idxs[key] = idxs[start:end]
+                    start = end
+
+                # check if all idxs were assigned to a prompt
+                assert sum([len(v) for v in prompt_idxs.values()]) == n_samples
+
+            ### evtl könnte man das noch optimieren in dem man sicher stellt dass wenn ein prompt template in label und explanation vorkommt,
+            # dass dann die idxs die für label ausgewählt wurden auch für explanation ausgewählt werden um sich queries zu sparen
+
             ## dann querying von den idxs
             ## dann dataset writer
 
