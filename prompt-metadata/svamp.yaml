@@ -1,27 +1,27 @@
 1:
   costs:
-    avg_cost_per_query: 0.00020775563909774435
-    avg_nr_tokens_received: 65.73684210526316
-    avg_nr_tokens_sent: 50.854636591478695
-    total_accumulated_costs: 0.0828945
-    total_performed_queries: 399
-    total_tokens_received: 26229
-    total_tokens_sent: 20291
+    avg_cost_per_query: 0.0002077780548628429
+    avg_nr_tokens_received: 65.76059850374065
+    avg_nr_tokens_sent: 50.83790523690773
+    total_accumulated_costs: 0.083319
+    total_performed_queries: 401
+    total_tokens_received: 26370
+    total_tokens_sent: 20386
 2:
   costs:
-    avg_cost_per_query: 0.00031924242424242425
-    avg_nr_tokens_received: 111.48484848484848
-    avg_nr_tokens_sent: 64.18181818181819
-    total_accumulated_costs: 0.031605
-    total_performed_queries: 99
-    total_tokens_received: 11037
-    total_tokens_sent: 6354
+    avg_cost_per_query: 0.00032243421052631575
+    avg_nr_tokens_received: 113.07894736842105
+    avg_nr_tokens_sent: 64.1842105263158
+    total_accumulated_costs: 0.0367575
+    total_performed_queries: 114
+    total_tokens_received: 12891
+    total_tokens_sent: 7317
 3:
   costs:
-    avg_cost_per_query: 0.00011011881188118812
-    avg_nr_tokens_received: 11.247524752475247
-    avg_nr_tokens_sent: 58.415841584158414
-    total_accumulated_costs: 0.011122
-    total_performed_queries: 101
-    total_tokens_received: 1136
-    total_tokens_sent: 5900
+    avg_cost_per_query: 0.00011060648148148148
+    avg_nr_tokens_received: 11.49074074074074
+    avg_nr_tokens_sent: 58.416666666666664
+    total_accumulated_costs: 0.0119455
+    total_performed_queries: 108
+    total_tokens_received: 1241
+    total_tokens_sent: 6309
