@@ -20,6 +20,8 @@ class Metadata:
 
     def save_updated_metadata(self, metadata: Dict) -> None:
         yaml_file = f"./prompt-metadata/{self.dataset_name}.yaml"
+        if not os.path.exists("./prompt-metadata/"):
+            os.makedirs("./prompt-metadata/")
         with open(yaml_file, "w") as yf:
             try:
                 yaml.dump(metadata, yf)
