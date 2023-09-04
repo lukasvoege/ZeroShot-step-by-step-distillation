@@ -5,6 +5,7 @@ import numpy as np
 import json
 
 from src.teacher_response_evaluator import TeacherResponseEvaluator
+from src.teacher_writer import TeacherWriter
 
 from src.utils import read_yaml, print_c
 from src.factories import teacherQuerierFactory, dataLoaderFactory
@@ -74,12 +75,15 @@ def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int,
     datsets = dataloader.load_from_json()
 
     teacher_querier = teacherQuerierFactory(dataset_name)
+    teacher_writer = TeacherWriter(dataset_name)
 
     print(f"Using seed {prompt_mix_info['seed']}.")
     print_c(f"PHASE 1: Done.", c="green")
     print_c(f"PHASE 2: Sampling idxs and querying Teacher Model...", c="green")
 
     total_prompt_tokens, total_completion_tokens, total_costs = 0, 0, 0
+
+    complete_idxs_mix = {split: {} for split in splits}
 
     for split in splits:
         print_c(f"{split.upper()}", c="blue")
@@ -108,6 +112,8 @@ def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int,
             assert sum([len(v) for v in prompt_idxs.values()]) == n_samples
             print(f"Sampled and assigned all idxs according to Prompt-Mix ({part}).")
 
+            complete_idxs_mix[split][part] = prompt_idxs
+
             print_c(f"Querying Teacher Model...", c="yellow")
             for i, prompt_template in enumerate(prompt_idxs.keys()):
                 print_c(f"Querying prompt template {prompt_template} ({i+1}/{len(prompt_idxs)})...", c="yellow")
@@ -127,7 +133,14 @@ def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int,
     print(
         f"Total prompt tokens: {total_prompt_tokens}\nTotal completion tokens: {total_completion_tokens}\nTotal costs: ${total_costs}"
     )
-            ## dann dataset writer
+    print_c(f"PHASE 3: Writing training file(s)...", c="green")
+    for split in splits:
+        print_c(f"{split.upper()}", c="blue")
+
+        ## TODO: needs to save with prompt mix id
+        teacher_writer.write_teacher_responses(split=split, prompt_template_id_mix=complete_idxs_mix[split])
+        
+    print_c(f"PHASE 3: Done.", c="green")
 
 
 if __name__ == "__main__":
