@@ -12,14 +12,14 @@ class TeacherWriter:
 
     # prompt_template_id_mix = {"label": {1: [1, 2, 5], 2: [0, 3, 4]}, "explanation": {1: [0, 1, 2], 2: [3, 4, 5]}}
 
-    def write_teacher_responses(self, split: str, prompt_template_id_mix: Dict[int, List[int]]) -> None:
+    def write_teacher_responses(self, split: str, prompt_template_id_mix: Dict[int, List[int]], prompt_mix_id: int) -> None:
         all_used_Prompt_ids = set([id for ids in prompt_template_id_mix.values() for id in ids])
         parsed_responses = {id: self.parser.parse_response_batch(split, id) for id in all_used_Prompt_ids}
 
         # get overall highest value in the dict
         max_idx = max([max(ids[id]) for ids in prompt_template_id_mix.values() for id in ids])
 
-        write_location = f"./datasets/{self.dataset_name}/gpt_35_turbo/"
+        write_location = f"./datasets/{self.dataset_name}/gpt_35_turbo/{prompt_mix_id}/"
         if not os.path.exists(write_location):
             os.makedirs(write_location)
 

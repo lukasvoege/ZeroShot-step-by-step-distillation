@@ -137,8 +137,7 @@ def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int,
     for split in splits:
         print_c(f"{split.upper()}", c="blue")
 
-        ## TODO: needs to save with prompt mix id
-        teacher_writer.write_teacher_responses(split=split, prompt_template_id_mix=complete_idxs_mix[split])
+        teacher_writer.write_teacher_responses(split=split, prompt_template_id_mix=complete_idxs_mix[split], prompt_mix_id=prompt_mix)
         
     print_c(f"PHASE 3: Done.", c="green")
 
