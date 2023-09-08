@@ -25,13 +25,13 @@
     total_length_of_explanations: 34580
     total_reponses: 85
   costs:
-    avg_cost_per_query: 0.0003267321772639693
-    avg_nr_tokens_received: 115.13487475915221
-    avg_nr_tokens_sent: 64.30828516377649
-    total_accumulated_costs: 0.16957400000000006
-    total_performed_queries: 519
-    total_tokens_received: 59755
-    total_tokens_sent: 33376
+    avg_cost_per_query: 0.00032686800000000023
+    avg_nr_tokens_received: 115.137
+    avg_nr_tokens_sent: 64.396
+    total_accumulated_costs: 0.3268680000000002
+    total_performed_queries: 1000
+    total_tokens_received: 115137
+    total_tokens_sent: 64396
   performance:
     accuracy: 0.8235294117647058
     n_correct: 70
