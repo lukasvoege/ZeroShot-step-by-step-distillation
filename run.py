@@ -141,12 +141,20 @@ def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int,
         
     print_c(f"PHASE 3: Done.", c="green")
 
+def run_train_evaluation(dataset: str) -> None:
+    evaluator = TeacherResponseEvaluator(dataset)
+    print_c(f"PHASE 1: Evaluating all querried prompts for {dataset} on train split...", c="green")
+    _ = evaluator.evaluate_train(verbose=False)
+    print_c(f"Updating metadata file for {dataset}...", c="yellow")
+    print_c(f"PHASE 1: Done.", c="green")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--experiment", action="store_true")
     parser.add_argument("--test_size", type=float)
+
+    parser.add_argument("--evaluate", action="store_true")
 
     parser.add_argument("--generate_trainingdata", action="store_true")
     parser.add_argument("--splits", type=str, nargs="+")
@@ -165,3 +173,5 @@ if __name__ == "__main__":
         run_experiment(args.dataset, args.test_size)
     elif args.generate_trainingdata:
         generate_trainingdata(args.dataset, args.splits, args.prompt_mix, args.samples)
+    elif args.evaluate:
+        run_train_evaluation(args.dataset)

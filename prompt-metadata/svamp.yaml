@@ -19,11 +19,11 @@
     n_wrong: 58
 2:
   characteristics:
-    avg_len_of_explanations: 406.8235294117647
+    avg_len_of_explanations: 412.78125
     n_none_responses: 0
     n_parse_errors: 0
-    total_length_of_explanations: 34580
-    total_reponses: 85
+    total_length_of_explanations: 330225
+    total_reponses: 800
   costs:
     avg_cost_per_query: 0.00032686800000000023
     avg_nr_tokens_received: 115.137
@@ -33,9 +33,9 @@
     total_tokens_received: 115137
     total_tokens_sent: 64396
   performance:
-    accuracy: 0.8235294117647058
-    n_correct: 70
-    n_wrong: 15
+    accuracy: 0.77625
+    n_correct: 621
+    n_wrong: 179
 3:
   characteristics:
     avg_len_of_explanations: 46.84615384615385
