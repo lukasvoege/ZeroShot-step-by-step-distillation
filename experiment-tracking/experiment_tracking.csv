@@ -1,0 +1,2 @@
+experiment_id,group,category,dataset,model,mode,llm,subsample,prompt_mix,label_type,alpha,max_input_length,batch_size,optimizer,lr,run,train_duration,test_acc,eval_acc
+id1,validation,standard Distillation,anli1,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,2040.7352,0.334,0.334
