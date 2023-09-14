@@ -85,5 +85,8 @@ for root, dirs, files in os.walk("../results"):
             experiments.loc[experiments["id"] == params["id"], "train_duration"] = params["train_duration"]
             experiments.loc[experiments["id"] == params["id"], "eval_acc"] = params["eval_acc"]
             experiments.loc[experiments["id"] == params["id"], "test_acc"] = params["test_acc"]
+        else:
+            # concat to experiments
+            experiments = pd.concat([experiments, pd.DataFrame(params, index=[0])])
 
 # %%
