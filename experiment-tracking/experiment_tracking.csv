@@ -1,8 +1,8 @@
 experiment_group;category;dataset;model;mode;llm;subsample;prompt_mix;label_type;alpha;max_input_length;batch_size;optimizer;lr;run;train_duration;test_acc;eval_acc
-Subsampling;standard Finetuning;anli1;t5-v1_1-base;standard;None;0.125;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
-Subsampling;standard Finetuning;anli1;t5-v1_1-base;standard;None;0.25;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
-Subsampling;standard Finetuning;anli1;t5-v1_1-base;standard;None;0.5;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
-Subsampling;standard Finetuning;anli1;t5-v1_1-base;standard;None;1.0;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
+Subsampling;standard Finetuning;anli1;t5-v1_1-base;standard;None;0.125;0;gt;0.5;1024;64;AdamW;5e-05;0;2527.7244;0.349;0.347
+Subsampling;standard Finetuning;anli1;t5-v1_1-base;standard;None;0.25;0;gt;0.5;1024;64;AdamW;5e-05;0;3738.1272;0.434;0.403
+Subsampling;standard Finetuning;anli1;t5-v1_1-base;standard;None;0.5;0;gt;0.5;1024;64;AdamW;5e-05;0;1723.3321;0.346;0.318
+Subsampling;standard Finetuning;anli1;t5-v1_1-base;standard;None;1.0;0;gt;0.5;1024;64;AdamW;5e-05;0;2927.8069;0.35;0.337
 Subsampling;step-by-step Finetuning;anli1;t5-v1_1-base;task_prefix;palm;0.125;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
 Subsampling;step-by-step Finetuning;anli1;t5-v1_1-base;task_prefix;palm;0.25;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
 Subsampling;step-by-step Finetuning;anli1;t5-v1_1-base;task_prefix;palm;0.5;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
@@ -22,3 +22,4 @@ None;standard Distillation;svamp;t5-v1_1-base;standard;gpt35;1.0;4;llm;0.5;1024;
 None;step-by-step Distillation;svamp;t5-v1_1-base;task_prefix;gpt35;1.0;4;llm;0.5;1024;64;AdamW;5e-05;0;None;None;0.0625
 None;step-by-step Finetuning;svamp;t5-v1_1-small;task_prefix;gpt35;1.0;4;gt;0.5;1024;64;AdamW;5e-05;0;None;None;0.2
 None;step-by-step Distillation;svamp;t5-v1_1-small;task_prefix;gpt35;1.0;4;llm;0.5;1024;64;AdamW;5e-05;0;None;None;0.16666666666666666
+None;standard Distillation;svamp;t5-v1_1-small;standard;gpt35;1.0;4;llm;0.5;1024;64;AdamW;5e-05;0;284.0384;0.07;0.0875

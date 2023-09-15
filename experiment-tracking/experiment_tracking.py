@@ -1,11 +1,13 @@
 import pandas as pd
 import os
 import json
+import argparse
 
-# Read csv and have all dtypes as object
-experiments = pd.read_csv("experiment-tracking/experiment_tracking.csv", sep=";", dtype=object)
-# replace nan with "None"
-experiments = experiments.fillna("None")
+def get_experiments_df():
+    # Read csv and have all dtypes as object
+    experiments = pd.read_csv("experiment-tracking/experiment_tracking.csv", sep=";", dtype=object)
+    # replace nan with "None"
+    return experiments.fillna("None")
 
 
 def get_params_from_path(path: str):
@@ -57,38 +59,112 @@ def get_identifier(params: dict):
         ]
     )
 
+def command_from_row(row: dict, pass_through: str = None):
+    info = f"{row['category']}: {row['dataset']} - {row['model']} - {row['mode']}"
+    for field in ["label_type", "llm", "prompt_mix", "subsample", "alpha"]:
+        if row[field] != "None":
+            info += f" - {row[field]} {field}"
 
-# add id column
-experiments["id"] = experiments.apply(lambda row: get_identifier(row.to_dict()), axis=1)
+    echo = "echo '" + '#' * 50 + "'\n"
+    echo += "echo '" + info + "'"
 
-for root, dirs, files in os.walk("results"):
-    if files:
-        params = get_params_from_path(root)
-        for file in files:
-            if file == "train_results.txt":
-                with open(os.path.join(root, file)) as f:
-                    train_results = f.read().split("metrics=")[1][:-1]
-                train_results = train_results.replace("'", '"')
-                params["train_duration"] = json.loads(train_results)["train_runtime"]
-            elif file == "eval_results.txt":
-                eval_reults = open(os.path.join(root, file)).read()
-                eval_reults = eval_reults.replace("'", '"')
-                params["eval_acc"] = json.loads(eval_reults)["eval_accuracy"]
-            elif file == "test_results.txt":
-                test_results = open(os.path.join(root, file)).read()
-                test_results = test_results.replace("'", '"')
-                params["test_acc"] = json.loads(test_results)["eval_accuracy"]
-        ## check if params are in experiments
-        if params["id"] in experiments["id"].values:
-            ## update experiments
-            experiments.loc[experiments["id"] == params["id"], "train_duration"] = params["train_duration"]
-            experiments.loc[experiments["id"] == params["id"], "eval_acc"] = params["eval_acc"]
-            experiments.loc[experiments["id"] == params["id"], "test_acc"] = params["test_acc"]
-            print(f"updated {params['id']}")
-        else:
-            # concat to experiments
-            experiments = pd.concat([experiments, pd.DataFrame(params, index=[0])])
-            print(f"added {params['id']}")
+    python = "python distilling-step-by-step/run.py"
+    python += f" --from_pretrained google/{row['model']}"
+    python += f" --dataset {row['dataset']}"
+    python += f" --model_type {row['mode']}"
+    for field in ["label_type", "llm", "prompt_mix", "subsample", "alpha"]:
+        if row[field] not in ["None", "0"]:
+            python += f" --{field} {row[field]}"
 
-# save experiments to csv again
-experiments.drop("id", axis=1).to_csv("experiment-tracking/experiment_tracking.csv", sep=";", index=False)
+    if pass_through:
+        python += f" {pass_through}"
+
+    command = "# " + info + "\n" + echo + "\n" + python + "\n\n"
+    return command
+
+def update_experiment_tracking():
+    experiments = get_experiments_df()
+    # add id column
+    experiments["id"] = experiments.apply(lambda row: get_identifier(row.to_dict()), axis=1)
+
+    for root, _, files in os.walk("results"):
+        if files:
+            params = get_params_from_path(root)
+            for file in files:
+                if file == "train_results.txt":
+                    with open(os.path.join(root, file)) as f:
+                        train_results = f.read().split("metrics=")[1][:-1]
+                    train_results = train_results.replace("'", '"')
+                    params["train_duration"] = json.loads(train_results)["train_runtime"]
+                elif file == "eval_results.txt":
+                    eval_reults = open(os.path.join(root, file)).read()
+                    eval_reults = eval_reults.replace("'", '"')
+                    params["eval_acc"] = json.loads(eval_reults)["eval_accuracy"]
+                elif file == "test_results.txt":
+                    test_results = open(os.path.join(root, file)).read()
+                    test_results = test_results.replace("'", '"')
+                    params["test_acc"] = json.loads(test_results)["eval_accuracy"]
+            ## check if params are in experiments
+            if params["id"] in experiments["id"].values:
+                ## update experiments
+                experiments.loc[experiments["id"] == params["id"], "train_duration"] = params["train_duration"]
+                experiments.loc[experiments["id"] == params["id"], "eval_acc"] = params["eval_acc"]
+                experiments.loc[experiments["id"] == params["id"], "test_acc"] = params["test_acc"]
+                print(f"updated {params['id']}")
+            else:
+                # concat to experiments
+                experiments = pd.concat([experiments, pd.DataFrame(params, index=[0])])
+                print(f"added {params['id']}")
+
+    # save experiments to csv again
+    experiments.drop("id", axis=1).to_csv("experiment-tracking/experiment_tracking.csv", sep=";", index=False)
+
+
+def generate_missing_experiments(args):
+    experiments = get_experiments_df()
+    ## remove all experiments that already have train_duration, eval_acc and test_acc
+    experiments = experiments[
+        (experiments["train_duration"] == "None")
+        | (experiments["eval_acc"] == "None")
+        | (experiments["test_acc"] == "None")
+    ]
+    ## select experiments that match the args for all args that are not None
+    for arg in vars(args):
+        if getattr(args, arg) != None and arg not in ["update_tracking", "generate_missing_experiments_script", "passthrough"]:
+            experiments = experiments[experiments[arg] == str(getattr(args, arg))]
+    
+    ## generate commands for all experiments
+    bash_script = ""
+    for _, row in experiments.iterrows():
+        bash_script += command_from_row(row, args.passthrough)
+
+    ## save bash script
+    with open(f"experiment-tracking/scripts/{args.generate_missing_experiments_script}.sh", "w") as f:
+        f.write(bash_script)
+    
+    print(f"Generated bash script: experiment-tracking/scripts/{args.generate_missing_experiments_script}.sh with {len(experiments)} experiments.")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--update_tracking", action="store_true")
+
+    parser.add_argument("--generate_missing_experiments_script", type=str)
+    parser.add_argument("--dataset", type=str)
+    parser.add_argument("--model", type=int)
+    parser.add_argument("--mode", type=str)
+    parser.add_argument("--llm", type=str)
+    parser.add_argument("--subsample", type=float)
+    parser.add_argument("--prompt_mix", type=int)
+    parser.add_argument("--label_type", type=str)
+    parser.add_argument("--alpha", type=float)
+
+    parser.add_argument("--passthrough", type=str)
+
+    args = parser.parse_args()
+
+    if args.update_tracking:
+        update_experiment_tracking()
+    elif args.generate_missing_experiments_script:
+        generate_missing_experiments(args)
