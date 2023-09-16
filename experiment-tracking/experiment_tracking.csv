@@ -7,9 +7,9 @@ Subsampling;step-by-step Finetuning;anli1;t5-v1_1-base;task_prefix;palm;0.125;0;
 Subsampling;step-by-step Finetuning;anli1;t5-v1_1-base;task_prefix;palm;0.25;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
 Subsampling;step-by-step Finetuning;anli1;t5-v1_1-base;task_prefix;palm;0.5;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
 Subsampling;step-by-step Finetuning;anli1;t5-v1_1-base;task_prefix;palm;1.0;0;gt;0.5;1024;64;AdamW;5e-05;0;None;None;None
-Subsampling;standard Distillation;anli1;t5-v1_1-base;standard;palm;0.125;0;llm;0.5;1024;64;AdamW;5e-05;0;None;None;None
-Subsampling;standard Distillation;anli1;t5-v1_1-base;standard;palm;0.25;0;llm;0.5;1024;64;AdamW;5e-05;0;None;None;None
-Subsampling;standard Distillation;anli1;t5-v1_1-base;standard;palm;0.5;0;llm;0.5;1024;64;AdamW;5e-05;0;None;None;None
+Subsampling;standard Distillation;anli1;t5-v1_1-base;standard;palm;0.125;0;llm;0.5;1024;64;AdamW;5e-05;0;5043.1983;0.344;0.345
+Subsampling;standard Distillation;anli1;t5-v1_1-base;standard;palm;0.25;0;llm;0.5;1024;64;AdamW;5e-05;0;6754.3391;0.39;0.408
+Subsampling;standard Distillation;anli1;t5-v1_1-base;standard;palm;0.5;0;llm;0.5;1024;64;AdamW;5e-05;0;6886.6909;0.352;0.316
 Subsampling;standard Distillation;anli1;t5-v1_1-base;standard;palm;1.0;0;llm;0.5;1024;64;AdamW;5e-05;0;2040.7352;0.334;0.334
 Subsampling;step-by-step Distillation;anli1;t5-v1_1-base;task_prefix;palm;0.125;0;llm;0.5;1024;64;AdamW;5e-05;0;None;None;None
 Subsampling;step-by-step Distillation;anli1;t5-v1_1-base;task_prefix;palm;0.25;0;llm;0.5;1024;64;AdamW;5e-05;0;None;None;None
