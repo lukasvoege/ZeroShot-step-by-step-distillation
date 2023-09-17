@@ -61,7 +61,7 @@ def get_identifier(params: dict):
     )
 
 def command_from_row(row: dict, pass_through: str = None):
-    info = f"{row['category']}: {row['dataset']} - {row['model']} - {row['mode']}"
+    info = f"({row['experiment_group']}) {row['category']}: {row['dataset']} - {row['model']} - {row['mode']}"
     for field in ["label_type", "llm", "prompt_mix", "subsample", "alpha"]:
         if row[field] != "None":
             info += f" - {row[field]} {field}"
@@ -156,6 +156,7 @@ if __name__ == "__main__":
     parser.add_argument("--update_tracking", action="store_true")
 
     parser.add_argument("--generate_missing_experiments_script", type=str)
+    parser.add_argument("--experiment_group", type=str)
     parser.add_argument("--dataset", type=str)
     parser.add_argument("--model", type=int)
     parser.add_argument("--mode", type=str)
