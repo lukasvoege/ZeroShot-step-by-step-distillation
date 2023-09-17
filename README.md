@@ -74,12 +74,31 @@ OPENAI_API_KEY="your-openai-api-key"
 ### Usage
 #### Args usages
  - `--experiment`: run a Prompt experiment
+ - `--test_size`: float between `0` and `1` to specify the test set size based on the train set size, or an integer to specify the test set size in absolute numbers
+ - `--evaluate`: run prompt evaluation of all query results for a given dataset to update the prompt metadata file
+ - `--generate_trainingdata`: generate training data for a given dataset and prompt mix
+ - `--splits`: `train`, `eval`, `test`
+ - `--prompt_mix`: Integer that refers to a prompt mix yaml in the `./prompt_mixes` directory
+ - `--samples`: Integer, the number of samples to generate
  - `--dataset`: `esnli`, `anli1`, `cqa`, `svamp`
- - `--test_size`: float between 0 and 1 to specify the test set size based on the train set size, or an integer to specify the test set size in absolute numbers
  - `--seed`: random seed to use
 
  #### Run a Prompt experiment
  The following command runs a Prompt experiment on the CQA dataset with a test set size of 100 samples and a random seed of 42. It will query and evaluate the same 100 random samples for all available prompt templates for the CQA dataset.
  ```bash
 python run.py --experiment --dataset cqa --test_size 100 --seed 42
+```
+
+#### Run prompt evaluation
+The following command runs prompt evaluation on the SVAMP dataset. This will evaluate all available query results across all prompt templates for the SVAMP dataset and update the prompt metadata file `./prompt_metadata/svamp.yaml`.
+
+```bash
+python run.py --evaluate --dataset svamp
+```
+
+#### Generate training data
+The following command generates training data for the ESNLI dataset using the `2.yaml` prompt mix. It will query the first 500 samples of the train and test split using prompt templates in a mix defined in `./prompt_mixes/2.yaml`. The query results will be parsed and dataset files ready for model finetuning will be saved to `./datasets/esnli/gpt_35_turbo/2/`.
+
+```bash
+python run.py --generate_trainingdata --dataset esnli --splits train test --prompt_mix 2 --samples 500
 ```
