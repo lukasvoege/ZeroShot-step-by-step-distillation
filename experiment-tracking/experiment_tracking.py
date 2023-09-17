@@ -5,7 +5,7 @@ import argparse
 
 def get_experiments_df():
     # Read csv and have all dtypes as object
-    experiments = pd.read_csv("experiment-tracking/experiment_tracking.csv", sep=";", dtype=object)
+    experiments = pd.read_csv("experiment-tracking/experiment_tracking.csv", sep=",", dtype=object)
     # replace nan with "None"
     return experiments.fillna("None")
 
@@ -35,6 +35,7 @@ def get_params_from_path(path: str):
     params["category"] = category
 
     params["train_duration"] = "None"
+    params["train_steps"] = "None"
     params["eval_acc"] = "None"
     params["test_acc"] = "None"
 
@@ -93,21 +94,24 @@ def update_experiment_tracking():
             for file in files:
                 if file == "train_results.txt":
                     with open(os.path.join(root, file)) as f:
-                        train_results = f.read().split("metrics=")[1][:-1]
-                    train_results = train_results.replace("'", '"')
-                    params["train_duration"] = json.loads(train_results)["train_runtime"]
+                        train_results = f.read().split("metrics=")
+
+                    train_results_dict = train_results[1][:-1].replace("'", '"')
+                    params["train_duration"] = round(json.loads(train_results_dict)["train_runtime"], 0)
+                    params["train_steps"] = train_results[0].split("global_step=")[-1].split(",")[0]
                 elif file == "eval_results.txt":
                     eval_reults = open(os.path.join(root, file)).read()
                     eval_reults = eval_reults.replace("'", '"')
-                    params["eval_acc"] = json.loads(eval_reults)["eval_accuracy"]
+                    params["eval_acc"] = round(json.loads(eval_reults)["eval_accuracy"], 3)
                 elif file == "test_results.txt":
                     test_results = open(os.path.join(root, file)).read()
                     test_results = test_results.replace("'", '"')
-                    params["test_acc"] = json.loads(test_results)["eval_accuracy"]
+                    params["test_acc"] = round(json.loads(test_results)["eval_accuracy"], 3)
             ## check if params are in experiments
             if params["id"] in experiments["id"].values:
                 ## update experiments
                 experiments.loc[experiments["id"] == params["id"], "train_duration"] = params["train_duration"]
+                experiments.loc[experiments["id"] == params["id"], "train_steps"] = params["train_steps"]
                 experiments.loc[experiments["id"] == params["id"], "eval_acc"] = params["eval_acc"]
                 experiments.loc[experiments["id"] == params["id"], "test_acc"] = params["test_acc"]
                 print(f"updated {params['id']}")
@@ -117,7 +121,7 @@ def update_experiment_tracking():
                 print(f"added {params['id']}")
 
     # save experiments to csv again
-    experiments.drop("id", axis=1).to_csv("experiment-tracking/experiment_tracking.csv", sep=";", index=False)
+    experiments.drop("id", axis=1).to_csv("experiment-tracking/experiment_tracking.csv", sep=",", index=False)
 
 
 def generate_missing_experiments(args):
@@ -127,6 +131,7 @@ def generate_missing_experiments(args):
         (experiments["train_duration"] == "None")
         | (experiments["eval_acc"] == "None")
         | (experiments["test_acc"] == "None")
+        | (experiments["train_steps"] == "None")
     ]
     ## select experiments that match the args for all args that are not None
     for arg in vars(args):
