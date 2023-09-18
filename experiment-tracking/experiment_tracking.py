@@ -158,7 +158,7 @@ if __name__ == "__main__":
     parser.add_argument("--generate_missing_experiments_script", type=str)
     parser.add_argument("--experiment_group", type=str)
     parser.add_argument("--dataset", type=str)
-    parser.add_argument("--model", type=int)
+    parser.add_argument("--model", type=str)
     parser.add_argument("--mode", type=str)
     parser.add_argument("--llm", type=str)
     parser.add_argument("--subsample", type=float)
