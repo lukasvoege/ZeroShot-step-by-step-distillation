@@ -5,7 +5,7 @@ import argparse
 
 def get_experiments_df():
     # Read csv and have all dtypes as object
-    experiments = pd.read_csv("experiment-tracking/experiment_tracking.csv", sep=",", dtype=object)
+    experiments = pd.read_csv("experiment-tracking/experiment_tracking.csv", sep=";", dtype=object)
     # replace nan with "None"
     return experiments.fillna("None")
 
@@ -121,7 +121,7 @@ def update_experiment_tracking():
                 print(f"added {params['id']}")
 
     # save experiments to csv again
-    experiments.drop("id", axis=1).to_csv("experiment-tracking/experiment_tracking.csv", sep=",", index=False)
+    experiments.drop("id", axis=1).to_csv("experiment-tracking/experiment_tracking.csv", sep=";", index=False)
 
 
 def generate_missing_experiments(args):
