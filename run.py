@@ -11,14 +11,14 @@ from src.utils import read_yaml, print_c
 from src.factories import teacherQuerierFactory, dataLoaderFactory
 
 
-def run_experiment(dataset_name: str, test_size: float) -> None:
+def run_experiment(dataset_name: str, test_size: float, model: str) -> None:
     """
     Run an experiment in the form of querieng test_size random samples with each available prompt
     and subsequent evaluation of the results to update metadata files and find the best performing
     prompt for each dataset.
     """
 
-    teacher_querier = teacherQuerierFactory(dataset_name)
+    teacher_querier = teacherQuerierFactory(dataset_name, chat_model=model)
     evaluator = TeacherResponseEvaluator(dataset_name)
 
     yaml_file = f"./prompt-templates/{dataset_name}.yaml"
@@ -55,7 +55,13 @@ def run_experiment(dataset_name: str, test_size: float) -> None:
         total_costs += callbacks[2]
     print_c("PHASE 1: Done.", c="green")
     print_c("PHASE 2: Evaluating responses and writing prompt metadata...", c="green")
-    best_prompt = evaluator.evaluate_train()
+    if model == "gpt-3.5-turbo":
+        best_prompt = evaluator.evaluate_train()
+    else:
+        print_c("BETA: Using a different model than gpt-3.5-turbo.", c="red")
+        print_c("BETA: Only evaluating on the test_samples.", c="red")
+        print_c("BETA: WILL NOT UPDATE METADATA", c="red")
+        best_prompt = evaluator.evaluate_train(idxs=test_idx)
     print_c("PHASE 2: Done.", c="green")
     print("-" * 40)
     print_c(f"Best prompt template for {dataset_name} is {best_prompt}.", c="blue")
@@ -164,13 +170,15 @@ if __name__ == "__main__":
     parser.add_argument("--dataset", type=str)
     parser.add_argument("--seed", type=int, default=42)
 
+    parser.add_argument("--chat_model", type=str, default="gpt-3.5-turbo")
+
     args = parser.parse_args()
 
     # set seed for the whole script
     np.random.seed(args.seed)
 
     if args.experiment:
-        run_experiment(args.dataset, args.test_size)
+        run_experiment(args.dataset, args.test_size, args.chat_model)
     elif args.generate_trainingdata:
         generate_trainingdata(args.dataset, args.splits, args.prompt_mix, args.samples)
     elif args.evaluate:

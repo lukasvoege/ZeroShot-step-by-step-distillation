@@ -1,6 +1,6 @@
 ## This class needs to load the ground truth data and parse the teacher responses
 ## to evaluate the teacher responses and update the metadata file accordingly.
-from typing import Dict
+from typing import Dict, List
 import numpy as np
 import os
 from src.factories import teacherResponseParserFactory, dataLoaderFactory
@@ -57,8 +57,11 @@ class TeacherResponseEvaluator:
 
         return n_none_responses, total_repsonses, total_length_of_explanations
 
-    def evaluate_responses_split(self, split: str, prompt_template_id: int, verbose: bool = False) -> Dict:
+    def evaluate_responses_split(self, split: str, prompt_template_id: int, idxs: List = None, verbose: bool = False) -> Dict:
         parsed_responses = self.parser.parse_response_batch(split, prompt_template_id, verbose=verbose)
+        # filter for idxs if provided
+        if idxs:
+            parsed_responses = {idx: parsed_responses[idx] for idx in idxs if idx in parsed_responses}
         if parsed_responses == {}:
             return {}
         n_parse_errors = [response[0] for response in parsed_responses.values()].count(None)
@@ -77,23 +80,25 @@ class TeacherResponseEvaluator:
             "total_length_of_explanations": total_length_of_explanations,
         }
 
-    def evaluate_train(self, verbose: bool = False) -> int:
+    def evaluate_train(self, idxs: List = None, verbose: bool = False) -> int:
         evals = {}
         split = "train"
         for prompt_template_id in os.listdir(f"./querie-results/{self.dataset_name}/{split}/"):
             # evaluate the responses and update the metadata file
-            evaluation_results = self.evaluate_responses_split(split, int(prompt_template_id), verbose=verbose)
-            if evaluation_results == {}:  # no responses found for this prompt template
+            evaluation_results = self.evaluate_responses_split(split, int(prompt_template_id), idxs=idxs, verbose=verbose)
+            # dont update if no responses were found for this prompt template or we are only evaluating a subset of the data
+            if evaluation_results == {}:
                 continue
-            self.metadata.update_from_evaluator(
-                int(prompt_template_id),
-                evaluation_results["total_reponses"],
-                evaluation_results["n_none_responses"],
-                evaluation_results["total_length_of_explanations"],
-                evaluation_results["n_correct"],
-                evaluation_results["n_wrong"],
-                evaluation_results["n_parse_errors"],
-            )
+            if not idxs:
+                self.metadata.update_from_evaluator(
+                    int(prompt_template_id),
+                    evaluation_results["total_reponses"],
+                    evaluation_results["n_none_responses"],
+                    evaluation_results["total_length_of_explanations"],
+                    evaluation_results["n_correct"],
+                    evaluation_results["n_wrong"],
+                    evaluation_results["n_parse_errors"],
+                )
             evals[prompt_template_id] = evaluation_results
 
         best_prompt_template_id = max(evals, key=lambda x: evals[x]["accuracy"])

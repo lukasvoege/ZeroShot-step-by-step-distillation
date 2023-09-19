@@ -32,16 +32,16 @@ def dataLoaderFactory(
 
 
 def teacherQuerierFactory(
-    dataset_name: str,
+    dataset_name: str, chat_model: str = "gpt-3.5-turbo"
 ) -> Union[ANLITeacherQuerier, CQATeacherQuerier, ESNLITeacherQuerier, SVAMPTeacherQuerier]:
     if dataset_name == "anli1":
-        return ANLITeacherQuerier()
+        return ANLITeacherQuerier(chat_model=chat_model)
     elif dataset_name == "cqa":
-        return CQATeacherQuerier()
+        return CQATeacherQuerier(chat_model=chat_model)
     elif dataset_name == "esnli":
-        return ESNLITeacherQuerier()
+        return ESNLITeacherQuerier(chat_model=chat_model)
     elif dataset_name == "svamp":
-        return SVAMPTeacherQuerier()
+        return SVAMPTeacherQuerier(chat_model=chat_model)
 
 
 def teacherResponseParserFactory(

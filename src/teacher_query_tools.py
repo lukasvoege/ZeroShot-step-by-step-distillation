@@ -4,6 +4,7 @@ import datetime
 import json
 import os
 from langchain.chat_models import ChatOpenAI
+from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 from langchain.callbacks import get_openai_callback, OpenAICallbackHandler
 from langchain.prompts.chat import (
@@ -13,6 +14,7 @@ from langchain.prompts.chat import (
     HumanMessage,
     HumanMessagePromptTemplate,
 )
+from langchain.prompts import PromptTemplate
 
 from datasets import DatasetDict
 
@@ -27,7 +29,7 @@ load_dotenv()
 
 class TeacherQuerier:
     def __init__(self, chat_model: str, dataset_name: str, dataloader: dsbs_du.DatasetLoader, has_valid: bool):
-        self.chat_model = ChatOpenAI(model=chat_model)
+        self.chat_model = ChatOpenAI(model=chat_model) if chat_model == "gpt-3.5-turbo" else OpenAI(model=chat_model)
         self.prompt_templates_folder = "./prompt-templates"
         self.dataset_folder = "./datasets"
         self.queries_save_folder = "./querie-results"
@@ -70,15 +72,18 @@ class TeacherQuerier:
         yaml_file = f"{self.prompt_templates_folder}/{self.dataset_name}.yaml"
         prompt_template = read_yaml(yaml_file)["templates"][prompt_template_id]
 
-        system_message_prompt = SystemMessagePromptTemplate.from_template(prompt_template["system_message"])
-        human_message_prompt = HumanMessagePromptTemplate.from_template(prompt_template["user_message"])
-        chat_prompt = ChatPromptTemplate.from_messages([system_message_prompt, human_message_prompt])
+        if isinstance(self.chat_model, ChatOpenAI):
+            system_message_prompt = SystemMessagePromptTemplate.from_template(prompt_template["system_message"])
+            human_message_prompt = HumanMessagePromptTemplate.from_template(prompt_template["user_message"])
+            chat_prompt = ChatPromptTemplate.from_messages([system_message_prompt, human_message_prompt])
+        elif isinstance(self.chat_model, OpenAI):
+            chat_prompt = PromptTemplate.from_template(f'{prompt_template["system_message"]} {prompt_template["user_message"]}')
 
         chain = LLMChain(llm=self.chat_model, prompt=chat_prompt)
 
         return chain
 
-    def stringify_prompt(self, formatted_chat_prompt: List[Union[SystemMessage, HumanMessage]]) -> str:
+    def stringify_chat_prompt(self, formatted_chat_prompt: List[Union[SystemMessage, HumanMessage]]) -> str:
         return f"{formatted_chat_prompt[0].content}\n{formatted_chat_prompt[1].content}"
 
     def run_chain_with_callback(
@@ -151,9 +156,9 @@ class TeacherQuerier:
                                 "idx": idx,
                                 "prompt_template_id": prompt_template_id,
                                 "prompt_values": {tup[0]: example[tup[1]] for tup in template_tuple},
-                                "complete_prompt": self.stringify_prompt(
+                                "complete_prompt": self.stringify_chat_prompt(
                                     chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple})
-                                ),
+                                ) if isinstance(self.chat_model, ChatOpenAI) else chain.prompt.format(**{tup[0]: example[tup[1]] for tup in template_tuple}),
                                 "response": response,
                             }
                         ],
@@ -189,9 +194,13 @@ class TeacherQuerier:
 
         # get example from dataset split
         example = self.datasets[split][idx]
-        print(
-            self.stringify_prompt(chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple}))
-        )
+        if isinstance(self.chat_model, ChatOpenAI):
+            print(
+                self.stringify_chat_prompt(chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple}))
+            )
+        elif isinstance(self.chat_model, OpenAI):
+            print(chain.prompt.format(**{tup[0]: example[tup[1]] for tup in template_tuple}))
+            
         response = chain.run({tup[0]: example[tup[1]] for tup in template_tuple})
         print(f"RESPONSE:\n{response}")
 
@@ -204,7 +213,7 @@ class TeacherQuerier:
                         "idx": idx,
                         "prompt_template_id": prompt_template_id,
                         "prompt_values": {tup[0]: example[tup[1]] for tup in template_tuple},
-                        "complete_prompt": self.stringify_prompt(
+                        "complete_prompt": self.stringify_chat_prompt(
                             chain.prompt.format_messages(**{tup[0]: example[tup[1]] for tup in template_tuple})
                         ),
                         "response": response,
