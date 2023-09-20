@@ -139,7 +139,7 @@ def generate_missing_experiments(args):
             experiments = experiments[experiments[arg] == str(getattr(args, arg))]
     
     ## generate commands for all experiments
-    bash_script = ""
+    bash_script = "export TOKENIZERS_PARALLELISM=true\n\n"
     for _, row in experiments.iterrows():
         bash_script += command_from_row(row, args.passthrough)
 
