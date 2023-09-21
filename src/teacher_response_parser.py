@@ -82,11 +82,11 @@ class ANLITeacherResponseParser(TeacherResponseParser):
 
     def conform_label(self, label: str) -> str:
         label = label.lower().strip()
-        if label in ["contradiction", "false"]:
+        if label in ["contradiction", "false", "not valid", "contradicts"]:
             label = "contradiction"
-        elif label in ["neutral", "inconclusive"]:
+        elif label in ["neutral", "inconclusive", "cannot be determined", "uncertain", "cannot determine"]:
             label = "neutral"
-        elif label in ["entailment", "true"]:
+        elif label in ["entailment", "true", "valid", "entails"]:
             label = "entailment"
         return label
 
@@ -111,11 +111,11 @@ class ESNLITeacherResponseParser(TeacherResponseParser):
 
     def conform_label(self, label: str) -> str:
         label = label.lower().strip()
-        if label in ["contradiction", "false"]:
+        if label in ["contradiction", "false", "not valid", "contradicts"]:
             label = "contradiction"
-        elif label in ["neutral", "inconclusive"]:
+        elif label in ["neutral", "inconclusive", "cannot be determined", "uncertain", "cannot determine"]:
             label = "neutral"
-        elif label in ["entailment", "true"]:
+        elif label in ["entailment", "true", "valid", "entails"]:
             label = "entailment"
         return label
 

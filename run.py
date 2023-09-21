@@ -11,7 +11,7 @@ from src.utils import read_yaml, print_c
 from src.factories import teacherQuerierFactory, dataLoaderFactory
 
 
-def run_experiment(dataset_name: str, test_size: float, model: str) -> None:
+def run_experiment(dataset_name: str, test_size: float, model: str, seed: int) -> None:
     """
     Run an experiment in the form of querieng test_size random samples with each available prompt
     and subsequent evaluation of the results to update metadata files and find the best performing
@@ -31,6 +31,7 @@ def run_experiment(dataset_name: str, test_size: float, model: str) -> None:
         test_size = test_size * DATASET_SIZE
     TEST_SIZE = int(test_size)
 
+    np.random.seed(seed)
     test_idx = np.random.choice(DATASET_SIZE, TEST_SIZE, replace=False)
     test_idx = [int(i) for i in test_idx]
 
@@ -178,7 +179,7 @@ if __name__ == "__main__":
     np.random.seed(args.seed)
 
     if args.experiment:
-        run_experiment(args.dataset, args.test_size, args.chat_model)
+        run_experiment(args.dataset, args.test_size, args.chat_model, args.seed)
     elif args.generate_trainingdata:
         generate_trainingdata(args.dataset, args.splits, args.prompt_mix, args.samples)
     elif args.evaluate:

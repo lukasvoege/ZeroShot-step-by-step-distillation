@@ -1,0 +1,32 @@
+Your task is to generate prompt templates <PRT>. Below are some previous prompt templates with their scores.
+The score ranges from 0 to 100.
+
+<[PREVIOUS_BEST]>
+
+Below are some problems.
+
+Problem:
+premise: "The Other One is the third solo album by former Fleetwood Mac guitarist Bob Welch. The track \"Future Games\" was first released on the Fleetwood Mac album of the same name in 1971. Members of Welch's backing band also make songwriting contributions here though the majority of tracks are Welch's own."
+hypothesis: "The Other One is an album by the group TOOL, for which Bob Welch did most of the backing vocals."
+template: <PRT>
+Ground truth answer:
+false
+
+Problem:
+premise: "The Living and the Dead is a British supernatural horror television miniseries created by Ashley Pharoah and Matthew Graham. The plot revolves around Nathan Appleby (played by Colin Morgan) and his wife, Charlotte Appleby (played by Charlotte Spencer), whose farm is believed to be at the centre of numerous supernatural occurrences."
+hypothesis: "The Living and the Dead was renewed for 7 seasons."
+template: <PRT>
+Ground truth answer:
+inconclusive
+
+Problem:
+premise: "The Strangers is a 2008 American horror film written and directed by Bryan Bertino and starring Liv Tyler and Scott Speedman. The film follows a young couple who are terrorized by three masked assailants over the course of an evening at a remote summer home."
+hypothesis: "The film follows a young hip couple who are terrorized by three masked assailants over the course of an evening at a remote summer home.\n"
+template: <PRT>
+Ground truth answer:
+true
+
+Generate a prompt template that is different from all the prompt templates <PRT> above, and has a higher score than all the prompt templates <PRT> above.
+The instruction should begin with <PRT> and end with </PRT>.
+The instruction should be concise, effective, and generally applicable to all problems above.
+The instruction must include the placeholders {premise} and {hypothesis}.
