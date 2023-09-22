@@ -116,3 +116,59 @@ templates:
     user_message: 'Given the {premise}, determine the validity of the claim: "{hypothesis}". Provide a brief justification.'
     label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
     explanation_parse: '.?(.*)'
+
+  18:
+    id: 18
+    system_message: ''
+    user_message: 'Given the {premise}, evaluate the validity of the claim: "{hypothesis}". Provide a clear and concise justification for your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  19:
+    id: 19
+    system_message: ''
+    user_message: 'Assess the validity of the claim "{hypothesis}" based on the given {premise}. Provide a brief justification for your evaluation.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  20:
+    id: 20
+    system_message: ''
+    user_message: 'Assess the truth value of the claim "{hypothesis}" based on the information provided in the statement "{premise}". Justify your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  21:
+    id: 21
+    system_message: ''
+    user_message: 'Assess the validity of the claim "{hypothesis}" in light of the {premise} and provide a concise explanation to support your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  22:
+    id: 22
+    system_message: ''
+    user_message: 'Given the {premise}, assess the validity of the claim that "{hypothesis}". Please provide a brief justification for your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  23:
+    id: 23
+    system_message: ''
+    user_message: 'Assess the credibility of the claim "{hypothesis}" based on the provided {premise}. Provide a clear and concise justification.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  24:
+    id: 24
+    system_message: ''
+    user_message: 'Given the {premise}, determine the validity of the claim "{hypothesis}". Provide a concise explanation to support your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  25:
+    id: 25
+    system_message: ''
+    user_message: 'Evaluate the claim "{hypothesis}" based on the given {premise}. Provide your conclusion with a brief explanation.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
