@@ -26,7 +26,7 @@ template: <PRT>
 Ground truth answer:
 true
 
-Generate a prompt template that is different from all the prompt templates <PRT> above, and has a higher score than all the prompt templates <PRT> above.
-The instruction should begin with <PRT> and end with </PRT>.
-The instruction should be concise, effective, and generally applicable to all problems above.
-The instruction must include the placeholders {premise} and {hypothesis}.
+Generate a prompt template that is different from all the prompt templates <PRT> above, and HAS A HIGHER SCORE than all the prompt templates <PRT> above.
+The prompt template should begin with <PRT> and end with </PRT>.
+The prompt template should be concise, effective, and generally applicable to all problems above.
+The prompt template must include the placeholders {premise} and {hypothesis}, but must be different from all of the above prompt templates.
