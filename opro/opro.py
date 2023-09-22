@@ -11,9 +11,10 @@ load_dotenv()
 
 DATASET = "anli1"
 N_PRV_BEST = 15
+TEST_SIZE = 50
 
 # 1.) evaluate all prompts
-run.run_experiment(DATASET, test_size=50, model="gpt-3.5-turbo", seed=42)
+run.run_experiment(DATASET, test_size=TEST_SIZE, model="gpt-3.5-turbo", seed=42)
 
 # 2.) load all prompts, and get their performance
 prompt_templates = utils.read_yaml(f"prompt-templates/{DATASET}.yaml")["templates"]
@@ -41,7 +42,9 @@ with open("opro/meta-prompts/anli1.txt", "r") as f:
 
 meta_prompt = meta_prompt.replace("<[PREVIOUS_BEST]>", previous_best)
 
-#print(meta_prompt)
+print("#" * 75)
+print(meta_prompt)
+print("#" * 75)
 
 chat_model = ChatOpenAI(model = "gpt-3.5-turbo", temperature=1.1, max_tokens=200)
 
@@ -49,12 +52,13 @@ i = 0
 while i < 8:
     print(f"Querying {i+1}/8...")
     response = chat_model.predict(meta_prompt)
-    print(response)
-    if "{premise}" in response and "{hypothesis}" in response and "<PRT>" in response and "</PRT>" in response:
+    #print(response)
+    if all([x in response for x in ["{premise}", "{hypothesis}", "<PRT>", "</PRT>"]]):
         i += 1
         response = response.split("<PRT>")[1].split("</PRT>")[0]
         response = response.strip("\n")
         utils.add_prompt_to_yaml(f"prompt-templates/{DATASET}.yaml", response)
+        print(response)
     else:
         i += 0.5
 
