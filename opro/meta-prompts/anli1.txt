@@ -10,7 +10,7 @@ premise: "The Other One is the third solo album by former Fleetwood Mac guitaris
 hypothesis: "The Other One is an album by the group TOOL, for which Bob Welch did most of the backing vocals."
 template: <PRT>
 Ground truth answer:
-false
+contradiction
 
 Problem:
 premise: "The Living and the Dead is a British supernatural horror television miniseries created by Ashley Pharoah and Matthew Graham. The plot revolves around Nathan Appleby (played by Colin Morgan) and his wife, Charlotte Appleby (played by Charlotte Spencer), whose farm is believed to be at the centre of numerous supernatural occurrences."
@@ -24,7 +24,7 @@ premise: "The Strangers is a 2008 American horror film written and directed by B
 hypothesis: "The film follows a young hip couple who are terrorized by three masked assailants over the course of an evening at a remote summer home.\n"
 template: <PRT>
 Ground truth answer:
-true
+entailment
 
 Generate a prompt template that is different from all the prompt templates <PRT> above, and HAS A HIGHER SCORE than all the prompt templates <PRT> above.
 The prompt template should begin with <PRT> and end with </PRT>.
