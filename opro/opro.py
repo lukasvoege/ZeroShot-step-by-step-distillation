@@ -17,8 +17,8 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
     N_PRV_BEST = n_prev_best #15
     TEST_SIZE = test_size #50
 
-    for i in range(iterations):
-        utils.print_c(f"ITERATION {i + 1}/{iterations}", c="green")
+    for x in range(iterations):
+        utils.print_c(f"ITERATION {x + 1}/{iterations}", c="green")
         # 1.) evaluate all prompts
         run.run_experiment(DATASET, test_size=TEST_SIZE, model="gpt-3.5-turbo", seed=42)
 
