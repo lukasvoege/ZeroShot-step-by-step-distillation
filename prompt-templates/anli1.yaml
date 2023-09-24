@@ -270,3 +270,998 @@ templates:
     user_message: 'Based on the given premise: "{premise}", does the evidence strongly support or contradict the claim that "{hypothesis}"? Please respond with either "true" if the evidence strongly supports the claim, "false" if the evidence contradicts the claim, or "inconclusive" if the connection between the evidence and claim cannot be determined.'
     label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
     explanation_parse: '.?(.*)'
+
+  40:
+    id: 40
+    system_message: ''
+    user_message: 'Can the given information about {premise} definitively determine the veracity of {hypothesis}? Provide a clear and concise answer as either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  41:
+    id: 41
+    system_message: ''
+    user_message: 'Based on the information provided in the {premise}, evaluate the validity of the claim: "{hypothesis}". Provide a clear and concise response of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  42:
+    id: 42
+    system_message: ''
+    user_message: 'Evaluate whether the claim "{hypothesis}" can be supported or refuted based on the given {premise}.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  43:
+    id: 43
+    system_message: ''
+    user_message: 'Based on the given {premise}, can we determine the truth value of the claim "{hypothesis}"? Respond with "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  44:
+    id: 44
+    system_message: ''
+    user_message: 'Can the given {premise} be used to determine the validity of the claim "{hypothesis}"? Provide a clear response of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  45:
+    id: 45
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported or contradicted by the given information in "{premise}"? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if a conclusion cannot be determined.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  46:
+    id: 46
+    system_message: ''
+    user_message: 'Based on the given {premise}, can we conclude whether the claim "{hypothesis}" is true, false, or inconclusive? Justify your answer succinctly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  47:
+    id: 47
+    system_message: ''
+    user_message: 'Can we determine the truth value of the claim "{hypothesis}" based on the given information in the premise: "{premise}"? Respond with "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  48:
+    id: 48
+    system_message: ''
+    user_message: 'Evaluate the claim "{hypothesis}" based on the following information: "{premise}". Provide a succinct answer of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  49:
+    id: 49
+    system_message: ''
+    user_message: 'Based on the information provided about {premise}, can we accurately determine the truth value of the claim "{hypothesis}"? Respond with either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  50:
+    id: 50
+    system_message: ''
+    user_message: 'Considering the information provided {premise}, can we ascertain the truth value of the claim "{hypothesis}"? Provide a clear and concise answer of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  51:
+    id: 51
+    system_message: ''
+    user_message: 'Given the information provided in the {premise}, can we determine the truth value of the claim "{hypothesis}"? Please respond with either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  52:
+    id: 52
+    system_message: ''
+    user_message: 'Based on the given information on premise: "{premise}", can we definitively determine the veracity of the claim "{hypothesis}"? Responses should be "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if a conclusion cannot be reached.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  53:
+    id: 53
+    system_message: ''
+    user_message: 'Based on the given facts shared in "{premise}", can we determine the validity of the claim "{hypothesis}"? Please respond with "true" if the claim can be supported, "false" if the claim can be contradicted, or "inconclusive" if a conclusion cannot be reached.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  54:
+    id: 54
+    system_message: ''
+    user_message: 'Based on the information provided in {premise}, can we determine the truth value of the claim "{hypothesis}"? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is not enough evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  55:
+    id: 55
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the information provided in {premise}? Respond with either "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is not enough evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  56:
+    id: 56
+    system_message: ''
+    user_message: 'Given {premise}, can we determine the truth value of the claim "{hypothesis}"? Respond with either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  57:
+    id: 57
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported or contradicted by the given {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is not enough evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  58:
+    id: 58
+    system_message: ''
+    user_message: 'Considering the information given in the {premise}, can we determine whether the claim "{hypothesis}" is true, false, or inconclusive? Provide a clear and concise answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  59:
+    id: 59
+    system_message: ''
+    user_message: 'Can we determine the truth value of the claim "{hypothesis}" based on the information provided in {premise}? Please respond with either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  60:
+    id: 60
+    system_message: ''
+    user_message: 'With the given {premise}, can we determine the truth value of the claim "{hypothesis}"? Provide a clear answer of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  61:
+    id: 61
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported or contradicted by the information provided in {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is not enough evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  62:
+    id: 62
+    system_message: ''
+    user_message: 'Can the claim "{hypothesis}" be determined to be true, false, or inconclusive based on the given {premise}? Provide a clear and concise answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  63:
+    id: 63
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the information given in the {premise}? Provide a one-word answer of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  64:
+    id: 64
+    system_message: ''
+    user_message: 'Can we determine whether the claim "{hypothesis}" is supported by the information provided in {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is not enough evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  65:
+    id: 65
+    system_message: ''
+    user_message: 'Considering the given {premise}, can we determine if the claim "{hypothesis}" is true, false, or inconclusive? Please provide your answer using one of the following options: "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  66:
+    id: 66
+    system_message: ''
+    user_message: 'Based on the information presented in {premise}, can we determine the veracity of the claim "{hypothesis}"? Provide a response of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  67:
+    id: 67
+    system_message: ''
+    user_message: 'Can we determine if the claim "{hypothesis}" is true, false, or inconclusive based on the {premise}? Provide a concise response.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  68:
+    id: 68
+    system_message: ''
+    user_message: 'Given the {premise}, can we definitively determine the truth value of the claim "{hypothesis}"? Please respond with "true" if the claim is supported by the information provided, "false" if the claim is contradicted by the information provided, or "inconclusive" if there is insufficient evidence to determine the truth value of the claim.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  69:
+    id: 69
+    system_message: ''
+    user_message: 'Given the {premise}, can we determine if the claim "{hypothesis}" is true, false, or inconclusive? Answer with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  70:
+    id: 70
+    system_message: ''
+    user_message: 'Considering the given {premise}, can we make a determination on the truthfulness of the statement "{hypothesis}"? Respond with "true" if the claim can be supported, "false" if the claim can be contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  71:
+    id: 71
+    system_message: ''
+    user_message: 'Based on the {premise}, can we conclude the truth value of the claim "{hypothesis}"? Provide a one-word answer: "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  72:
+    id: 72
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported, contradicted, or inconclusive based on the given {premise}?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  73:
+    id: 73
+    system_message: ''
+    user_message: 'Based on the given {premise}, can we determine if the claim "{hypothesis}" is true, false, or inconclusive? Provide a one-word answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  74:
+    id: 74
+    system_message: ''
+    user_message: 'Can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the given {premise}? '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  75:
+    id: 75
+    system_message: ''
+    user_message: 'Given the information provided about {premise}, can we determine the veracity of the claim "{hypothesis}"? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  76:
+    id: 76
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported, contradicted, or inconclusive based on the given {premise}? '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  77:
+    id: 77
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported, contradicted, or inconclusive given the provided {premise}?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  78:
+    id: 78
+    system_message: ''
+    user_message: 'Based on the given {premise}, can we confidently determine the truth value of the claim "{hypothesis}"? Please respond with "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  79:
+    id: 79
+    system_message: ''
+    user_message: 'Can the claim "{hypothesis}" be confirmed or refuted based on the given {premise}? Provide a one-word response: "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  80:
+    id: 80
+    system_message: ''
+    user_message: 'Can we determine the truth value (truth) of the claim "{hypothesis}" based on the {premise}? Justify your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  81:
+    id: 81
+    system_message: ''
+    user_message: 'Can we determine the truth value of the claim "{hypothesis}" based on the given {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  82:
+    id: 82
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the given {premise}? Provide a one-word response: "true" if supported, "false" if contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  83:
+    id: 83
+    system_message: ''
+    user_message: 'Based on the {premise}, can we determine the veracity of the claim "{hypothesis}"? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  84:
+    id: 84
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  85:
+    id: 85
+    system_message: ''
+    user_message: 'Can we determine if the claim "{hypothesis}" is supported or contradicted based on the given {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  86:
+    id: 86
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the information provided in the {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+
+  87:
+    id: 87
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported or contradicted by the given {premise}? Provide a response of "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  88:
+    id: 88
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the given {premise}? Provide a concise response: "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  89:
+    id: 89
+    system_message: ''
+    user_message: 'Can the {hypothesis} be determined to be true, false, or inconclusive based on the given {premise}? Please answer with "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  90:
+    id: 90
+    system_message: ''
+    user_message: 'Based on the provided {premise}, can we determine if the claim "{hypothesis}" is true, false, or inconclusive? Justify your answer with a succinct explanation.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  91:
+    id: 91
+    system_message: ''
+    user_message: 'Can the given {premise} provide enough evidence to support or contradict the claim "{hypothesis}"? Respond with "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  92:
+    id: 92
+    system_message: ''
+    user_message: 'Can the information in the {premise} definitively support or refute the claim that "{hypothesis}"? Respond with "true" if the claim is supported, "false" if the claim is refuted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  93:
+    id: 93
+    system_message: ''
+    user_message: 'Given the {premise}, can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Provide your answer. '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  94:
+    id: 94
+    system_message: ''
+    user_message: 'Can the claim "{hypothesis}" be validated based on the information in the {premise}? Provide a one-word response: "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  95:
+    id: 95
+    system_message: ''
+    user_message: 'Given the {premise}, can we determine if the claim "{hypothesis}" is true, false, or inconclusive? Briefly explain your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  96:
+    id: 96
+    system_message: ''
+    user_message: 'Can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the given {premise}? Justify your answer briefly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  97:
+    id: 97
+    system_message: ''
+    user_message: 'Based on the given {premise}, can we determine the truth value of the claim "{hypothesis}"? Provide a straightforward answer of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  98:
+    id: 98
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the given {premise}? Respond with either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  99:
+    id: 99
+    system_message: ''
+    user_message: 'Given the {premise}, can we confirm the veracity of the claim "{hypothesis}"? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  100:
+    id: 100
+    system_message: ''
+    user_message: 'Based on {premise}, determine whether the claim "{hypothesis}" is true, false, or inconclusive?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  101:
+    id: 101
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the given {premise}? '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  102:
+    id: 102
+    system_message: ''
+    user_message: 'Given the provided {premise} and the claim "{hypothesis}", can we determine the truth value? Respond with "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  103:
+    id: 103
+    system_message: ''
+    user_message: 'Based on the provided {premise}, determine the veracity of the claim: "{hypothesis}". Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  104:
+    id: 104
+    system_message: ''
+    user_message: 'Can we determine the truth value of the claim "{hypothesis}" based on the provided information in {premise}? Please respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  105:
+    id: 105
+    system_message: ''
+    user_message: 'Assess the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the given {premise}.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  106:
+    id: 106
+    system_message: ''
+    user_message: 'Given the information provided in {premise}, assess the validity of the claim that "{hypothesis}". State your answer as "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  107:
+    id: 107
+    system_message: ''
+    user_message: 'Given the {premise}, determine the truth value of the claim "{hypothesis}". State your answer as either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  108:
+    id: 108
+    system_message: ''
+    user_message: 'Can the claim "{hypothesis}" be determined to be true, false, or inconclusive based on the given {premise}? Respond with either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  109:
+    id: 109
+    system_message: ''
+    user_message: 'Based on the given {premise}, can the claim "{hypothesis}" be determined to be true, false, or inconclusive?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  110:
+    id: 110
+    system_message: ''
+    user_message: 'Assess the truth value of the claim "{hypothesis}" based on the given {premise}. Provide a clear and concise response: "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  111:
+    id: 111
+    system_message: ''
+    user_message: 'Based on the details stated in {premise}, determine the accuracy of the claim: "{hypothesis}". State your response as "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine the truth value.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  112:
+    id: 112
+    system_message: ''
+    user_message: 'Evaluate the claim: "{hypothesis}", based on the information provided in {premise}. Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  113:
+    id: 113
+    system_message: ''
+    user_message: 'Based on the given {premise}, please evaluate the claim "{hypothesis}" and provide a response of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  114:
+    id: 114
+    system_message: ''
+    user_message: 'Based on the provided {premise}, evaluate the claim "{hypothesis}". State your answer as either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  115:
+    id: 115
+    system_message: ''
+    user_message: 'Based on the information provided about {premise}, assess the veracity of the claim that "{hypothesis}". State your answer as either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  116:
+    id: 116
+    system_message: ''
+    user_message: 'Can we determine the veracity of the claim "{hypothesis}" based on the information in {premise}? Please provide a straightforward response: "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  117:
+    id: 117
+    system_message: ''
+    user_message: 'Based on the provided information in {premise}, can we determine if the claim "{hypothesis}" is supported, contradicted, or inconclusive? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  118:
+    id: 118
+    system_message: ''
+    user_message: 'Given the information provided in {premise}, is it possible to determine the truth value of the claim "{hypothesis}"? Provide a straightforward answer of either "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  119:
+    id: 119
+    system_message: ''
+    user_message: 'Based on the {premise}, can we determine the truth value of the claim "{hypothesis}"? Provide a brief response of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  120:
+    id: 120
+    system_message: ''
+    user_message: 'Based on the {premise}, assess the truth value (true, false, or inconclusive) of the claim: "{hypothesis}". Provide a brief and justified response.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  121:
+    id: 121
+    system_message: ''
+    user_message: 'Given the {premise}, evaluate the claim "{hypothesis}" and provide a concise answer of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  122:
+    id: 122
+    system_message: ''
+    user_message: 'Based on the given {premise}, determine the veracity of the claim "{hypothesis}". Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine the truth value.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  123:
+    id: 123
+    system_message: ''
+    user_message: 'Based on the information provided in the given {premise}, can the claim "{hypothesis}" be determined as true, false, or inconclusive? Please provide your answer in a clear and concise manner. '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  124:
+    id: 124
+    system_message: ''
+    user_message: 'Can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the information provided in {premise}?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  125:
+    id: 125
+    system_message: ''
+    user_message: 'Given the {premise}, evaluate the {hypothesis}. Is it supported by the information provided? Respond with either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  126:
+    id: 126
+    system_message: ''
+    user_message: 'Can the claim "{hypothesis}" be determined to be true, false, or inconclusive based on the information provided in {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  127:
+    id: 127
+    system_message: ''
+    user_message: 'Based on the information provided in {premise}, can we determine the veracity of the claim "{hypothesis}"? State your answer as "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  128:
+    id: 128
+    system_message: ''
+    user_message: 'Given the {premise}, can we determine the veracity of the claim "{hypothesis}"? Provide a concise response of "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  129:
+    id: 129
+    system_message: ''
+    user_message: 'Can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the given {premise}? Justify your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  130:
+    id: 130
+    system_message: ''
+    user_message: 'Using the given {premise}, determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}". Justify your answer briefly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  131:
+    id: 131
+    system_message: ''
+    user_message: 'Can we determine the veracity of the claim "{hypothesis}" based on the given information in {premise}? Provide a brief response of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  132:
+    id: 132
+    system_message: ''
+    user_message: 'Does the {premise} provide enough evidence to determine the truth value of the claim "{hypothesis}"? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient information.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  133:
+    id: 133
+    system_message: ''
+    user_message: 'Given the information provided in {premise}, can we determine the veracity of the claim "{hypothesis}"? Respond with either "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  134:
+    id: 134
+    system_message: ''
+    user_message: 'Can we determine the truth value of the claim "{hypothesis}" based on the information provided in the {premise}? State your answer as either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  135:
+    id: 135
+    system_message: ''
+    user_message: 'Can the claim "{hypothesis}" be determined as true, false, or inconclusive based on the information provided in the {premise}? Explain your reasoning.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  136:
+    id: 136
+    system_message: ''
+    user_message: 'Based on {premise}, can we determine the validity (true, false, or inconclusive) of the claim "{hypothesis}"? Justify your answer in a clear and succinct manner.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  137:
+    id: 137
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported, contradicted, or inconclusive based on the provided {premise}? Justify your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  138:
+    id: 138
+    system_message: ''
+    user_message: 'Can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the given {premise}? Provide a brief explanation for your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  139:
+    id: 139
+    system_message: ''
+    user_message: 'Based on the given {premise}, can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Provide a clear and concise justification for your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  140:
+    id: 140
+    system_message: ''
+    user_message: 'Based on the information presented in "{premise}", determine the validity of the claim "{hypothesis}". Provide a clear and concise answer in the form of "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  141:
+    id: 141
+    system_message: ''
+    user_message: 'Can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the information presented in {premise}? Justify your response.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  142:
+    id: 142
+    system_message: ''
+    user_message: 'Based on the information given in {premise}, assess the truth value (true, false, or inconclusive) of the claim "{hypothesis}". Justify your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  143:
+    id: 143
+    system_message: ''
+    user_message: 'Can we determine the validity of the claim "{hypothesis}" based on the given information in the {premise}? Explain your answer in a clear and concise manner.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  144:
+    id: 144
+    system_message: ''
+    user_message: 'Can we determine the validity of the claim "{hypothesis}" based on the information provided in the {premise}? Justify your answer with evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  145:
+    id: 145
+    system_message: ''
+    user_message: 'Based on the given {premise}, can we determine the veracity of the claim "{hypothesis}"? Provide a concise answer of either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  146:
+    id: 146
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the given {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  147:
+    id: 147
+    system_message: ''
+    user_message: 'Given the information provided in {premise}, can we determine if the claim "{hypothesis}" is supported? Provide a concise response of "true" if supported, "false" if contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  148:
+    id: 148
+    system_message: ''
+    user_message: 'Is it possible to determine the veracity of the claim "{hypothesis}" based on the given {premise}? Justify your answer with a clear explanation.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  149:
+    id: 149
+    system_message: ''
+    user_message: 'Based on the provided {premise}, can we accurately determine the truth value of the claim "{hypothesis}"? Please state your response as either "true", "false", or "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  150:
+    id: 150
+    system_message: ''
+    user_message: 'Based on the given {premise}, is the claim "{hypothesis}" supported? Provide your answer as either "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine the veracity.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  151:
+    id: 151
+    system_message: ''
+    user_message: 'Can the information provided in the {premise} be used to determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Explain your reasoning in a concise manner.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  152:
+    id: 152
+    system_message: ''
+    user_message: 'Can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the given information in the premise: "{premise}"?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  153:
+    id: 153
+    system_message: ''
+    user_message: 'Based on the given {premise}, can we definitively determine the truth value of the claim "{hypothesis}"? Respond with either "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  154:
+    id: 154
+    system_message: ''
+    user_message: 'Given the information provided in {premise}, can we determine if the claim "{hypothesis}" is supported, contradicted, or inconclusive?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  155:
+    id: 155
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported or contradicted by the information provided in the {premise}? Respond with "true" if the claim is supported, "false" if the claim is contradicted, or "inconclusive" if there is insufficient evidence to determine the truth value.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  156:
+    id: 156
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the given {premise}? Respond with "true" if supported, "false" if contradicted, or "inconclusive" if there is insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  157:
+    id: 157
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported by the information provided in the {premise}? Respond with "true" if supported, "false" if contradicted, or "inconclusive" if insufficient evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  158:
+    id: 158
+    system_message: ''
+    user_message: 'Given the information provided in the {premise}, can we definitively determine the veracity of the claim "{hypothesis}"? If yes, respond with "true". If no, respond with "false". If there is insufficient evidence, respond with "inconclusive".'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  159:
+    id: 159
+    system_message: ''
+    user_message: 'Based on the information provided in the given {premise}, is it possible to determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Explain your reasoning.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  160:
+    id: 160
+    system_message: ''
+    user_message: 'Can we determine the verity of the claim "{hypothesis}" based on the information provided in the {premise}? Justify your answer with supporting evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  161:
+    id: 161
+    system_message: ''
+    user_message: 'Can the given {premise} be used to determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Justify your answer. '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  162:
+    id: 162
+    system_message: ''
+    user_message: 'Given the {premise}, can we ascertain the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Provide a clear and concise response.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  163:
+    id: 163
+    system_message: ''
+    user_message: 'Can the given {premise} provide conclusive evidence for the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? State your answer clearly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  164:
+    id: 164
+    system_message: ''
+    user_message: 'Can we determine the veracity (true, false, or inconclusive) of the claim "{hypothesis}" based on the information provided in the given statement: "{premise}"? Justify your answer briefly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  165:
+    id: 165
+    system_message: ''
+    user_message: 'Based on the information provided in the {premise}, can we definitively determine the truth value of the claim "{hypothesis}"? State your answer as either "true", "false", or "inconclusive". '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  166:
+    id: 166
+    system_message: ''
+    user_message: 'Can the information provided in the {premise} lead us to a definite truth value (true, false, or inconclusive) for the claim "{hypothesis}"? Justify your answer succinctly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  167:
+    id: 167
+    system_message: ''
+    user_message: 'Can the information provided in the {premise} be used to determine the validity (true, false, or inconclusive) of the claim "{hypothesis}"? Explain your answer clearly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  168:
+    id: 168
+    system_message: ''
+    user_message: 'Based on the provided {premise} and considering the claim "{hypothesis}", can we ascertain the truth value (true, false, or inconclusive)? Justify your answer briefly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  169:
+    id: 169
+    system_message: ''
+    user_message: 'Can the given {premise} provide definitive evidence to determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Justify your response.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  170:
+    id: 170
+    system_message: ''
+    user_message: 'Based on the information provided in {premise}, can we determine if {hypothesis} is true, false, or inconclusive? Justify your answer briefly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  171:
+    id: 171
+    system_message: ''
+    user_message: 'Can the given {premise} provide sufficient evidence to determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Justify your answer succinctly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  172:
+    id: 172
+    system_message: ''
+    user_message: 'Considering the {premise}, can we definitively conclude the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Provide a clear and concise answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  173:
+    id: 173
+    system_message: ''
+    user_message: 'Is the claim "{hypothesis}" supported, contradicted, or inconclusive based on the {premise}? Explain your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  174:
+    id: 174
+    system_message: ''
+    user_message: 'Based on the information provided in the premise: "{premise}", can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  175:
+    id: 175
+    system_message: ''
+    user_message: 'Can the information provided about {premise} definitively determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Explain your reasoning clearly.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  176:
+    id: 176
+    system_message: ''
+    user_message: 'Given the information provided in the {premise}, can we definitively determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  177:
+    id: 177
+    system_message: ''
+    user_message: 'Is it possible to determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the given information in the premise: "{premise}"? Justify your response with a clear and concise explanation.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  178:
+    id: 178
+    system_message: ''
+    user_message: 'Based on the information provided in the {premise}, can we definitively determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Justify your answer with a clear and concise explanation.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  179:
+    id: 179
+    system_message: ''
+    user_message: 'Can the {premise} provide sufficient evidence to determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Please justify your response.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  180:
+    id: 180
+    system_message: ''
+    user_message: 'Based on the given information in the {premise}, can we determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Justify your answer using relevant evidence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  181:
+    id: 181
+    system_message: ''
+    user_message: 'Based on the information given in {premise}, can we definitively determine the truth value (true, false, or inconclusive) of the claim "{hypothesis}"? Provide a clear and concise explanation for your answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
