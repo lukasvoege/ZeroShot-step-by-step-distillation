@@ -60,7 +60,7 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
             print(f"Querying {i+1}/8...")
             response = chat_model.predict(meta_prompt)
             #print(response)
-            if all([x in response for x in ["{premise}", "{hypothesis}", "<PRT>", "</PRT>"]]): # ANLI1 specific!!!!
+            if all([x in response for x in ["{premise}", "{hypothesis}", "<PRT>", "</PRT>"]]) and response.count("{") == 2: # ANLI1 specific!!!!
                 i += 1
                 response = response.split("<PRT>")[1].split("</PRT>")[0]
                 response = response.strip("\n")
