@@ -29,4 +29,5 @@ entailment
 Generate a prompt template that is different from all the prompt templates <PRT> above, and HAS A HIGHER SCORE than all the prompt templates <PRT> above.
 The prompt template should begin with <PRT> and end with </PRT>.
 The prompt template should be concise, effective, and generally applicable to all problems above.
+The response to a prompt template should be easy to parse, i.e. include either "true", "false" or "inconclusive".
 The prompt template must include the placeholders {premise} and {hypothesis}, but must be different from all of the above prompt templates.
