@@ -30,6 +30,10 @@ colorama==0.4.6
     # via
     #   click
     #   tqdm
+contourpy==1.1.1
+    # via matplotlib
+cycler==0.11.0
+    # via matplotlib
 dataclasses-json==0.5.14
     # via langchain
 datasets==2.14.3
@@ -40,6 +44,8 @@ dill==0.3.7
     #   multiprocess
 filelock==3.12.2
     # via huggingface-hub
+fonttools==4.42.1
+    # via matplotlib
 frozenlist==1.4.0
     # via
     #   aiohttp
@@ -56,14 +62,20 @@ idna==3.4
     # via
     #   requests
     #   yarl
+importlib-resources==6.1.0
+    # via matplotlib
 joblib==1.3.2
     # via nltk
+kiwisolver==1.4.5
+    # via matplotlib
 langchain==0.0.256
     # via -r .\requirements.in
 langsmith==0.0.19
     # via langchain
 marshmallow==3.20.1
     # via dataclasses-json
+matplotlib==3.7.3
+    # via -r .\requirements.in
 multidict==6.0.4
     # via
     #   aiohttp
@@ -78,8 +90,11 @@ numexpr==2.8.5
     # via langchain
 numpy==1.24.4
     # via
+    #   -r .\requirements.in
+    #   contourpy
     #   datasets
     #   langchain
+    #   matplotlib
     #   numexpr
     #   pandas
     #   pyarrow
@@ -92,8 +107,13 @@ packaging==23.1
     #   datasets
     #   huggingface-hub
     #   marshmallow
+    #   matplotlib
 pandas==2.0.3
-    # via datasets
+    # via
+    #   -r .\requirements.in
+    #   datasets
+pillow==10.0.1
+    # via matplotlib
 py-readability-metrics==1.4.5
     # via -r .\requirements.in
 pyarrow==12.0.1
@@ -103,8 +123,12 @@ pydantic==1.10.12
     #   langchain
     #   langsmith
     #   openapi-schema-pydantic
+pyparsing==3.1.1
+    # via matplotlib
 python-dateutil==2.8.2
-    # via pandas
+    # via
+    #   matplotlib
+    #   pandas
 python-dotenv==1.0.0
     # via -r .\requirements.in
 pytz==2023.3
@@ -152,3 +176,5 @@ xxhash==3.3.0
     # via datasets
 yarl==1.9.2
     # via aiohttp
+zipp==3.17.0
+    # via importlib-resources

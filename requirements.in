@@ -1,5 +1,8 @@
 # Basics
 python-dotenv
+matplotlib
+numpy
+pandas
 
 # Teacher Querier dependencies
 langchain
