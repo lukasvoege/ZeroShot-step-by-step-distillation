@@ -20,8 +20,14 @@ class TeacherResponseParser:
         explanation = re.sub(r"\\+\w+{|}", "", explanation, flags=re.IGNORECASE)  # remove math expression formatting
         explanation = re.sub(r"\s+", " ", explanation)
         explanation = explanation.strip()
+        # if an explanation starts with a lowercase letter, it is probably a continuation of the previous sentence.
+        # Remove this if there is another complete sentence to follow.
+        if explanation and len(explanation.split(". ")) > 1:
+            if explanation.split(". ")[0][0].islower():
+                explanation = explanation.split(". ", 1)[1]
+
         ## vllt noch pruning wenn hier so arschlange erklärungen kommen
-        if len(explanation.split()) < 6:
+        if len(explanation.split()) < 5:
             explanation = None
         return explanation
 

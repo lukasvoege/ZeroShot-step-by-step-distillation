@@ -50,19 +50,19 @@ class Metadata:
                 self.current_metadata[prompt_id][category]["total_accumulated_costs"]
                 / self.current_metadata[prompt_id][category]["total_performed_queries"]
             )
-            self.write_filed(prompt_id, category, "avg_cost_per_query", avg_cost_per_query)
+            self.write_filed(prompt_id, category, "avg_cost_per_query", round(avg_cost_per_query, 5))
 
             avg_nr_tokens_sent = (
                 self.current_metadata[prompt_id][category]["total_tokens_sent"]
                 / self.current_metadata[prompt_id][category]["total_performed_queries"]
             )
-            self.write_filed(prompt_id, category, "avg_nr_tokens_sent", avg_nr_tokens_sent)
+            self.write_filed(prompt_id, category, "avg_nr_tokens_sent", round(avg_nr_tokens_sent, 2))
 
             avg_nr_tokens_received = (
                 self.current_metadata[prompt_id][category]["total_tokens_received"]
                 / self.current_metadata[prompt_id][category]["total_performed_queries"]
             )
-            self.write_filed(prompt_id, category, "avg_nr_tokens_received", avg_nr_tokens_received)
+            self.write_filed(prompt_id, category, "avg_nr_tokens_received", round(avg_nr_tokens_received, 2))
 
         elif category == "characteristics":
             try:
@@ -71,14 +71,30 @@ class Metadata:
                 )
             except ZeroDivisionError:
                 avg_len_of_explanations = 0
-            self.write_filed(prompt_id, category, "avg_len_of_explanations", avg_len_of_explanations)
+            self.write_filed(prompt_id, category, "avg_len_of_explanations", round(avg_len_of_explanations, 2))
+
+            try:
+                avg_nr_of_sentences = self.current_metadata[prompt_id][category]["total_number_of_sentences"] / (
+                    self.current_metadata[prompt_id][category]["total_reponses"]
+                )
+            except ZeroDivisionError:
+                avg_nr_of_sentences = 0
+            self.write_filed(prompt_id, category, "avg_nr_of_sentences", round(avg_nr_of_sentences, 2))
+
+            try:
+                avg_nr_of_words = self.current_metadata[prompt_id][category]["total_number_of_words"] / (
+                    self.current_metadata[prompt_id][category]["total_reponses"]
+                )
+            except ZeroDivisionError:
+                avg_nr_of_words = 0
+            self.write_filed(prompt_id, category, "avg_nr_of_words", round(avg_nr_of_words, 2))
 
         elif category == "performance":
             accuracy = self.current_metadata[prompt_id][category]["n_correct"] / (
                 self.current_metadata[prompt_id][category]["n_correct"]
                 + self.current_metadata[prompt_id][category]["n_wrong"]
             )
-            self.write_filed(prompt_id, category, "accuracy", accuracy)
+            self.write_filed(prompt_id, category, "accuracy", round(accuracy, 4))
 
     def update_from_callback(
         self, prompt_id: int, total_prompt_tokens: int, total_completion_tokens: int, total_costs: float, n: int
@@ -106,6 +122,9 @@ class Metadata:
         n_correct: int,
         n_wrong: int,
         n_parse_errors: int,
+        total_number_of_sentences: int,
+        total_number_of_words: int,
+        flesch_reading_ease: float,
     ):
         # update current_metadata
         self.current_metadata = self.load_current_metadata()
@@ -114,6 +133,9 @@ class Metadata:
         self.write_filed(prompt_id, "characteristics", "n_none_responses", n_none_responses)
         self.write_filed(prompt_id, "characteristics", "total_length_of_explanations", total_length_of_explanations)
         self.write_filed(prompt_id, "characteristics", "n_parse_errors", n_parse_errors)
+        self.write_filed(prompt_id, "characteristics", "total_number_of_sentences", total_number_of_sentences)
+        self.write_filed(prompt_id, "characteristics", "total_number_of_words", total_number_of_words)
+        self.write_filed(prompt_id, "characteristics", "flesch_reading_ease", round(flesch_reading_ease, 1))
 
         self.write_filed(prompt_id, "performance", "n_correct", n_correct)
         self.write_filed(prompt_id, "performance", "n_wrong", n_wrong)

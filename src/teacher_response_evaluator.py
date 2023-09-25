@@ -6,6 +6,9 @@ import os
 from src.factories import teacherResponseParserFactory, dataLoaderFactory
 from src.metadata import Metadata
 
+from readability import Readability
+from readability.exceptions import ReadabilityException
+
 import importlib
 
 dsbs_metrics = importlib.import_module("distilling-step-by-step.metrics")
@@ -49,15 +52,41 @@ class TeacherResponseEvaluator:
 
         n_none_responses = response_explanations.count(None)
         total_repsonses = len(response_explanations) - n_none_responses
+
+        # number of sentences
+        total_number_of_sentences = sum(
+            [len(explanation.split(". ")) for explanation in response_explanations if explanation is not None]
+        )
+        # number of words
+        total_number_of_words = sum(
+            [len(explanation.split()) for explanation in response_explanations if explanation is not None]
+        )
+        # number of characters
         total_length_of_explanations = sum(
             [len(explanation) for explanation in response_explanations if explanation is not None]
         )
 
-        ## TODO: Add more explanation characteristics like coherence and fluency
+        # Flesch reading ease of all explanations combined
+        readability = Readability(
+            " ".join([explanation for explanation in response_explanations if explanation is not None])
+        )
+        try:
+            flesch_reading_ease = readability.flesch().score
+        except ReadabilityException:
+            flesch_reading_ease = 0
 
-        return n_none_responses, total_repsonses, total_length_of_explanations
+        return (
+            n_none_responses,
+            total_repsonses,
+            total_length_of_explanations,
+            total_number_of_sentences,
+            total_number_of_words,
+            flesch_reading_ease,
+        )
 
-    def evaluate_responses_split(self, split: str, prompt_template_id: int, idxs: List = None, verbose: bool = False) -> Dict:
+    def evaluate_responses_split(
+        self, split: str, prompt_template_id: int, idxs: List = None, verbose: bool = False
+    ) -> Dict:
         parsed_responses = self.parser.parse_response_batch(split, prompt_template_id, verbose=verbose)
         # filter for idxs if provided
         if idxs:
@@ -66,9 +95,14 @@ class TeacherResponseEvaluator:
             return {}
         n_parse_errors = [response[0] for response in parsed_responses.values()].count(None)
         acc, n_correct, n_wrong = self.get_label_accuracy(split, parsed_responses)
-        n_none_responses, total_repsonses, total_length_of_explanations = self.get_explanation_characteristics(
-            parsed_responses
-        )
+        (
+            n_none_responses,
+            total_repsonses,
+            total_length_of_explanations,
+            total_number_of_sentences,
+            total_number_of_words,
+            flesch_reading_ease,
+        ) = self.get_explanation_characteristics(parsed_responses)
 
         return {
             "accuracy": acc,
@@ -78,6 +112,9 @@ class TeacherResponseEvaluator:
             "n_none_responses": n_none_responses,
             "total_reponses": total_repsonses,
             "total_length_of_explanations": total_length_of_explanations,
+            "total_number_of_sentences": total_number_of_sentences,
+            "total_number_of_words": total_number_of_words,
+            "flesch_reading_ease": flesch_reading_ease,
         }
 
     def evaluate_train(self, idxs: List = None, verbose: bool = False) -> int:
@@ -85,7 +122,9 @@ class TeacherResponseEvaluator:
         split = "train"
         for prompt_template_id in os.listdir(f"./querie-results/{self.dataset_name}/{split}/"):
             # evaluate the responses and update the metadata file
-            evaluation_results = self.evaluate_responses_split(split, int(prompt_template_id), idxs=idxs, verbose=verbose)
+            evaluation_results = self.evaluate_responses_split(
+                split, int(prompt_template_id), idxs=idxs, verbose=verbose
+            )
             # dont update if no responses were found for this prompt template or we are only evaluating a subset of the data
             if evaluation_results == {}:
                 continue
@@ -98,6 +137,9 @@ class TeacherResponseEvaluator:
                     evaluation_results["n_correct"],
                     evaluation_results["n_wrong"],
                     evaluation_results["n_parse_errors"],
+                    evaluation_results["total_number_of_sentences"],
+                    evaluation_results["total_number_of_words"],
+                    evaluation_results["flesch_reading_ease"],
                 )
             evals[prompt_template_id] = evaluation_results
 
