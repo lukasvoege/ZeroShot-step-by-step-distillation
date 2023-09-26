@@ -1209,3 +1209,17 @@ templates:
     user_message: 'Is the claim "{hypothesis}" supported, contradicted, or inconclusive based on the {premise}? Explain your answer.'
     label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
     explanation_parse: '.?(.*)'
+
+  174:
+    id: 174
+    system_message: ''
+    user_message: 'Considering the provided premise: "{premise}", can we determine the truth value (true, false, or inconclusive) of the claim: "{hypothesis}"? Talk to me like I am five years old.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  175:
+    id: 175
+    system_message: ''
+    user_message: 'Based on {premise}, determine whether the claim "{hypothesis}" is true, false, or inconclusive? Talk to me like I am five years old.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'

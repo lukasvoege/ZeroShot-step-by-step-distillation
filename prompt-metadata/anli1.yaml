@@ -11,7 +11,7 @@
     total_number_of_words: 2583
     total_responses: 125
   costs:
-    avg_cost_per_query: 0.000202556
+    avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 30.08
     avg_nr_tokens_sent: 125.28
     total_accumulated_costs: 0.0253195
@@ -35,9 +35,9 @@
     total_number_of_words: 3396
     total_responses: 125
   costs:
-    avg_cost_per_query: 0.000329936
-    avg_nr_tokens_received: 40.824
-    avg_nr_tokens_sent: 215.096
+    avg_cost_per_query: 0.00033
+    avg_nr_tokens_received: 40.82
+    avg_nr_tokens_sent: 215.1
     total_accumulated_costs: 0.041242
     total_performed_queries: 125
     total_tokens_received: 5103
@@ -59,8 +59,8 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.000154364
-    avg_nr_tokens_received: 2.776
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 2.78
     avg_nr_tokens_sent: 123.28
     total_accumulated_costs: 0.0192955
     total_performed_queries: 125
@@ -83,7 +83,7 @@
     total_number_of_words: 2580
     total_responses: 48
   costs:
-    avg_cost_per_query: 0.00036834
+    avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 89.04
     avg_nr_tokens_sent: 126.84
     total_accumulated_costs: 0.018417
@@ -107,9 +107,9 @@
     total_number_of_words: 2919
     total_responses: 48
   costs:
-    avg_cost_per_query: 0.00041760416666666666
-    avg_nr_tokens_received: 105.95833333333333
-    avg_nr_tokens_sent: 137.125
+    avg_cost_per_query: 0.00042
+    avg_nr_tokens_received: 105.96
+    avg_nr_tokens_sent: 137.12
     total_accumulated_costs: 0.0100225
     total_performed_queries: 24
     total_tokens_received: 2543
@@ -131,7 +131,7 @@
     total_number_of_words: 1655
     total_responses: 47
   costs:
-    avg_cost_per_query: 0.00032025999999999984
+    avg_cost_per_query: 0.00032
     avg_nr_tokens_received: 64.88
     avg_nr_tokens_sent: 127.0
     total_accumulated_costs: 0.016012999999999993
@@ -155,7 +155,7 @@
     total_number_of_words: 24
     total_responses: 3
   costs:
-    avg_cost_per_query: 0.00019094
+    avg_cost_per_query: 0.00019
     avg_nr_tokens_received: 3.34
     avg_nr_tokens_sent: 122.84
     total_accumulated_costs: 0.009547
@@ -179,7 +179,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020259
+    avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 1.32
     avg_nr_tokens_sent: 133.3
     total_accumulated_costs: 0.0101295
@@ -203,7 +203,7 @@
     total_number_of_words: 65
     total_responses: 3
   costs:
-    avg_cost_per_query: 0.00020587999999999995
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 3.94
     avg_nr_tokens_sent: 132.0
     total_accumulated_costs: 0.010293999999999998
@@ -227,7 +227,7 @@
     total_number_of_words: 2306
     total_responses: 41
   costs:
-    avg_cost_per_query: 0.00037848000000000005
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 94.86
     avg_nr_tokens_sent: 125.84
     total_accumulated_costs: 0.018924000000000003
@@ -251,7 +251,7 @@
     total_number_of_words: 2293
     total_responses: 38
   costs:
-    avg_cost_per_query: 0.0004178000000000001
+    avg_cost_per_query: 0.00042
     avg_nr_tokens_received: 111.4
     avg_nr_tokens_sent: 130.0
     total_accumulated_costs: 0.020890000000000006
@@ -275,7 +275,7 @@
     total_number_of_words: 2005
     total_responses: 45
   costs:
-    avg_cost_per_query: 0.00035053
+    avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 81.26
     avg_nr_tokens_sent: 125.34
     total_accumulated_costs: 0.0175265
@@ -299,7 +299,7 @@
     total_number_of_words: 2555
     total_responses: 39
   costs:
-    avg_cost_per_query: 0.0004041400000000002
+    avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 108.2
     avg_nr_tokens_sent: 125.16
     total_accumulated_costs: 0.02020700000000001
@@ -323,7 +323,7 @@
     total_number_of_words: 2889
     total_responses: 47
   costs:
-    avg_cost_per_query: 0.00040361999999999993
+    avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 105.06
     avg_nr_tokens_sent: 129.0
     total_accumulated_costs: 0.020180999999999998
@@ -347,7 +347,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020150999999999996
+    avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 1.5
     avg_nr_tokens_sent: 132.34
     total_accumulated_costs: 0.010075499999999998
@@ -371,7 +371,7 @@
     total_number_of_words: 1079
     total_responses: 24
   costs:
-    avg_cost_per_query: 0.00037961
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 96.58
     avg_nr_tokens_sent: 124.3
     total_accumulated_costs: 0.0189805
@@ -395,7 +395,7 @@
     total_number_of_words: 3109
     total_responses: 49
   costs:
-    avg_cost_per_query: 0.0003832199999999999
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 100.74
     avg_nr_tokens_sent: 121.16
     total_accumulated_costs: 0.019160999999999997
@@ -419,7 +419,7 @@
     total_number_of_words: 2398
     total_responses: 50
   costs:
-    avg_cost_per_query: 0.00037245999999999997
+    avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 84.98
     avg_nr_tokens_sent: 135.0
     total_accumulated_costs: 0.018622999999999997
@@ -443,7 +443,7 @@
     total_number_of_words: 2634
     total_responses: 50
   costs:
-    avg_cost_per_query: 0.00034977999999999995
+    avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 76.64
     avg_nr_tokens_sent: 131.0
     total_accumulated_costs: 0.017488999999999998
@@ -467,7 +467,7 @@
     total_number_of_words: 1949
     total_responses: 47
   costs:
-    avg_cost_per_query: 0.00036295000000000007
+    avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 80.12
     avg_nr_tokens_sent: 135.14
     total_accumulated_costs: 0.018147500000000004
@@ -491,7 +491,7 @@
     total_number_of_words: 2559
     total_responses: 42
   costs:
-    avg_cost_per_query: 0.00038466000000000005
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 98.46
     avg_nr_tokens_sent: 125.16
     total_accumulated_costs: 0.019233000000000004
@@ -515,7 +515,7 @@
     total_number_of_words: 2441
     total_responses: 50
   costs:
-    avg_cost_per_query: 0.0003643400000000001
+    avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 83.8
     avg_nr_tokens_sent: 131.16
     total_accumulated_costs: 0.018217000000000004
@@ -539,7 +539,7 @@
     total_number_of_words: 655
     total_responses: 24
   costs:
-    avg_cost_per_query: 0.00037481000000000005
+    avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 82.3
     avg_nr_tokens_sent: 140.14
     total_accumulated_costs: 0.018740500000000004
@@ -563,7 +563,7 @@
     total_number_of_words: 2413
     total_responses: 38
   costs:
-    avg_cost_per_query: 0.00045071999999999994
+    avg_cost_per_query: 0.00045
     avg_nr_tokens_received: 126.24
     avg_nr_tokens_sent: 132.16
     total_accumulated_costs: 0.022535999999999997
@@ -587,7 +587,7 @@
     total_number_of_words: 2389
     total_responses: 47
   costs:
-    avg_cost_per_query: 0.00037356
+    avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 87.66
     avg_nr_tokens_sent: 132.16
     total_accumulated_costs: 0.018678
@@ -611,7 +611,7 @@
     total_number_of_words: 4536
     total_responses: 49
   costs:
-    avg_cost_per_query: 0.0005059800000000001
+    avg_cost_per_query: 0.00051
     avg_nr_tokens_received: 148.92
     avg_nr_tokens_sent: 138.76
     total_accumulated_costs: 0.025299000000000002
@@ -635,7 +635,7 @@
     total_number_of_words: 681
     total_responses: 20
   costs:
-    avg_cost_per_query: 0.00029727999999999997
+    avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 53.84
     avg_nr_tokens_sent: 126.4
     total_accumulated_costs: 0.014863999999999999
@@ -659,7 +659,7 @@
     total_number_of_words: 878
     total_responses: 33
   costs:
-    avg_cost_per_query: 0.00026604000000000005
+    avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 31.92
     avg_nr_tokens_sent: 134.8
     total_accumulated_costs: 0.013302000000000001
@@ -683,7 +683,7 @@
     total_number_of_words: 361
     total_responses: 15
   costs:
-    avg_cost_per_query: 0.00022708000000000006
+    avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 11.24
     avg_nr_tokens_sent: 136.4
     total_accumulated_costs: 0.011354000000000003
@@ -707,7 +707,7 @@
     total_number_of_words: 146
     total_responses: 6
   costs:
-    avg_cost_per_query: 0.00027652000000000004
+    avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 12.62
     avg_nr_tokens_sent: 167.52
     total_accumulated_costs: 0.013826000000000003
@@ -731,7 +731,7 @@
     total_number_of_words: 869
     total_responses: 30
   costs:
-    avg_cost_per_query: 0.0002860199999999999
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 48.12
     avg_nr_tokens_sent: 126.52
     total_accumulated_costs: 0.014300999999999996
@@ -755,7 +755,7 @@
     total_number_of_words: 961
     total_responses: 37
   costs:
-    avg_cost_per_query: 0.0003210899999999999
+    avg_cost_per_query: 0.00032
     avg_nr_tokens_received: 60.84
     avg_nr_tokens_sent: 132.94
     total_accumulated_costs: 0.016054499999999996
@@ -779,7 +779,7 @@
     total_number_of_words: 115
     total_responses: 5
   costs:
-    avg_cost_per_query: 0.00024494
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 6.1
     avg_nr_tokens_sent: 155.16
     total_accumulated_costs: 0.012247000000000001
@@ -803,7 +803,7 @@
     total_number_of_words: 458
     total_responses: 15
   costs:
-    avg_cost_per_query: 0.00029044
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 21.86
     avg_nr_tokens_sent: 164.48
     total_accumulated_costs: 0.014522
@@ -827,7 +827,7 @@
     total_number_of_words: 313
     total_responses: 11
   costs:
-    avg_cost_per_query: 0.00023905000000000004
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 10.82
     avg_nr_tokens_sent: 144.94
     total_accumulated_costs: 0.011952500000000001
@@ -851,7 +851,7 @@
     total_number_of_words: 884
     total_responses: 34
   costs:
-    avg_cost_per_query: 0.00030615
+    avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 59.1
     avg_nr_tokens_sent: 125.3
     total_accumulated_costs: 0.0153075
@@ -875,7 +875,7 @@
     total_number_of_words: 304
     total_responses: 10
   costs:
-    avg_cost_per_query: 0.00033586000000000005
+    avg_cost_per_query: 0.00034
     avg_nr_tokens_received: 47.06
     avg_nr_tokens_sent: 161.16
     total_accumulated_costs: 0.016793000000000002
@@ -899,7 +899,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020936000000000007
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.9
     avg_nr_tokens_sent: 137.04
     total_accumulated_costs: 0.010468000000000003
@@ -923,7 +923,7 @@
     total_number_of_words: 393
     total_responses: 15
   costs:
-    avg_cost_per_query: 0.00031141
+    avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 29.0
     avg_nr_tokens_sent: 168.94
     total_accumulated_costs: 0.015570499999999998
@@ -947,7 +947,7 @@
     total_number_of_words: 146
     total_responses: 8
   costs:
-    avg_cost_per_query: 0.00021903999999999988
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 6.2
     avg_nr_tokens_sent: 137.76
     total_accumulated_costs: 0.010951999999999995
@@ -971,7 +971,7 @@
     total_number_of_words: 318
     total_responses: 12
   costs:
-    avg_cost_per_query: 0.00023361999999999995
+    avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 10.94
     avg_nr_tokens_sent: 141.16
     total_accumulated_costs: 0.011680999999999997
@@ -995,7 +995,7 @@
     total_number_of_words: 193
     total_responses: 5
   costs:
-    avg_cost_per_query: 0.00043265999999999997
+    avg_cost_per_query: 0.00043
     avg_nr_tokens_received: 125.58
     avg_nr_tokens_sent: 121.0
     total_accumulated_costs: 0.021633
@@ -1019,7 +1019,7 @@
     total_number_of_words: 162
     total_responses: 8
   costs:
-    avg_cost_per_query: 0.00021938000000000006
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 8.62
     avg_nr_tokens_sent: 134.76
     total_accumulated_costs: 0.010969000000000003
@@ -1043,7 +1043,7 @@
     total_number_of_words: 449
     total_responses: 14
   costs:
-    avg_cost_per_query: 0.00023765999999999994
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 15.6
     avg_nr_tokens_sent: 137.64
     total_accumulated_costs: 0.011882999999999998
@@ -1067,7 +1067,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00023682000000000003
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 2.04
     avg_nr_tokens_sent: 155.16
     total_accumulated_costs: 0.011841
@@ -1091,7 +1091,7 @@
     total_number_of_words: 2019
     total_responses: 50
   costs:
-    avg_cost_per_query: 0.00036128
+    avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 80.8
     avg_nr_tokens_sent: 133.12
     total_accumulated_costs: 0.018064
@@ -1115,7 +1115,7 @@
     total_number_of_words: 163
     total_responses: 10
   costs:
-    avg_cost_per_query: 0.00024878
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 18.52
     avg_nr_tokens_sent: 141.16
     total_accumulated_costs: 0.012438999999999999
@@ -1139,7 +1139,7 @@
     total_number_of_words: 263
     total_responses: 9
   costs:
-    avg_cost_per_query: 0.00022207000000000005
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 9.56
     avg_nr_tokens_sent: 135.3
     total_accumulated_costs: 0.011103500000000002
@@ -1163,7 +1163,7 @@
     total_number_of_words: 110
     total_responses: 6
   costs:
-    avg_cost_per_query: 0.0002409
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 16.38
     avg_nr_tokens_sent: 138.76
     total_accumulated_costs: 0.012045
@@ -1187,7 +1187,7 @@
     total_number_of_words: 256
     total_responses: 12
   costs:
-    avg_cost_per_query: 0.00023610000000000002
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 12.48
     avg_nr_tokens_sent: 140.76
     total_accumulated_costs: 0.011805000000000001
@@ -1211,7 +1211,7 @@
     total_number_of_words: 168
     total_responses: 8
   costs:
-    avg_cost_per_query: 0.00023493999999999992
+    avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 13.4
     avg_nr_tokens_sent: 138.76
     total_accumulated_costs: 0.011746999999999995
@@ -1235,7 +1235,7 @@
     total_number_of_words: 400
     total_responses: 11
   costs:
-    avg_cost_per_query: 0.00027801
+    avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 16.8
     avg_nr_tokens_sent: 162.94
     total_accumulated_costs: 0.013900499999999998
@@ -1259,7 +1259,7 @@
     total_number_of_words: 26
     total_responses: 1
   costs:
-    avg_cost_per_query: 0.00024576999999999997
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 2.18
     avg_nr_tokens_sent: 160.94
     total_accumulated_costs: 0.012288499999999997
@@ -1283,7 +1283,7 @@
     total_number_of_words: 241
     total_responses: 12
   costs:
-    avg_cost_per_query: 0.00026817999999999997
+    avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 15.02
     avg_nr_tokens_sent: 158.76
     total_accumulated_costs: 0.013408999999999999
@@ -1307,7 +1307,7 @@
     total_number_of_words: 68
     total_responses: 4
   costs:
-    avg_cost_per_query: 0.0002372699999999999
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.78
     avg_nr_tokens_sent: 153.14
     total_accumulated_costs: 0.011863499999999996
@@ -1331,7 +1331,7 @@
     total_number_of_words: 164
     total_responses: 7
   costs:
-    avg_cost_per_query: 0.0002147
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 7.78
     avg_nr_tokens_sent: 132.76
     total_accumulated_costs: 0.010735
@@ -1355,7 +1355,7 @@
     total_number_of_words: 5
     total_responses: 1
   costs:
-    avg_cost_per_query: 0.00023835000000000002
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 4.32
     avg_nr_tokens_sent: 153.14
     total_accumulated_costs: 0.011917500000000001
@@ -1379,7 +1379,7 @@
     total_number_of_words: 995
     total_responses: 38
   costs:
-    avg_cost_per_query: 0.0002968799999999999
+    avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 47.1
     avg_nr_tokens_sent: 135.12
     total_accumulated_costs: 0.014843999999999996
@@ -1403,7 +1403,7 @@
     total_number_of_words: 374
     total_responses: 19
   costs:
-    avg_cost_per_query: 0.00025553
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 24.16
     avg_nr_tokens_sent: 138.14
     total_accumulated_costs: 0.012776500000000001
@@ -1427,7 +1427,7 @@
     total_number_of_words: 440
     total_responses: 18
   costs:
-    avg_cost_per_query: 0.0002674
+    avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 30.38
     avg_nr_tokens_sent: 137.76
     total_accumulated_costs: 0.01337
@@ -1451,7 +1451,7 @@
     total_number_of_words: 26
     total_responses: 3
   costs:
-    avg_cost_per_query: 0.00023919000000000002
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.24
     avg_nr_tokens_sent: 155.14
     total_accumulated_costs: 0.011959500000000001
@@ -1475,7 +1475,7 @@
     total_number_of_words: 799
     total_responses: 36
   costs:
-    avg_cost_per_query: 0.00029137000000000005
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 46.58
     avg_nr_tokens_sent: 132.14
     total_accumulated_costs: 0.014568500000000002
@@ -1499,7 +1499,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020733
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.56
     avg_nr_tokens_sent: 136.14
     total_accumulated_costs: 0.0103665
@@ -1523,7 +1523,7 @@
     total_number_of_words: 90
     total_responses: 3
   costs:
-    avg_cost_per_query: 0.00024157000000000006
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.68
     avg_nr_tokens_sent: 156.14
     total_accumulated_costs: 0.012078500000000002
@@ -1547,7 +1547,7 @@
     total_number_of_words: 171
     total_responses: 8
   costs:
-    avg_cost_per_query: 0.00024894
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 13.38
     avg_nr_tokens_sent: 148.12
     total_accumulated_costs: 0.012447000000000001
@@ -1571,7 +1571,7 @@
     total_number_of_words: 264
     total_responses: 9
   costs:
-    avg_cost_per_query: 0.00023480000000000004
+    avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 12.58
     avg_nr_tokens_sent: 139.76
     total_accumulated_costs: 0.011740000000000002
@@ -1595,7 +1595,7 @@
     total_number_of_words: 961
     total_responses: 40
   costs:
-    avg_cost_per_query: 0.00028551000000000005
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 45.9
     avg_nr_tokens_sent: 129.14
     total_accumulated_costs: 0.014275500000000002
@@ -1619,7 +1619,7 @@
     total_number_of_words: 77
     total_responses: 4
   costs:
-    avg_cost_per_query: 0.0002646200000000001
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 4.24
     avg_nr_tokens_sent: 170.76
     total_accumulated_costs: 0.013231000000000003
@@ -1643,7 +1643,7 @@
     total_number_of_words: 711
     total_responses: 24
   costs:
-    avg_cost_per_query: 0.0003031599999999999
+    avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 33.74
     avg_nr_tokens_sent: 157.12
     total_accumulated_costs: 0.015157999999999994
@@ -1667,7 +1667,7 @@
     total_number_of_words: 328
     total_responses: 10
   costs:
-    avg_cost_per_query: 0.00026124
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 12.3
     avg_nr_tokens_sent: 157.76
     total_accumulated_costs: 0.013061999999999999
@@ -1691,7 +1691,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020956000000000002
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.46
     avg_nr_tokens_sent: 137.76
     total_accumulated_costs: 0.010478000000000001
@@ -1715,7 +1715,7 @@
     total_number_of_words: 297
     total_responses: 11
   costs:
-    avg_cost_per_query: 0.00029797
+    avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 57.38
     avg_nr_tokens_sent: 122.14
     total_accumulated_costs: 0.014898499999999999
@@ -1739,7 +1739,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020125999999999995
+    avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 1.54
     avg_nr_tokens_sent: 132.12
     total_accumulated_costs: 0.010062999999999997
@@ -1763,7 +1763,7 @@
     total_number_of_words: 1061
     total_responses: 35
   costs:
-    avg_cost_per_query: 0.0003412900000000001
+    avg_cost_per_query: 0.00034
     avg_nr_tokens_received: 73.04
     avg_nr_tokens_sent: 130.14
     total_accumulated_costs: 0.017064500000000007
@@ -1787,7 +1787,7 @@
     total_number_of_words: 179
     total_responses: 8
   costs:
-    avg_cost_per_query: 0.00024826
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 8.06
     avg_nr_tokens_sent: 154.76
     total_accumulated_costs: 0.012412999999999999
@@ -1811,7 +1811,7 @@
     total_number_of_words: 339
     total_responses: 11
   costs:
-    avg_cost_per_query: 0.0002915500000000001
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 53.42
     avg_nr_tokens_sent: 123.14
     total_accumulated_costs: 0.014577500000000005
@@ -1835,7 +1835,7 @@
     total_number_of_words: 301
     total_responses: 9
   costs:
-    avg_cost_per_query: 0.00030603
+    avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 62.16
     avg_nr_tokens_sent: 121.14
     total_accumulated_costs: 0.0153015
@@ -1859,7 +1859,7 @@
     total_number_of_words: 105
     total_responses: 5
   costs:
-    avg_cost_per_query: 0.00022106
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 7.96
     avg_nr_tokens_sent: 136.76
     total_accumulated_costs: 0.011053
@@ -1883,7 +1883,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020883000000000005
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.56
     avg_nr_tokens_sent: 137.14
     total_accumulated_costs: 0.010441500000000003
@@ -1907,7 +1907,7 @@
     total_number_of_words: 1468
     total_responses: 34
   costs:
-    avg_cost_per_query: 0.0004154300000000001
+    avg_cost_per_query: 0.00042
     avg_nr_tokens_received: 112.36
     avg_nr_tokens_sent: 127.14
     total_accumulated_costs: 0.020771500000000005
@@ -1931,7 +1931,7 @@
     total_number_of_words: 227
     total_responses: 11
   costs:
-    avg_cost_per_query: 0.00026674999999999995
+    avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 18.52
     avg_nr_tokens_sent: 153.14
     total_accumulated_costs: 0.013337499999999999
@@ -1955,7 +1955,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00022026999999999998
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 1.28
     avg_nr_tokens_sent: 145.14
     total_accumulated_costs: 0.011013499999999999
@@ -1979,7 +1979,7 @@
     total_number_of_words: 122
     total_responses: 5
   costs:
-    avg_cost_per_query: 0.00024001999999999997
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 5.44
     avg_nr_tokens_sent: 152.76
     total_accumulated_costs: 0.012000999999999998
@@ -2003,7 +2003,7 @@
     total_number_of_words: 21
     total_responses: 1
   costs:
-    avg_cost_per_query: 0.00022317
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 1.98
     avg_nr_tokens_sent: 146.14
     total_accumulated_costs: 0.0111585
@@ -2027,7 +2027,7 @@
     total_number_of_words: 38
     total_responses: 3
   costs:
-    avg_cost_per_query: 0.0002463900000000001
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 6.84
     avg_nr_tokens_sent: 155.14
     total_accumulated_costs: 0.012319500000000004
@@ -2051,7 +2051,7 @@
     total_number_of_words: 21
     total_responses: 2
   costs:
-    avg_cost_per_query: 0.00022949
+    avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 2.14
     avg_nr_tokens_sent: 150.14
     total_accumulated_costs: 0.0114745
@@ -2075,7 +2075,7 @@
     total_number_of_words: 100
     total_responses: 5
   costs:
-    avg_cost_per_query: 0.00024901
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 10.4
     avg_nr_tokens_sent: 152.14
     total_accumulated_costs: 0.0124505
@@ -2099,7 +2099,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020011
+    avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 1.7
     avg_nr_tokens_sent: 131.14
     total_accumulated_costs: 0.0100055
@@ -2123,7 +2123,7 @@
     total_number_of_words: 11
     total_responses: 1
   costs:
-    avg_cost_per_query: 0.00021167
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 2.68
     avg_nr_tokens_sent: 137.54
     total_accumulated_costs: 0.010583500000000001
@@ -2147,7 +2147,7 @@
     total_number_of_words: 2196
     total_responses: 49
   costs:
-    avg_cost_per_query: 0.00037128000000000004
+    avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 84.3
     avg_nr_tokens_sent: 135.12
     total_accumulated_costs: 0.018564
@@ -2171,7 +2171,7 @@
     total_number_of_words: 22
     total_responses: 1
   costs:
-    avg_cost_per_query: 0.00020462000000000008
+    avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 2.08
     avg_nr_tokens_sent: 133.64
     total_accumulated_costs: 0.010231000000000004
@@ -2195,7 +2195,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00023734000000000006
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.44
     avg_nr_tokens_sent: 153.64
     total_accumulated_costs: 0.011867000000000003
@@ -2219,7 +2219,7 @@
     total_number_of_words: 1024
     total_responses: 36
   costs:
-    avg_cost_per_query: 0.00031034000000000004
+    avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 55.6
     avg_nr_tokens_sent: 132.76
     total_accumulated_costs: 0.015517000000000003
@@ -2243,7 +2243,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00020684999999999999
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.32
     avg_nr_tokens_sent: 136.14
     total_accumulated_costs: 0.0103425
@@ -2267,7 +2267,7 @@
     total_number_of_words: 2295
     total_responses: 48
   costs:
-    avg_cost_per_query: 0.00036313999999999997
+    avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 83.98
     avg_nr_tokens_sent: 130.12
     total_accumulated_costs: 0.018157
@@ -2291,7 +2291,7 @@
     total_number_of_words: 1401
     total_responses: 44
   costs:
-    avg_cost_per_query: 0.00037835
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 87.82
     avg_nr_tokens_sent: 135.14
     total_accumulated_costs: 0.0189175
@@ -2315,7 +2315,7 @@
     total_number_of_words: 262
     total_responses: 10
   costs:
-    avg_cost_per_query: 0.00023838000000000006
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 15.12
     avg_nr_tokens_sent: 138.76
     total_accumulated_costs: 0.011919000000000003
@@ -2339,7 +2339,7 @@
     total_number_of_words: 36
     total_responses: 2
   costs:
-    avg_cost_per_query: 0.00019831
+    avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 2.3
     avg_nr_tokens_sent: 129.14
     total_accumulated_costs: 0.009915499999999999
@@ -2363,7 +2363,7 @@
     total_number_of_words: 108
     total_responses: 4
   costs:
-    avg_cost_per_query: 0.00023955999999999994
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 4.46
     avg_nr_tokens_sent: 153.76
     total_accumulated_costs: 0.011977999999999997
@@ -2387,7 +2387,7 @@
     total_number_of_words: 1459
     total_responses: 43
   costs:
-    avg_cost_per_query: 0.0002977
+    avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 57.26
     avg_nr_tokens_sent: 122.12
     total_accumulated_costs: 0.014885000000000002
@@ -2411,7 +2411,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00029319000000000003
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 60.24
     avg_nr_tokens_sent: 115.14
     total_accumulated_costs: 0.014659500000000002
@@ -2435,7 +2435,7 @@
     total_number_of_words: 83
     total_responses: 4
   costs:
-    avg_cost_per_query: 0.00020937999999999995
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 4.16
     avg_nr_tokens_sent: 134.04
     total_accumulated_costs: 0.010468999999999997
@@ -2459,7 +2459,7 @@
     total_number_of_words: 54
     total_responses: 3
   costs:
-    avg_cost_per_query: 0.00023860000000000003
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.68
     avg_nr_tokens_sent: 154.16
     total_accumulated_costs: 0.011930000000000001
@@ -2483,7 +2483,7 @@
     total_number_of_words: 270
     total_responses: 15
   costs:
-    avg_cost_per_query: 0.00027616999999999995
+    avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 19.48
     avg_nr_tokens_sent: 158.14
     total_accumulated_costs: 0.013808499999999998
@@ -2507,7 +2507,7 @@
     total_number_of_words: 1497
     total_responses: 47
   costs:
-    avg_cost_per_query: 0.00031755999999999993
+    avg_cost_per_query: 0.00032
     avg_nr_tokens_received: 62.78
     avg_nr_tokens_sent: 128.0
     total_accumulated_costs: 0.015877999999999996
@@ -2531,7 +2531,7 @@
     total_number_of_words: 440
     total_responses: 14
   costs:
-    avg_cost_per_query: 0.0002688399999999999
+    avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 17.3
     avg_nr_tokens_sent: 156.16
     total_accumulated_costs: 0.013441999999999996
@@ -2555,7 +2555,7 @@
     total_number_of_words: 418
     total_responses: 14
   costs:
-    avg_cost_per_query: 0.00024954
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 24.9
     avg_nr_tokens_sent: 133.16
     total_accumulated_costs: 0.012477
@@ -2579,7 +2579,7 @@
     total_number_of_words: 167
     total_responses: 14
   costs:
-    avg_cost_per_query: 0.00023753000000000004
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 13.66
     avg_nr_tokens_sent: 140.14
     total_accumulated_costs: 0.011876500000000002
@@ -2603,7 +2603,7 @@
     total_number_of_words: 1238
     total_responses: 39
   costs:
-    avg_cost_per_query: 0.00031422000000000004
+    avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 62.52
     avg_nr_tokens_sent: 126.12
     total_accumulated_costs: 0.015711000000000003
@@ -2627,7 +2627,7 @@
     total_number_of_words: 631
     total_responses: 26
   costs:
-    avg_cost_per_query: 0.00029342
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 27.46
     avg_nr_tokens_sent: 159.0
     total_accumulated_costs: 0.014671000000000002
@@ -2651,7 +2651,7 @@
     total_number_of_words: 264
     total_responses: 9
   costs:
-    avg_cost_per_query: 0.00026147999999999997
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 10.62
     avg_nr_tokens_sent: 160.16
     total_accumulated_costs: 0.013073999999999999
@@ -2675,7 +2675,7 @@
     total_number_of_words: 215
     total_responses: 8
   costs:
-    avg_cost_per_query: 0.0002454599999999999
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 8.7
     avg_nr_tokens_sent: 152.04
     total_accumulated_costs: 0.012272999999999996
@@ -2699,7 +2699,7 @@
     total_number_of_words: 923
     total_responses: 27
   costs:
-    avg_cost_per_query: 0.00027748
+    avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 38.9
     avg_nr_tokens_sent: 133.12
     total_accumulated_costs: 0.013874
@@ -2723,7 +2723,7 @@
     total_number_of_words: 314
     total_responses: 11
   costs:
-    avg_cost_per_query: 0.00022381999999999995
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 13.54
     avg_nr_tokens_sent: 131.16
     total_accumulated_costs: 0.011190999999999998
@@ -2747,7 +2747,7 @@
     total_number_of_words: 542
     total_responses: 18
   costs:
-    avg_cost_per_query: 0.00025607999999999995
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 24.42
     avg_nr_tokens_sent: 138.16
     total_accumulated_costs: 0.012803999999999998
@@ -2771,7 +2771,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00021286999999999993
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 2.08
     avg_nr_tokens_sent: 139.14
     total_accumulated_costs: 0.010643499999999997
@@ -2795,7 +2795,7 @@
     total_number_of_words: 263
     total_responses: 13
   costs:
-    avg_cost_per_query: 0.00027613999999999997
+    avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 14.98
     avg_nr_tokens_sent: 164.12
     total_accumulated_costs: 0.013806999999999998
@@ -2819,7 +2819,7 @@
     total_number_of_words: 707
     total_responses: 26
   costs:
-    avg_cost_per_query: 0.00030989999999999994
+    avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 32.88
     avg_nr_tokens_sent: 162.76
     total_accumulated_costs: 0.015494999999999998
@@ -2843,7 +2843,7 @@
     total_number_of_words: 322
     total_responses: 12
   costs:
-    avg_cost_per_query: 0.00022936
+    avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 11.36
     avg_nr_tokens_sent: 137.76
     total_accumulated_costs: 0.011468
@@ -2867,7 +2867,7 @@
     total_number_of_words: 2502
     total_responses: 50
   costs:
-    avg_cost_per_query: 0.00036092
+    avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 79.84
     avg_nr_tokens_sent: 134.16
     total_accumulated_costs: 0.018046
@@ -2891,7 +2891,7 @@
     total_number_of_words: 302
     total_responses: 14
   costs:
-    avg_cost_per_query: 0.00022664
+    avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 14.98
     avg_nr_tokens_sent: 131.12
     total_accumulated_costs: 0.011332
@@ -2915,7 +2915,7 @@
     total_number_of_words: 266
     total_responses: 11
   costs:
-    avg_cost_per_query: 0.0002592
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 12.48
     avg_nr_tokens_sent: 156.16
     total_accumulated_costs: 0.012960000000000001
@@ -2939,7 +2939,7 @@
     total_number_of_words: 689
     total_responses: 29
   costs:
-    avg_cost_per_query: 0.00028716
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 37.74
     avg_nr_tokens_sent: 141.12
     total_accumulated_costs: 0.014358000000000001
@@ -2963,7 +2963,7 @@
     total_number_of_words: 852
     total_responses: 36
   costs:
-    avg_cost_per_query: 0.0003540299999999999
+    avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 78.66
     avg_nr_tokens_sent: 131.14
     total_accumulated_costs: 0.017701499999999995
@@ -2987,7 +2987,7 @@
     total_number_of_words: 39
     total_responses: 3
   costs:
-    avg_cost_per_query: 0.00020506
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 2.9
     avg_nr_tokens_sent: 132.84
     total_accumulated_costs: 0.010253
@@ -3011,7 +3011,7 @@
     total_number_of_words: 127
     total_responses: 10
   costs:
-    avg_cost_per_query: 0.00026541
+    avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 11.1
     avg_nr_tokens_sent: 162.14
     total_accumulated_costs: 0.013270500000000001
@@ -3035,7 +3035,7 @@
     total_number_of_words: 415
     total_responses: 17
   costs:
-    avg_cost_per_query: 0.0002555
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 23.68
     avg_nr_tokens_sent: 138.76
     total_accumulated_costs: 0.012775
@@ -3059,7 +3059,7 @@
     total_number_of_words: 148
     total_responses: 6
   costs:
-    avg_cost_per_query: 0.00021532000000000002
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 5.84
     avg_nr_tokens_sent: 135.76
     total_accumulated_costs: 0.010766000000000001
@@ -3083,7 +3083,7 @@
     total_number_of_words: 2226
     total_responses: 38
   costs:
-    avg_cost_per_query: 0.0004449300000000002
+    avg_cost_per_query: 0.00044
     avg_nr_tokens_received: 121.86
     avg_nr_tokens_sent: 134.14
     total_accumulated_costs: 0.02224650000000001
@@ -3107,7 +3107,7 @@
     total_number_of_words: 2142
     total_responses: 50
   costs:
-    avg_cost_per_query: 0.00035152
+    avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 76.64
     avg_nr_tokens_sent: 132.16
     total_accumulated_costs: 0.017576
@@ -3131,7 +3131,7 @@
     total_number_of_words: 472
     total_responses: 18
   costs:
-    avg_cost_per_query: 0.00024664999999999995
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 18.22
     avg_nr_tokens_sent: 140.14
     total_accumulated_costs: 0.012332499999999998
@@ -3155,7 +3155,7 @@
     total_number_of_words: 38
     total_responses: 2
   costs:
-    avg_cost_per_query: 0.00023969999999999997
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 4.62
     avg_nr_tokens_sent: 153.64
     total_accumulated_costs: 0.011984999999999999
@@ -3179,7 +3179,7 @@
     total_number_of_words: 341
     total_responses: 13
   costs:
-    avg_cost_per_query: 0.00026188000000000003
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 12.62
     avg_nr_tokens_sent: 157.76
     total_accumulated_costs: 0.013094000000000001
@@ -3203,7 +3203,7 @@
     total_number_of_words: 729
     total_responses: 32
   costs:
-    avg_cost_per_query: 0.00031421
+    avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 52.0
     avg_nr_tokens_sent: 140.14
     total_accumulated_costs: 0.0157105
@@ -3227,7 +3227,7 @@
     total_number_of_words: 2585
     total_responses: 49
   costs:
-    avg_cost_per_query: 0.0003843500000000001
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 93.82
     avg_nr_tokens_sent: 131.14
     total_accumulated_costs: 0.019217500000000005
@@ -3251,7 +3251,7 @@
     total_number_of_words: 2578
     total_responses: 49
   costs:
-    avg_cost_per_query: 0.00038908
+    avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 91.22
     avg_nr_tokens_sent: 137.76
     total_accumulated_costs: 0.019454
@@ -3275,7 +3275,7 @@
     total_number_of_words: 677
     total_responses: 15
   costs:
-    avg_cost_per_query: 0.00036462999999999996
+    avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 86.96
     avg_nr_tokens_sent: 127.14
     total_accumulated_costs: 0.018231499999999998
@@ -3299,7 +3299,7 @@
     total_number_of_words: 1740
     total_responses: 42
   costs:
-    avg_cost_per_query: 0.0003934300000000001
+    avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 93.86
     avg_nr_tokens_sent: 137.14
     total_accumulated_costs: 0.019671500000000005
@@ -3323,7 +3323,7 @@
     total_number_of_words: 2012
     total_responses: 47
   costs:
-    avg_cost_per_query: 0.00037972000000000006
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 85.04
     avg_nr_tokens_sent: 139.76
     total_accumulated_costs: 0.018986000000000003
@@ -3347,7 +3347,7 @@
     total_number_of_words: 452
     total_responses: 17
   costs:
-    avg_cost_per_query: 0.00027481000000000006
+    avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 16.4
     avg_nr_tokens_sent: 161.34
     total_accumulated_costs: 0.013740500000000003
@@ -3371,7 +3371,7 @@
     total_number_of_words: 1990
     total_responses: 43
   costs:
-    avg_cost_per_query: 0.00041229
+    avg_cost_per_query: 0.00041
     avg_nr_tokens_received: 104.04
     avg_nr_tokens_sent: 136.14
     total_accumulated_costs: 0.0206145
@@ -3395,7 +3395,7 @@
     total_number_of_words: 2752
     total_responses: 50
   costs:
-    avg_cost_per_query: 0.00039855999999999995
+    avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 98.66
     avg_nr_tokens_sent: 134.16
     total_accumulated_costs: 0.019927999999999998
@@ -3419,7 +3419,7 @@
     total_number_of_words: 2286
     total_responses: 48
   costs:
-    avg_cost_per_query: 0.00038996999999999995
+    avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 95.88
     avg_nr_tokens_sent: 132.14
     total_accumulated_costs: 0.0194985
@@ -3443,7 +3443,7 @@
     total_number_of_words: 4042
     total_responses: 49
   costs:
-    avg_cost_per_query: 0.00048095000000000017
+    avg_cost_per_query: 0.00048
     avg_nr_tokens_received: 143.62
     avg_nr_tokens_sent: 129.14
     total_accumulated_costs: 0.02404750000000001
@@ -3467,7 +3467,7 @@
     total_number_of_words: 142
     total_responses: 6
   costs:
-    avg_cost_per_query: 0.00022006
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 5.96
     avg_nr_tokens_sent: 138.76
     total_accumulated_costs: 0.011003
@@ -3491,7 +3491,7 @@
     total_number_of_words: 40
     total_responses: 2
   costs:
-    avg_cost_per_query: 0.00023043
+    avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 3.36
     avg_nr_tokens_sent: 149.14
     total_accumulated_costs: 0.0115215
@@ -3515,7 +3515,7 @@
     total_number_of_words: 400
     total_responses: 15
   costs:
-    avg_cost_per_query: 0.00025336000000000005
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 13.34
     avg_nr_tokens_sent: 151.12
     total_accumulated_costs: 0.012668000000000002
@@ -3539,7 +3539,7 @@
     total_number_of_words: 552
     total_responses: 13
   costs:
-    avg_cost_per_query: 0.0005183100000000002
+    avg_cost_per_query: 0.00052
     avg_nr_tokens_received: 160.8
     avg_nr_tokens_sent: 131.14
     total_accumulated_costs: 0.02591550000000001
@@ -3563,7 +3563,7 @@
     total_number_of_words: 461
     total_responses: 16
   costs:
-    avg_cost_per_query: 0.00025768
+    avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 24.02
     avg_nr_tokens_sent: 139.76
     total_accumulated_costs: 0.012884
@@ -3587,7 +3587,7 @@
     total_number_of_words: 699
     total_responses: 22
   costs:
-    avg_cost_per_query: 0.00028516
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 24.74
     avg_nr_tokens_sent: 157.12
     total_accumulated_costs: 0.014258
@@ -3611,7 +3611,7 @@
     total_number_of_words: 612
     total_responses: 27
   costs:
-    avg_cost_per_query: 0.00038528000000000005
+    avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 87.16
     avg_nr_tokens_sent: 140.64
     total_accumulated_costs: 0.019264000000000003
@@ -3635,7 +3635,7 @@
     total_number_of_words: 896
     total_responses: 36
   costs:
-    avg_cost_per_query: 0.00035979999999999996
+    avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 77.78
     avg_nr_tokens_sent: 136.16
     total_accumulated_costs: 0.01799
@@ -3659,7 +3659,7 @@
     total_number_of_words: 393
     total_responses: 15
   costs:
-    avg_cost_per_query: 0.0002902599999999999
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 27.56
     avg_nr_tokens_sent: 156.76
     total_accumulated_costs: 0.014512999999999996
@@ -3683,7 +3683,7 @@
     total_number_of_words: 449
     total_responses: 12
   costs:
-    avg_cost_per_query: 0.00033726000000000003
+    avg_cost_per_query: 0.00034
     avg_nr_tokens_received: 72.54
     avg_nr_tokens_sent: 128.12
     total_accumulated_costs: 0.016863000000000003
@@ -3707,7 +3707,7 @@
     total_number_of_words: 56
     total_responses: 3
   costs:
-    avg_cost_per_query: 0.00024612999999999995
+    avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 4.46
     avg_nr_tokens_sent: 158.14
     total_accumulated_costs: 0.012306499999999998
@@ -3731,7 +3731,7 @@
     total_number_of_words: 0
     total_responses: 0
   costs:
-    avg_cost_per_query: 0.00021443
+    avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.36
     avg_nr_tokens_sent: 141.14
     total_accumulated_costs: 0.0107215
@@ -3755,7 +3755,7 @@
     total_number_of_words: 20
     total_responses: 1
   costs:
-    avg_cost_per_query: 0.00021737
+    avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 2.08
     avg_nr_tokens_sent: 142.14
     total_accumulated_costs: 0.0108685
@@ -3779,7 +3779,7 @@
     total_number_of_words: 39
     total_responses: 1
   costs:
-    avg_cost_per_query: 0.00024011999999999992
+    avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 4.74
     avg_nr_tokens_sent: 153.76
     total_accumulated_costs: 0.012005999999999996
@@ -3803,7 +3803,7 @@
     total_number_of_words: 1431
     total_responses: 32
   costs:
-    avg_cost_per_query: 0.00040715999999999994
+    avg_cost_per_query: 0.00041
     avg_nr_tokens_received: 98.76
     avg_nr_tokens_sent: 139.76
     total_accumulated_costs: 0.020357999999999998
@@ -3827,7 +3827,7 @@
     total_number_of_words: 1556
     total_responses: 29
   costs:
-    avg_cost_per_query: 0.00046822999999999987
+    avg_cost_per_query: 0.00047
     avg_nr_tokens_received: 135.76
     avg_nr_tokens_sent: 131.14
     total_accumulated_costs: 0.023411499999999995
@@ -3851,7 +3851,7 @@
     total_number_of_words: 634
     total_responses: 32
   costs:
-    avg_cost_per_query: 0.0003978600000000001
+    avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 97.2
     avg_nr_tokens_sent: 135.64
     total_accumulated_costs: 0.019893000000000004
@@ -3875,7 +3875,7 @@
     total_number_of_words: 865
     total_responses: 34
   costs:
-    avg_cost_per_query: 0.00028618000000000014
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 42.02
     avg_nr_tokens_sent: 134.76
     total_accumulated_costs: 0.014309000000000007
@@ -3899,7 +3899,7 @@
     total_number_of_words: 381
     total_responses: 19
   costs:
-    avg_cost_per_query: 0.00029403999999999997
+    avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 46.04
     avg_nr_tokens_sent: 134.64
     total_accumulated_costs: 0.014702
@@ -3923,7 +3923,7 @@
     total_number_of_words: 1129
     total_responses: 36
   costs:
-    avg_cost_per_query: 0.00039150000000000003
+    avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 88.38
     avg_nr_tokens_sent: 143.16
     total_accumulated_costs: 0.019575000000000002
@@ -3947,7 +3947,7 @@
     total_number_of_words: 410
     total_responses: 11
   costs:
-    avg_cost_per_query: 0.00027335999999999994
+    avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 28.86
     avg_nr_tokens_sent: 143.76
     total_accumulated_costs: 0.013667999999999998
@@ -3971,7 +3971,7 @@
     total_number_of_words: 698
     total_responses: 32
   costs:
-    avg_cost_per_query: 0.00038362
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 87.08
     avg_nr_tokens_sent: 139.64
     total_accumulated_costs: 0.019181
@@ -3995,7 +3995,7 @@
     total_number_of_words: 2316
     total_responses: 48
   costs:
-    avg_cost_per_query: 0.00042020000000000013
+    avg_cost_per_query: 0.00042
     avg_nr_tokens_received: 107.62
     avg_nr_tokens_sent: 136.64
     total_accumulated_costs: 0.021010000000000008
@@ -4019,7 +4019,7 @@
     total_number_of_words: 1893
     total_responses: 45
   costs:
-    avg_cost_per_query: 0.00038125999999999986
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 88.6
     avg_nr_tokens_sent: 136.04
     total_accumulated_costs: 0.019062999999999993
@@ -4043,7 +4043,7 @@
     total_number_of_words: 1481
     total_responses: 36
   costs:
-    avg_cost_per_query: 0.00044558000000000005
+    avg_cost_per_query: 0.00045
     avg_nr_tokens_received: 121.06
     avg_nr_tokens_sent: 135.64
     total_accumulated_costs: 0.022279000000000004
@@ -4067,7 +4067,7 @@
     total_number_of_words: 1339
     total_responses: 34
   costs:
-    avg_cost_per_query: 0.0003459799999999999
+    avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 75.1
     avg_nr_tokens_sent: 130.52
     total_accumulated_costs: 0.017298999999999995
@@ -4091,7 +4091,7 @@
     total_number_of_words: 817
     total_responses: 31
   costs:
-    avg_cost_per_query: 0.00039382000000000013
+    avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 93.68
     avg_nr_tokens_sent: 137.64
     total_accumulated_costs: 0.019691000000000007
@@ -4115,7 +4115,7 @@
     total_number_of_words: 597
     total_responses: 22
   costs:
-    avg_cost_per_query: 0.00027550000000000003
+    avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 35.18
     avg_nr_tokens_sent: 136.76
     total_accumulated_costs: 0.013775
@@ -4139,7 +4139,7 @@
     total_number_of_words: 702
     total_responses: 10
   costs:
-    avg_cost_per_query: 0.00037506999999999997
+    avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 93.68
     avg_nr_tokens_sent: 125.14
     total_accumulated_costs: 0.0187535
@@ -4150,3 +4150,51 @@
     accuracy: 0.18
     n_correct: 9
     n_wrong: 41
+174:
+  characteristics:
+    avg_len_of_explanations: 233.56
+    avg_nr_of_sentences: 2.77
+    avg_nr_of_words: 42.42
+    flesch_reading_ease: 70.4
+    n_none_responses: 7
+    n_parse_errors: 1
+    total_length_of_explanations: 10043
+    total_number_of_sentences: 119
+    total_number_of_words: 1824
+    total_responses: 43
+  costs:
+    avg_cost_per_query: 0.0004
+    avg_nr_tokens_received: 91.94
+    avg_nr_tokens_sent: 142.94
+    total_accumulated_costs: 0.0199145
+    total_performed_queries: 50
+    total_tokens_received: 4597
+    total_tokens_sent: 7147
+  performance:
+    accuracy: 0.52
+    n_correct: 26
+    n_wrong: 24
+175:
+  characteristics:
+    avg_len_of_explanations: 214.75
+    avg_nr_of_sentences: 2.58
+    avg_nr_of_words: 39.15
+    flesch_reading_ease: 70.3
+    n_none_responses: 2
+    n_parse_errors: 1
+    total_length_of_explanations: 10308
+    total_number_of_sentences: 124
+    total_number_of_words: 1879
+    total_responses: 48
+  costs:
+    avg_cost_per_query: 0.00035
+    avg_nr_tokens_received: 75.32
+    avg_nr_tokens_sent: 132.12
+    total_accumulated_costs: 0.017441
+    total_performed_queries: 50
+    total_tokens_received: 3766
+    total_tokens_sent: 6606
+  performance:
+    accuracy: 0.58
+    n_correct: 29
+    n_wrong: 21
