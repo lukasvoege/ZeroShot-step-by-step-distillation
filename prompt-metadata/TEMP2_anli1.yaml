@@ -4,7 +4,7 @@
     n_none_responses: 43
     n_parse_errors: 42
     total_length_of_explanations: 1023
-    total_reponses: 7
+    total_responses: 7
   costs:
     avg_cost_per_query: 0.0003455299999999999
     avg_nr_tokens_received: 85.9
@@ -23,7 +23,7 @@
     n_none_responses: 48
     n_parse_errors: 45
     total_length_of_explanations: 952
-    total_reponses: 2
+    total_responses: 2
   costs:
     avg_cost_per_query: 0.00032330000000000005
     avg_nr_tokens_received: 77.08
@@ -42,7 +42,7 @@
     n_none_responses: 34
     n_parse_errors: 33
     total_length_of_explanations: 3792
-    total_reponses: 16
+    total_responses: 16
   costs:
     avg_cost_per_query: 0.00030486000000000006
     avg_nr_tokens_received: 66.36
@@ -61,7 +61,7 @@
     n_none_responses: 47
     n_parse_errors: 47
     total_length_of_explanations: 3069
-    total_reponses: 3
+    total_responses: 3
   costs:
     avg_cost_per_query: 0.0005683499999999999
     avg_nr_tokens_received: 200.22
@@ -80,7 +80,7 @@
     n_none_responses: 48
     n_parse_errors: 48
     total_length_of_explanations: 814
-    total_reponses: 2
+    total_responses: 2
   costs:
     avg_cost_per_query: 0.0003835600000000001
     avg_nr_tokens_received: 106.46
@@ -99,7 +99,7 @@
     n_none_responses: 48
     n_parse_errors: 48
     total_length_of_explanations: 447
-    total_reponses: 2
+    total_responses: 2
   costs:
     avg_cost_per_query: 0.00031500000000000007
     avg_nr_tokens_received: 72.18
@@ -118,7 +118,7 @@
     n_none_responses: 44
     n_parse_errors: 44
     total_length_of_explanations: 6393
-    total_reponses: 6
+    total_responses: 6
   costs:
     avg_cost_per_query: 0.00082814
     avg_nr_tokens_received: 323.5
@@ -137,7 +137,7 @@
     n_none_responses: 46
     n_parse_errors: 46
     total_length_of_explanations: 604
-    total_reponses: 4
+    total_responses: 4
   costs:
     avg_cost_per_query: 0.000867
     avg_nr_tokens_received: 342.18
@@ -156,7 +156,7 @@
     n_none_responses: 49
     n_parse_errors: 49
     total_length_of_explanations: 151
-    total_reponses: 1
+    total_responses: 1
   costs:
     avg_cost_per_query: 0.0004735000000000002
     avg_nr_tokens_received: 149.18
@@ -175,7 +175,7 @@
     n_none_responses: 49
     n_parse_errors: 49
     total_length_of_explanations: 479
-    total_reponses: 1
+    total_responses: 1
   costs:
     avg_cost_per_query: 0.0004055400000000001
     avg_nr_tokens_received: 116.7
@@ -194,7 +194,7 @@
     n_none_responses: 49
     n_parse_errors: 49
     total_length_of_explanations: 490
-    total_reponses: 1
+    total_responses: 1
   costs:
     avg_cost_per_query: 0.0005598199999999999
     avg_nr_tokens_received: 192.34
@@ -213,7 +213,7 @@
     n_none_responses: 49
     n_parse_errors: 49
     total_length_of_explanations: 277
-    total_reponses: 1
+    total_responses: 1
   costs:
     avg_cost_per_query: 0.0008275000000000002
     avg_nr_tokens_received: 326.18
@@ -232,7 +232,7 @@
     n_none_responses: 50
     n_parse_errors: 50
     total_length_of_explanations: 0
-    total_reponses: 0
+    total_responses: 0
   costs:
     avg_cost_per_query: 0.00067776
     avg_nr_tokens_received: 252.06
@@ -251,7 +251,7 @@
     n_none_responses: 50
     n_parse_errors: 42
     total_length_of_explanations: 0
-    total_reponses: 0
+    total_responses: 0
   costs:
     avg_cost_per_query: 0.00088512
     avg_nr_tokens_received: 352.74
@@ -270,7 +270,7 @@
     n_none_responses: 17
     n_parse_errors: 0
     total_length_of_explanations: 5787
-    total_reponses: 33
+    total_responses: 33
   costs:
     avg_cost_per_query: 0.00026604000000000005
     avg_nr_tokens_received: 31.92
@@ -289,7 +289,7 @@
     n_none_responses: 46
     n_parse_errors: 46
     total_length_of_explanations: 704
-    total_reponses: 4
+    total_responses: 4
   costs:
     avg_cost_per_query: 0.00030412000000000006
     avg_nr_tokens_received: 63.26
@@ -308,7 +308,7 @@
     n_none_responses: 34
     n_parse_errors: 26
     total_length_of_explanations: 4270
-    total_reponses: 16
+    total_responses: 16
   costs:
     avg_cost_per_query: 0.00036726
     avg_nr_tokens_received: 87.9
@@ -327,7 +327,7 @@
     n_none_responses: 46
     n_parse_errors: 46
     total_length_of_explanations: 997
-    total_reponses: 4
+    total_responses: 4
   costs:
     avg_cost_per_query: 0.00040262
     avg_nr_tokens_received: 112.24
@@ -346,7 +346,7 @@
     n_none_responses: 49
     n_parse_errors: 49
     total_length_of_explanations: 56
-    total_reponses: 1
+    total_responses: 1
   costs:
     avg_cost_per_query: 0.0002952
     avg_nr_tokens_received: 58.8
@@ -365,7 +365,7 @@
     n_none_responses: 3
     n_parse_errors: 2
     total_length_of_explanations: 17689
-    total_reponses: 47
+    total_responses: 47
   costs:
     avg_cost_per_query: 0.0003790200000000002
     avg_nr_tokens_received: 91.44
@@ -384,7 +384,7 @@
     n_none_responses: 35
     n_parse_errors: 12
     total_length_of_explanations: 2427
-    total_reponses: 15
+    total_responses: 15
   costs:
     avg_cost_per_query: 0.00027016000000000003
     avg_nr_tokens_received: 39.26
@@ -403,7 +403,7 @@
     n_none_responses: 13
     n_parse_errors: 3
     total_length_of_explanations: 7887
-    total_reponses: 37
+    total_responses: 37
   costs:
     avg_cost_per_query: 0.00027726
     avg_nr_tokens_received: 43.56
@@ -422,7 +422,7 @@
     n_none_responses: 6
     n_parse_errors: 0
     total_length_of_explanations: 23579
-    total_reponses: 44
+    total_responses: 44
   costs:
     avg_cost_per_query: 0.00050848
     avg_nr_tokens_received: 150.92
@@ -441,7 +441,7 @@
     n_none_responses: 38
     n_parse_errors: 8
     total_length_of_explanations: 2088
-    total_reponses: 12
+    total_responses: 12
   costs:
     avg_cost_per_query: 0.00023194000000000003
     avg_nr_tokens_received: 24.92
@@ -460,7 +460,7 @@
     n_none_responses: 35
     n_parse_errors: 0
     total_length_of_explanations: 2259
-    total_reponses: 15
+    total_responses: 15
   costs:
     avg_cost_per_query: 0.00022708000000000006
     avg_nr_tokens_received: 11.24
@@ -479,7 +479,7 @@
     n_none_responses: 1
     n_parse_errors: 1
     total_length_of_explanations: 30580
-    total_reponses: 49
+    total_responses: 49
   costs:
     avg_cost_per_query: 0.0005059800000000001
     avg_nr_tokens_received: 148.92
@@ -498,7 +498,7 @@
     n_none_responses: 48
     n_parse_errors: 48
     total_length_of_explanations: 226
-    total_reponses: 2
+    total_responses: 2
   costs:
     avg_cost_per_query: 0.00031838000000000005
     avg_nr_tokens_received: 68.8
@@ -517,7 +517,7 @@
     n_none_responses: 11
     n_parse_errors: 1
     total_length_of_explanations: 19153
-    total_reponses: 39
+    total_responses: 39
   costs:
     avg_cost_per_query: 0.00048117999999999994
     avg_nr_tokens_received: 135.02
@@ -536,7 +536,7 @@
     n_none_responses: 6
     n_parse_errors: 0
     total_length_of_explanations: 12065
-    total_reponses: 44
+    total_responses: 44
   costs:
     avg_cost_per_query: 0.00033842
     avg_nr_tokens_received: 69.64
@@ -555,7 +555,7 @@
     n_none_responses: 31
     n_parse_errors: 17
     total_length_of_explanations: 4080
-    total_reponses: 19
+    total_responses: 19
   costs:
     avg_cost_per_query: 0.00029727999999999997
     avg_nr_tokens_received: 53.84
@@ -574,7 +574,7 @@
     n_none_responses: 50
     n_parse_errors: 48
     total_length_of_explanations: 0
-    total_reponses: 0
+    total_responses: 0
   costs:
     avg_cost_per_query: 0.00033662000000000004
     avg_nr_tokens_received: 77.74
@@ -593,7 +593,7 @@
     n_none_responses: 20
     n_parse_errors: 13
     total_length_of_explanations: 6100
-    total_reponses: 30
+    total_responses: 30
   costs:
     avg_cost_per_query: 0.0002860199999999999
     avg_nr_tokens_received: 48.12
@@ -612,7 +612,7 @@
     n_none_responses: 10
     n_parse_errors: 9
     total_length_of_explanations: 12520
-    total_reponses: 40
+    total_responses: 40
   costs:
     avg_cost_per_query: 0.00034726
     avg_nr_tokens_received: 84.56
@@ -631,7 +631,7 @@
     n_none_responses: 36
     n_parse_errors: 11
     total_length_of_explanations: 2392
-    total_reponses: 14
+    total_responses: 14
   costs:
     avg_cost_per_query: 0.00025754
     avg_nr_tokens_received: 36.22
@@ -650,7 +650,7 @@
     n_none_responses: 50
     n_parse_errors: 50
     total_length_of_explanations: 0
-    total_reponses: 0
+    total_responses: 0
   costs:
     avg_cost_per_query: 0.0002894200000000001
     avg_nr_tokens_received: 57.14
@@ -669,7 +669,7 @@
     n_none_responses: 15
     n_parse_errors: 10
     total_length_of_explanations: 6820
-    total_reponses: 35
+    total_responses: 35
   costs:
     avg_cost_per_query: 0.00028089999999999994
     avg_nr_tokens_received: 45.56
@@ -688,7 +688,7 @@
     n_none_responses: 28
     n_parse_errors: 7
     total_length_of_explanations: 4643
-    total_reponses: 22
+    total_responses: 22
   costs:
     avg_cost_per_query: 0.00033274000000000004
     avg_nr_tokens_received: 70.82
@@ -707,7 +707,7 @@
     n_none_responses: 44
     n_parse_errors: 0
     total_length_of_explanations: 957
-    total_reponses: 6
+    total_responses: 6
   costs:
     avg_cost_per_query: 0.00027652000000000004
     avg_nr_tokens_received: 12.62

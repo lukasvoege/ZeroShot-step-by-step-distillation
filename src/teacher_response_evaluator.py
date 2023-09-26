@@ -110,7 +110,7 @@ class TeacherResponseEvaluator:
             "n_wrong": n_wrong,
             "n_parse_errors": n_parse_errors,
             "n_none_responses": n_none_responses,
-            "total_reponses": total_repsonses,
+            "total_responses": total_repsonses,
             "total_length_of_explanations": total_length_of_explanations,
             "total_number_of_sentences": total_number_of_sentences,
             "total_number_of_words": total_number_of_words,
@@ -131,7 +131,7 @@ class TeacherResponseEvaluator:
             if not idxs:
                 self.metadata.update_from_evaluator(
                     int(prompt_template_id),
-                    evaluation_results["total_reponses"],
+                    evaluation_results["total_responses"],
                     evaluation_results["n_none_responses"],
                     evaluation_results["total_length_of_explanations"],
                     evaluation_results["n_correct"],

@@ -4,7 +4,7 @@
     n_none_responses: 13
     n_parse_errors: 1
     total_length_of_explanations: 40777
-    total_reponses: 209
+    total_responses: 209
   costs:
     avg_cost_per_query: 0.00020697630331753555
     avg_nr_tokens_received: 65.59715639810426
@@ -23,7 +23,7 @@
     n_none_responses: 0
     n_parse_errors: 0
     total_length_of_explanations: 330225
-    total_reponses: 800
+    total_responses: 800
   costs:
     avg_cost_per_query: 0.00032686800000000023
     avg_nr_tokens_received: 115.137
@@ -42,7 +42,7 @@
     n_none_responses: 67
     n_parse_errors: 4
     total_length_of_explanations: 609
-    total_reponses: 13
+    total_responses: 13
   costs:
     avg_cost_per_query: 0.00010952651515151515
     avg_nr_tokens_received: 11.803030303030303

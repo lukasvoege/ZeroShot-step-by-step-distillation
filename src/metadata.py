@@ -67,7 +67,7 @@ class Metadata:
         elif category == "characteristics":
             try:
                 avg_len_of_explanations = self.current_metadata[prompt_id][category]["total_length_of_explanations"] / (
-                    self.current_metadata[prompt_id][category]["total_reponses"]
+                    self.current_metadata[prompt_id][category]["total_responses"]
                 )
             except ZeroDivisionError:
                 avg_len_of_explanations = 0
@@ -75,7 +75,7 @@ class Metadata:
 
             try:
                 avg_nr_of_sentences = self.current_metadata[prompt_id][category]["total_number_of_sentences"] / (
-                    self.current_metadata[prompt_id][category]["total_reponses"]
+                    self.current_metadata[prompt_id][category]["total_responses"]
                 )
             except ZeroDivisionError:
                 avg_nr_of_sentences = 0
@@ -83,7 +83,7 @@ class Metadata:
 
             try:
                 avg_nr_of_words = self.current_metadata[prompt_id][category]["total_number_of_words"] / (
-                    self.current_metadata[prompt_id][category]["total_reponses"]
+                    self.current_metadata[prompt_id][category]["total_responses"]
                 )
             except ZeroDivisionError:
                 avg_nr_of_words = 0
@@ -116,7 +116,7 @@ class Metadata:
     def update_from_evaluator(
         self,
         prompt_id: int,
-        total_reponses: float,
+        total_responses: float,
         n_none_responses: int,
         total_length_of_explanations: int,
         n_correct: int,
@@ -129,7 +129,7 @@ class Metadata:
         # update current_metadata
         self.current_metadata = self.load_current_metadata()
 
-        self.write_filed(prompt_id, "characteristics", "total_reponses", total_reponses)
+        self.write_filed(prompt_id, "characteristics", "total_responses", total_responses)
         self.write_filed(prompt_id, "characteristics", "n_none_responses", n_none_responses)
         self.write_filed(prompt_id, "characteristics", "total_length_of_explanations", total_length_of_explanations)
         self.write_filed(prompt_id, "characteristics", "n_parse_errors", n_parse_errors)
