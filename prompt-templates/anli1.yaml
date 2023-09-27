@@ -1223,3 +1223,24 @@ templates:
     user_message: 'Based on {premise}, determine whether the claim "{hypothesis}" is true, false, or inconclusive? Talk to me like I am five years old.'
     label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
     explanation_parse: '.?(.*)'
+
+  176:
+    id: 176
+    system_message: ''
+    user_message: 'Premise:\n{premise}\n\nHypothesis:\n{hypothesis}\n\nExplian to my five year old son, why the hypothesis is true, false, or inconclusive based on the premise. Try to do it in one sentence.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  177:
+    id: 177
+    system_message: ''
+    user_message: 'Premise:\n{premise}\n\nHypothesis:\n{hypothesis}\n\nBased exclusively on the premise, is the hypothesis true, false, or inconclusive?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  178:
+    id: 178
+    system_message: ''
+    user_message: 'Based on {premise}, determine whether the claim "{hypothesis}" is true, false, or inconclusive? Additionally, give a one sentence explanation, with as high of a Flesch-Reading-Ease as possible.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
