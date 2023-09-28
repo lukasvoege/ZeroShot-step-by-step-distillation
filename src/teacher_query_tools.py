@@ -29,7 +29,7 @@ load_dotenv()
 
 class TeacherQuerier:
     def __init__(self, chat_model: str, dataset_name: str, dataloader: dsbs_du.DatasetLoader, has_valid: bool):
-        self.chat_model = ChatOpenAI(model=chat_model, request_timeout=10) if chat_model == "gpt-3.5-turbo" else OpenAI(model=chat_model)
+        self.chat_model = ChatOpenAI(model=chat_model, request_timeout=40) if chat_model == "gpt-3.5-turbo" else OpenAI(model=chat_model)
         self.prompt_templates_folder = "./prompt-templates"
         self.dataset_folder = "./datasets"
         self.queries_save_folder = "./querie-results"
