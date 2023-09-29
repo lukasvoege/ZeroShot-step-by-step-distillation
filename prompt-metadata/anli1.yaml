@@ -2388,12 +2388,12 @@
     total_responses: 14773
   costs:
     avg_cost_per_query: 0.0003
-    avg_nr_tokens_received: 60.7
-    avg_nr_tokens_sent: 119.89
-    total_accumulated_costs: 5.048953499999989
-    total_performed_queries: 16761
-    total_tokens_received: 1017414
-    total_tokens_sent: 2009417
+    avg_nr_tokens_received: 60.61
+    avg_nr_tokens_sent: 119.99
+    total_accumulated_costs: 5.650958999999989
+    total_performed_queries: 18761
+    total_tokens_received: 1137078
+    total_tokens_sent: 2251202
   performance:
     accuracy: 0.7098
     n_correct: 12028
