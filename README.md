@@ -77,7 +77,7 @@ OPENAI_API_KEY="your-openai-api-key"
  - `--test_size`: float between `0` and `1` to specify the test set size based on the train set size, or an integer to specify the test set size in absolute numbers
  - `--evaluate`: run prompt evaluation of all query results for a given dataset to update the prompt metadata file
  - `--generate_trainingdata`: generate training data for a given dataset and prompt mix
- - `--splits`: `train`, `eval`, `test`
+ - `--splits`: `train`, `valid`, `test`
  - `--prompt_mix`: Integer that refers to a prompt mix yaml in the `./prompt_mixes` directory
  - `--samples`: Integer, the number of samples to generate
  - `--dataset`: `esnli`, `anli1`, `cqa`, `svamp`
