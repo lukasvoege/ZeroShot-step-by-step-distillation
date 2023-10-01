@@ -1,52 +1,52 @@
 experiment_group,category,dataset,model,mode,llm,subsample,prompt_mix,label_type,alpha,max_input_length,batch_size,optimizer,lr,run,train_duration,train_steps,test_acc,eval_acc
-Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,2528,3750,0.349,0.347
-Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,3738,5500,0.434,0.403
-Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,,,,
-Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,,,,
-Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,7970,5750,0.441,0.401
-Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,12580,9250,0.46,0.426
-Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,11525,8250,0.475,0.423
-Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,13986,10000,0.52,0.496
-Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,5043,7500,0.344,0.345
-Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,6754,10000,0.39,0.408
-Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,,,,
-Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,,,,
-Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,11069,8000,0.399,0.399
-Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,11969,8750,0.413,0.417
-Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,14003,10000,0.441,0.442
-Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,13976,10000,0.456,0.474
-Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.125,6,llm,0.5,1024,64,AdamW,5e-05,0,,,,
-Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.25,6,llm,0.5,1024,64,AdamW,5e-05,0,,,,
-Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.5,6,llm,0.5,1024,64,AdamW,5e-05,0,,,,
-Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,1.0,6,llm,0.5,1024,64,AdamW,5e-05,0,,,,
-Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,2085,5750,0.474,0.443
-Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,1940,5250,0.55,0.533
-Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,3081,8250,0.605,0.532
-Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,2776,7500,0.625,0.591
-Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,4124,5250,0.468,0.402
-Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,6227,7750,0.55,0.488
-Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,5106,6250,0.617,0.567
-Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,8170,10000,0.631,0.598
-Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,2891,8000,0.468,0.451
-Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,3021,8250,0.494,0.455
-Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,2667,6750,0.578,0.511
-Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,2913,7750,0.593,0.557
-Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,4134,5250,0.469,0.41
-Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,4666,5750,0.54,0.566
-Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,5328,6500,0.575,0.517
-Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,8228,10000,0.618,0.567
-Model Size ANLI1,standard Finetuning,anli1,t5-v1_1-large,standard,None,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,20503,10000,0.639,0.604
+Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,2528.0,3750,0.349,0.347
+Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,3738.0,5500,0.434,0.403
+Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,8497.0,9500,0.346,0.342
+Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,5848.0,6500,0.341,0.334
+Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,7970.0,5750,0.441,0.401
+Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,12580.0,9250,0.46,0.426
+Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,11525.0,8250,0.475,0.423
+Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,13986.0,10000,0.52,0.496
+Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,5043.0,7500,0.344,0.345
+Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,6754.0,10000,0.39,0.408
+Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,6887.0,10000,0.352,0.316
+Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,2041.0,3000,0.334,0.334
+Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,11069.0,8000,0.399,0.399
+Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,11969.0,8750,0.413,0.417
+Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,14003.0,10000,0.441,0.442
+Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,13976.0,10000,0.456,0.474
+Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.125,6,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
+Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.25,6,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
+Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.5,6,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
+Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,1.0,6,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
+Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,2085.0,5750,0.474,0.443
+Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,1940.0,5250,0.55,0.533
+Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,3081.0,8250,0.605,0.532
+Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,2776.0,7500,0.625,0.591
+Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,4124.0,5250,0.468,0.402
+Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,6227.0,7750,0.55,0.488
+Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,5106.0,6250,0.617,0.567
+Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,8170.0,10000,0.631,0.598
+Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,2891.0,8000,0.468,0.451
+Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,3021.0,8250,0.494,0.455
+Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,2667.0,6750,0.578,0.511
+Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,2913.0,7750,0.593,0.557
+Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,4134.0,5250,0.469,0.41
+Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,4666.0,5750,0.54,0.566
+Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,5328.0,6500,0.575,0.517
+Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,8228.0,10000,0.618,0.567
+Model Size ANLI1,standard Finetuning,anli1,t5-v1_1-large,standard,None,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,20503.0,10000,0.639,0.604
 Model Size ANLI1,standard Finetuning,anli1,t5-v1_1-xl,standard,None,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
-Model Size ANLI1,standard Distillation,anli1,t5-v1_1-large,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,11818,5750,0.603,0.585
+Model Size ANLI1,standard Distillation,anli1,t5-v1_1-large,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,11818.0,5750,0.603,0.585
 Model Size ANLI1,standard Distillation,anli1,t5-v1_1-xl,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
 Model Size ANLI1,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,palm,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
 Model Size ANLI1,step-by-step Finetuning,anli1,t5-v1_1-xl,task_prefix,palm,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
 Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-large,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
 Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-xl,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
-None,standard Distillation,esnli,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,3743,8750,0.816,0.819
-None,step-by-step Distillation,esnli,t5-v1_1-base,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,4260,5250,0.815,0.818
-None,standard Distillation,svamp,t5-v1_1-base,standard,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,244,750,0.065,0.062
+None,standard Distillation,esnli,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,3743.0,8750,0.816,0.819
+None,step-by-step Distillation,esnli,t5-v1_1-base,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,4260.0,5250,0.815,0.818
+None,standard Distillation,svamp,t5-v1_1-base,standard,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,244.0,750,0.065,0.062
 None,step-by-step Distillation,svamp,t5-v1_1-base,task_prefix,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,0.062
 None,step-by-step Finetuning,svamp,t5-v1_1-small,task_prefix,gpt35,1.0,4,gt,0.5,1024,64,AdamW,5e-05,0,None,None,None,0.2
 None,step-by-step Distillation,svamp,t5-v1_1-small,task_prefix,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,0.167
-None,standard Distillation,svamp,t5-v1_1-small,standard,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,284,2000,0.07,0.087
+None,standard Distillation,svamp,t5-v1_1-small,standard,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,284.0,2000,0.07,0.087
