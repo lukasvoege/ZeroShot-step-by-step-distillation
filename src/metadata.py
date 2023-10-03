@@ -125,6 +125,7 @@ class Metadata:
         total_number_of_sentences: int,
         total_number_of_words: int,
         flesch_reading_ease: float,
+        variance_length_of_explanations: float,
     ):
         # update current_metadata
         self.current_metadata = self.load_current_metadata()
@@ -136,6 +137,7 @@ class Metadata:
         self.write_filed(prompt_id, "characteristics", "total_number_of_sentences", total_number_of_sentences)
         self.write_filed(prompt_id, "characteristics", "total_number_of_words", total_number_of_words)
         self.write_filed(prompt_id, "characteristics", "flesch_reading_ease", round(flesch_reading_ease, 1))
+        self.write_filed(prompt_id, "characteristics", "variance_length_of_explanations", round(float(variance_length_of_explanations), 3))
 
         self.write_filed(prompt_id, "performance", "n_correct", n_correct)
         self.write_filed(prompt_id, "performance", "n_wrong", n_wrong)

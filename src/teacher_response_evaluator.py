@@ -62,9 +62,10 @@ class TeacherResponseEvaluator:
             [len(explanation.split()) for explanation in response_explanations if explanation is not None]
         )
         # number of characters
-        total_length_of_explanations = sum(
-            [len(explanation) for explanation in response_explanations if explanation is not None]
-        )
+        len_list = [len(explanation) for explanation in response_explanations if explanation is not None]
+        total_length_of_explanations = sum(len_list)
+        # variance of length of explanations
+        variance_length_of_explanations = np.var(len_list)
 
         # Flesch reading ease of all explanations combined
         readability = Readability(
@@ -82,6 +83,7 @@ class TeacherResponseEvaluator:
             total_number_of_sentences,
             total_number_of_words,
             flesch_reading_ease,
+            variance_length_of_explanations,
         )
 
     def evaluate_responses_split(
@@ -102,6 +104,7 @@ class TeacherResponseEvaluator:
             total_number_of_sentences,
             total_number_of_words,
             flesch_reading_ease,
+            variance_length_of_explanations,
         ) = self.get_explanation_characteristics(parsed_responses)
 
         return {
@@ -115,6 +118,7 @@ class TeacherResponseEvaluator:
             "total_number_of_sentences": total_number_of_sentences,
             "total_number_of_words": total_number_of_words,
             "flesch_reading_ease": flesch_reading_ease,
+            "variance_length_of_explanations": variance_length_of_explanations,
         }
 
     def evaluate_train(self, idxs: List = None, verbose: bool = False) -> int:
@@ -140,6 +144,7 @@ class TeacherResponseEvaluator:
                     evaluation_results["total_number_of_sentences"],
                     evaluation_results["total_number_of_words"],
                     evaluation_results["flesch_reading_ease"],
+                    evaluation_results["variance_length_of_explanations"],
                 )
             evals[prompt_template_id] = evaluation_results
 

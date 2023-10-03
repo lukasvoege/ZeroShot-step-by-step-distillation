@@ -10,6 +10,7 @@
     total_number_of_sentences: 130
     total_number_of_words: 2583
     total_responses: 125
+    variance_length_of_explanations: 1687.254
   costs:
     avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 30.08
@@ -34,6 +35,7 @@
     total_number_of_sentences: 137
     total_number_of_words: 3396
     total_responses: 125
+    variance_length_of_explanations: 2083.536
   costs:
     avg_cost_per_query: 0.00033
     avg_nr_tokens_received: 40.82
@@ -58,6 +60,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00015
     avg_nr_tokens_received: 2.78
@@ -82,6 +85,7 @@
     total_number_of_sentences: 140
     total_number_of_words: 2580
     total_responses: 48
+    variance_length_of_explanations: 27909.496
   costs:
     avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 89.04
@@ -106,6 +110,7 @@
     total_number_of_sentences: 149
     total_number_of_words: 2919
     total_responses: 48
+    variance_length_of_explanations: 34944.16
   costs:
     avg_cost_per_query: 0.00042
     avg_nr_tokens_received: 105.96
@@ -130,6 +135,7 @@
     total_number_of_sentences: 76
     total_number_of_words: 1655
     total_responses: 47
+    variance_length_of_explanations: 12625.317
   costs:
     avg_cost_per_query: 0.00032
     avg_nr_tokens_received: 64.88
@@ -154,6 +160,7 @@
     total_number_of_sentences: 3
     total_number_of_words: 24
     total_responses: 3
+    variance_length_of_explanations: 600.889
   costs:
     avg_cost_per_query: 0.00019
     avg_nr_tokens_received: 3.34
@@ -178,6 +185,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 1.32
@@ -202,6 +210,7 @@
     total_number_of_sentences: 6
     total_number_of_words: 65
     total_responses: 3
+    variance_length_of_explanations: 1377.556
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 3.94
@@ -226,6 +235,7 @@
     total_number_of_sentences: 125
     total_number_of_words: 2306
     total_responses: 41
+    variance_length_of_explanations: 31155.747
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 94.86
@@ -250,6 +260,7 @@
     total_number_of_sentences: 118
     total_number_of_words: 2293
     total_responses: 38
+    variance_length_of_explanations: 28410.77
   costs:
     avg_cost_per_query: 0.00042
     avg_nr_tokens_received: 111.4
@@ -274,6 +285,7 @@
     total_number_of_sentences: 110
     total_number_of_words: 2005
     total_responses: 45
+    variance_length_of_explanations: 12232.724
   costs:
     avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 81.26
@@ -298,6 +310,7 @@
     total_number_of_sentences: 138
     total_number_of_words: 2555
     total_responses: 39
+    variance_length_of_explanations: 42558.045
   costs:
     avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 108.2
@@ -322,6 +335,7 @@
     total_number_of_sentences: 142
     total_number_of_words: 2889
     total_responses: 47
+    variance_length_of_explanations: 23094.233
   costs:
     avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 105.06
@@ -346,6 +360,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 1.5
@@ -370,6 +385,7 @@
     total_number_of_sentences: 60
     total_number_of_words: 1079
     total_responses: 24
+    variance_length_of_explanations: 20522.026
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 96.58
@@ -394,6 +410,7 @@
     total_number_of_sentences: 159
     total_number_of_words: 3109
     total_responses: 49
+    variance_length_of_explanations: 45729.678
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 100.74
@@ -418,6 +435,7 @@
     total_number_of_sentences: 127
     total_number_of_words: 2398
     total_responses: 50
+    variance_length_of_explanations: 8218.596
   costs:
     avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 84.98
@@ -442,6 +460,7 @@
     total_number_of_sentences: 130
     total_number_of_words: 2634
     total_responses: 50
+    variance_length_of_explanations: 9892.738
   costs:
     avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 76.64
@@ -466,6 +485,7 @@
     total_number_of_sentences: 99
     total_number_of_words: 1949
     total_responses: 47
+    variance_length_of_explanations: 7406.017
   costs:
     avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 80.12
@@ -490,6 +510,7 @@
     total_number_of_sentences: 140
     total_number_of_words: 2559
     total_responses: 42
+    variance_length_of_explanations: 29102.234
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 98.46
@@ -514,6 +535,7 @@
     total_number_of_sentences: 136
     total_number_of_words: 2441
     total_responses: 50
+    variance_length_of_explanations: 17775.89
   costs:
     avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 83.8
@@ -538,6 +560,7 @@
     total_number_of_sentences: 39
     total_number_of_words: 655
     total_responses: 24
+    variance_length_of_explanations: 22638.373
   costs:
     avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 82.3
@@ -562,6 +585,7 @@
     total_number_of_sentences: 139
     total_number_of_words: 2413
     total_responses: 38
+    variance_length_of_explanations: 74044.43
   costs:
     avg_cost_per_query: 0.00045
     avg_nr_tokens_received: 126.24
@@ -586,6 +610,7 @@
     total_number_of_sentences: 124
     total_number_of_words: 2389
     total_responses: 47
+    variance_length_of_explanations: 17899.147
   costs:
     avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 87.66
@@ -610,6 +635,7 @@
     total_number_of_sentences: 236
     total_number_of_words: 4536
     total_responses: 49
+    variance_length_of_explanations: 113655.468
   costs:
     avg_cost_per_query: 0.00051
     avg_nr_tokens_received: 148.92
@@ -634,6 +660,7 @@
     total_number_of_sentences: 39
     total_number_of_words: 681
     total_responses: 20
+    variance_length_of_explanations: 12492.448
   costs:
     avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 53.84
@@ -658,6 +685,7 @@
     total_number_of_sentences: 42
     total_number_of_words: 878
     total_responses: 33
+    variance_length_of_explanations: 4813.622
   costs:
     avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 31.92
@@ -682,6 +710,7 @@
     total_number_of_sentences: 21
     total_number_of_words: 361
     total_responses: 15
+    variance_length_of_explanations: 8751.173
   costs:
     avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 11.24
@@ -706,6 +735,7 @@
     total_number_of_sentences: 8
     total_number_of_words: 146
     total_responses: 6
+    variance_length_of_explanations: 4982.889
   costs:
     avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 12.62
@@ -730,6 +760,7 @@
     total_number_of_sentences: 48
     total_number_of_words: 869
     total_responses: 30
+    variance_length_of_explanations: 10362.529
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 48.12
@@ -754,6 +785,7 @@
     total_number_of_sentences: 151
     total_number_of_words: 2739
     total_responses: 95
+    variance_length_of_explanations: 9259.83
   costs:
     avg_cost_per_query: 0.00032
     avg_nr_tokens_received: 64.24
@@ -778,6 +810,7 @@
     total_number_of_sentences: 5
     total_number_of_words: 115
     total_responses: 5
+    variance_length_of_explanations: 4119.36
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 6.1
@@ -802,6 +835,7 @@
     total_number_of_sentences: 24
     total_number_of_words: 458
     total_responses: 15
+    variance_length_of_explanations: 5743.2
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 21.86
@@ -826,6 +860,7 @@
     total_number_of_sentences: 18
     total_number_of_words: 313
     total_responses: 11
+    variance_length_of_explanations: 4599.719
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 10.82
@@ -850,6 +885,7 @@
     total_number_of_sentences: 46
     total_number_of_words: 884
     total_responses: 34
+    variance_length_of_explanations: 9069.16
   costs:
     avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 59.1
@@ -874,6 +910,7 @@
     total_number_of_sentences: 15
     total_number_of_words: 304
     total_responses: 10
+    variance_length_of_explanations: 12427.44
   costs:
     avg_cost_per_query: 0.00034
     avg_nr_tokens_received: 47.06
@@ -898,6 +935,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.9
@@ -922,6 +960,7 @@
     total_number_of_sentences: 23
     total_number_of_words: 393
     total_responses: 15
+    variance_length_of_explanations: 7813.582
   costs:
     avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 29.0
@@ -946,6 +985,7 @@
     total_number_of_sentences: 8
     total_number_of_words: 146
     total_responses: 8
+    variance_length_of_explanations: 1704.688
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 6.2
@@ -970,6 +1010,7 @@
     total_number_of_sentences: 16
     total_number_of_words: 318
     total_responses: 12
+    variance_length_of_explanations: 4261.188
   costs:
     avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 10.94
@@ -994,6 +1035,7 @@
     total_number_of_sentences: 8
     total_number_of_words: 193
     total_responses: 5
+    variance_length_of_explanations: 37677.04
   costs:
     avg_cost_per_query: 0.00043
     avg_nr_tokens_received: 125.58
@@ -1018,6 +1060,7 @@
     total_number_of_sentences: 8
     total_number_of_words: 162
     total_responses: 8
+    variance_length_of_explanations: 5792.609
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 8.62
@@ -1042,6 +1085,7 @@
     total_number_of_sentences: 23
     total_number_of_words: 449
     total_responses: 14
+    variance_length_of_explanations: 11491.515
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 15.6
@@ -1066,6 +1110,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 2.04
@@ -1090,6 +1135,7 @@
     total_number_of_sentences: 104
     total_number_of_words: 2019
     total_responses: 50
+    variance_length_of_explanations: 10158.308
   costs:
     avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 80.8
@@ -1114,6 +1160,7 @@
     total_number_of_sentences: 11
     total_number_of_words: 163
     total_responses: 10
+    variance_length_of_explanations: 3841.05
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 18.52
@@ -1138,6 +1185,7 @@
     total_number_of_sentences: 10
     total_number_of_words: 263
     total_responses: 9
+    variance_length_of_explanations: 6120.543
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 9.56
@@ -1162,6 +1210,7 @@
     total_number_of_sentences: 7
     total_number_of_words: 110
     total_responses: 6
+    variance_length_of_explanations: 5751.667
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 16.38
@@ -1186,6 +1235,7 @@
     total_number_of_sentences: 13
     total_number_of_words: 256
     total_responses: 12
+    variance_length_of_explanations: 2777.556
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 12.48
@@ -1210,6 +1260,7 @@
     total_number_of_sentences: 9
     total_number_of_words: 168
     total_responses: 8
+    variance_length_of_explanations: 3172.234
   costs:
     avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 13.4
@@ -1234,6 +1285,7 @@
     total_number_of_sentences: 21
     total_number_of_words: 400
     total_responses: 11
+    variance_length_of_explanations: 9875.24
   costs:
     avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 16.8
@@ -1258,6 +1310,7 @@
     total_number_of_sentences: 1
     total_number_of_words: 26
     total_responses: 1
+    variance_length_of_explanations: 0.0
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 2.18
@@ -1282,6 +1335,7 @@
     total_number_of_sentences: 13
     total_number_of_words: 241
     total_responses: 12
+    variance_length_of_explanations: 2557.556
   costs:
     avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 15.02
@@ -1306,6 +1360,7 @@
     total_number_of_sentences: 4
     total_number_of_words: 68
     total_responses: 4
+    variance_length_of_explanations: 2348.688
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.78
@@ -1330,6 +1385,7 @@
     total_number_of_sentences: 8
     total_number_of_words: 164
     total_responses: 7
+    variance_length_of_explanations: 2011.633
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 7.78
@@ -1354,6 +1410,7 @@
     total_number_of_sentences: 1
     total_number_of_words: 5
     total_responses: 1
+    variance_length_of_explanations: 0.0
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 4.32
@@ -1378,6 +1435,7 @@
     total_number_of_sentences: 51
     total_number_of_words: 995
     total_responses: 38
+    variance_length_of_explanations: 6441.098
   costs:
     avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 47.1
@@ -1402,6 +1460,7 @@
     total_number_of_sentences: 20
     total_number_of_words: 374
     total_responses: 19
+    variance_length_of_explanations: 4540.244
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 24.16
@@ -1426,6 +1485,7 @@
     total_number_of_sentences: 26
     total_number_of_words: 440
     total_responses: 18
+    variance_length_of_explanations: 5821.728
   costs:
     avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 30.38
@@ -1450,6 +1510,7 @@
     total_number_of_sentences: 3
     total_number_of_words: 26
     total_responses: 3
+    variance_length_of_explanations: 968.0
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.24
@@ -1474,6 +1535,7 @@
     total_number_of_sentences: 46
     total_number_of_words: 799
     total_responses: 36
+    variance_length_of_explanations: 5689.188
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 46.58
@@ -1498,6 +1560,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.56
@@ -1522,6 +1585,7 @@
     total_number_of_sentences: 3
     total_number_of_words: 90
     total_responses: 3
+    variance_length_of_explanations: 11089.556
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.68
@@ -1546,6 +1610,7 @@
     total_number_of_sentences: 10
     total_number_of_words: 171
     total_responses: 8
+    variance_length_of_explanations: 7549.75
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 13.38
@@ -1570,6 +1635,7 @@
     total_number_of_sentences: 15
     total_number_of_words: 264
     total_responses: 9
+    variance_length_of_explanations: 6232.691
   costs:
     avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 12.58
@@ -1594,6 +1660,7 @@
     total_number_of_sentences: 47
     total_number_of_words: 961
     total_responses: 40
+    variance_length_of_explanations: 4302.834
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 45.9
@@ -1618,6 +1685,7 @@
     total_number_of_sentences: 4
     total_number_of_words: 77
     total_responses: 4
+    variance_length_of_explanations: 894.0
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 4.24
@@ -1642,6 +1710,7 @@
     total_number_of_sentences: 34
     total_number_of_words: 711
     total_responses: 24
+    variance_length_of_explanations: 8330.326
   costs:
     avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 33.74
@@ -1666,6 +1735,7 @@
     total_number_of_sentences: 15
     total_number_of_words: 328
     total_responses: 10
+    variance_length_of_explanations: 16608.96
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 12.3
@@ -1690,6 +1760,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.46
@@ -1714,6 +1785,7 @@
     total_number_of_sentences: 13
     total_number_of_words: 297
     total_responses: 11
+    variance_length_of_explanations: 5043.174
   costs:
     avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 57.38
@@ -1738,6 +1810,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 1.54
@@ -1762,6 +1835,7 @@
     total_number_of_sentences: 52
     total_number_of_words: 1061
     total_responses: 35
+    variance_length_of_explanations: 10541.791
   costs:
     avg_cost_per_query: 0.00034
     avg_nr_tokens_received: 73.04
@@ -1786,6 +1860,7 @@
     total_number_of_sentences: 8
     total_number_of_words: 179
     total_responses: 8
+    variance_length_of_explanations: 4490.25
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 8.06
@@ -1810,6 +1885,7 @@
     total_number_of_sentences: 12
     total_number_of_words: 339
     total_responses: 11
+    variance_length_of_explanations: 2667.967
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 53.42
@@ -1834,6 +1910,7 @@
     total_number_of_sentences: 13
     total_number_of_words: 301
     total_responses: 9
+    variance_length_of_explanations: 8971.556
   costs:
     avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 62.16
@@ -1858,6 +1935,7 @@
     total_number_of_sentences: 5
     total_number_of_words: 105
     total_responses: 5
+    variance_length_of_explanations: 1022.96
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 7.96
@@ -1882,6 +1960,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.56
@@ -1906,6 +1985,7 @@
     total_number_of_sentences: 76
     total_number_of_words: 1468
     total_responses: 34
+    variance_length_of_explanations: 27090.786
   costs:
     avg_cost_per_query: 0.00042
     avg_nr_tokens_received: 112.36
@@ -1930,6 +2010,7 @@
     total_number_of_sentences: 12
     total_number_of_words: 227
     total_responses: 11
+    variance_length_of_explanations: 6799.289
   costs:
     avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 18.52
@@ -1954,6 +2035,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 1.28
@@ -1978,6 +2060,7 @@
     total_number_of_sentences: 6
     total_number_of_words: 122
     total_responses: 5
+    variance_length_of_explanations: 3032.0
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 5.44
@@ -2002,6 +2085,7 @@
     total_number_of_sentences: 1
     total_number_of_words: 21
     total_responses: 1
+    variance_length_of_explanations: 0.0
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 1.98
@@ -2026,6 +2110,7 @@
     total_number_of_sentences: 3
     total_number_of_words: 38
     total_responses: 3
+    variance_length_of_explanations: 422.222
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 6.84
@@ -2050,6 +2135,7 @@
     total_number_of_sentences: 2
     total_number_of_words: 21
     total_responses: 2
+    variance_length_of_explanations: 1482.25
   costs:
     avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 2.14
@@ -2074,6 +2160,7 @@
     total_number_of_sentences: 5
     total_number_of_words: 100
     total_responses: 5
+    variance_length_of_explanations: 3648.24
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 10.4
@@ -2098,6 +2185,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 1.7
@@ -2122,6 +2210,7 @@
     total_number_of_sentences: 1
     total_number_of_words: 11
     total_responses: 1
+    variance_length_of_explanations: 0.0
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 2.68
@@ -2146,6 +2235,7 @@
     total_number_of_sentences: 119
     total_number_of_words: 2196
     total_responses: 49
+    variance_length_of_explanations: 9198.273
   costs:
     avg_cost_per_query: 0.00037
     avg_nr_tokens_received: 84.3
@@ -2170,6 +2260,7 @@
     total_number_of_sentences: 1
     total_number_of_words: 22
     total_responses: 1
+    variance_length_of_explanations: 0.0
   costs:
     avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 2.08
@@ -2194,6 +2285,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.44
@@ -2218,6 +2310,7 @@
     total_number_of_sentences: 54
     total_number_of_words: 1024
     total_responses: 36
+    variance_length_of_explanations: 6567.556
   costs:
     avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 55.6
@@ -2242,6 +2335,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.32
@@ -2266,6 +2360,7 @@
     total_number_of_sentences: 122
     total_number_of_words: 2295
     total_responses: 48
+    variance_length_of_explanations: 10123.035
   costs:
     avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 83.98
@@ -2290,6 +2385,7 @@
     total_number_of_sentences: 80
     total_number_of_words: 1401
     total_responses: 44
+    variance_length_of_explanations: 13639.089
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 87.82
@@ -2314,6 +2410,7 @@
     total_number_of_sentences: 12
     total_number_of_words: 262
     total_responses: 10
+    variance_length_of_explanations: 3332.16
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 15.12
@@ -2338,6 +2435,7 @@
     total_number_of_sentences: 2
     total_number_of_words: 36
     total_responses: 2
+    variance_length_of_explanations: 36.0
   costs:
     avg_cost_per_query: 0.0002
     avg_nr_tokens_received: 2.3
@@ -2362,6 +2460,7 @@
     total_number_of_sentences: 6
     total_number_of_words: 108
     total_responses: 4
+    variance_length_of_explanations: 1061.188
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 4.46
@@ -2386,6 +2485,7 @@
     total_number_of_sentences: 24926
     total_number_of_words: 500537
     total_responses: 14773
+    variance_length_of_explanations: 14076.337
   costs:
     avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 60.61
@@ -2410,6 +2510,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 60.24
@@ -2434,6 +2535,7 @@
     total_number_of_sentences: 4
     total_number_of_words: 83
     total_responses: 4
+    variance_length_of_explanations: 4091.25
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 4.16
@@ -2458,6 +2560,7 @@
     total_number_of_sentences: 3
     total_number_of_words: 54
     total_responses: 3
+    variance_length_of_explanations: 182.0
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 3.68
@@ -2482,6 +2585,7 @@
     total_number_of_sentences: 16
     total_number_of_words: 270
     total_responses: 15
+    variance_length_of_explanations: 3535.493
   costs:
     avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 19.48
@@ -2506,6 +2610,7 @@
     total_number_of_sentences: 76
     total_number_of_words: 1497
     total_responses: 47
+    variance_length_of_explanations: 11240.188
   costs:
     avg_cost_per_query: 0.00032
     avg_nr_tokens_received: 62.78
@@ -2530,6 +2635,7 @@
     total_number_of_sentences: 23
     total_number_of_words: 440
     total_responses: 14
+    variance_length_of_explanations: 8445.347
   costs:
     avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 17.3
@@ -2554,6 +2660,7 @@
     total_number_of_sentences: 20
     total_number_of_words: 418
     total_responses: 14
+    variance_length_of_explanations: 10339.673
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 24.9
@@ -2578,6 +2685,7 @@
     total_number_of_sentences: 14
     total_number_of_words: 167
     total_responses: 14
+    variance_length_of_explanations: 2513.964
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 13.66
@@ -2602,6 +2710,7 @@
     total_number_of_sentences: 65
     total_number_of_words: 1238
     total_responses: 39
+    variance_length_of_explanations: 8778.561
   costs:
     avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 62.52
@@ -2626,6 +2735,7 @@
     total_number_of_sentences: 34
     total_number_of_words: 631
     total_responses: 26
+    variance_length_of_explanations: 4646.976
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 27.46
@@ -2650,6 +2760,7 @@
     total_number_of_sentences: 15
     total_number_of_words: 264
     total_responses: 9
+    variance_length_of_explanations: 9384.025
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 10.62
@@ -2674,6 +2785,7 @@
     total_number_of_sentences: 12
     total_number_of_words: 215
     total_responses: 8
+    variance_length_of_explanations: 4571.75
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 8.7
@@ -2698,6 +2810,7 @@
     total_number_of_sentences: 49
     total_number_of_words: 923
     total_responses: 27
+    variance_length_of_explanations: 10458.765
   costs:
     avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 38.9
@@ -2722,6 +2835,7 @@
     total_number_of_sentences: 21
     total_number_of_words: 314
     total_responses: 11
+    variance_length_of_explanations: 4856.595
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 13.54
@@ -2746,6 +2860,7 @@
     total_number_of_sentences: 29
     total_number_of_words: 542
     total_responses: 18
+    variance_length_of_explanations: 10316.333
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 24.42
@@ -2770,6 +2885,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 2.08
@@ -2794,6 +2910,7 @@
     total_number_of_sentences: 15
     total_number_of_words: 263
     total_responses: 13
+    variance_length_of_explanations: 4617.467
   costs:
     avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 14.98
@@ -2818,6 +2935,7 @@
     total_number_of_sentences: 34
     total_number_of_words: 707
     total_responses: 26
+    variance_length_of_explanations: 8511.13
   costs:
     avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 32.88
@@ -2842,6 +2960,7 @@
     total_number_of_sentences: 17
     total_number_of_words: 322
     total_responses: 12
+    variance_length_of_explanations: 5409.076
   costs:
     avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 11.36
@@ -2866,6 +2985,7 @@
     total_number_of_sentences: 135
     total_number_of_words: 2502
     total_responses: 50
+    variance_length_of_explanations: 11898.566
   costs:
     avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 79.84
@@ -2890,6 +3010,7 @@
     total_number_of_sentences: 17
     total_number_of_words: 302
     total_responses: 14
+    variance_length_of_explanations: 8995.087
   costs:
     avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 14.98
@@ -2914,6 +3035,7 @@
     total_number_of_sentences: 14
     total_number_of_words: 266
     total_responses: 11
+    variance_length_of_explanations: 5070.364
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 12.48
@@ -2938,6 +3060,7 @@
     total_number_of_sentences: 38
     total_number_of_words: 689
     total_responses: 29
+    variance_length_of_explanations: 6155.275
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 37.74
@@ -2962,6 +3085,7 @@
     total_number_of_sentences: 50
     total_number_of_words: 852
     total_responses: 36
+    variance_length_of_explanations: 10282.414
   costs:
     avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 78.66
@@ -2986,6 +3110,7 @@
     total_number_of_sentences: 3
     total_number_of_words: 39
     total_responses: 3
+    variance_length_of_explanations: 326.889
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 2.9
@@ -3010,6 +3135,7 @@
     total_number_of_sentences: 10
     total_number_of_words: 127
     total_responses: 10
+    variance_length_of_explanations: 2294.04
   costs:
     avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 11.1
@@ -3034,6 +3160,7 @@
     total_number_of_sentences: 22
     total_number_of_words: 415
     total_responses: 17
+    variance_length_of_explanations: 7155.543
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 23.68
@@ -3058,6 +3185,7 @@
     total_number_of_sentences: 8
     total_number_of_words: 148
     total_responses: 6
+    variance_length_of_explanations: 3910.556
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 5.84
@@ -3082,6 +3210,7 @@
     total_number_of_sentences: 119
     total_number_of_words: 2226
     total_responses: 38
+    variance_length_of_explanations: 46673.87
   costs:
     avg_cost_per_query: 0.00044
     avg_nr_tokens_received: 121.86
@@ -3106,6 +3235,7 @@
     total_number_of_sentences: 113
     total_number_of_words: 2142
     total_responses: 50
+    variance_length_of_explanations: 10069.658
   costs:
     avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 76.64
@@ -3130,6 +3260,7 @@
     total_number_of_sentences: 22
     total_number_of_words: 472
     total_responses: 18
+    variance_length_of_explanations: 2514.583
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 18.22
@@ -3154,6 +3285,7 @@
     total_number_of_sentences: 3
     total_number_of_words: 38
     total_responses: 2
+    variance_length_of_explanations: 1722.25
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 4.62
@@ -3178,6 +3310,7 @@
     total_number_of_sentences: 21
     total_number_of_words: 341
     total_responses: 13
+    variance_length_of_explanations: 6074.828
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 12.62
@@ -3202,6 +3335,7 @@
     total_number_of_sentences: 49
     total_number_of_words: 729
     total_responses: 32
+    variance_length_of_explanations: 7051.679
   costs:
     avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 52.0
@@ -3226,6 +3360,7 @@
     total_number_of_sentences: 126
     total_number_of_words: 2585
     total_responses: 49
+    variance_length_of_explanations: 19436.068
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 93.82
@@ -3250,6 +3385,7 @@
     total_number_of_sentences: 139
     total_number_of_words: 2578
     total_responses: 49
+    variance_length_of_explanations: 12497.695
   costs:
     avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 91.22
@@ -3274,6 +3410,7 @@
     total_number_of_sentences: 32
     total_number_of_words: 677
     total_responses: 15
+    variance_length_of_explanations: 22477.449
   costs:
     avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 86.96
@@ -3298,6 +3435,7 @@
     total_number_of_sentences: 100
     total_number_of_words: 1740
     total_responses: 42
+    variance_length_of_explanations: 16369.855
   costs:
     avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 93.86
@@ -3322,6 +3460,7 @@
     total_number_of_sentences: 111
     total_number_of_words: 2012
     total_responses: 47
+    variance_length_of_explanations: 12467.297
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 85.04
@@ -3346,6 +3485,7 @@
     total_number_of_sentences: 27
     total_number_of_words: 452
     total_responses: 17
+    variance_length_of_explanations: 5009.82
   costs:
     avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 16.4
@@ -3370,6 +3510,7 @@
     total_number_of_sentences: 110
     total_number_of_words: 1990
     total_responses: 43
+    variance_length_of_explanations: 24322.183
   costs:
     avg_cost_per_query: 0.00041
     avg_nr_tokens_received: 104.04
@@ -3394,6 +3535,7 @@
     total_number_of_sentences: 150
     total_number_of_words: 2752
     total_responses: 50
+    variance_length_of_explanations: 26282.32
   costs:
     avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 98.66
@@ -3418,6 +3560,7 @@
     total_number_of_sentences: 130
     total_number_of_words: 2286
     total_responses: 48
+    variance_length_of_explanations: 19622.026
   costs:
     avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 95.88
@@ -3442,6 +3585,7 @@
     total_number_of_sentences: 199
     total_number_of_words: 4042
     total_responses: 49
+    variance_length_of_explanations: 51120.172
   costs:
     avg_cost_per_query: 0.00048
     avg_nr_tokens_received: 143.62
@@ -3466,6 +3610,7 @@
     total_number_of_sentences: 8
     total_number_of_words: 142
     total_responses: 6
+    variance_length_of_explanations: 2431.472
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 5.96
@@ -3490,6 +3635,7 @@
     total_number_of_sentences: 2
     total_number_of_words: 40
     total_responses: 2
+    variance_length_of_explanations: 2401.0
   costs:
     avg_cost_per_query: 0.00023
     avg_nr_tokens_received: 3.36
@@ -3514,6 +3660,7 @@
     total_number_of_sentences: 20
     total_number_of_words: 400
     total_responses: 15
+    variance_length_of_explanations: 2548.862
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 13.34
@@ -3538,6 +3685,7 @@
     total_number_of_sentences: 27
     total_number_of_words: 552
     total_responses: 13
+    variance_length_of_explanations: 58405.976
   costs:
     avg_cost_per_query: 0.00052
     avg_nr_tokens_received: 160.8
@@ -3562,6 +3710,7 @@
     total_number_of_sentences: 22
     total_number_of_words: 461
     total_responses: 16
+    variance_length_of_explanations: 15896.996
   costs:
     avg_cost_per_query: 0.00026
     avg_nr_tokens_received: 24.02
@@ -3586,6 +3735,7 @@
     total_number_of_sentences: 36
     total_number_of_words: 699
     total_responses: 22
+    variance_length_of_explanations: 7341.357
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 24.74
@@ -3610,6 +3760,7 @@
     total_number_of_sentences: 41
     total_number_of_words: 612
     total_responses: 27
+    variance_length_of_explanations: 16681.748
   costs:
     avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 87.16
@@ -3634,6 +3785,7 @@
     total_number_of_sentences: 56
     total_number_of_words: 896
     total_responses: 36
+    variance_length_of_explanations: 8420.395
   costs:
     avg_cost_per_query: 0.00036
     avg_nr_tokens_received: 77.78
@@ -3658,6 +3810,7 @@
     total_number_of_sentences: 19
     total_number_of_words: 393
     total_responses: 15
+    variance_length_of_explanations: 7643.529
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 27.56
@@ -3682,6 +3835,7 @@
     total_number_of_sentences: 18
     total_number_of_words: 449
     total_responses: 12
+    variance_length_of_explanations: 15904.188
   costs:
     avg_cost_per_query: 0.00034
     avg_nr_tokens_received: 72.54
@@ -3706,6 +3860,7 @@
     total_number_of_sentences: 3
     total_number_of_words: 56
     total_responses: 3
+    variance_length_of_explanations: 548.222
   costs:
     avg_cost_per_query: 0.00025
     avg_nr_tokens_received: 4.46
@@ -3730,6 +3885,7 @@
     total_number_of_sentences: 0
     total_number_of_words: 0
     total_responses: 0
+    variance_length_of_explanations: .nan
   costs:
     avg_cost_per_query: 0.00021
     avg_nr_tokens_received: 1.36
@@ -3754,6 +3910,7 @@
     total_number_of_sentences: 1
     total_number_of_words: 20
     total_responses: 1
+    variance_length_of_explanations: 0.0
   costs:
     avg_cost_per_query: 0.00022
     avg_nr_tokens_received: 2.08
@@ -3778,6 +3935,7 @@
     total_number_of_sentences: 1
     total_number_of_words: 39
     total_responses: 1
+    variance_length_of_explanations: 0.0
   costs:
     avg_cost_per_query: 0.00024
     avg_nr_tokens_received: 4.74
@@ -3802,6 +3960,7 @@
     total_number_of_sentences: 72
     total_number_of_words: 1431
     total_responses: 32
+    variance_length_of_explanations: 38177.527
   costs:
     avg_cost_per_query: 0.00041
     avg_nr_tokens_received: 98.76
@@ -3826,6 +3985,7 @@
     total_number_of_sentences: 80
     total_number_of_words: 1556
     total_responses: 29
+    variance_length_of_explanations: 44519.337
   costs:
     avg_cost_per_query: 0.00047
     avg_nr_tokens_received: 135.76
@@ -3850,6 +4010,7 @@
     total_number_of_sentences: 44
     total_number_of_words: 634
     total_responses: 32
+    variance_length_of_explanations: 17682.027
   costs:
     avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 97.2
@@ -3874,6 +4035,7 @@
     total_number_of_sentences: 44
     total_number_of_words: 865
     total_responses: 34
+    variance_length_of_explanations: 5814.595
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 42.02
@@ -3898,6 +4060,7 @@
     total_number_of_sentences: 26
     total_number_of_words: 381
     total_responses: 19
+    variance_length_of_explanations: 9929.922
   costs:
     avg_cost_per_query: 0.00029
     avg_nr_tokens_received: 46.04
@@ -3922,6 +4085,7 @@
     total_number_of_sentences: 63
     total_number_of_words: 1129
     total_responses: 36
+    variance_length_of_explanations: 15031.722
   costs:
     avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 88.38
@@ -3946,6 +4110,7 @@
     total_number_of_sentences: 25
     total_number_of_words: 410
     total_responses: 11
+    variance_length_of_explanations: 13832.017
   costs:
     avg_cost_per_query: 0.00027
     avg_nr_tokens_received: 28.86
@@ -3970,6 +4135,7 @@
     total_number_of_sentences: 49
     total_number_of_words: 698
     total_responses: 32
+    variance_length_of_explanations: 16522.09
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 87.08
@@ -3994,6 +4160,7 @@
     total_number_of_sentences: 130
     total_number_of_words: 2316
     total_responses: 48
+    variance_length_of_explanations: 31854.854
   costs:
     avg_cost_per_query: 0.00042
     avg_nr_tokens_received: 107.62
@@ -4018,6 +4185,7 @@
     total_number_of_sentences: 102
     total_number_of_words: 1893
     total_responses: 45
+    variance_length_of_explanations: 12178.481
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 88.6
@@ -4042,6 +4210,7 @@
     total_number_of_sentences: 87
     total_number_of_words: 1481
     total_responses: 36
+    variance_length_of_explanations: 35443.434
   costs:
     avg_cost_per_query: 0.00045
     avg_nr_tokens_received: 121.06
@@ -4066,6 +4235,7 @@
     total_number_of_sentences: 68
     total_number_of_words: 1339
     total_responses: 34
+    variance_length_of_explanations: 11101.728
   costs:
     avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 75.1
@@ -4090,6 +4260,7 @@
     total_number_of_sentences: 52
     total_number_of_words: 817
     total_responses: 31
+    variance_length_of_explanations: 22238.289
   costs:
     avg_cost_per_query: 0.00039
     avg_nr_tokens_received: 93.68
@@ -4114,6 +4285,7 @@
     total_number_of_sentences: 32
     total_number_of_words: 597
     total_responses: 22
+    variance_length_of_explanations: 5137.231
   costs:
     avg_cost_per_query: 0.00028
     avg_nr_tokens_received: 35.18
@@ -4138,6 +4310,7 @@
     total_number_of_sentences: 31
     total_number_of_words: 702
     total_responses: 10
+    variance_length_of_explanations: 16902.64
   costs:
     avg_cost_per_query: 0.00038
     avg_nr_tokens_received: 93.68
@@ -4162,6 +4335,7 @@
     total_number_of_sentences: 119
     total_number_of_words: 1824
     total_responses: 43
+    variance_length_of_explanations: 19392.386
   costs:
     avg_cost_per_query: 0.0004
     avg_nr_tokens_received: 91.94
@@ -4186,6 +4360,7 @@
     total_number_of_sentences: 124
     total_number_of_words: 1879
     total_responses: 48
+    variance_length_of_explanations: 10157.938
   costs:
     avg_cost_per_query: 0.00035
     avg_nr_tokens_received: 75.32
@@ -4210,6 +4385,7 @@
     total_number_of_sentences: 51
     total_number_of_words: 1220
     total_responses: 50
+    variance_length_of_explanations: 1695.21
   costs:
     avg_cost_per_query: 0.0003
     avg_nr_tokens_received: 38.8
@@ -4234,6 +4410,7 @@
     total_number_of_sentences: 80
     total_number_of_words: 1682
     total_responses: 47
+    variance_length_of_explanations: 9435.501
   costs:
     avg_cost_per_query: 0.00032
     avg_nr_tokens_received: 58.18
@@ -4258,6 +4435,7 @@
     total_number_of_sentences: 53
     total_number_of_words: 1060
     total_responses: 47
+    variance_length_of_explanations: 2360.418
   costs:
     avg_cost_per_query: 0.00031
     avg_nr_tokens_received: 47.64
