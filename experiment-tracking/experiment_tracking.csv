@@ -19,6 +19,10 @@ Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,
 Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.25,6,llm,0.5,1024,64,AdamW,5e-05,0,9062.0,10000,0.369,0.364
 Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.5,6,llm,0.5,1024,64,AdamW,5e-05,0,9240.0,10000,0.399,0.404
 Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,1.0,6,llm,0.5,1024,64,AdamW,5e-05,0,7884.0,8500,0.368,0.395
+Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,0.125,6,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
+Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,0.25,6,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
+Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,0.5,6,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
+Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,1.0,6,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,None
 Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,2085.0,5750,0.474,0.443
 Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,1940.0,5250,0.55,0.533
 Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,3081.0,8250,0.605,0.532
