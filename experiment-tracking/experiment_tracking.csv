@@ -19,8 +19,8 @@ Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,
 Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.25,6,llm,0.5,1024,64,AdamW,5e-05,0,9062.0,10000,0.369,0.364
 Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,0.5,6,llm,0.5,1024,64,AdamW,5e-05,0,9240.0,10000,0.399,0.404
 Subsampling ANLI1 GPT35,standard Distillation,anli1,t5-v1_1-base,standard,gpt35,1.0,6,llm,0.5,1024,64,AdamW,5e-05,0,7884.0,8500,0.368,0.395
-Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,0.125,6,llm,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
-Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,0.25,6,llm,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
+Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,0.125,6,llm,0.5,1024,32,AdamW,5e-05,0,9266.0,10000,0.415,0.387
+Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,0.25,6,llm,0.5,1024,32,AdamW,5e-05,0,8769.0,9500,0.418,0.423
 Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,0.5,6,llm,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
 Subsampling ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,gpt35,1.0,6,llm,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
 Subsampling CQA,standard Finetuning,cqa,t5-v1_1-base,standard,None,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,2085.0,5750,0.474,0.443
@@ -53,4 +53,4 @@ None,standard Distillation,svamp,t5-v1_1-base,standard,gpt35,1.0,4,llm,0.5,1024,
 None,step-by-step Distillation,svamp,t5-v1_1-base,task_prefix,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,0.062
 None,step-by-step Finetuning,svamp,t5-v1_1-small,task_prefix,gpt35,1.0,4,gt,0.5,1024,64,AdamW,5e-05,0,None,None,None,0.2
 None,step-by-step Distillation,svamp,t5-v1_1-small,task_prefix,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,None,None,None,0.167
-None,standard Distillation,svamp,t5-v1_1-small,standard,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,284.0,2000,0.07,0.087
+None,standard Distillation,svamp,t5-v1_1-small,standard,gpt35,1.0,4,llm,0.5,1024,64,AdamW,5e-05,0,273.0,2000,0.07,0.087

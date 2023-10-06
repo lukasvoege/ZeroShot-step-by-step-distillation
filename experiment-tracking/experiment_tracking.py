@@ -3,6 +3,8 @@ import os
 import json
 import argparse
 
+DEFAULT_PASSTHROUGH = "--batch_size 64 --parallelize --bf16 --tf32 --es_threshold 0.0001 --es_patience 30"
+
 def get_experiments_df():
     # Read csv and have all dtypes as object
     experiments = pd.read_csv("experiment-tracking/experiment_tracking.csv", sep=",", dtype=object)
@@ -166,7 +168,7 @@ if __name__ == "__main__":
     parser.add_argument("--label_type", type=str)
     parser.add_argument("--alpha", type=float)
 
-    parser.add_argument("--passthrough", type=str)
+    parser.add_argument("--passthrough", type=str, default=DEFAULT_PASSTHROUGH)
 
     args = parser.parse_args()
 
