@@ -18,3 +18,15 @@ templates:
     user_message: 'Given the following options, what do you think is the correct answer to the question below:\n\n{question}\n\nOptions:\na){choice_a}\nb){choice_b}\nc){choice_c}\nd){choice_d}\ne){choice_e}\n\nExplain your answer with one sentence.'
     label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
     explanation_parse: '.(.*)'
+  4:
+    id: 4
+    system_message: ''
+    user_message: 'Given the following choices, what do you think is the correct answer to the question below:\n\n{question}\n\Choices:\n{choice_a}\n{choice_b}\n{choice_c}\n{choice_d}\n{choice_e}\n\nExplain why, but be very brief.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+  5:
+    id: 5
+    system_message: ''
+    user_message: '{question}\n\n{choice_a}\n{choice_b}\n{choice_c}\n{choice_d}\n{choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
