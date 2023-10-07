@@ -59,6 +59,7 @@ def get_identifier(params: dict):
             params["batch_size"],
             params["optimizer"],
             params["lr"],
+            params["run"],
         ]
     )
 
