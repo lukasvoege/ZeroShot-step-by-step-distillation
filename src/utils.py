@@ -1,10 +1,10 @@
 from typing import Dict
 import yaml
 
-def add_prompt_to_yaml(yaml_file: str, prompt: str) -> None:
+def add_prompt_to_yaml(yaml_file: str, prompt: str, label_parse: str, expl_parse: str) -> None:
     highest_id = max(read_yaml(yaml_file)["templates"].keys())
 
-    append = f"\n\n  {highest_id+1}:\n    id: {highest_id+1}\n    system_message: ''\n    user_message: '{prompt}'\n    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'\n    explanation_parse: '.?(.*)'"
+    append = f"\n\n  {highest_id+1}:\n    id: {highest_id+1}\n    system_message: ''\n    user_message: '{prompt}'\n    label_parse: '{label_parse}'\n    explanation_parse: '{expl_parse}'"
     with open(yaml_file, "a") as yf:
         yf.write(append)
 

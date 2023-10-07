@@ -16,6 +16,11 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
     DATASET = dataset#"anli1"
     N_PRV_BEST = n_prev_best #15
     TEST_SIZE = test_size #50
+    if DATASET == "anli1" or DATASET == "esnli":
+        LABEL_PARSE = '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    elif DATASET == "cqa":
+        LABEL_PARSE = '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    EXPL_PARSE = '.(.*)'
 
     for x in range(iterations):
         utils.print_c(f"ITERATION {x + 1}/{iterations}", c="green")
@@ -74,7 +79,7 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
                     i += 1
                     response = response.split("<PRT>")[1].split("</PRT>")[0]
                     response = response.strip("\n")
-                    utils.add_prompt_to_yaml(f"prompt-templates/{DATASET}.yaml", response)
+                    utils.add_prompt_to_yaml(f"prompt-templates/{DATASET}.yaml", response, LABEL_PARSE, EXPL_PARSE)
                     print(response)
                 else:
                     i += 0.25
