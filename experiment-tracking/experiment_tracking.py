@@ -76,7 +76,7 @@ def command_from_row(row: dict, pass_through: str = None):
     python += f" --from_pretrained google/{row['model']}"
     python += f" --dataset {row['dataset']}"
     python += f" --model_type {row['mode']}"
-    for field in ["label_type", "llm", "prompt_mix", "subsample", "alpha"]:
+    for field in ["label_type", "llm", "prompt_mix", "subsample", "alpha", "run"]:
         if row[field] not in ["None", "0"]:
             python += f" --{field} {row[field]}"
 
