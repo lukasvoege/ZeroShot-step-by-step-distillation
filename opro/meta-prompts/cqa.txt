@@ -1,0 +1,45 @@
+Your task is to generate prompt templates <PRT>. Below are some previous prompt templates with their scores.
+The score ranges from 0 to 100.
+
+<[PREVIOUS_BEST]>
+
+Below are some problems.
+
+Problem:
+question: "Where would you put silverware once they've dried, but you're not ready to use them."
+choice_a: "table"
+choice_b: "restaurant"
+choice_c: "cupboard"
+choice_d: "kitchen"
+choice_e: "sink"
+template: <PRT>
+Ground truth answer:
+"cupboard"
+
+Problem:
+question: "Billy was a student taking a course in communications. Where might he be taking his classes?"
+choice_a: "every aspect of life"
+choice_b: "library"
+choice_c: "in a movie hall"
+choice_d: "classroom"
+choice_e: "university"
+template: <PRT>
+Ground truth answer:
+"classroom"
+
+Problem:
+question: "When people travel they usually don't have to worry about medical emergencies because hospitals are where?"
+choice_a: "people are"
+choice_b: "military base"
+choice_c: "every state"
+choice_d: "major city"
+choice_e: "urban area"
+template: <PRT>
+Ground truth answer:
+"every state"
+
+Generate a prompt template that is different from all the prompt templates <PRT> above, and HAS A HIGHER SCORE than all the prompt templates <PRT> above.
+The prompt template should begin with <PRT> and end with </PRT>.
+The prompt template should be concise, effective, and generally applicable to all problems above.
+The response to a prompt template should be easy to parse.
+The prompt template must include the placeholders {question} and {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}, but must be different from all of the above prompt templates.

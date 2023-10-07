@@ -60,14 +60,24 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
             print(f"Querying {i+1}/8...")
             response = chat_model.predict(meta_prompt, timeout=10)
             #print(response)
-            if all([x in response for x in ["{premise}", "{hypothesis}", "<PRT>", "</PRT>"]]) and response.count("{") == 2: # ANLI1 specific!!!!
-                i += 1
-                response = response.split("<PRT>")[1].split("</PRT>")[0]
-                response = response.strip("\n")
-                utils.add_prompt_to_yaml(f"prompt-templates/{DATASET}.yaml", response)
-                print(response)
-            else:
-                i += 0.5
+            if DATASET == "anli1" or DATASET == "esnli":
+                if all([x in response for x in ["{premise}", "{hypothesis}", "<PRT>", "</PRT>"]]) and response.count("{") == 2: # ANLI1, ESNLI
+                    i += 1
+                    response = response.split("<PRT>")[1].split("</PRT>")[0]
+                    response = response.strip("\n")
+                    utils.add_prompt_to_yaml(f"prompt-templates/{DATASET}.yaml", response)
+                    print(response)
+                else:
+                    i += 0.5
+            elif DATASET == "cqa":
+                if all([x in response for x in ["{question}", "{choice_a}", "{choice_b}", "{choice_c}", "{choice_d}", "{choice_e}", "<PRT>", "</PRT>"]]) and response.count("{") == 6: # CQA
+                    i += 1
+                    response = response.split("<PRT>")[1].split("</PRT>")[0]
+                    response = response.strip("\n")
+                    utils.add_prompt_to_yaml(f"prompt-templates/{DATASET}.yaml", response)
+                    print(response)
+                else:
+                    i += 0.25
 
         utils.print_c("FINISHED ITERATION", c="green")
 
