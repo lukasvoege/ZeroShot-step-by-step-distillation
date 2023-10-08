@@ -3,7 +3,7 @@ import os
 import json
 import argparse
 
-DEFAULT_PASSTHROUGH = "--batch_size 64 --parallelize --bf16 --tf32 --es_threshold 0.0001 --es_patience 30"
+DEFAULT_PASSTHROUGH = "--batch_size 32 --bf16 --tf32 --es_threshold 0.0001 --es_patience 30" #  --parallelize
 
 def get_experiments_df():
     # Read csv and have all dtypes as object
