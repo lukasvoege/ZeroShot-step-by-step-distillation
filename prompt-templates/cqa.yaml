@@ -30,3 +30,664 @@ templates:
     user_message: '{question}\n\n{choice_a}\n{choice_b}\n{choice_c}\n{choice_d}\n{choice_e}'
     label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
     explanation_parse: '.(.*)'
+
+  6:
+    id: 6
+    system_message: ''
+    user_message: 'What is the correct answer to the following question? {question}\n\na) {choice_a}\nb) {choice_b}\nc) {choice_c}\nd) {choice_d}\ne) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  7:
+    id: 7
+    system_message: ''
+    user_message: 'What is the best option for {question}?
+a) {choice_a}
+b) {choice_b}
+c) {choice_c}
+d) {choice_d}
+e) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  8:
+    id: 8
+    system_message: ''
+    user_message: '{question}
+A) {choice_a}
+B) {choice_b}
+C) {choice_c}
+D) {choice_d}
+E) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  9:
+    id: 9
+    system_message: ''
+    user_message: '{question}\n\n1. {choice_a}\n2. {choice_b}\n3. {choice_c}\n4. {choice_d}\n5. {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  10:
+    id: 10
+    system_message: ''
+    user_message: '{question}: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}? '
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  11:
+    id: 11
+    system_message: ''
+    user_message: 'Choose the correct answer for the question: {question}
+
+a) {choice_a}
+b) {choice_b}
+c) {choice_c}
+d) {choice_d}
+e) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  12:
+    id: 12
+    system_message: ''
+    user_message: '{question}
+a) {choice_a}
+b) {choice_b}
+c) {choice_c}
+d) {choice_d}
+e) {choice_e}
+
+Which of these options fits best?'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  13:
+    id: 13
+    system_message: ''
+    user_message: '{question}
+Choose the correct option:
+a) {choice_a}
+b) {choice_b}
+c) {choice_c}
+d) {choice_d}
+e) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+
+  14:
+    id: 14
+    system_message: ''
+    user_message: '{question} Choose the option that best answers the question: a) {choice_a} b) {choice_b} c) {choice_c} d) {choice_d} e) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  15:
+    id: 15
+    system_message: ''
+    user_message: '{question} Please select the most appropriate choice out of the following options: a) {choice_a} b) {choice_b} c) {choice_c} d) {choice_d} e) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  16:
+    id: 16
+    system_message: ''
+    user_message: '{question}: Which of the following options is correct? a) {choice_a} b) {choice_b} c) {choice_c} d) {choice_d} e) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  17:
+    id: 17
+    system_message: ''
+    user_message: 'What is the best choice for {question}? 1) {choice_a} 2) {choice_b} 3) {choice_c} 4) {choice_d} 5) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  18:
+    id: 18
+    system_message: ''
+    user_message: 'Choose the best option for {question}: a) {choice_a} b) {choice_b} c) {choice_c} d) {choice_d} e) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  19:
+    id: 19
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? 1) {choice_a} 2) {choice_b} 3) {choice_c} 4) {choice_d} 5) {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  20:
+    id: 20
+    system_message: ''
+    user_message: 'Which option best completes the following question: {question}? 
+a) {choice_a} 
+b) {choice_b} 
+c) {choice_c} 
+d) {choice_d} 
+e) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  21:
+    id: 21
+    system_message: ''
+    user_message: 'What is the appropriate choice for {question}? 
+1) {choice_a} 
+2) {choice_b} 
+3) {choice_c} 
+4) {choice_d} 
+5) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  22:
+    id: 22
+    system_message: ''
+    user_message: '{question} - Which option below best fits the given question: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}?'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  23:
+    id: 23
+    system_message: ''
+    user_message: 'What is the most suitable option for {question} among the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}? '
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  24:
+    id: 24
+    system_message: ''
+    user_message: 'What is the preferred option for {question}? Pick one: {choice_a} / {choice_b} / {choice_c} / {choice_d} / {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  25:
+    id: 25
+    system_message: ''
+    user_message: 'What is the most appropriate choice for {question}? Choose from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  26:
+    id: 26
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}. '
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  27:
+    id: 27
+    system_message: ''
+    user_message: 'Which option is the most appropriate for {question}? A) {choice_a} B) {choice_b} C) {choice_c} D) {choice_d} E) {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  28:
+    id: 28
+    system_message: ''
+    user_message: 'What option is the most appropriate for {question}? Choose from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  29:
+    id: 29
+    system_message: ''
+    user_message: 'What is the most logical choice for {question}? {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}?'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  30:
+    id: 30
+    system_message: ''
+    user_message: 'What is the best choice for {question}? Select from {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  31:
+    id: 31
+    system_message: ''
+    user_message: 'What is the best choice for {question}? Options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}. '
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  32:
+    id: 32
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Choose from the following options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  33:
+    id: 33
+    system_message: ''
+    user_message: 'What is the best option for {question}? Select either {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  34:
+    id: 34
+    system_message: ''
+    user_message: 'What is the best option for {question}? Choose from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  35:
+    id: 35
+    system_message: ''
+    user_message: 'What is the ideal option for {question}? Choose from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  36:
+    id: 36
+    system_message: ''
+    user_message: 'What is the best option for {question}? 1) {choice_a} 2) {choice_b} 3) {choice_c} 4) {choice_d} 5) {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  37:
+    id: 37
+    system_message: ''
+    user_message: 'What is the best option for {question}? Select one from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  38:
+    id: 38
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Pick one from {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  39:
+    id: 39
+    system_message: ''
+    user_message: 'What is the optimal selection for {question}? A) {choice_a} B) {choice_b} C) {choice_c} D) {choice_d} E) {choice_e} '
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  40:
+    id: 40
+    system_message: ''
+    user_message: 'What is the ideal choice for {question}? Pick one from {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  41:
+    id: 41
+    system_message: ''
+    user_message: 'What is the most suitable choice for {question}? Pick one: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  42:
+    id: 42
+    system_message: ''
+    user_message: 'What is the most suitable selection for {question}? Pick one: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  43:
+    id: 43
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Pick one of the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  44:
+    id: 44
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Pick one: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  45:
+    id: 45
+    system_message: ''
+    user_message: ' What is the optimal choice for {question}? Choose between {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. '
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  46:
+    id: 46
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Pick one of the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  47:
+    id: 47
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Consider the following options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}. '
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  48:
+    id: 48
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  49:
+    id: 49
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}. Explain your reasoning in one sentence.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  50:
+    id: 50
+    system_message: ''
+    user_message: 'What is the optimal selection for {question}? 1) {choice_a} 2) {choice_b} 3) {choice_c} 4) {choice_d} 5) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  51:
+    id: 51
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Choose from the following options: 
+1) {choice_a}
+2) {choice_b}
+3) {choice_c}
+4) {choice_d}
+5) {choice_e}'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  52:
+    id: 52
+    system_message: ''
+    user_message: 'Choose the most suitable option for {question}: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  53:
+    id: 53
+    system_message: ''
+    user_message: 'What is the optimal selection for {question}? Pick among: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  54:
+    id: 54
+    system_message: ''
+    user_message: 'What is the most suitable choice for {question}? Pick one from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  55:
+    id: 55
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Pick one from these choices: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  56:
+    id: 56
+    system_message: ''
+    user_message: 'Considering the options {choice_a}, {choice_b}, {choice_c}, {choice_d}, and {choice_e}, what is the most suitable choice for {question}?'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  57:
+    id: 57
+    system_message: ''
+    user_message: 'For {question}, which of the following is the most suitable option: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}?'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  58:
+    id: 58
+    system_message: ''
+    user_message: 'What is the optimal selection for {question}? Evaluate the options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  59:
+    id: 59
+    system_message: ''
+    user_message: 'Which option is the most suitable for {question}? Please choose from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  60:
+    id: 60
+    system_message: ''
+    user_message: 'What is the most suitable choice for {question}? Pick one from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  61:
+    id: 61
+    system_message: ''
+    user_message: 'What is the ideal choice for {question}? Choose one from the options below: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  62:
+    id: 62
+    system_message: ''
+    user_message: 'Which of the following options is the most suitable choice for {question}? Please choose from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  63:
+    id: 63
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Select one from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  64:
+    id: 64
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Please select one of the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  65:
+    id: 65
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Choose from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  66:
+    id: 66
+    system_message: ''
+    user_message: 'What is the most suitable choice for {question}? Select one from the options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  67:
+    id: 67
+    system_message: ''
+    user_message: 'What is the most suitable choice for {question}? Pick one of the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  68:
+    id: 68
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Please select from the following choices: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  69:
+    id: 69
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Consider the choices: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  70:
+    id: 70
+    system_message: ''
+    user_message: 'What is the most suitable option to {question}? Please select one from the following options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Briefly explain your choice.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  71:
+    id: 71
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Select one: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  72:
+    id: 72
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Please select one of the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  73:
+    id: 73
+    system_message: ''
+    user_message: 'What is the most appropriate option for {question}? Select one from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  74:
+    id: 74
+    system_message: ''
+    user_message: 'Which of the following is the most suitable choice for {question}? Please select one option: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  75:
+    id: 75
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Choose from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  76:
+    id: 76
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Select one from {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Justify your choice in one sentence.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  77:
+    id: 77
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Select one of the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Provide a brief explanation for your selection.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  78:
+    id: 78
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Choose one of the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  79:
+    id: 79
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Pick one: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  80:
+    id: 80
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Pick one from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Justify your answer briefly.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  81:
+    id: 81
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Choose from {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e} and provide a brief explanation. '
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  82:
+    id: 82
+    system_message: ''
+    user_message: 'What option is the most suitable for {question}? Select one from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  83:
+    id: 83
+    system_message: ''
+    user_message: 'What is the most suitable choice for {question}? Choose from the options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  84:
+    id: 84
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Pick one of the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  85:
+    id: 85
+    system_message: ''
+    user_message: 'What is the most suitable option for {question}? Choose from the following: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  86:
+    id: 86
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Choose one from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Provide a concise explanation for your selection.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  87:
+    id: 87
+    system_message: ''
+    user_message: 'What is the most optimal choice for {question}? Please select one of the provided options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Give a brief explanation for your answer.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  88:
+    id: 88
+    system_message: ''
+    user_message: 'What is the optimal choice for {question}? Consider the following options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Briefly explain your reasoning.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  89:
+    id: 89
+    system_message: ''
+    user_message: 'What is the optimal selection for the following: {question}? Choose one from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, {choice_e}. Justify your decision in one sentence.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  90:
+    id: 90
+    system_message: ''
+    user_message: 'What is the optimal selection for {question}? Use one of the options: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Justify your choice concisely.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  91:
+    id: 91
+    system_message: ''
+    user_message: 'What is the most suitable choice for {question}? Choose one option: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Justify your answer in one sentence.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  92:
+    id: 92
+    system_message: ''
+    user_message: 'What is the optimal solution for {question}? Please select the most suitable option from the following choices: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Justify your choice with a brief explanation.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'
+
+  93:
+    id: 93
+    system_message: ''
+    user_message: 'What is the ideal option for {question}? Select one choice from: {choice_a}, {choice_b}, {choice_c}, {choice_d}, or {choice_e}. Provide a short explanation for your decision.'
+    label_parse: '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+    explanation_parse: '.(.*)'

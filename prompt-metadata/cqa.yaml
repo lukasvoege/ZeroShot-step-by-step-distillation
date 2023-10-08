@@ -123,3 +123,2003 @@
     accuracy: 0.5067
     n_correct: 38
     n_wrong: 37
+6:
+  characteristics:
+    avg_len_of_explanations: 124.83
+    avg_nr_of_sentences: 1.17
+    avg_nr_of_words: 20.5
+    flesch_reading_ease: 47.3
+    n_none_responses: 69
+    n_parse_errors: 34
+    total_length_of_explanations: 749
+    total_number_of_sentences: 7
+    total_number_of_words: 123
+    total_responses: 6
+    variance_length_of_explanations: 4138.472
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 13.55
+    avg_nr_tokens_sent: 61.53
+    total_accumulated_costs: 0.008954499999999997
+    total_performed_queries: 75
+    total_tokens_received: 1016
+    total_tokens_sent: 4615
+  performance:
+    accuracy: 0.4533
+    n_correct: 34
+    n_wrong: 41
+7:
+  characteristics:
+    avg_len_of_explanations: 256.1
+    avg_nr_of_sentences: 2.13
+    avg_nr_of_words: 41.85
+    flesch_reading_ease: 45.6
+    n_none_responses: 36
+    n_parse_errors: 20
+    total_length_of_explanations: 9988
+    total_number_of_sentences: 83
+    total_number_of_words: 1632
+    total_responses: 39
+    variance_length_of_explanations: 48722.195
+  costs:
+    avg_cost_per_query: 0.00019
+    avg_nr_tokens_received: 54.83
+    avg_nr_tokens_sent: 51.53
+    total_accumulated_costs: 0.014021499999999998
+    total_performed_queries: 75
+    total_tokens_received: 4112
+    total_tokens_sent: 3865
+  performance:
+    accuracy: 0.5467
+    n_correct: 41
+    n_wrong: 34
+8:
+  characteristics:
+    avg_len_of_explanations: 495.44
+    avg_nr_of_sentences: 4.33
+    avg_nr_of_words: 81.61
+    flesch_reading_ease: 48.1
+    n_none_responses: 57
+    n_parse_errors: 51
+    total_length_of_explanations: 8918
+    total_number_of_sentences: 78
+    total_number_of_words: 1469
+    total_responses: 18
+    variance_length_of_explanations: 240818.802
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 35.12
+    avg_nr_tokens_sent: 45.56
+    total_accumulated_costs: 0.010393499999999995
+    total_performed_queries: 75
+    total_tokens_received: 2634
+    total_tokens_sent: 3417
+  performance:
+    accuracy: 0.0933
+    n_correct: 7
+    n_wrong: 68
+9:
+  characteristics:
+    avg_len_of_explanations: 575.54
+    avg_nr_of_sentences: 7.0
+    avg_nr_of_words: 93.74
+    flesch_reading_ease: 51.5
+    n_none_responses: 40
+    n_parse_errors: 25
+    total_length_of_explanations: 20144
+    total_number_of_sentences: 245
+    total_number_of_words: 3281
+    total_responses: 35
+    variance_length_of_explanations: 237641.62
+  costs:
+    avg_cost_per_query: 0.00024
+    avg_nr_tokens_received: 81.51
+    avg_nr_tokens_sent: 51.57
+    total_accumulated_costs: 0.018027999999999995
+    total_performed_queries: 75
+    total_tokens_received: 6113
+    total_tokens_sent: 3868
+  performance:
+    accuracy: 0.36
+    n_correct: 27
+    n_wrong: 48
+10:
+  characteristics:
+    avg_len_of_explanations: 434.75
+    avg_nr_of_sentences: 4.53
+    avg_nr_of_words: 69.5
+    flesch_reading_ease: 47.4
+    n_none_responses: 35
+    n_parse_errors: 12
+    total_length_of_explanations: 17390
+    total_number_of_sentences: 181
+    total_number_of_words: 2780
+    total_responses: 40
+    variance_length_of_explanations: 227232.788
+  costs:
+    avg_cost_per_query: 0.00021
+    avg_nr_tokens_received: 70.79
+    avg_nr_tokens_sent: 42.57
+    total_accumulated_costs: 0.015407499999999998
+    total_performed_queries: 75
+    total_tokens_received: 5309
+    total_tokens_sent: 3193
+  performance:
+    accuracy: 0.4933
+    n_correct: 37
+    n_wrong: 38
+11:
+  characteristics:
+    avg_len_of_explanations: 44.0
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 7.0
+    flesch_reading_ease: 0
+    n_none_responses: 73
+    n_parse_errors: 72
+    total_length_of_explanations: 88
+    total_number_of_sentences: 2
+    total_number_of_words: 14
+    total_responses: 2
+    variance_length_of_explanations: 4.0
+  costs:
+    avg_cost_per_query: 9.0e-05
+    avg_nr_tokens_received: 4.04
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.0066285
+    total_performed_queries: 75
+    total_tokens_received: 303
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.0
+    n_correct: 0
+    n_wrong: 75
+12:
+  characteristics:
+    avg_len_of_explanations: 102.17
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 16.83
+    flesch_reading_ease: 45.6
+    n_none_responses: 69
+    n_parse_errors: 59
+    total_length_of_explanations: 613
+    total_number_of_sentences: 6
+    total_number_of_words: 101
+    total_responses: 6
+    variance_length_of_explanations: 1833.139
+  costs:
+    avg_cost_per_query: 9.0e-05
+    avg_nr_tokens_received: 6.61
+    avg_nr_tokens_sent: 53.56
+    total_accumulated_costs: 0.007017499999999999
+    total_performed_queries: 75
+    total_tokens_received: 496
+    total_tokens_sent: 4017
+  performance:
+    accuracy: 0.12
+    n_correct: 9
+    n_wrong: 66
+13:
+  characteristics:
+    avg_len_of_explanations: 231.4
+    avg_nr_of_sentences: 2.2
+    avg_nr_of_words: 41.4
+    flesch_reading_ease: 60.2
+    n_none_responses: 70
+    n_parse_errors: 48
+    total_length_of_explanations: 1157
+    total_number_of_sentences: 11
+    total_number_of_words: 207
+    total_responses: 5
+    variance_length_of_explanations: 52082.24
+  costs:
+    avg_cost_per_query: 9.0e-05
+    avg_nr_tokens_received: 9.44
+    avg_nr_tokens_sent: 50.56
+    total_accumulated_costs: 0.007104000000000002
+    total_performed_queries: 75
+    total_tokens_received: 708
+    total_tokens_sent: 3792
+  performance:
+    accuracy: 0.16
+    n_correct: 12
+    n_wrong: 63
+14:
+  characteristics:
+    avg_len_of_explanations: 70.5
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 14.0
+    flesch_reading_ease: 0
+    n_none_responses: 71
+    n_parse_errors: 64
+    total_length_of_explanations: 282
+    total_number_of_sentences: 4
+    total_number_of_words: 56
+    total_responses: 4
+    variance_length_of_explanations: 1254.25
+  costs:
+    avg_cost_per_query: 9.0e-05
+    avg_nr_tokens_received: 6.45
+    avg_nr_tokens_sent: 54.56
+    total_accumulated_costs: 0.007105999999999999
+    total_performed_queries: 75
+    total_tokens_received: 484
+    total_tokens_sent: 4092
+  performance:
+    accuracy: 0.08
+    n_correct: 6
+    n_wrong: 69
+15:
+  characteristics:
+    avg_len_of_explanations: 141.82
+    avg_nr_of_sentences: 1.18
+    avg_nr_of_words: 22.73
+    flesch_reading_ease: 42.8
+    n_none_responses: 64
+    n_parse_errors: 42
+    total_length_of_explanations: 1560
+    total_number_of_sentences: 13
+    total_number_of_words: 250
+    total_responses: 11
+    variance_length_of_explanations: 3641.058
+  costs:
+    avg_cost_per_query: 0.00011
+    avg_nr_tokens_received: 12.31
+    avg_nr_tokens_sent: 57.56
+    total_accumulated_costs: 0.008321500000000003
+    total_performed_queries: 75
+    total_tokens_received: 923
+    total_tokens_sent: 4317
+  performance:
+    accuracy: 0.2667
+    n_correct: 20
+    n_wrong: 55
+16:
+  characteristics:
+    avg_len_of_explanations: 249.92
+    avg_nr_of_sentences: 2.0
+    avg_nr_of_words: 42.15
+    flesch_reading_ease: 48.5
+    n_none_responses: 62
+    n_parse_errors: 40
+    total_length_of_explanations: 3249
+    total_number_of_sentences: 26
+    total_number_of_words: 548
+    total_responses: 13
+    variance_length_of_explanations: 66501.917
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 20.35
+    avg_nr_tokens_sent: 53.57
+    total_accumulated_costs: 0.009078999999999999
+    total_performed_queries: 75
+    total_tokens_received: 1526
+    total_tokens_sent: 4018
+  performance:
+    accuracy: 0.28
+    n_correct: 21
+    n_wrong: 54
+17:
+  characteristics:
+    avg_len_of_explanations: 358.33
+    avg_nr_of_sentences: 2.89
+    avg_nr_of_words: 57.42
+    flesch_reading_ease: 43.7
+    n_none_responses: 30
+    n_parse_errors: 8
+    total_length_of_explanations: 16125
+    total_number_of_sentences: 130
+    total_number_of_words: 2584
+    total_responses: 45
+    variance_length_of_explanations: 96624.178
+  costs:
+    avg_cost_per_query: 0.00023
+    avg_nr_tokens_received: 71.25
+    avg_nr_tokens_sent: 56.53
+    total_accumulated_costs: 0.017048000000000004
+    total_performed_queries: 75
+    total_tokens_received: 5344
+    total_tokens_sent: 4240
+  performance:
+    accuracy: 0.5733
+    n_correct: 43
+    n_wrong: 32
+18:
+  characteristics:
+    avg_len_of_explanations: 318.2
+    avg_nr_of_sentences: 2.73
+    avg_nr_of_words: 51.4
+    flesch_reading_ease: 45.1
+    n_none_responses: 60
+    n_parse_errors: 43
+    total_length_of_explanations: 4773
+    total_number_of_sentences: 41
+    total_number_of_words: 771
+    total_responses: 15
+    variance_length_of_explanations: 176831.36
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 23.16
+    avg_nr_tokens_sent: 50.53
+    total_accumulated_costs: 0.009159000000000002
+    total_performed_queries: 75
+    total_tokens_received: 1737
+    total_tokens_sent: 3790
+  performance:
+    accuracy: 0.2533
+    n_correct: 19
+    n_wrong: 56
+19:
+  characteristics:
+    avg_len_of_explanations: 220.11
+    avg_nr_of_sentences: 1.8
+    avg_nr_of_words: 35.54
+    flesch_reading_ease: 44.3
+    n_none_responses: 40
+    n_parse_errors: 11
+    total_length_of_explanations: 7704
+    total_number_of_sentences: 63
+    total_number_of_words: 1244
+    total_responses: 35
+    variance_length_of_explanations: 38138.673
+  costs:
+    avg_cost_per_query: 0.00018
+    avg_nr_tokens_received: 47.32
+    avg_nr_tokens_sent: 58.53
+    total_accumulated_costs: 0.013683000000000004
+    total_performed_queries: 75
+    total_tokens_received: 3549
+    total_tokens_sent: 4390
+  performance:
+    accuracy: 0.5467
+    n_correct: 41
+    n_wrong: 34
+20:
+  characteristics:
+    avg_len_of_explanations: 76.0
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 15.0
+    flesch_reading_ease: 0
+    n_none_responses: 74
+    n_parse_errors: 65
+    total_length_of_explanations: 76
+    total_number_of_sentences: 1
+    total_number_of_words: 15
+    total_responses: 1
+    variance_length_of_explanations: 0.0
+  costs:
+    avg_cost_per_query: 9.0e-05
+    avg_nr_tokens_received: 5.04
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.0067785000000000015
+    total_performed_queries: 75
+    total_tokens_received: 378
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.0667
+    n_correct: 5
+    n_wrong: 70
+21:
+  characteristics:
+    avg_len_of_explanations: 230.41
+    avg_nr_of_sentences: 1.95
+    avg_nr_of_words: 37.41
+    flesch_reading_ease: 48.2
+    n_none_responses: 53
+    n_parse_errors: 8
+    total_length_of_explanations: 5069
+    total_number_of_sentences: 43
+    total_number_of_words: 823
+    total_responses: 22
+    variance_length_of_explanations: 91937.242
+  costs:
+    avg_cost_per_query: 0.00017
+    avg_nr_tokens_received: 40.17
+    avg_nr_tokens_sent: 56.53
+    total_accumulated_costs: 0.012385999999999998
+    total_performed_queries: 75
+    total_tokens_received: 3013
+    total_tokens_sent: 4240
+  performance:
+    accuracy: 0.64
+    n_correct: 48
+    n_wrong: 27
+22:
+  characteristics:
+    avg_len_of_explanations: 92.0
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 16.25
+    flesch_reading_ease: 0
+    n_none_responses: 71
+    n_parse_errors: 46
+    total_length_of_explanations: 368
+    total_number_of_sentences: 4
+    total_number_of_words: 65
+    total_responses: 4
+    variance_length_of_explanations: 1096.5
+  costs:
+    avg_cost_per_query: 9.0e-05
+    avg_nr_tokens_received: 7.35
+    avg_nr_tokens_sent: 51.56
+    total_accumulated_costs: 0.0069025000000000015
+    total_performed_queries: 75
+    total_tokens_received: 551
+    total_tokens_sent: 3867
+  performance:
+    accuracy: 0.2533
+    n_correct: 19
+    n_wrong: 56
+23:
+  characteristics:
+    avg_len_of_explanations: 202.73
+    avg_nr_of_sentences: 1.68
+    avg_nr_of_words: 33.05
+    flesch_reading_ease: 46.6
+    n_none_responses: 53
+    n_parse_errors: 7
+    total_length_of_explanations: 4460
+    total_number_of_sentences: 37
+    total_number_of_words: 727
+    total_responses: 22
+    variance_length_of_explanations: 20018.198
+  costs:
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 33.2
+    avg_nr_tokens_sent: 53.52
+    total_accumulated_costs: 0.011001000000000002
+    total_performed_queries: 75
+    total_tokens_received: 2490
+    total_tokens_sent: 4014
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+24:
+  characteristics:
+    avg_len_of_explanations: 77.67
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 13.33
+    flesch_reading_ease: 0
+    n_none_responses: 72
+    n_parse_errors: 19
+    total_length_of_explanations: 233
+    total_number_of_sentences: 3
+    total_number_of_words: 40
+    total_responses: 3
+    variance_length_of_explanations: 81.556
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 20.97
+    avg_nr_tokens_sent: 49.53
+    total_accumulated_costs: 0.008718499999999997
+    total_performed_queries: 75
+    total_tokens_received: 1573
+    total_tokens_sent: 3715
+  performance:
+    accuracy: 0.5733
+    n_correct: 43
+    n_wrong: 32
+25:
+  characteristics:
+    avg_len_of_explanations: 335.29
+    avg_nr_of_sentences: 3.35
+    avg_nr_of_words: 54.18
+    flesch_reading_ease: 50.6
+    n_none_responses: 58
+    n_parse_errors: 7
+    total_length_of_explanations: 5700
+    total_number_of_sentences: 57
+    total_number_of_words: 921
+    total_responses: 17
+    variance_length_of_explanations: 172475.972
+  costs:
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 35.28
+    avg_nr_tokens_sent: 50.53
+    total_accumulated_costs: 0.010976999999999997
+    total_performed_queries: 75
+    total_tokens_received: 2646
+    total_tokens_sent: 3790
+  performance:
+    accuracy: 0.68
+    n_correct: 51
+    n_wrong: 24
+26:
+  characteristics:
+    avg_len_of_explanations: 414.23
+    avg_nr_of_sentences: 3.91
+    avg_nr_of_words: 65.51
+    flesch_reading_ease: 44.2
+    n_none_responses: 40
+    n_parse_errors: 10
+    total_length_of_explanations: 14498
+    total_number_of_sentences: 137
+    total_number_of_words: 2293
+    total_responses: 35
+    variance_length_of_explanations: 193531.433
+  costs:
+    avg_cost_per_query: 0.00021
+    avg_nr_tokens_received: 65.71
+    avg_nr_tokens_sent: 49.53
+    total_accumulated_costs: 0.015428500000000003
+    total_performed_queries: 75
+    total_tokens_received: 4928
+    total_tokens_sent: 3715
+  performance:
+    accuracy: 0.5733
+    n_correct: 43
+    n_wrong: 32
+27:
+  characteristics:
+    avg_len_of_explanations: 173.93
+    avg_nr_of_sentences: 1.4
+    avg_nr_of_words: 28.27
+    flesch_reading_ease: 44.2
+    n_none_responses: 60
+    n_parse_errors: 24
+    total_length_of_explanations: 2609
+    total_number_of_sentences: 21
+    total_number_of_words: 424
+    total_responses: 15
+    variance_length_of_explanations: 5338.596
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 19.69
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.008976499999999998
+    total_performed_queries: 75
+    total_tokens_received: 1477
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.4667
+    n_correct: 35
+    n_wrong: 40
+28:
+  characteristics:
+    avg_len_of_explanations: 281.85
+    avg_nr_of_sentences: 2.8
+    avg_nr_of_words: 45.6
+    flesch_reading_ease: 50.3
+    n_none_responses: 55
+    n_parse_errors: 7
+    total_length_of_explanations: 5637
+    total_number_of_sentences: 56
+    total_number_of_words: 912
+    total_responses: 20
+    variance_length_of_explanations: 139741.428
+  costs:
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 35.97
+    avg_nr_tokens_sent: 50.53
+    total_accumulated_costs: 0.011080999999999995
+    total_performed_queries: 75
+    total_tokens_received: 2698
+    total_tokens_sent: 3790
+  performance:
+    accuracy: 0.6933
+    n_correct: 52
+    n_wrong: 23
+29:
+  characteristics:
+    avg_len_of_explanations: 279.31
+    avg_nr_of_sentences: 2.23
+    avg_nr_of_words: 43.54
+    flesch_reading_ease: 37.1
+    n_none_responses: 40
+    n_parse_errors: 10
+    total_length_of_explanations: 9776
+    total_number_of_sentences: 78
+    total_number_of_words: 1524
+    total_responses: 35
+    variance_length_of_explanations: 89267.073
+  costs:
+    avg_cost_per_query: 0.00018
+    avg_nr_tokens_received: 52.71
+    avg_nr_tokens_sent: 48.53
+    total_accumulated_costs: 0.013366000000000001
+    total_performed_queries: 75
+    total_tokens_received: 3953
+    total_tokens_sent: 3640
+  performance:
+    accuracy: 0.64
+    n_correct: 48
+    n_wrong: 27
+30:
+  characteristics:
+    avg_len_of_explanations: 416.03
+    avg_nr_of_sentences: 3.97
+    avg_nr_of_words: 66.06
+    flesch_reading_ease: 45.2
+    n_none_responses: 44
+    n_parse_errors: 8
+    total_length_of_explanations: 12897
+    total_number_of_sentences: 123
+    total_number_of_words: 2048
+    total_responses: 31
+    variance_length_of_explanations: 204607.967
+  costs:
+    avg_cost_per_query: 0.00019
+    avg_nr_tokens_received: 55.37
+    avg_nr_tokens_sent: 49.53
+    total_accumulated_costs: 0.0138785
+    total_performed_queries: 75
+    total_tokens_received: 4153
+    total_tokens_sent: 3715
+  performance:
+    accuracy: 0.6533
+    n_correct: 49
+    n_wrong: 26
+31:
+  characteristics:
+    avg_len_of_explanations: 450.08
+    avg_nr_of_sentences: 4.4
+    avg_nr_of_words: 71.24
+    flesch_reading_ease: 45.0
+    n_none_responses: 50
+    n_parse_errors: 10
+    total_length_of_explanations: 11252
+    total_number_of_sentences: 110
+    total_number_of_words: 1781
+    total_responses: 25
+    variance_length_of_explanations: 219961.674
+  costs:
+    avg_cost_per_query: 0.00018
+    avg_nr_tokens_received: 51.93
+    avg_nr_tokens_sent: 49.53
+    total_accumulated_costs: 0.0133625
+    total_performed_queries: 75
+    total_tokens_received: 3895
+    total_tokens_sent: 3715
+  performance:
+    accuracy: 0.6667
+    n_correct: 50
+    n_wrong: 25
+32:
+  characteristics:
+    avg_len_of_explanations: 369.0
+    avg_nr_of_sentences: 3.54
+    avg_nr_of_words: 58.62
+    flesch_reading_ease: 45.3
+    n_none_responses: 49
+    n_parse_errors: 8
+    total_length_of_explanations: 9594
+    total_number_of_sentences: 92
+    total_number_of_words: 1524
+    total_responses: 26
+    variance_length_of_explanations: 170800.846
+  costs:
+    avg_cost_per_query: 0.00018
+    avg_nr_tokens_received: 47.99
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.013220499999999996
+    total_performed_queries: 75
+    total_tokens_received: 3599
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.6267
+    n_correct: 47
+    n_wrong: 28
+33:
+  characteristics:
+    avg_len_of_explanations: 346.03
+    avg_nr_of_sentences: 3.18
+    avg_nr_of_words: 56.0
+    flesch_reading_ease: 46.7
+    n_none_responses: 42
+    n_parse_errors: 12
+    total_length_of_explanations: 11419
+    total_number_of_sentences: 105
+    total_number_of_words: 1848
+    total_responses: 33
+    variance_length_of_explanations: 163893.12
+  costs:
+    avg_cost_per_query: 0.00018
+    avg_nr_tokens_received: 51.27
+    avg_nr_tokens_sent: 49.53
+    total_accumulated_costs: 0.013262500000000002
+    total_performed_queries: 75
+    total_tokens_received: 3845
+    total_tokens_sent: 3715
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+34:
+  characteristics:
+    avg_len_of_explanations: 315.83
+    avg_nr_of_sentences: 2.89
+    avg_nr_of_words: 49.66
+    flesch_reading_ease: 41.2
+    n_none_responses: 40
+    n_parse_errors: 9
+    total_length_of_explanations: 11054
+    total_number_of_sentences: 101
+    total_number_of_words: 1738
+    total_responses: 35
+    variance_length_of_explanations: 149204.485
+  costs:
+    avg_cost_per_query: 0.00018
+    avg_nr_tokens_received: 48.85
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.013238000000000002
+    total_performed_queries: 75
+    total_tokens_received: 3664
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.6267
+    n_correct: 47
+    n_wrong: 28
+35:
+  characteristics:
+    avg_len_of_explanations: 372.53
+    avg_nr_of_sentences: 3.47
+    avg_nr_of_words: 58.94
+    flesch_reading_ease: 45.8
+    n_none_responses: 58
+    n_parse_errors: 10
+    total_length_of_explanations: 6333
+    total_number_of_sentences: 59
+    total_number_of_words: 1002
+    total_responses: 17
+    variance_length_of_explanations: 201954.367
+  costs:
+    avg_cost_per_query: 0.00016
+    avg_nr_tokens_received: 39.08
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.011772000000000001
+    total_performed_queries: 75
+    total_tokens_received: 2931
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.6267
+    n_correct: 47
+    n_wrong: 28
+36:
+  characteristics:
+    avg_len_of_explanations: 376.31
+    avg_nr_of_sentences: 3.0
+    avg_nr_of_words: 60.23
+    flesch_reading_ease: 41.2
+    n_none_responses: 27
+    n_parse_errors: 8
+    total_length_of_explanations: 18063
+    total_number_of_sentences: 144
+    total_number_of_words: 2891
+    total_responses: 48
+    variance_length_of_explanations: 159669.84
+  costs:
+    avg_cost_per_query: 0.00024
+    avg_nr_tokens_received: 76.51
+    avg_nr_tokens_sent: 57.53
+    total_accumulated_costs: 0.017948499999999996
+    total_performed_queries: 75
+    total_tokens_received: 5738
+    total_tokens_sent: 4315
+  performance:
+    accuracy: 0.6
+    n_correct: 45
+    n_wrong: 30
+37:
+  characteristics:
+    avg_len_of_explanations: 339.8
+    avg_nr_of_sentences: 3.0
+    avg_nr_of_words: 54.2
+    flesch_reading_ease: 47.5
+    n_none_responses: 65
+    n_parse_errors: 11
+    total_length_of_explanations: 3398
+    total_number_of_sentences: 30
+    total_number_of_words: 542
+    total_responses: 10
+    variance_length_of_explanations: 236354.36
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 26.63
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.010016500000000003
+    total_performed_queries: 75
+    total_tokens_received: 1997
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.64
+    n_correct: 48
+    n_wrong: 27
+38:
+  characteristics:
+    avg_len_of_explanations: 342.84
+    avg_nr_of_sentences: 3.16
+    avg_nr_of_words: 54.21
+    flesch_reading_ease: 44.4
+    n_none_responses: 56
+    n_parse_errors: 12
+    total_length_of_explanations: 6514
+    total_number_of_sentences: 60
+    total_number_of_words: 1030
+    total_responses: 19
+    variance_length_of_explanations: 216398.028
+  costs:
+    avg_cost_per_query: 0.00016
+    avg_nr_tokens_received: 43.69
+    avg_nr_tokens_sent: 50.53
+    total_accumulated_costs: 0.012238999999999996
+    total_performed_queries: 75
+    total_tokens_received: 3277
+    total_tokens_sent: 3790
+  performance:
+    accuracy: 0.6267
+    n_correct: 47
+    n_wrong: 28
+39:
+  characteristics:
+    avg_len_of_explanations: 441.24
+    avg_nr_of_sentences: 3.76
+    avg_nr_of_words: 71.91
+    flesch_reading_ease: 45.6
+    n_none_responses: 41
+    n_parse_errors: 16
+    total_length_of_explanations: 15002
+    total_number_of_sentences: 128
+    total_number_of_words: 2445
+    total_responses: 34
+    variance_length_of_explanations: 131305.533
+  costs:
+    avg_cost_per_query: 0.0002
+    avg_nr_tokens_received: 61.0
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.01506
+    total_performed_queries: 75
+    total_tokens_received: 4575
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.52
+    n_correct: 39
+    n_wrong: 36
+40:
+  characteristics:
+    avg_len_of_explanations: 383.85
+    avg_nr_of_sentences: 3.23
+    avg_nr_of_words: 59.46
+    flesch_reading_ease: 36.5
+    n_none_responses: 62
+    n_parse_errors: 11
+    total_length_of_explanations: 4990
+    total_number_of_sentences: 42
+    total_number_of_words: 773
+    total_responses: 13
+    variance_length_of_explanations: 195929.207
+  costs:
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 36.53
+    avg_nr_tokens_sent: 50.53
+    total_accumulated_costs: 0.011164999999999996
+    total_performed_queries: 75
+    total_tokens_received: 2740
+    total_tokens_sent: 3790
+  performance:
+    accuracy: 0.6267
+    n_correct: 47
+    n_wrong: 28
+41:
+  characteristics:
+    avg_len_of_explanations: 341.92
+    avg_nr_of_sentences: 3.38
+    avg_nr_of_words: 54.92
+    flesch_reading_ease: 51.6
+    n_none_responses: 62
+    n_parse_errors: 9
+    total_length_of_explanations: 4445
+    total_number_of_sentences: 44
+    total_number_of_words: 714
+    total_responses: 13
+    variance_length_of_explanations: 245796.84
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 30.68
+    avg_nr_tokens_sent: 51.53
+    total_accumulated_costs: 0.010399499999999994
+    total_performed_queries: 75
+    total_tokens_received: 2301
+    total_tokens_sent: 3865
+  performance:
+    accuracy: 0.6133
+    n_correct: 46
+    n_wrong: 29
+42:
+  characteristics:
+    avg_len_of_explanations: 161.31
+    avg_nr_of_sentences: 1.31
+    avg_nr_of_words: 25.54
+    flesch_reading_ease: 46.8
+    n_none_responses: 62
+    n_parse_errors: 11
+    total_length_of_explanations: 2097
+    total_number_of_sentences: 17
+    total_number_of_words: 332
+    total_responses: 13
+    variance_length_of_explanations: 10156.521
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 23.11
+    avg_nr_tokens_sent: 51.53
+    total_accumulated_costs: 0.009263499999999996
+    total_performed_queries: 75
+    total_tokens_received: 1733
+    total_tokens_sent: 3865
+  performance:
+    accuracy: 0.56
+    n_correct: 42
+    n_wrong: 33
+43:
+  characteristics:
+    avg_len_of_explanations: 379.25
+    avg_nr_of_sentences: 3.56
+    avg_nr_of_words: 59.12
+    flesch_reading_ease: 43.4
+    n_none_responses: 59
+    n_parse_errors: 9
+    total_length_of_explanations: 6068
+    total_number_of_sentences: 57
+    total_number_of_words: 946
+    total_responses: 16
+    variance_length_of_explanations: 186744.188
+  costs:
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 36.2
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.011452500000000001
+    total_performed_queries: 75
+    total_tokens_received: 2715
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.6133
+    n_correct: 46
+    n_wrong: 29
+44:
+  characteristics:
+    avg_len_of_explanations: 379.45
+    avg_nr_of_sentences: 3.5
+    avg_nr_of_words: 59.5
+    flesch_reading_ease: 41.0
+    n_none_responses: 53
+    n_parse_errors: 12
+    total_length_of_explanations: 8348
+    total_number_of_sentences: 77
+    total_number_of_words: 1309
+    total_responses: 22
+    variance_length_of_explanations: 145636.066
+  costs:
+    avg_cost_per_query: 0.00017
+    avg_nr_tokens_received: 46.67
+    avg_nr_tokens_sent: 49.53
+    total_accumulated_costs: 0.012572499999999999
+    total_performed_queries: 75
+    total_tokens_received: 3500
+    total_tokens_sent: 3715
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+45:
+  characteristics:
+    avg_len_of_explanations: 425.39
+    avg_nr_of_sentences: 3.77
+    avg_nr_of_words: 69.42
+    flesch_reading_ease: 46.7
+    n_none_responses: 44
+    n_parse_errors: 7
+    total_length_of_explanations: 13187
+    total_number_of_sentences: 117
+    total_number_of_words: 2152
+    total_responses: 31
+    variance_length_of_explanations: 169776.495
+  costs:
+    avg_cost_per_query: 0.00019
+    avg_nr_tokens_received: 59.21
+    avg_nr_tokens_sent: 50.53
+    total_accumulated_costs: 0.014567
+    total_performed_queries: 75
+    total_tokens_received: 4441
+    total_tokens_sent: 3790
+  performance:
+    accuracy: 0.6133
+    n_correct: 46
+    n_wrong: 29
+46:
+  characteristics:
+    avg_len_of_explanations: 449.71
+    avg_nr_of_sentences: 4.43
+    avg_nr_of_words: 71.79
+    flesch_reading_ease: 46.9
+    n_none_responses: 61
+    n_parse_errors: 15
+    total_length_of_explanations: 6296
+    total_number_of_sentences: 62
+    total_number_of_words: 1005
+    total_responses: 14
+    variance_length_of_explanations: 274138.061
+  costs:
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 35.65
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.011257999999999997
+    total_performed_queries: 75
+    total_tokens_received: 2674
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+47:
+  characteristics:
+    avg_len_of_explanations: 427.45
+    avg_nr_of_sentences: 4.04
+    avg_nr_of_words: 68.24
+    flesch_reading_ease: 43.3
+    n_none_responses: 24
+    n_parse_errors: 4
+    total_length_of_explanations: 21800
+    total_number_of_sentences: 206
+    total_number_of_words: 3480
+    total_responses: 51
+    variance_length_of_explanations: 178709.659
+  costs:
+    avg_cost_per_query: 0.00025
+    avg_nr_tokens_received: 84.69
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.018614
+    total_performed_queries: 75
+    total_tokens_received: 6352
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.64
+    n_correct: 48
+    n_wrong: 27
+48:
+  characteristics:
+    avg_len_of_explanations: 341.64
+    avg_nr_of_sentences: 3.15
+    avg_nr_of_words: 54.87
+    flesch_reading_ease: 44.6
+    n_none_responses: 36
+    n_parse_errors: 7
+    total_length_of_explanations: 13324
+    total_number_of_sentences: 123
+    total_number_of_words: 2140
+    total_responses: 39
+    variance_length_of_explanations: 186877.717
+  costs:
+    avg_cost_per_query: 0.00021
+    avg_nr_tokens_received: 66.33
+    avg_nr_tokens_sent: 49.53
+    total_accumulated_costs: 0.0155225
+    total_performed_queries: 75
+    total_tokens_received: 4975
+    total_tokens_sent: 3715
+  performance:
+    accuracy: 0.6
+    n_correct: 45
+    n_wrong: 30
+49:
+  characteristics:
+    avg_len_of_explanations: 118.06
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 18.93
+    flesch_reading_ease: 36.8
+    n_none_responses: 7
+    n_parse_errors: 6
+    total_length_of_explanations: 8028
+    total_number_of_sentences: 68
+    total_number_of_words: 1287
+    total_responses: 68
+    variance_length_of_explanations: 1387.967
+  costs:
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 34.85
+    avg_nr_tokens_sent: 55.53
+    total_accumulated_costs: 0.011475500000000003
+    total_performed_queries: 75
+    total_tokens_received: 2614
+    total_tokens_sent: 4165
+  performance:
+    accuracy: 0.68
+    n_correct: 51
+    n_wrong: 24
+50:
+  characteristics:
+    avg_len_of_explanations: 441.35
+    avg_nr_of_sentences: 3.61
+    avg_nr_of_words: 71.2
+    flesch_reading_ease: 42.8
+    n_none_responses: 29
+    n_parse_errors: 6
+    total_length_of_explanations: 20302
+    total_number_of_sentences: 166
+    total_number_of_words: 3275
+    total_responses: 46
+    variance_length_of_explanations: 191891.922
+  costs:
+    avg_cost_per_query: 0.00025
+    avg_nr_tokens_received: 80.21
+    avg_nr_tokens_sent: 56.53
+    total_accumulated_costs: 0.018392
+    total_performed_queries: 75
+    total_tokens_received: 6016
+    total_tokens_sent: 4240
+  performance:
+    accuracy: 0.6
+    n_correct: 45
+    n_wrong: 30
+51:
+  characteristics:
+    avg_len_of_explanations: 353.09
+    avg_nr_of_sentences: 2.86
+    avg_nr_of_words: 57.66
+    flesch_reading_ease: 46.9
+    n_none_responses: 40
+    n_parse_errors: 5
+    total_length_of_explanations: 12358
+    total_number_of_sentences: 100
+    total_number_of_words: 2018
+    total_responses: 35
+    variance_length_of_explanations: 180380.193
+  costs:
+    avg_cost_per_query: 0.00021
+    avg_nr_tokens_received: 59.47
+    avg_nr_tokens_sent: 62.53
+    total_accumulated_costs: 0.015955000000000004
+    total_performed_queries: 75
+    total_tokens_received: 4460
+    total_tokens_sent: 4690
+  performance:
+    accuracy: 0.5733
+    n_correct: 43
+    n_wrong: 32
+52:
+  characteristics:
+    avg_len_of_explanations: 153.73
+    avg_nr_of_sentences: 1.45
+    avg_nr_of_words: 25.82
+    flesch_reading_ease: 55.8
+    n_none_responses: 64
+    n_parse_errors: 24
+    total_length_of_explanations: 1691
+    total_number_of_sentences: 16
+    total_number_of_words: 284
+    total_responses: 11
+    variance_length_of_explanations: 10959.107
+  costs:
+    avg_cost_per_query: 0.00011
+    avg_nr_tokens_received: 19.28
+    avg_nr_tokens_sent: 47.53
+    total_accumulated_costs: 0.0082395
+    total_performed_queries: 75
+    total_tokens_received: 1446
+    total_tokens_sent: 3565
+  performance:
+    accuracy: 0.4133
+    n_correct: 31
+    n_wrong: 44
+53:
+  characteristics:
+    avg_len_of_explanations: 338.93
+    avg_nr_of_sentences: 3.56
+    avg_nr_of_words: 54.41
+    flesch_reading_ease: 48.3
+    n_none_responses: 48
+    n_parse_errors: 9
+    total_length_of_explanations: 9151
+    total_number_of_sentences: 96
+    total_number_of_words: 1469
+    total_responses: 27
+    variance_length_of_explanations: 146848.069
+  costs:
+    avg_cost_per_query: 0.00018
+    avg_nr_tokens_received: 50.36
+    avg_nr_tokens_sent: 49.53
+    total_accumulated_costs: 0.013126500000000001
+    total_performed_queries: 75
+    total_tokens_received: 3777
+    total_tokens_sent: 3715
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+54:
+  characteristics:
+    avg_len_of_explanations: 212.29
+    avg_nr_of_sentences: 1.59
+    avg_nr_of_words: 33.06
+    flesch_reading_ease: 38.4
+    n_none_responses: 58
+    n_parse_errors: 7
+    total_length_of_explanations: 3609
+    total_number_of_sentences: 27
+    total_number_of_words: 562
+    total_responses: 17
+    variance_length_of_explanations: 38821.384
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 29.4
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.010320000000000003
+    total_performed_queries: 75
+    total_tokens_received: 2205
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.6
+    n_correct: 45
+    n_wrong: 30
+55:
+  characteristics:
+    avg_len_of_explanations: 174.23
+    avg_nr_of_sentences: 1.38
+    avg_nr_of_words: 29.46
+    flesch_reading_ease: 51.3
+    n_none_responses: 62
+    n_parse_errors: 9
+    total_length_of_explanations: 2265
+    total_number_of_sentences: 18
+    total_number_of_words: 383
+    total_responses: 13
+    variance_length_of_explanations: 13559.254
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 24.75
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.009734500000000002
+    total_performed_queries: 75
+    total_tokens_received: 1856
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.6133
+    n_correct: 46
+    n_wrong: 29
+56:
+  characteristics:
+    avg_len_of_explanations: 282.77
+    avg_nr_of_sentences: 2.66
+    avg_nr_of_words: 45.03
+    flesch_reading_ease: 43.2
+    n_none_responses: 40
+    n_parse_errors: 9
+    total_length_of_explanations: 9897
+    total_number_of_sentences: 93
+    total_number_of_words: 1576
+    total_responses: 35
+    variance_length_of_explanations: 132628.291
+  costs:
+    avg_cost_per_query: 0.00018
+    avg_nr_tokens_received: 51.13
+    avg_nr_tokens_sent: 51.53
+    total_accumulated_costs: 0.013467500000000004
+    total_performed_queries: 75
+    total_tokens_received: 3835
+    total_tokens_sent: 3865
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+57:
+  characteristics:
+    avg_len_of_explanations: 228.13
+    avg_nr_of_sentences: 2.0
+    avg_nr_of_words: 36.74
+    flesch_reading_ease: 45.9
+    n_none_responses: 52
+    n_parse_errors: 4
+    total_length_of_explanations: 5247
+    total_number_of_sentences: 46
+    total_number_of_words: 845
+    total_responses: 23
+    variance_length_of_explanations: 89652.635
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 31.21
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.010591999999999999
+    total_performed_queries: 75
+    total_tokens_received: 2341
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.6933
+    n_correct: 52
+    n_wrong: 23
+58:
+  characteristics:
+    avg_len_of_explanations: 1129.96
+    avg_nr_of_sentences: 11.82
+    avg_nr_of_words: 182.92
+    flesch_reading_ease: 48.5
+    n_none_responses: 4
+    n_parse_errors: 3
+    total_length_of_explanations: 80227
+    total_number_of_sentences: 839
+    total_number_of_words: 12987
+    total_responses: 71
+    variance_length_of_explanations: 331646.322
+  costs:
+    avg_cost_per_query: 0.00055
+    avg_nr_tokens_received: 236.89
+    avg_nr_tokens_sent: 50.53
+    total_accumulated_costs: 0.041219000000000006
+    total_performed_queries: 75
+    total_tokens_received: 17767
+    total_tokens_sent: 3790
+  performance:
+    accuracy: 0.4
+    n_correct: 30
+    n_wrong: 45
+59:
+  characteristics:
+    avg_len_of_explanations: 216.76
+    avg_nr_of_sentences: 2.19
+    avg_nr_of_words: 35.33
+    flesch_reading_ease: 49.4
+    n_none_responses: 54
+    n_parse_errors: 6
+    total_length_of_explanations: 4552
+    total_number_of_sentences: 46
+    total_number_of_words: 742
+    total_responses: 21
+    variance_length_of_explanations: 120476.277
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 31.49
+    avg_nr_tokens_sent: 51.53
+    total_accumulated_costs: 0.010521499999999998
+    total_performed_queries: 75
+    total_tokens_received: 2362
+    total_tokens_sent: 3865
+  performance:
+    accuracy: 0.6533
+    n_correct: 49
+    n_wrong: 26
+60:
+  characteristics:
+    avg_len_of_explanations: 252.14
+    avg_nr_of_sentences: 2.43
+    avg_nr_of_words: 40.5
+    flesch_reading_ease: 48.5
+    n_none_responses: 61
+    n_parse_errors: 6
+    total_length_of_explanations: 3530
+    total_number_of_sentences: 34
+    total_number_of_words: 567
+    total_responses: 14
+    variance_length_of_explanations: 131645.694
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 29.16
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.010284
+    total_performed_queries: 75
+    total_tokens_received: 2187
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.64
+    n_correct: 48
+    n_wrong: 27
+61:
+  characteristics:
+    avg_len_of_explanations: 338.5
+    avg_nr_of_sentences: 3.75
+    avg_nr_of_words: 54.5
+    flesch_reading_ease: 48.7
+    n_none_responses: 67
+    n_parse_errors: 9
+    total_length_of_explanations: 2708
+    total_number_of_sentences: 30
+    total_number_of_words: 436
+    total_responses: 8
+    variance_length_of_explanations: 155606.0
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 26.27
+    avg_nr_tokens_sent: 54.53
+    total_accumulated_costs: 0.010075000000000004
+    total_performed_queries: 75
+    total_tokens_received: 1970
+    total_tokens_sent: 4090
+  performance:
+    accuracy: 0.6533
+    n_correct: 49
+    n_wrong: 26
+62:
+  characteristics:
+    avg_len_of_explanations: 115.36
+    avg_nr_of_sentences: 1.27
+    avg_nr_of_words: 20.45
+    flesch_reading_ease: 63.3
+    n_none_responses: 64
+    n_parse_errors: 5
+    total_length_of_explanations: 1269
+    total_number_of_sentences: 14
+    total_number_of_words: 225
+    total_responses: 11
+    variance_length_of_explanations: 2191.14
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 23.44
+    avg_nr_tokens_sent: 56.53
+    total_accumulated_costs: 0.009876
+    total_performed_queries: 75
+    total_tokens_received: 1758
+    total_tokens_sent: 4240
+  performance:
+    accuracy: 0.6533
+    n_correct: 49
+    n_wrong: 26
+63:
+  characteristics:
+    avg_len_of_explanations: 208.44
+    avg_nr_of_sentences: 2.33
+    avg_nr_of_words: 32.78
+    flesch_reading_ease: 49.8
+    n_none_responses: 66
+    n_parse_errors: 12
+    total_length_of_explanations: 1876
+    total_number_of_sentences: 21
+    total_number_of_words: 295
+    total_responses: 9
+    variance_length_of_explanations: 82631.358
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 22.72
+    avg_nr_tokens_sent: 54.53
+    total_accumulated_costs: 0.009543
+    total_performed_queries: 75
+    total_tokens_received: 1704
+    total_tokens_sent: 4090
+  performance:
+    accuracy: 0.6
+    n_correct: 45
+    n_wrong: 30
+64:
+  characteristics:
+    avg_len_of_explanations: 245.1
+    avg_nr_of_sentences: 2.9
+    avg_nr_of_words: 39.0
+    flesch_reading_ease: 53.5
+    n_none_responses: 65
+    n_parse_errors: 21
+    total_length_of_explanations: 2451
+    total_number_of_sentences: 29
+    total_number_of_words: 390
+    total_responses: 10
+    variance_length_of_explanations: 126636.89
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 22.41
+    avg_nr_tokens_sent: 55.53
+    total_accumulated_costs: 0.0096095
+    total_performed_queries: 75
+    total_tokens_received: 1681
+    total_tokens_sent: 4165
+  performance:
+    accuracy: 0.5067
+    n_correct: 38
+    n_wrong: 37
+65:
+  characteristics:
+    avg_len_of_explanations: 324.29
+    avg_nr_of_sentences: 2.95
+    avg_nr_of_words: 51.95
+    flesch_reading_ease: 47.1
+    n_none_responses: 54
+    n_parse_errors: 9
+    total_length_of_explanations: 6810
+    total_number_of_sentences: 62
+    total_number_of_words: 1091
+    total_responses: 21
+    variance_length_of_explanations: 147297.823
+  costs:
+    avg_cost_per_query: 0.00015
+    avg_nr_tokens_received: 35.96
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.011416500000000005
+    total_performed_queries: 75
+    total_tokens_received: 2697
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.6
+    n_correct: 45
+    n_wrong: 30
+66:
+  characteristics:
+    avg_len_of_explanations: 187.82
+    avg_nr_of_sentences: 1.45
+    avg_nr_of_words: 31.82
+    flesch_reading_ease: 50.0
+    n_none_responses: 64
+    n_parse_errors: 8
+    total_length_of_explanations: 2066
+    total_number_of_sentences: 16
+    total_number_of_words: 350
+    total_responses: 11
+    variance_length_of_explanations: 35165.058
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 22.33
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.0093725
+    total_performed_queries: 75
+    total_tokens_received: 1675
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.6133
+    n_correct: 46
+    n_wrong: 29
+67:
+  characteristics:
+    avg_len_of_explanations: 340.8
+    avg_nr_of_sentences: 3.5
+    avg_nr_of_words: 52.4
+    flesch_reading_ease: 45.9
+    n_none_responses: 65
+    n_parse_errors: 11
+    total_length_of_explanations: 3408
+    total_number_of_sentences: 35
+    total_number_of_words: 524
+    total_responses: 10
+    variance_length_of_explanations: 253708.16
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 27.25
+    avg_nr_tokens_sent: 54.53
+    total_accumulated_costs: 0.010222999999999998
+    total_performed_queries: 75
+    total_tokens_received: 2044
+    total_tokens_sent: 4090
+  performance:
+    accuracy: 0.6
+    n_correct: 45
+    n_wrong: 30
+68:
+  characteristics:
+    avg_len_of_explanations: 143.09
+    avg_nr_of_sentences: 1.27
+    avg_nr_of_words: 24.09
+    flesch_reading_ease: 54.1
+    n_none_responses: 64
+    n_parse_errors: 10
+    total_length_of_explanations: 1574
+    total_number_of_sentences: 14
+    total_number_of_words: 265
+    total_responses: 11
+    variance_length_of_explanations: 11038.083
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 22.55
+    avg_nr_tokens_sent: 55.53
+    total_accumulated_costs: 0.009629500000000003
+    total_performed_queries: 75
+    total_tokens_received: 1691
+    total_tokens_sent: 4165
+  performance:
+    accuracy: 0.6
+    n_correct: 45
+    n_wrong: 30
+69:
+  characteristics:
+    avg_len_of_explanations: 341.0
+    avg_nr_of_sentences: 3.05
+    avg_nr_of_words: 53.86
+    flesch_reading_ease: 43.1
+    n_none_responses: 38
+    n_parse_errors: 9
+    total_length_of_explanations: 12617
+    total_number_of_sentences: 113
+    total_number_of_words: 1993
+    total_responses: 37
+    variance_length_of_explanations: 144269.351
+  costs:
+    avg_cost_per_query: 0.00019
+    avg_nr_tokens_received: 56.0
+    avg_nr_tokens_sent: 51.53
+    total_accumulated_costs: 0.0141975
+    total_performed_queries: 75
+    total_tokens_received: 4200
+    total_tokens_sent: 3865
+  performance:
+    accuracy: 0.6133
+    n_correct: 46
+    n_wrong: 29
+70:
+  characteristics:
+    avg_len_of_explanations: 451.54
+    avg_nr_of_sentences: 3.39
+    avg_nr_of_words: 72.06
+    flesch_reading_ease: 40.2
+    n_none_responses: 3
+    n_parse_errors: 3
+    total_length_of_explanations: 32511
+    total_number_of_sentences: 244
+    total_number_of_words: 5188
+    total_responses: 72
+    variance_length_of_explanations: 31580.832
+  costs:
+    avg_cost_per_query: 0.00029
+    avg_nr_tokens_received: 99.08
+    avg_nr_tokens_sent: 62.53
+    total_accumulated_costs: 0.021897000000000003
+    total_performed_queries: 75
+    total_tokens_received: 7431
+    total_tokens_sent: 4690
+  performance:
+    accuracy: 0.6267
+    n_correct: 47
+    n_wrong: 28
+71:
+  characteristics:
+    avg_len_of_explanations: 148.18
+    avg_nr_of_sentences: 1.36
+    avg_nr_of_words: 24.09
+    flesch_reading_ease: 49.4
+    n_none_responses: 64
+    n_parse_errors: 8
+    total_length_of_explanations: 1630
+    total_number_of_sentences: 15
+    total_number_of_words: 265
+    total_responses: 11
+    variance_length_of_explanations: 8536.331
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 23.55
+    avg_nr_tokens_sent: 51.53
+    total_accumulated_costs: 0.009329500000000001
+    total_performed_queries: 75
+    total_tokens_received: 1766
+    total_tokens_sent: 3865
+  performance:
+    accuracy: 0.6133
+    n_correct: 46
+    n_wrong: 29
+72:
+  characteristics:
+    avg_len_of_explanations: 386.2
+    avg_nr_of_sentences: 4.6
+    avg_nr_of_words: 64.2
+    flesch_reading_ease: 58.3
+    n_none_responses: 70
+    n_parse_errors: 16
+    total_length_of_explanations: 1931
+    total_number_of_sentences: 23
+    total_number_of_words: 321
+    total_responses: 5
+    variance_length_of_explanations: 266522.56
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 22.56
+    avg_nr_tokens_sent: 55.53
+    total_accumulated_costs: 0.009631500000000003
+    total_performed_queries: 75
+    total_tokens_received: 1692
+    total_tokens_sent: 4165
+  performance:
+    accuracy: 0.5733
+    n_correct: 43
+    n_wrong: 32
+73:
+  characteristics:
+    avg_len_of_explanations: 221.25
+    avg_nr_of_sentences: 1.5
+    avg_nr_of_words: 35.75
+    flesch_reading_ease: 41.8
+    n_none_responses: 71
+    n_parse_errors: 22
+    total_length_of_explanations: 885
+    total_number_of_sentences: 6
+    total_number_of_words: 143
+    total_responses: 4
+    variance_length_of_explanations: 26846.188
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 17.45
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.008640499999999997
+    total_performed_queries: 75
+    total_tokens_received: 1309
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.52
+    n_correct: 39
+    n_wrong: 36
+74:
+  characteristics:
+    avg_len_of_explanations: 114.4
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 19.6
+    flesch_reading_ease: 0
+    n_none_responses: 70
+    n_parse_errors: 19
+    total_length_of_explanations: 572
+    total_number_of_sentences: 5
+    total_number_of_words: 98
+    total_responses: 5
+    variance_length_of_explanations: 1499.84
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 18.45
+    avg_nr_tokens_sent: 56.53
+    total_accumulated_costs: 0.009128000000000004
+    total_performed_queries: 75
+    total_tokens_received: 1384
+    total_tokens_sent: 4240
+  performance:
+    accuracy: 0.48
+    n_correct: 36
+    n_wrong: 39
+75:
+  characteristics:
+    avg_len_of_explanations: 238.95
+    avg_nr_of_sentences: 2.38
+    avg_nr_of_words: 37.1
+    flesch_reading_ease: 44.1
+    n_none_responses: 54
+    n_parse_errors: 8
+    total_length_of_explanations: 5018
+    total_number_of_sentences: 50
+    total_number_of_words: 779
+    total_responses: 21
+    variance_length_of_explanations: 87837.283
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 31.75
+    avg_nr_tokens_sent: 52.53
+    total_accumulated_costs: 0.010672
+    total_performed_queries: 75
+    total_tokens_received: 2381
+    total_tokens_sent: 3940
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+76:
+  characteristics:
+    avg_len_of_explanations: 120.96
+    avg_nr_of_sentences: 1.0
+    avg_nr_of_words: 19.43
+    flesch_reading_ease: 39.9
+    n_none_responses: 7
+    n_parse_errors: 7
+    total_length_of_explanations: 8225
+    total_number_of_sentences: 68
+    total_number_of_words: 1321
+    total_responses: 68
+    variance_length_of_explanations: 1195.807
+  costs:
+    avg_cost_per_query: 0.00016
+    avg_nr_tokens_received: 35.92
+    avg_nr_tokens_sent: 59.53
+    total_accumulated_costs: 0.012085500000000002
+    total_performed_queries: 75
+    total_tokens_received: 2694
+    total_tokens_sent: 4465
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+77:
+  characteristics:
+    avg_len_of_explanations: 523.33
+    avg_nr_of_sentences: 3.84
+    avg_nr_of_words: 82.4
+    flesch_reading_ease: 38.1
+    n_none_responses: 5
+    n_parse_errors: 5
+    total_length_of_explanations: 36633
+    total_number_of_sentences: 269
+    total_number_of_words: 5768
+    total_responses: 70
+    variance_length_of_explanations: 55154.306
+  costs:
+    avg_cost_per_query: 0.00032
+    avg_nr_tokens_received: 115.28
+    avg_nr_tokens_sent: 61.53
+    total_accumulated_costs: 0.024214500000000003
+    total_performed_queries: 75
+    total_tokens_received: 8646
+    total_tokens_sent: 4615
+  performance:
+    accuracy: 0.6533
+    n_correct: 49
+    n_wrong: 26
+78:
+  characteristics:
+    avg_len_of_explanations: 136.78
+    avg_nr_of_sentences: 1.22
+    avg_nr_of_words: 23.56
+    flesch_reading_ease: 59.2
+    n_none_responses: 66
+    n_parse_errors: 11
+    total_length_of_explanations: 1231
+    total_number_of_sentences: 11
+    total_number_of_words: 212
+    total_responses: 9
+    variance_length_of_explanations: 3139.951
+  costs:
+    avg_cost_per_query: 0.00012
+    avg_nr_tokens_received: 21.12
+    avg_nr_tokens_sent: 54.53
+    total_accumulated_costs: 0.009303000000000006
+    total_performed_queries: 75
+    total_tokens_received: 1584
+    total_tokens_sent: 4090
+  performance:
+    accuracy: 0.6133
+    n_correct: 46
+    n_wrong: 29
+79:
+  characteristics:
+    avg_len_of_explanations: 184.07
+    avg_nr_of_sentences: 1.4
+    avg_nr_of_words: 29.93
+    flesch_reading_ease: 43.4
+    n_none_responses: 60
+    n_parse_errors: 13
+    total_length_of_explanations: 2761
+    total_number_of_sentences: 21
+    total_number_of_words: 449
+    total_responses: 15
+    variance_length_of_explanations: 8467.529
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 25.36
+    avg_nr_tokens_sent: 51.53
+    total_accumulated_costs: 0.009601499999999995
+    total_performed_queries: 75
+    total_tokens_received: 1902
+    total_tokens_sent: 3865
+  performance:
+    accuracy: 0.5867
+    n_correct: 44
+    n_wrong: 31
+80:
+  characteristics:
+    avg_len_of_explanations: 465.82
+    avg_nr_of_sentences: 3.48
+    avg_nr_of_words: 73.86
+    flesch_reading_ease: 39.4
+    n_none_responses: 4
+    n_parse_errors: 4
+    total_length_of_explanations: 33073
+    total_number_of_sentences: 247
+    total_number_of_words: 5244
+    total_responses: 71
+    variance_length_of_explanations: 26802.741
+  costs:
+    avg_cost_per_query: 0.0003
+    avg_nr_tokens_received: 106.27
+    avg_nr_tokens_sent: 58.53
+    total_accumulated_costs: 0.022524999999999993
+    total_performed_queries: 75
+    total_tokens_received: 7970
+    total_tokens_sent: 4390
+  performance:
+    accuracy: 0.6533
+    n_correct: 49
+    n_wrong: 26
+81:
+  characteristics:
+    avg_len_of_explanations: 431.36
+    avg_nr_of_sentences: 3.46
+    avg_nr_of_words: 68.73
+    flesch_reading_ease: 40.7
+    n_none_responses: 5
+    n_parse_errors: 5
+    total_length_of_explanations: 30195
+    total_number_of_sentences: 242
+    total_number_of_words: 4811
+    total_responses: 70
+    variance_length_of_explanations: 51361.03
+  costs:
+    avg_cost_per_query: 0.00028
+    avg_nr_tokens_received: 99.48
+    avg_nr_tokens_sent: 56.53
+    total_accumulated_costs: 0.021281999999999995
+    total_performed_queries: 75
+    total_tokens_received: 7461
+    total_tokens_sent: 4240
+  performance:
+    accuracy: 0.6267
+    n_correct: 47
+    n_wrong: 28
+82:
+  characteristics:
+    avg_len_of_explanations: 258.08
+    avg_nr_of_sentences: 2.85
+    avg_nr_of_words: 42.15
+    flesch_reading_ease: 54.7
+    n_none_responses: 62
+    n_parse_errors: 12
+    total_length_of_explanations: 3355
+    total_number_of_sentences: 37
+    total_number_of_words: 548
+    total_responses: 13
+    variance_length_of_explanations: 144395.609
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 26.07
+    avg_nr_tokens_sent: 54.53
+    total_accumulated_costs: 0.010044999999999998
+    total_performed_queries: 75
+    total_tokens_received: 1955
+    total_tokens_sent: 4090
+  performance:
+    accuracy: 0.5733
+    n_correct: 43
+    n_wrong: 32
+83:
+  characteristics:
+    avg_len_of_explanations: 248.47
+    avg_nr_of_sentences: 2.16
+    avg_nr_of_words: 40.26
+    flesch_reading_ease: 49.3
+    n_none_responses: 56
+    n_parse_errors: 6
+    total_length_of_explanations: 4721
+    total_number_of_sentences: 41
+    total_number_of_words: 765
+    total_responses: 19
+    variance_length_of_explanations: 85926.986
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 31.83
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.010796499999999999
+    total_performed_queries: 75
+    total_tokens_received: 2387
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.64
+    n_correct: 48
+    n_wrong: 27
+84:
+  characteristics:
+    avg_len_of_explanations: 289.58
+    avg_nr_of_sentences: 2.92
+    avg_nr_of_words: 46.08
+    flesch_reading_ease: 48.8
+    n_none_responses: 63
+    n_parse_errors: 13
+    total_length_of_explanations: 3475
+    total_number_of_sentences: 35
+    total_number_of_words: 553
+    total_responses: 12
+    variance_length_of_explanations: 216790.243
+  costs:
+    avg_cost_per_query: 0.00013
+    avg_nr_tokens_received: 26.27
+    avg_nr_tokens_sent: 54.53
+    total_accumulated_costs: 0.010074999999999995
+    total_performed_queries: 75
+    total_tokens_received: 1970
+    total_tokens_sent: 4090
+  performance:
+    accuracy: 0.56
+    n_correct: 42
+    n_wrong: 33
+85:
+  characteristics:
+    avg_len_of_explanations: 218.21
+    avg_nr_of_sentences: 1.92
+    avg_nr_of_words: 35.38
+    flesch_reading_ease: 44.9
+    n_none_responses: 51
+    n_parse_errors: 7
+    total_length_of_explanations: 5237
+    total_number_of_sentences: 46
+    total_number_of_words: 849
+    total_responses: 24
+    variance_length_of_explanations: 63992.415
+  costs:
+    avg_cost_per_query: 0.00014
+    avg_nr_tokens_received: 31.71
+    avg_nr_tokens_sent: 53.53
+    total_accumulated_costs: 0.010778500000000002
+    total_performed_queries: 75
+    total_tokens_received: 2378
+    total_tokens_sent: 4015
+  performance:
+    accuracy: 0.5733
+    n_correct: 43
+    n_wrong: 32
