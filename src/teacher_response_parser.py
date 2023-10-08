@@ -35,6 +35,9 @@ class TeacherResponseParser:
         prompt_template = self.yaml_prompts["templates"][prompt_template_id]
         parse_pattern = prompt_template["label_parse"] + prompt_template["explanation_parse"]
         if prompt_values:
+            # escape ( and ) in prompt values
+            for key, value in prompt_values.items():
+                prompt_values[key] = value.replace("(", "\(").replace(")", "\)")
             parse_pattern = parse_pattern.format(**prompt_values)
         pattern = re.compile(parse_pattern, re.IGNORECASE | re.DOTALL)
         return pattern
