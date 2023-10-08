@@ -51,14 +51,14 @@ class TeacherResponseParser:
                     response = json.loads(line)
                     if response["idx"] not in parsed_responses:
                         pattern = self.get_pattern_from_template(prompt_template_id, response["prompt_values"])
-                        parsed_responses[response["idx"]] = self.parse_response(response["response"], pattern=pattern, verbose=verbose)
+                        parsed_responses[response["idx"]] = self.parse_response(response["response"], pattern=pattern, prompt_values=response["prompt_values"], verbose=verbose)
         except FileNotFoundError:
             print(f"No responses found for prompt template {prompt_template_id} in split {split}")
 
         return parsed_responses
 
     def parse_response(
-        self, response: str, prompt_template_id: int = None, pattern: re.Pattern = None, verbose: bool = False
+        self, response: str, prompt_template_id: int = None, pattern: re.Pattern = None, prompt_values: Dict = None, verbose: bool = False
     ) -> Tuple[str, str]:
         if not pattern:
             pattern = self.get_pattern_from_template(prompt_template_id)
@@ -69,7 +69,7 @@ class TeacherResponseParser:
         try:
             if len(match.groups()) > 0:
                 label = match.group(1)
-                label = self.conform_label(label)
+                label = self.conform_label(label, prompt_values)
             if len(match.groups()) > 1:
                 explanation = match.group(2)
                 explanation = self.clean_explanation(explanation)
@@ -86,7 +86,7 @@ class ANLITeacherResponseParser(TeacherResponseParser):
         dataset_name = "anli1"
         super().__init__(dataset_name)
 
-    def conform_label(self, label: str) -> str:
+    def conform_label(self, label: str, prompt_values: Dict = None) -> str:
         label = label.lower().strip()
         if label in ["contradiction", "false", "not valid", "contradicts"]:
             label = "contradiction"
@@ -104,8 +104,14 @@ class CQATeacherResponseParser(TeacherResponseParser):
         dataset_name = "cqa"
         super().__init__(dataset_name)
 
-    def conform_label(self, label: str) -> str:
-        return label.lower().strip()
+    def conform_label(self, label: str, prompt_values: Dict = None) -> str:
+        label = label.lower().strip()
+        # in case the model answered with an identifier only, replace it with the actual label (e.g. "a)", "1)" or "1." -> prompt_values["choice_a"])
+        for int, let in enumerate(["a", "b", "c", "d", "e"]):
+            if label.replace(" ", "") in [f"{let})", f"{int+1})", f"{int+1}."]:
+                label = prompt_values[f"choice_{let}"]
+
+        return label
 
 
 class ESNLITeacherResponseParser(TeacherResponseParser):
@@ -115,7 +121,7 @@ class ESNLITeacherResponseParser(TeacherResponseParser):
         dataset_name = "esnli"
         super().__init__(dataset_name)
 
-    def conform_label(self, label: str) -> str:
+    def conform_label(self, label: str, prompt_values: Dict = None) -> str:
         label = label.lower().strip()
         if label in ["contradiction", "false", "not valid", "contradicts"]:
             label = "contradiction"
@@ -133,7 +139,7 @@ class SVAMPTeacherResponseParser(TeacherResponseParser):
         dataset_name = "svamp"
         super().__init__(dataset_name)
 
-    def conform_label(self, label: str) -> str:
+    def conform_label(self, label: str, prompt_values: Dict = None) -> str:
         return label.lower().strip()
 
     def get_pattern_from_template(self, prompt_template_id: int, prompt_values: Dict = None) -> re.Pattern:
@@ -145,7 +151,7 @@ class SVAMPTeacherResponseParser(TeacherResponseParser):
         return pattern
 
     def parse_response(
-        self, response: str, prompt_template_id: int = None, pattern: re.Pattern = None, verbose: bool = False
+        self, response: str, prompt_template_id: int = None, pattern: re.Pattern = None, prompt_values: Dict = None, verbose: bool = False
     ) -> Tuple[str, str]:
         if not pattern:
             pattern = self.get_pattern_from_template(prompt_template_id)

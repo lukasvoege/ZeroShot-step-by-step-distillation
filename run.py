@@ -11,7 +11,7 @@ from src.utils import read_yaml, print_c
 from src.factories import teacherQuerierFactory, dataLoaderFactory
 
 
-def run_experiment(dataset_name: str, test_size: float, model: str, seed: int) -> None:
+def run_experiment(dataset_name: str, test_size: float, model: str, seed: int, include_prompts: List[int] = None) -> None:
     """
     Run an experiment in the form of querieng test_size random samples with each available prompt
     and subsequent evaluation of the results to update metadata files and find the best performing
@@ -23,6 +23,8 @@ def run_experiment(dataset_name: str, test_size: float, model: str, seed: int) -
 
     yaml_file = f"./prompt-templates/{dataset_name}.yaml"
     prompt_templates = read_yaml(yaml_file)["templates"]
+    if include_prompts:
+        prompt_templates = {i: prompt_templates[i] for i in include_prompts}
 
     N_PROMPT_TEMPLATE = len(prompt_templates)
     DATASET_SIZE = len(teacher_querier.datasets["train"])
@@ -160,6 +162,7 @@ if __name__ == "__main__":
 
     parser.add_argument("--experiment", action="store_true")
     parser.add_argument("--test_size", type=float)
+    parser.add_argument("--include_prompts", type=int, nargs="+", default=None)
 
     parser.add_argument("--evaluate", action="store_true")
 
@@ -179,7 +182,7 @@ if __name__ == "__main__":
     np.random.seed(args.seed)
 
     if args.experiment:
-        run_experiment(args.dataset, args.test_size, args.chat_model, args.seed)
+        run_experiment(args.dataset, args.test_size, args.chat_model, args.seed, args.include_prompts)
     elif args.generate_trainingdata:
         generate_trainingdata(args.dataset, args.splits, args.prompt_mix, args.samples)
     elif args.evaluate:
