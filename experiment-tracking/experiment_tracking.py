@@ -3,7 +3,7 @@ import os
 import json
 import argparse
 
-DEFAULT_PASSTHROUGH = "--batch_size 32 --bf16 --tf32 --es_threshold 0.0001 --es_patience 30" #  --parallelize
+DEFAULT_PASSTHROUGH = "--bf16 --tf32 --es_threshold 0.0001 --es_patience 30" #  --parallelize
 
 def get_experiments_df():
     # Read csv and have all dtypes as object
@@ -76,7 +76,7 @@ def command_from_row(row: dict, pass_through: str = None):
     python += f" --from_pretrained google/{row['model']}"
     python += f" --dataset {row['dataset']}"
     python += f" --model_type {row['mode']}"
-    for field in ["label_type", "llm", "prompt_mix", "subsample", "alpha", "run"]:
+    for field in ["label_type", "llm", "prompt_mix", "subsample", "alpha", "batch_size", "run"]:
         if row[field] not in ["None", "0"]:
             python += f" --{field} {row[field]}"
 
