@@ -19,7 +19,7 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
     if DATASET == "anli1" or DATASET == "esnli":
         LABEL_PARSE = '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
     elif DATASET == "cqa":
-        LABEL_PARSE = '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e})'
+        LABEL_PARSE = '({choice_a}|{choice_b}|{choice_c}|{choice_d}|{choice_e}|a\)|b\)|c\)|d\)|e\)|1\)|2\)|3\)|4\)|5\)|1\.|2\.|3\.|4\.|5\.)'
     EXPL_PARSE = '.(.*)'
 
     for x in range(iterations):
@@ -83,6 +83,8 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
                     print(response)
                 else:
                     i += 0.25
+            else:
+                raise ValueError("Invalid dataset")
 
         utils.print_c("FINISHED ITERATION", c="green")
 
