@@ -1,4 +1,4 @@
-dataset: anli1
+dataset: esnli
 templates:
   1:
     id: 1
@@ -18,3 +18,17 @@ templates:
     user_message: '"{premise}" Based on that information, is the claim: "{hypothesis}" true, false, or inconclusive? Answer without an explanation.'
     label_parse: '(True|False|Inconclusive)'
     explanation_parse: ''
+    
+  4:
+    id: 4
+    system_message: ''
+    user_message: 'Based on {premise}, determine whether the claim "{hypothesis}" is true, false, or inconclusive?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  5:
+    id: 5
+    system_message: ''
+    user_message: 'Based on "{premise}", can it be determined whether "{hypothesis}" is true, false, or inconclusive? '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
