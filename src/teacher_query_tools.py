@@ -90,7 +90,6 @@ class TeacherQuerier:
         self, chain: LLMChain, template_args: Dict[str, str]
     ) -> Tuple[str, OpenAICallbackHandler]:
         with get_openai_callback() as callback:
-            ## TODO: run chain with timeout
             response = chain.run(template_args)	
         return response, callback
 
@@ -143,7 +142,6 @@ class TeacherQuerier:
                 response, callback = self.run_chain_with_callback(
                     chain,
                     {tup[0]: example[tup[1]] for tup in template_tuple}
-                    # {"premise": example["premise"], "hypothesis": example["hypothesis"]}
                 )
                 callbacks.append(callback)
                 # add to stored results in case it was queried in this batch already (should never happen)
