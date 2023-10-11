@@ -70,7 +70,7 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
                     i += 1
                     response = response.split("<PRT>")[1].split("</PRT>")[0]
                     response = response.strip("\n")
-                    utils.add_prompt_to_yaml(f"prompt-templates/{DATASET}.yaml", response)
+                    utils.add_prompt_to_yaml(f"prompt-templates/{DATASET}.yaml", response, LABEL_PARSE, EXPL_PARSE)
                     print(response)
                 else:
                     i += 0.5
