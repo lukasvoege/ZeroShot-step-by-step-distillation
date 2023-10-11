@@ -1,4 +1,4 @@
-dataset: anli1
+dataset: esnli
 templates:
   1:
     id: 1
@@ -18,3 +18,38 @@ templates:
     user_message: '"{premise}" Based on that information, is the claim: "{hypothesis}" true, false, or inconclusive? Answer without an explanation.'
     label_parse: '(True|False|Inconclusive)'
     explanation_parse: ''
+    
+  4:
+    id: 4
+    system_message: ''
+    user_message: 'Based on {premise}, determine whether the claim "{hypothesis}" is true, false, or inconclusive?'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  5:
+    id: 5
+    system_message: ''
+    user_message: 'Based on "{premise}", can it be determined whether "{hypothesis}" is true, false, or inconclusive? '
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  6:
+    id: 6
+    system_message: ''
+    user_message: 'Can the claim "{hypothesis}" be supported or refuted based on the given information about premise: "{premise}"? Mention "true" if the premise strongly supports the hypothesis, "false" if the premise contradicts the hypothesis, and "inconclusive" if a conclusion cannot be determined.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  7:
+    id: 7
+    system_message: ''
+    user_message: 'Considering the information given in the {premise}, can we determine whether the claim "{hypothesis}" is true, false, or inconclusive? Provide a clear and concise answer.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
+
+  8:
+    id: 8
+    system_message: ''
+    user_message: 'Assess the truth value (true, false, or inconclusive) of the claim "{hypothesis}" based on the given {premise}.'
+    label_parse: '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
+    explanation_parse: '.?(.*)'
