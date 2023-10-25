@@ -67,6 +67,7 @@ class TeacherResponseParser:
             pattern = self.get_pattern_from_template(prompt_template_id)
         match = pattern.search(response)
 
+        # TODO: implement switch to parse label first and explanation second if needed
         label = None
         explanation = None
         try:
