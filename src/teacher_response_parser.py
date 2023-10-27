@@ -33,14 +33,19 @@ class TeacherResponseParser:
 
     def get_pattern_from_template(self, prompt_template_id: int, prompt_values: Dict = None) -> re.Pattern:
         prompt_template = self.yaml_prompts["templates"][prompt_template_id]
-        parse_pattern = prompt_template["label_parse"] + prompt_template["explanation_parse"]
-        if prompt_values:
-            # escape ( and ) in prompt values
+        if "swap" in prompt_template and prompt_template["swap"]:
+            parse_pattern = prompt_template["explanation_parse"] + prompt_template["label_parse"]
+            swap = True
+        else:
+            parse_pattern = prompt_template["label_parse"] + prompt_template["explanation_parse"]
+            swap = False
+        if prompt_values and self.dataset_name != "svamp":
+            # escape ( and ) in prompt values and skip for svamp since it does not use prompt values
             for key, value in prompt_values.items():
                 prompt_values[key] = value.replace("(", "\(").replace(")", "\)")
             parse_pattern = parse_pattern.format(**prompt_values)
         pattern = re.compile(parse_pattern, re.IGNORECASE | re.DOTALL)
-        return pattern
+        return pattern, swap
 
     def parse_response_batch(self, split: str, prompt_template_id: int, verbose: bool = False) -> Dict[int, Tuple[str, str]]:
         yaml_file = f"{self.prompt_templates_folder}/{self.dataset_name}.yaml"
@@ -53,18 +58,18 @@ class TeacherResponseParser:
                 for line in f:
                     response = json.loads(line)
                     if response["idx"] not in parsed_responses:
-                        pattern = self.get_pattern_from_template(prompt_template_id, response["prompt_values"])
-                        parsed_responses[response["idx"]] = self.parse_response(response["response"], pattern=pattern, prompt_values=response["prompt_values"], verbose=verbose)
+                        pattern, swap = self.get_pattern_from_template(prompt_template_id, response["prompt_values"])
+                        parsed_responses[response["idx"]] = self.parse_response(response["response"], pattern=pattern, prompt_values=response["prompt_values"], swap=swap, verbose=verbose)
         except FileNotFoundError:
             print(f"No responses found for prompt template {prompt_template_id} in split {split}")
 
         return parsed_responses
 
     def parse_response(
-        self, response: str, prompt_template_id: int = None, pattern: re.Pattern = None, prompt_values: Dict = None, verbose: bool = False
+        self, response: str, prompt_template_id: int = None, pattern: re.Pattern = None, prompt_values: Dict = None, swap: bool = False, verbose: bool = False
     ) -> Tuple[str, str]:
         if not pattern:
-            pattern = self.get_pattern_from_template(prompt_template_id)
+            pattern, swap = self.get_pattern_from_template(prompt_template_id)
         match = pattern.search(response)
 
         # TODO: implement switch to parse label first and explanation second if needed
@@ -72,11 +77,19 @@ class TeacherResponseParser:
         explanation = None
         try:
             if len(match.groups()) > 0:
-                label = match.group(1)
-                label = self.conform_label(label, prompt_values)
+                if swap: # explanation first, then label
+                    explanation = match.group(1)
+                    explanation = self.clean_explanation(explanation)
+                else: # label first, then explanation
+                    label = match.group(1)
+                    label = self.conform_label(label, prompt_values)
             if len(match.groups()) > 1:
-                explanation = match.group(2)
-                explanation = self.clean_explanation(explanation)
+                if swap: # explanation first, then label
+                    label = match.group(2)
+                    label = self.conform_label(label, prompt_values)
+                else: # label first, then explanation
+                    explanation = match.group(2)
+                    explanation = self.clean_explanation(explanation)
         except (IndexError, AttributeError):
             if verbose: print(f"Could not parse '{response}' with pattern '{pattern}'")
 
@@ -145,32 +158,3 @@ class SVAMPTeacherResponseParser(TeacherResponseParser):
 
     def conform_label(self, label: str, prompt_values: Dict = None) -> str:
         return label.lower().strip()
-
-    def get_pattern_from_template(self, prompt_template_id: int, prompt_values: Dict = None) -> re.Pattern:
-        prompt_template = self.yaml_prompts["templates"][prompt_template_id]
-        parse_pattern = prompt_template["explanation_parse"] + prompt_template["label_parse"]
-        if prompt_values:
-            pass  # Prompt values are not used for SVAMP
-        pattern = re.compile(parse_pattern, re.IGNORECASE | re.DOTALL)
-        return pattern
-
-    def parse_response(
-        self, response: str, prompt_template_id: int = None, pattern: re.Pattern = None, prompt_values: Dict = None, verbose: bool = False
-    ) -> Tuple[str, str]:
-        if not pattern:
-            pattern = self.get_pattern_from_template(prompt_template_id)
-        match = pattern.search(response)
-
-        label = None
-        explanation = None
-        try:
-            if len(match.groups()) > 0:
-                explanation = match.group(1)
-                explanation = self.clean_explanation(explanation)
-            if len(match.groups()) > 1:
-                label = match.group(2)
-                label = self.conform_label(label)
-        except (IndexError, AttributeError):
-            if verbose: print(f"Could not parse '{response}' with pattern '{pattern}'")
-
-        return label, explanation

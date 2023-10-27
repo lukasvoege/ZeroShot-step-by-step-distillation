@@ -243,11 +243,11 @@ class ANLITeacherQuerier(TeacherQuerier):
     def _batch_query(
         self, split: str, idxs: List[int], prompt_template_id: int, dont_save: bool = False, force_query: bool = False, verbosity: int = 2
     ) -> Tuple[int, int, float]:
-        template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
+        template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis"), ("label", "label")]
         return self.batch_query(split, idxs, prompt_template_id, template_tuple, dont_save, force_query, verbosity)
 
     def _query(self, split: str, idx: int, prompt_template_id: int, dont_save: bool = False) -> None:
-        template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis")]
+        template_tuple = [("premise", "premise"), ("hypothesis", "hypothesis"), ("label", "label")]
         self.query(split, idx, prompt_template_id, template_tuple, dont_save)
 
     def _post_process_data(self, datasets) -> DatasetDict:

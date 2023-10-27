@@ -4448,3 +4448,12 @@
     accuracy: 0.6
     n_correct: 30
     n_wrong: 20
+179:
+  costs:
+    avg_cost_per_query: 0.00029
+    avg_nr_tokens_received: 39.0
+    avg_nr_tokens_sent: 143.8
+    total_accumulated_costs: 0.002937
+    total_performed_queries: 10
+    total_tokens_received: 390
+    total_tokens_sent: 1438
