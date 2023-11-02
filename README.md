@@ -79,6 +79,7 @@ OPENAI_API_KEY="your-openai-api-key"
  - `--generate_trainingdata`: generate training data for a given dataset and prompt mix
  - `--splits`: `train`, `valid`, `test`
  - `--prompt_mix`: Integer that refers to a prompt mix yaml in the `./prompt_mixes` directory
+ - `--include_prompts`: list of integers that refers to a prompt yaml in the `./prompts` directory, to only include specific prompts in an experiment. All if not specified.
  - `--samples`: Integer, the number of samples to generate
  - `--dataset`: `esnli`, `anli1`, `cqa`, `svamp`
  - `--seed`: random seed to use
