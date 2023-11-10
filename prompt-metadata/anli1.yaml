@@ -4463,12 +4463,12 @@
     variance_length_of_explanations: 1405.235
   costs:
     avg_cost_per_query: 0.0003
-    avg_nr_tokens_received: 38.41
-    avg_nr_tokens_sent: 145.84
-    total_accumulated_costs: 0.03251300000000001
-    total_performed_queries: 110
-    total_tokens_received: 4225
-    total_tokens_sent: 16042
+    avg_nr_tokens_received: 39.89
+    avg_nr_tokens_sent: 145.82
+    total_accumulated_costs: 5.356910499999996
+    total_performed_queries: 17946
+    total_tokens_received: 715838
+    total_tokens_sent: 2616823
   performance:
     accuracy: 1.0
     n_correct: 110
