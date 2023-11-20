@@ -3,16 +3,38 @@ Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.125,0,g
 Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,3738.0,5500,0.434,0.403
 Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,8497.0,9500,0.346,0.342
 Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,5848.0,6500,0.341,0.334
+RERUN Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.125,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.25,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.5,0,gt,0.5,1024,32,AdamW,5e-05,1,2896.0,10000,0.432,0.391
 RERUN Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,1.0,0,gt,0.5,1024,32,AdamW,5e-05,1,2858.0,10000,0.437,0.392
+RERUN Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.125,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.25,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,0.5,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1,standard Finetuning,anli1,t5-v1_1-base,standard,None,1.0,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
 Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,64,AdamW,5e-05,0,7970.0,5750,0.441,0.401
 Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,12580.0,9250,0.46,0.426
 Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,11525.0,8250,0.475,0.423
 Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,13986.0,10000,0.52,0.496
+RERUN Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
 Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.125,6,gt,0.5,1024,32,AdamW,5e-05,0,6015.0,10000,0.427,0.379
 Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.25,6,gt,0.5,1024,32,AdamW,5e-05,0,5921.0,10000,0.473,0.451
 Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.5,6,gt,0.5,1024,32,AdamW,5e-05,0,5960.0,10000,0.448,0.434
 Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,1.0,6,gt,0.5,1024,32,AdamW,5e-05,0,5992.0,10000,0.485,0.451
+RERUN Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.125,6,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.25,6,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.5,6,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,1.0,6,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.125,6,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.25,6,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.5,6,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,1.0,6,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
 Subsampling ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.125,8,gt,0.5,1024,32,AdamW,5e-05,0,5004.0,10000,0.411,0.391
 Subsampling ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.25,8,gt,0.5,1024,32,AdamW,5e-05,0,5070.0,10000,0.436,0.396
 Subsampling ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-base,task_prefix,gpt35,0.5,8,gt,0.5,1024,32,AdamW,5e-05,0,5284.0,10000,0.458,0.445
