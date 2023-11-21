@@ -98,6 +98,7 @@ numpy==1.24.4
     #   numexpr
     #   pandas
     #   pyarrow
+    #   scipy
 openai==0.27.8
     # via -r .\requirements.in
 openapi-schema-pydantic==1.2.4
@@ -148,6 +149,8 @@ requests==2.31.0
     #   langchain
     #   langsmith
     #   openai
+scipy==1.10.1
+    # via -r .\requirements.in
 six==1.16.0
     # via python-dateutil
 sqlalchemy==2.0.19

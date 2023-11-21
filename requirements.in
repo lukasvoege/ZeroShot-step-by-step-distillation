@@ -3,6 +3,7 @@ python-dotenv
 matplotlib
 numpy
 pandas
+scipy
 
 # Teacher Querier dependencies
 langchain
