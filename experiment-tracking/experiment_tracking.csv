@@ -119,10 +119,10 @@ Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.125,
 Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,64,AdamW,5e-05,0,6227.0,7750,0.55,0.488
 Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,64,AdamW,5e-05,0,5106.0,6250,0.617,0.567
 Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,64,AdamW,5e-05,0,8170.0,10000,0.631,0.598
-RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
-RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
-RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
-RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,32,AdamW,5e-05,1,3068.0,10000,0.525,0.492
+RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,32,AdamW,5e-05,1,3103.0,10000,0.575,0.557
+RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,32,AdamW,5e-05,1,3197.0,10000,0.603,0.577
+RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,gt,0.5,1024,32,AdamW,5e-05,1,3086.0,10000,0.631,0.591
 RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
 RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
 RERUN Subsampling CQA,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
@@ -133,17 +133,17 @@ Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.5,0,llm,0
 Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,2913.0,7750,0.593,0.557
 RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,32,AdamW,5e-05,1,2026.0,10000,0.464,0.402
 RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,32,AdamW,5e-05,1,1988.0,10000,0.53,0.496
-RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
-RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
-RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,32,AdamW,5e-05,1,1964.0,10000,0.571,0.567
+RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,1,2023.0,10000,0.588,0.551
+RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,32,AdamW,5e-05,2,1951.0,10000,0.498,0.393
+RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,32,AdamW,5e-05,2,1980.0,10000,0.527,0.533
+RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,32,AdamW,5e-05,2,1968.0,10000,0.541,0.528
+RERUN Subsampling CQA,standard Distillation,cqa,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,2,2040.0,10000,0.58,0.533
 Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,4134.0,5250,0.469,0.41
 Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,4666.0,5750,0.54,0.566
 Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,5328.0,6500,0.575,0.517
 Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,llm,0.5,1024,64,AdamW,5e-05,0,8228.0,10000,0.618,0.567
-RERUN Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,llm,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
+RERUN Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.125,0,llm,0.5,1024,32,AdamW,5e-05,1,3050.0,10000,0.491,0.484
 RERUN Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.25,0,llm,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,0.5,0,llm,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN Subsampling CQA,step-by-step Distillation,cqa,t5-v1_1-base,task_prefix,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
