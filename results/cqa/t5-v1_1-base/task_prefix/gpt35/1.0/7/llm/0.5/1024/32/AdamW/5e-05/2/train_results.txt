@@ -1,0 +1,1 @@
+TrainOutput(global_step=10000, training_loss=1.3324455932617187, metrics={'train_runtime': 3012.7142, 'train_samples_per_second': 106.217, 'train_steps_per_second': 3.319, 'train_loss': 1.3324455932617187, 'epoch': 36.5})
