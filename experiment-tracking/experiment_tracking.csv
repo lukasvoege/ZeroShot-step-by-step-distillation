@@ -238,10 +238,10 @@ RERUN Model Size ANLI1,step-by-step Finetuning,anli1,t5-v1_1-xl,task_prefix,palm
 Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,6,gt,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
 RERUN Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,6,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,6,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,6,gt,0.5,1024,8,AdamW,5e-05,0,None,None,None,None
+Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,6,gt,0.5,1024,8,AdamW,5e-05,0,5986.0,10000,0.657,0.626
 RERUN Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,6,gt,0.5,1024,8,AdamW,5e-05,1,None,None,None,None
 RERUN Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,6,gt,0.5,1024,8,AdamW,5e-05,2,None,None,None,None
-Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-xl,task_prefix,gpt35,1.0,6,gt,0.5,1024,4,AdamW,5e-05,0,None,None,None,None
+Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-xl,task_prefix,gpt35,1.0,6,gt,0.5,1024,8,AdamW,5e-05,0,None,None,None,None
 RERUN Model Size ANLI1 GPT35,step-by-step Finetuning,anli1,t5-v1_1-xl,task_prefix,gpt35,1.0,6,gt,0.5,1024,8,AdamW,5e-05,1,None,None,None,None
 Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-small,task_prefix,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,0,2225.0,10000,0.431,0.386
 RERUN Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-small,task_prefix,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
@@ -250,7 +250,7 @@ Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-large,task_prefix,palm,
 RERUN Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-large,task_prefix,palm,1.0,0,llm,0.5,1024,8,AdamW,5e-05,1,5849.0,10000,0.595,0.592
 RERUN Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-large,task_prefix,palm,1.0,0,llm,0.5,1024,8,AdamW,5e-05,2,5843.0,10000,0.605,0.587
 Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-xl,task_prefix,palm,1.0,0,llm,0.5,1024,4,AdamW,0.0005,0,11342.0,10000,0.508,0.508
-RERUN Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-xl,task_prefix,palm,1.0,0,llm,0.5,1024,4,AdamW,0.0005,1,None,None,None,None
+RERUN Model Size ANLI1,step-by-step Distillation,anli1,t5-v1_1-xl,task_prefix,palm,1.0,0,llm,0.5,1024,4,AdamW,0.0005,1,13623.0,10000,0.472,0.488
 Model Size ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,6,llm,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
 RERUN Model Size ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,6,llm,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN Model Size ANLI1 GPT35,step-by-step Distillation,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,6,llm,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
