@@ -1,0 +1,1 @@
+{'eval_loss': 0.39432957768440247, 'eval_accuracy': 0.461, 'eval_runtime': 6.3794, 'eval_samples_per_second': 156.754, 'eval_steps_per_second': 5.016, 'epoch': 18.87}
