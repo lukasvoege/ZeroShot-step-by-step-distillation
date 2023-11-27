@@ -4475,26 +4475,26 @@
     n_wrong: 81
 1000:
   characteristics:
-    avg_len_of_explanations: 429.88
-    avg_nr_of_sentences: 3.6
-    avg_nr_of_words: 71.44
-    flesch_reading_ease: 47.0
+    avg_len_of_explanations: 446.36
+    avg_nr_of_sentences: 3.72
+    avg_nr_of_words: 74.05
+    flesch_reading_ease: 46.8
     n_none_responses: 0
     n_parse_errors: 0
-    total_length_of_explanations: 10747
-    total_number_of_sentences: 90
-    total_number_of_words: 1786
-    total_responses: 25
-    variance_length_of_explanations: 4802.026
+    total_length_of_explanations: 3782034
+    total_number_of_sentences: 31511
+    total_number_of_words: 627386
+    total_responses: 8473
+    variance_length_of_explanations: 7083.481
   costs:
-    avg_cost_per_query: 0.00198
-    avg_nr_tokens_received: 89.64
-    avg_nr_tokens_sent: 1203.52
-    total_accumulated_costs: 0.049614
-    total_performed_queries: 25
-    total_tokens_received: 2241
-    total_tokens_sent: 30088
+    avg_cost_per_query: 0.002
+    avg_nr_tokens_received: 93.98
+    avg_nr_tokens_sent: 1204.9
+    total_accumulated_costs: 18.951491999999924
+    total_performed_queries: 9498
+    total_tokens_received: 892644
+    total_tokens_sent: 11444136
   performance:
-    accuracy: 1.0
-    n_correct: 25
-    n_wrong: 0
+    accuracy: 0.9996
+    n_correct: 8470
+    n_wrong: 3
