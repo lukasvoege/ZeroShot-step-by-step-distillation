@@ -85,27 +85,27 @@ RERUN LONG X ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-base,
 LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,palm,0.5,0,gt,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
 RERUN LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,palm,0.5,0,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,palm,0.5,0,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-LONG X LRG GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,palm,0.5,0,gt,0.5,1024,8,AdamW,5e-05,0,None,None,None,None
-RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,palm,0.5,0,gt,0.5,1024,8,AdamW,5e-05,1,None,None,None,None
-RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,palm,0.5,0,gt,0.5,1024,8,AdamW,5e-05,2,None,None,None,None
+LONG X LRG GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,palm,0.5,0,gt,0.5,1024,8,AdamW,5e-05,0,6033.0,10000,0.635,0.61
+RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,palm,0.5,0,gt,0.5,1024,8,AdamW,5e-05,1,5924.0,10000,0.605,0.607
+RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,palm,0.5,0,gt,0.5,1024,8,AdamW,5e-05,2,5941.0,10000,0.608,0.566
 LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,0.5,6,gt,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
 RERUN LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,0.5,6,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,0.5,6,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-LONG X LRG GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,6,gt,0.5,1024,8,AdamW,5e-05,0,None,None,None,None
-RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,6,gt,0.5,1024,8,AdamW,5e-05,1,None,None,None,None
-RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,6,gt,0.5,1024,8,AdamW,5e-05,2,None,None,None,None
+LONG X LRG GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,6,gt,0.5,1024,8,AdamW,5e-05,0,6007.0,10000,0.633,0.59
+RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,6,gt,0.5,1024,8,AdamW,5e-05,1,5955.0,10000,0.617,0.607
+RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,6,gt,0.5,1024,8,AdamW,5e-05,2,6068.0,10000,0.614,0.578
 LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,0.5,8,gt,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
 RERUN LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,0.5,8,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,0.5,8,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-LONG X LRG GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,8,gt,0.5,1024,8,AdamW,5e-05,0,None,None,None,None
-RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,8,gt,0.5,1024,8,AdamW,5e-05,1,None,None,None,None
-RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,8,gt,0.5,1024,8,AdamW,5e-05,2,None,None,None,None
+LONG X LRG GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,8,gt,0.5,1024,8,AdamW,5e-05,0,6019.0,10000,0.628,0.613
+RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,8,gt,0.5,1024,8,AdamW,5e-05,1,6258.0,10000,0.6,0.592
+RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,0.5,8,gt,0.5,1024,8,AdamW,5e-05,2,6067.0,9750,0.609,0.578
 LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,9,gt,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
 RERUN LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,9,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
 RERUN LONG X SML ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-small,task_prefix,gpt35,1.0,9,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-LONG X LRG GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,9,gt,0.5,1024,8,AdamW,5e-05,0,None,None,None,None
-RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,9,gt,0.5,1024,8,AdamW,5e-05,1,None,None,None,None
-RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,9,gt,0.5,1024,8,AdamW,5e-05,2,None,None,None,None
+LONG X LRG GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,9,gt,0.5,1024,8,AdamW,5e-05,0,5076.0,8000,0.561,0.512
+RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,9,gt,0.5,1024,8,AdamW,5e-05,1,6305.0,10000,0.567,0.542
+RERUN LONG X LRG ANLI1 GPT35 LABEL GIVEN,step-by-step Finetuning,anli1,t5-v1_1-large,task_prefix,gpt35,1.0,9,gt,0.5,1024,8,AdamW,5e-05,2,6279.0,10000,0.579,0.556
 Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,5043.0,7500,0.344,0.345
 Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,6754.0,10000,0.39,0.408
 Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,5101.0,5500,0.359,0.324
