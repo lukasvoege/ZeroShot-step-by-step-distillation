@@ -2,6 +2,7 @@ from typing import Dict, List
 
 import os
 import json
+import numpy as np
 from src.factories import teacherResponseParserFactory
 
 
@@ -12,7 +13,7 @@ class TeacherWriter:
 
     # prompt_template_id_mix = {"label": {1: [1, 2, 5], 2: [0, 3, 4]}, "explanation": {1: [0, 1, 2], 2: [3, 4, 5]}}
 
-    def write_teacher_responses(self, split: str, prompt_template_id_mix: Dict[int, List[int]], prompt_mix_id: int) -> None:
+    def write_teacher_responses(self, split: str, prompt_template_id_mix: Dict[int, List[int]], prompt_mix_id: int, subsam_expl_rate: float = None) -> None:
         all_used_Prompt_ids = set([id for ids in prompt_template_id_mix.values() for id in ids])
         parsed_responses = {id: self.parser.parse_response_batch(split, id) for id in all_used_Prompt_ids}
 
@@ -36,6 +37,21 @@ class TeacherWriter:
         none_idxs = [i for i, x in enumerate(to_write) if x == None]
         if none_idxs:
             raise ValueError(f"No responses given for indices {none_idxs}")
+        
+        # calculate the explanation rate as (1-None explanations)/len(to_write)
+        if split == "train":
+            explanation_rate = 1 - sum([1 for x in to_write if x["explanation"] == None]) / len(to_write)
+            print(f"Explanation rate in train split: {explanation_rate}")
+            if subsam_expl_rate is not None and 0.0 < subsam_expl_rate < 1.0 and subsam_expl_rate < explanation_rate:
+                print(f"Subsampling to {subsam_expl_rate} explanation rate.")
+                # change random explanations to None to match the desired explanation rate
+                for i, x in enumerate(to_write):
+                    if x["explanation"] is not None and np.random.random() < subsam_expl_rate * explanation_rate:
+                        to_write[i]["explanation"] = None
+
+                # check if the explanation rate is correctly subsampled
+                explanation_rate = 1 - sum([1 for x in to_write if x["explanation"] == None]) / len(to_write)
+                print(f"NEW Explanation rate in train split: {explanation_rate}")
 
         with open(f"{write_location}/{split}_CoT.json", "w") as f:
             for line in to_write:

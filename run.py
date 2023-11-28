@@ -74,7 +74,7 @@ def run_experiment(dataset_name: str, test_size: float, model: str, seed: int, i
     )
 
 
-def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int, n_samples: int) -> None:
+def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int, n_samples: int, subsam_expl_rate: float = None) -> None:
     print(f"Generating training data for {dataset_name}...")
     print_c(f"PHASE 1: Loading Prompt-Mix {prompt_mix} and seed...", c="green")
 
@@ -146,7 +146,7 @@ def generate_trainingdata(dataset_name: str, splits: List[str], prompt_mix: int,
     for split in splits:
         print_c(f"{split.upper()}", c="blue")
 
-        teacher_writer.write_teacher_responses(split=split, prompt_template_id_mix=complete_idxs_mix[split], prompt_mix_id=prompt_mix)
+        teacher_writer.write_teacher_responses(split=split, prompt_template_id_mix=complete_idxs_mix[split], prompt_mix_id=prompt_mix, subsam_expl_rate=subsam_expl_rate)
         
     print_c(f"PHASE 3: Done.", c="green")
 
@@ -170,6 +170,7 @@ if __name__ == "__main__":
     parser.add_argument("--splits", type=str, nargs="+")
     parser.add_argument("--prompt_mix", type=int)
     parser.add_argument("--samples", type=int)
+    parser.add_argument("--subsam_expl_rate", type=float, default=None)
 
     parser.add_argument("--dataset", type=str)
     parser.add_argument("--seed", type=int, default=42)
@@ -184,6 +185,6 @@ if __name__ == "__main__":
     if args.experiment:
         run_experiment(args.dataset, args.test_size, args.chat_model, args.seed, args.include_prompts)
     elif args.generate_trainingdata:
-        generate_trainingdata(args.dataset, args.splits, args.prompt_mix, args.samples)
+        generate_trainingdata(args.dataset, args.splits, args.prompt_mix, args.samples, args.subsam_expl_rate)
     elif args.evaluate:
         run_train_evaluation(args.dataset)
