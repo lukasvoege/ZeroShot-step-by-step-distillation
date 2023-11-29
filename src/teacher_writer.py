@@ -45,8 +45,9 @@ class TeacherWriter:
             if subsam_expl_rate is not None and 0.0 < subsam_expl_rate < 1.0 and subsam_expl_rate < explanation_rate:
                 print(f"Subsampling to {subsam_expl_rate} explanation rate.")
                 # change random explanations to None to match the desired explanation rate
+                np.random.seed(100)
                 for i, x in enumerate(to_write):
-                    if x["explanation"] is not None and np.random.random() > subsam_expl_rate * explanation_rate:
+                    if x["explanation"] is not None and np.random.random() > subsam_expl_rate:
                         to_write[i]["explanation"] = None
 
                 # check if the explanation rate is correctly subsampled
