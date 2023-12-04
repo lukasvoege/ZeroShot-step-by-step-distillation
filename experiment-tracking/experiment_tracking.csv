@@ -130,6 +130,14 @@ RERUN Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0
 RERUN Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,32,AdamW,5e-05,2,2722.0,10000,0.387,0.386
 RERUN Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,32,AdamW,5e-05,2,2725.0,10000,0.356,0.329
 RERUN Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,2,2718.0,10000,0.343,0.309
+MANUAL Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,32,AdamW,5e-05,100,10000.0,10000,0.384,0.352
+MANUAL Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,32,AdamW,5e-05,100,10000.0,10000,0.361,0.346
+MANUAL Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,32,AdamW,5e-05,100,10000.0,10000,0.374,0.386
+MANUAL Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,100,10000.0,10000,0.347,0.395
+MANUAL Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.125,0,llm,0.5,1024,32,AdamW,5e-05,100,10000.0,10000,0.353,0.359
+MANUAL Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.25,0,llm,0.5,1024,32,AdamW,5e-05,100,10000.0,10000,0.387,0.356
+MANUAL Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,0.5,0,llm,0.5,1024,32,AdamW,5e-05,100,10000.0,10000,0.356,0.389
+MANUAL Subsampling ANLI1,standard Distillation,anli1,t5-v1_1-base,standard,palm,1.0,0,llm,0.5,1024,32,AdamW,5e-05,100,10000.0,10000,0.343,0.399
 Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.125,0,llm,0.5,1024,64,AdamW,5e-05,0,11069.0,8000,0.399,0.399
 Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.25,0,llm,0.5,1024,64,AdamW,5e-05,0,11969.0,8750,0.413,0.417
 Subsampling ANLI1,step-by-step Distillation,anli1,t5-v1_1-base,task_prefix,palm,0.5,0,llm,0.5,1024,64,AdamW,5e-05,0,14003.0,10000,0.441,0.442
