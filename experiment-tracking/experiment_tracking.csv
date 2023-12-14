@@ -283,15 +283,15 @@ XR 66 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,7
 XR 33 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,72,gt,0.5,1024,32,AdamW,5e-05,0,3119.0,10000,0.601,0.581
 XR 33 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,72,gt,0.5,1024,32,AdamW,5e-05,1,3064.0,10000,0.636,0.605
 XR 33 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,72,gt,0.5,1024,32,AdamW,5e-05,2,3087.0,10000,0.628,0.613
-XR 15 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,73,gt,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
-XR 15 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,73,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
-XR 15 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,73,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-XR 50 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,74,gt,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
-XR 50 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,74,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
-XR 50 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,74,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
-XR 85 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,75,gt,0.5,1024,32,AdamW,5e-05,0,None,None,None,None
-XR 85 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,75,gt,0.5,1024,32,AdamW,5e-05,1,None,None,None,None
-XR 85 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,75,gt,0.5,1024,32,AdamW,5e-05,2,None,None,None,None
+XR 15 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,73,gt,0.5,1024,32,AdamW,5e-05,0,3024.0,10000,0.625,0.596
+XR 15 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,73,gt,0.5,1024,32,AdamW,5e-05,1,3076.0,10000,0.625,0.598
+XR 15 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,73,gt,0.5,1024,32,AdamW,5e-05,2,3077.0,10000,0.637,0.607
+XR 50 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,74,gt,0.5,1024,32,AdamW,5e-05,0,3199.0,10000,0.625,0.616
+XR 50 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,74,gt,0.5,1024,32,AdamW,5e-05,1,3186.0,10000,0.635,0.616
+XR 50 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,74,gt,0.5,1024,32,AdamW,5e-05,2,3104.0,10000,0.628,0.593
+XR 85 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,75,gt,0.5,1024,32,AdamW,5e-05,0,3090.0,10000,0.645,0.628
+XR 85 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,75,gt,0.5,1024,32,AdamW,5e-05,1,3127.0,10000,0.639,0.618
+XR 85 CQA GPT35,step-by-step Finetuning,cqa,t5-v1_1-base,task_prefix,gpt35,1.0,75,gt,0.5,1024,32,AdamW,5e-05,2,3084.0,10000,0.639,0.618
 Model Size ANLI1,standard Finetuning,anli1,t5-v1_1-small,standard,None,1.0,0,gt,0.5,1024,32,AdamW,5e-05,0,1434.0,10000,0.403,0.358
 RERUN Model Size ANLI1,standard Finetuning,anli1,t5-v1_1-small,standard,None,1.0,0,gt,0.5,1024,32,AdamW,5e-05,1,1964.0,10000,0.41,0.38
 RERUN Model Size ANLI1,standard Finetuning,anli1,t5-v1_1-small,standard,None,1.0,0,gt,0.5,1024,32,AdamW,5e-05,2,1968.0,10000,0.412,0.393
