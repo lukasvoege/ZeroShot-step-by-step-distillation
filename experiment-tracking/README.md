@@ -4,7 +4,7 @@ This folder contains the experiment tracking for the experiments conducted for t
 
 ### Experiment Tracking File
 
-Experiments are defined by the exact set of parameters used to finetune and distill the T5 models. The parameters are defined in the following columns, wheras each row represents a single experiment. Not all parameters are used for all experiments, e.g. the `prompt_mix` column is only used for experiments with `gpt35` as the teacher model (`llm`) and a teacher model is itself irrelevant for standard finetuning experiments for example. Parameters that are of no relevance for a specific experiment should be left at their default value or `None` to avoid confusion.
+Experiments are defined by the exact set of parameters used to finetune and distill the T5 models. The parameters are defined in the following columns, whereas each row represents a single experiment. Not all parameters are used for all experiments, e.g. the `prompt_mix` column is only used for experiments with `gpt35` as the teacher model (`llm`) and a teacher model is itself irrelevant for standard finetuning experiments for example. Parameters that are of no relevance for a specific experiment should be left at their default value or `None` to avoid confusion.
 
 - `dataset`: the dataset to use (`anli1`, `cqa`, `svamp`, `esnli`)
 - `model`: the pretrained google/t5-v1_1 model to finetune
@@ -30,7 +30,7 @@ This will update `train_duration`, `train_steps`, `test_acc`, `eval_acc` fields 
 
 #### Generate Bash Scripts
 
-To generate bash scripts to run the defined experiments that have not yet been run (`None` in `train_duration`, `train_steps`, `test_acc` or `eval_acc`), run with the `--generate_missing_experiments_script` parameter and a file name. Filter for any of the aforemntioned relevant parameters and/or a custom `experiment_group`.
+To generate bash scripts to run the defined experiments that have not yet been run (`None` in `train_duration`, `train_steps`, `test_acc` or `eval_acc`), run with the `--generate_missing_experiments_script` parameter and a file name. Filter for any of the aforementioned relevant parameters and/or a custom `experiment_group`.
 
 For example, to generate a bash script, called "anli_modelsize.sh", to run all experiments that have not yet been run with the `experiment_group` "Model Size" and `mode` "standard", run the following command from the root directory of the project:
 
@@ -38,7 +38,7 @@ For example, to generate a bash script, called "anli_modelsize.sh", to run all e
 python .\experiment-tracking\experiment_tracking.py --generate_missing_experiments anli_modelsize --experiment_group "Model Size" --mode standard
 ```
 
-To generate a bash script, called "cqa_gpt35.sh", to run all experiments that have not yet been run yet with the `dataset` "cqa" and `llm` "gpt35", run the following command from the root directory of the project. Arbitrary params can be passed through to the generated commands with the `--passthrough` parameter.
+To generate a bash script, called "cqa_gpt35.sh", to run all experiments that have not yet been run with the `dataset` "cqa" and `llm` "gpt35", run the following command from the root directory of the project. Arbitrary params can be passed through to the generated commands with the `--passthrough` parameter.
 
 ```bash
 python .\experiment-tracking\experiment_tracking.py --generate_missing_experiments cqa_gpt35 --dataset cqa --llm gpt35 --passthrough "--parallelize --es_threshold 0.0001 --es_patience 10"

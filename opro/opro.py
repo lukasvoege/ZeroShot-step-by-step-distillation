@@ -13,9 +13,9 @@ load_dotenv()
 
 
 def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
-    DATASET = dataset#"anli1"
-    N_PRV_BEST = n_prev_best #15
-    TEST_SIZE = test_size #50
+    DATASET = dataset
+    N_PRV_BEST = n_prev_best
+    TEST_SIZE = test_size
     if DATASET == "anli1" or DATASET == "esnli":
         LABEL_PARSE = '(True|False|Inconclusive|Contradiction|Neutral|Entailment|not valid|valid|entails|contradicts|cannot be determined|uncertain|cannot determine)'
     elif DATASET == "cqa":
@@ -46,9 +46,9 @@ def run_opro(dataset: str, n_prev_best: int, test_size: int, iterations: int):
             previous_best += str(round(acc*100)) + "\n\n"
 
         # (4.) load data to generate examples)
+        pass
 
         # 5.) prompt meta prompt 8 times and build prompt templates
-
         with open(f"opro/meta-prompts/{DATASET}.txt", "r") as f:
             meta_prompt = f.read()
 
