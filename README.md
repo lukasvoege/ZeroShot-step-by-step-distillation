@@ -36,8 +36,8 @@ This repository contains the code to perform Zero-Shot step-by-step Distillation
 
 ### Conceptual overview
 
- - **Prompt Template**: Used to query the Teacher LLM. Template that defines the structure of a prompt, including the appropriate placeholders for the input to the model. Also, define parsing instructions for the expected responses from the model into definite label and rationale parts. Prompt templates are defined in `./prompt_templates`, by dataset name and are identified by a unique ID.
- - **Prompt Mix**: Used to annotate complete datasets with labels and rationales from the teacher LLM. A prompt mix defines a relative mix of prompt templates for the annotation of a dataset with labels and rationales. This means, a dataset can be annotated with multiple prompt templates and different prompt templates for labels and rationales (e.g. 75% of labels are queried with prompt template 1 and 25% with prompt template 2 and 100% of rationales are from prompt template 3). A Teacher Writer class will query the teacher LLM accordingly, to build a dataset adhering to the defined prompt-mix. The most basic prompt-mix just states one prompt template with 100% for label and rationale. Prompt mixes are defined in `./prompt_mixes`, by a unique ID.
+ - **Prompt Template**: Used to query the Teacher LLM. Template that defines the structure of a prompt, including the appropriate placeholders for the input to the model. Also, defines regex parsing instructions for the expected responses from the model into definite label and rationale parts. Prompt templates are defined in `./prompt_templates`, by dataset name and are identified by a unique ID.
+ - **Prompt Mix**: Used to annotate complete datasets with labels and rationales from the teacher LLM. A prompt mix defines a relative mix of prompt templates for the annotation of a dataset with labels and rationales. This means, a dataset can be annotated with multiple prompt templates and different prompt templates for labels and rationales (e.g. 75% of labels are queried with prompt template 1 and 25% with prompt template 2 and 100% of rationales are from prompt template 3). A Teacher Writer object will query the teacher LLM accordingly, to build a dataset adhering to the defined prompt-mix. The most basic prompt-mix just states one prompt template with 100% for label and rationale. Prompt mixes are defined in `./prompt_mixes`, by a unique ID.
  - **Prompt Metadata**: Performance metadata for prompt templates. Prompt metadata is stored in `./prompt_metadata` by dataset name and prompt template ID. Prompt metadata is updated by prompt experiments and stores information about occurring costs, the parsing behaviour of resulting responses, and characteristics of labels and rationales.
 
 ---
@@ -54,7 +54,7 @@ This repository contains the code to perform Zero-Shot step-by-step Distillation
 ### Project structure
 
 ```bash
-├── distilling-step-by-step             # submodule, contains the original code by Hsieh et al. (2023)
+├── distilling-step-by-step             # submodule, contains the original code by Hsieh et al. (2023) to (step-by-step) finetune T5 models
 ├── experiment-tracking 
 │   ├── scripts                         # bash scripts to run T5 finetuning experiments
 │   ├── experiment_tracking.csv         # file containing all T5 finetuning experiments
