@@ -24,19 +24,19 @@ This repository contains the code to perform Zero-Shot step-by-step Distillation
 
 ### Conceptual overview
 
- - **Prompt Template**: Used to query the Teacher LLM. Template that defines the structure of a prompt, including the appropriate placeholders for the input to the model. Also, defines regex parsing instructions for the expected responses from the model into definite label and rationale parts. Prompt templates are defined in `./prompt_templates`, by dataset name and are identified by a unique ID.
- - **Prompt Mix**: Used to annotate complete datasets with labels and rationales from the teacher LLM. A prompt mix defines a relative mix of prompt templates for the annotation of a dataset with labels and rationales. This means, a dataset can be annotated with multiple prompt templates and different prompt templates for labels and rationales (e.g. 75% of labels are queried with prompt template 1 and 25% with prompt template 2 and 100% of rationales are from prompt template 3). A Teacher Writer object will query the teacher LLM accordingly, to build a dataset adhering to the defined prompt-mix. The most basic prompt-mix just states one prompt template with 100% for label and rationale. Prompt mixes are defined in `./prompt_mixes`, by a unique ID.
- - **Prompt Metadata**: Performance metadata for prompt templates. Prompt metadata is stored in `./prompt_metadata` by dataset name and prompt template ID. Prompt metadata is updated by prompt experiments and stores information about occurring costs, the parsing behaviour of resulting responses, and characteristics of labels and rationales.
+ - **_Prompt Template_**: Used to query the Teacher LLM. Template that defines the structure of a prompt, including the appropriate placeholders for the input to the model. Also, defines regex parsing instructions for the expected responses from the model into definite label and rationale parts. Prompt templates are defined in `./prompt_templates`, by dataset name and are identified by a unique ID.
+ - **_Prompt Mix_**: Used to annotate complete datasets with labels and rationales from the teacher LLM. A prompt mix defines a relative mix of prompt templates for the annotation of a dataset with labels and rationales. This means, a dataset can be annotated with multiple prompt templates and different prompt templates for labels and rationales (e.g. 75% of labels are queried with prompt template 1 and 25% with prompt template 2 and 100% of rationales are from prompt template 3). A Teacher Writer object will query the teacher LLM accordingly, to build a dataset adhering to the defined prompt-mix. The most basic prompt-mix just states one prompt template with 100% for label and rationale. Prompt mixes are defined in `./prompt_mixes`, by a unique ID.
+ - **_Prompt Metadata_**: Performance metadata for prompt templates. Prompt metadata is stored in `./prompt_metadata` by dataset name and prompt template ID. Prompt metadata is updated by prompt experiments and stores information about occurring costs, the parsing behaviour of resulting responses, and characteristics of labels and rationales.
 
 ---
 
- - **Prompt Experiment**: A prompt experiment queries all available prompt-templates for a given dataset n times and evaluates the responses (label accuracy and rationale characteristics). Results will be updating the prompt metadata for each prompt. Run prompt experiments with the `--experiment` flag.
+ - **_Prompt Experiment_**: A prompt experiment queries all available prompt-templates for a given dataset n times and evaluates the responses (label accuracy and rationale characteristics). Results will be updating the prompt metadata for each prompt. Run prompt experiments with the `--experiment` flag.
 
 ---
 
- - **Query Results**: All Teacher LLM responses for a given dataset, split and prompt template. Teacher Querrier classes will check the query-results directory for existing query results before each query to avoid querying the same exact query twice.
+ - **_Query Results_**: All Teacher LLM responses for a given dataset, split and prompt template. Teacher Querrier classes will check the query-results directory for existing query results before each query to avoid querying the same exact query twice.
 
- - **Results**: Results from T5 finetuning experiments by hyperparameter configuration. Outputs of the evaluation of the best checkpoint after training.
+ - **_Results_**: Results from T5 finetuning experiments by hyperparameter configuration. Outputs of the evaluation of the best checkpoint after training.
 
 
 ### Project structure
