@@ -8,27 +8,15 @@
 
 **2nd Examiner:** Prof. Dr. Akbik
 
-## Table of Content
-
-- [Summary](#summary)
-- [Working with the repo](#Working-with-the-repo)
-    - [Setup](#Setup)
-- [Reproducing results](#Reproducing-results)
-    - [Training code](#Training-code)
-    - [Evaluation code](#Evaluation-code)
-    - [Pretrained models](#Pretrained-models)
-- [Results](#Results)
-- [Project structure](-Project-structure)
-
 ## Summary
 
-(Short summary of motivation, contributions and results)
-![Conceptual overview](./conceptual_overview.png)
+![Conceptual overview](https://iili.io/JAMo3uf.png)
 
-**Keywords**: NLP, LLMs, Distillation, Finetuning, Chain of Thought Prompting, step-by-step Distillation
+The rise of powerful Large Language Models (LLMs) poses challenges in deploying their capabilities efficiently due to high resource requirements. To address this, finetuning and distillation methods have been explored, but both demand substantial labeled data. Hsieh et al. (2023) propose an innovative distillation technique, everaging LLMs as teachers to reason and generate labels along with explanations to justify each label (rationale). These rationales augment the training data for ask-specific student models in an additional training task. This multi-task training framework substantially improves the finetuning efficiency. Resulting models outperform LLMs while being much smaller and using less data.
 
-**Full text**: [include a link that points to the full text of your thesis]
-*Remark*: a thesis is about research. We believe in the [open science](https://en.wikipedia.org/wiki/Open_science) paradigm. Research results should be available to the public. Therefore, we expect dissertations to be shared publicly. Preferably, you publish your thesis via the [edoc-server of the Humboldt-Universität zu Berlin](https://edoc-info.hu-berlin.de/de/publizieren/andere). However, other sharing options, which ensure permanent availability, are also possible. <br> Exceptions from the default to share the full text of a thesis require the approval of the thesis supervisor.  
+We propose Zero-Shot step-by-step Distillation, an improvement upon Hsieh’s et al. original step-by-step distillation, significantly reducing costs of the technique without losing any performance. This is achieved by utilizing optimal Zero-Shot prompts against an instruction-tuned teacher LLM, to obtain the labels and rationales. Cost reductions of over 85% are achieved. Further, we do research on the effects isolated properties of the rationales have on the student models. Compelling evidence for further opportunities to cut costs are presented, since we find that not all labels need to be supported by an explanation to capitalize on the mechanism.
+
+**Keywords**: NLP, LLMs, Distillation, Finetuning, Chain of Thought Prompting, step-by-step Distillation 
 
 ## Overview
 
@@ -46,7 +34,7 @@ This repository contains the code to perform Zero-Shot step-by-step Distillation
 
 ---
 
- - **Querie Results**: All Teacher LLM responses for a given dataset, split and prompt template. Teacher Querrier classes will check the query-results directory for existing query results before each query to avoid querying the same exact query twice.
+ - **Query Results**: All Teacher LLM responses for a given dataset, split and prompt template. Teacher Querrier classes will check the query-results directory for existing query results before each query to avoid querying the same exact query twice.
 
  - **Results**: Results from T5 finetuning experiments by hyperparameter configuration. Outputs of the evaluation of the best checkpoint after training.
 
@@ -65,7 +53,7 @@ This repository contains the code to perform Zero-Shot step-by-step Distillation
 ├── prompt-metadata                     # prompt metadata files
 ├── prompt-mixes                        # prompt mix files
 ├── prompt-templates                    # prompt templates files
-├── query-results                      # query results by dataset, split and prompt template
+├── query-results                       # query results by dataset, split and prompt template
 ├── results                             # results from T5 finetuning experiments by hyperparameter configuration
 ├── src 
 │   ├── factories.py                    # class factories
