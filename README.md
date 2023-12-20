@@ -23,17 +23,66 @@
 ## Summary
 
 (Short summary of motivation, contributions and results)
+![Conceptual overview](./conceptual_overview.png)
 
-**Keywords**: NLP, LLMs, Distillation, Finetuning, Chain of Thought Prompting
+**Keywords**: NLP, LLMs, Distillation, Finetuning, Chain of Thought Prompting, step-by-step Distillation
 
 **Full text**: [include a link that points to the full text of your thesis]
 *Remark*: a thesis is about research. We believe in the [open science](https://en.wikipedia.org/wiki/Open_science) paradigm. Research results should be available to the public. Therefore, we expect dissertations to be shared publicly. Preferably, you publish your thesis via the [edoc-server of the Humboldt-Universität zu Berlin](https://edoc-info.hu-berlin.de/de/publizieren/andere). However, other sharing options, which ensure permanent availability, are also possible. <br> Exceptions from the default to share the full text of a thesis require the approval of the thesis supervisor.  
 
 ## Overview
 
-This repository contains the code to perform Zero-Shot step-by-step Distillation on top of `distilling-step-by-step` by Hsieh et al. (2023).
+This repository contains the code to perform Zero-Shot step-by-step Distillation on top of [distilling-step-by-step](https://github.com/google-research/distilling-step-by-step) by Hsieh et al. (2023).
+
+### Conceptual overview
+
+ - **Prompt Template**: Used to query the Teacher LLM. Template that defines the structure of a prompt, including the appropriate placeholders for the input to the model. Also, define parsing instructions for the expected responses from the model into definite label and rationale parts. Prompt templates are defined in `./prompt_templates`, by dataset name and are identified by a unique ID.
+ - **Prompt Mix**: Used to annotate complete datasets with labels and rationales from the teacher LLM. A prompt mix defines a relative mix of prompt templates for the annotation of a dataset with labels and rationales. This means, a dataset can be annotated with multiple prompt templates and different prompt templates for labels and rationales (e.g. 75% of labels are queried with prompt template 1 and 25% with prompt template 2 and 100% of rationales are from prompt template 3). A Teacher Writer class will query the teacher LLM accordingly, to build a dataset adhering to the defined prompt-mix. The most basic prompt-mix just states one prompt template with 100% for label and rationale. Prompt mixes are defined in `./prompt_mixes`, by a unique ID.
+ - **Prompt Metadata**: Performance metadata for prompt templates. Prompt metadata is stored in `./prompt_metadata` by dataset name and prompt template ID. Prompt metadata is updated by prompt experiments and stores information about occurring costs, the parsing behaviour of resulting responses, and characteristics of labels and rationales.
+
+---
+
+ - **Prompt Experiment**: A prompt experiment queries all available prompt-templates for a given dataset n times and evaluates the responses (label accuracy and rationale characteristics). Results will be updating the prompt metadata for each prompt. Run prompt experiments with the `--experiment` flag.
+
+---
+
+ - **Querie Results**: All Teacher LLM responses for a given dataset, split and prompt template. Teacher Querrier classes will check the querie-results directory for existing query results before each query to avoid querying the same exact query twice.
+
+ - **Results**: Results from T5 finetuning experiments by hyperparameter configuration. Outputs of the evaluation of the best checkpoint after training.
 
 
+### Project structure
+
+```bash
+├── distilling-step-by-step             # submodule, contains the original code by Hsieh et al. (2023)
+├── experiment-tracking 
+│   ├── scripts                         # bash scripts to run T5 finetuning experiments
+│   ├── experiment_tracking.csv         # file containing all T5 finetuning experiments
+│   ├── experiment_tracking.py          # script to create T5 finetuning scripts and update the tracking file
+├── opro    
+│   ├── meta-prompts                    # folder containing meta-prompts
+│   ├── opro.py                         # script to run the OPRO prompt optimization
+├── prompt-metadata                     # prompt metadata files
+├── prompt-mixes                        # prompt mix files
+├── prompt-templates                    # prompt templates files
+├── querie-results                      # query results by dataset, split and prompt template
+├── results                             # results from T5 finetuning experiments by hyperparameter configuration
+├── src 
+│   ├── factories.py                    # class factories
+│   ├── metadata.py                     # handling of prompt metadata
+│   ├── teacher_query_tools.py          # classes to handle the uniform querying of the teacher model by prompt templates
+│   ├── teacher_response_evaluator.py   # handling of the evaluation of teacher responses
+│   ├── teacher_response_parser.py      # handling of the parsing of teacher responses
+│   ├── teacher_writer.py               # annotating of datasets by teacher LLM based on prompt-mixes
+│   ├── utils.py                        # utility functions
+├── analytics.ipynb                     # plotting of results
+├── datasets.zip                        # datasets
+├── .env                                # environment file containing the OpenAI API key
+├── README.md                           # this file
+├── requirements.txt                    # python requirements
+├── run.py                              # main script, orchestrates the source code
+
+```
 
 ## Working with the repo
 
@@ -97,8 +146,8 @@ OPENAI_API_KEY="your-openai-api-key"
 python run.py --experiment --dataset cqa --test_size 100 --seed 42
 ```
 
-#### Run prompt evaluation
-The following command runs prompt evaluation on the SVAMP dataset. This will evaluate all available query results across all prompt templates for the SVAMP dataset and update the prompt metadata file `./prompt_metadata/svamp.yaml`.
+#### Run prompt evaluation only
+The following command runs prompt evaluation on the ANLI1 dataset. This will only evaluate all available query results across all prompt templates for the ANLI1 dataset and update the prompt metadata file `./prompt_metadata/anli1.yaml`.
 
 ```bash
 python run.py --evaluate --dataset anli1
