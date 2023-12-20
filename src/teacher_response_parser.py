@@ -9,7 +9,7 @@ class TeacherResponseParser:
     def __init__(self, dataset_name: str):
         self.dataset_name = dataset_name
         self.prompt_templates_folder = "./prompt-templates"
-        self.queries_save_folder = "./querie-results"
+        self.queries_save_folder = "./query-results"
         self.yaml_prompts = read_yaml(f"{self.prompt_templates_folder}/{self.dataset_name}.yaml")
 
     def clean_explanation(self, explanation: str) -> str:

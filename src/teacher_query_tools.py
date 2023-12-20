@@ -32,7 +32,7 @@ class TeacherQuerier:
         self.chat_model = ChatOpenAI(model=chat_model, request_timeout=40) if chat_model == "gpt-3.5-turbo" else OpenAI(model=chat_model)
         self.prompt_templates_folder = "./prompt-templates"
         self.dataset_folder = "./datasets"
-        self.queries_save_folder = "./querie-results"
+        self.queries_save_folder = "./query-results"
 
         self.dataset_name = dataset_name
         self.has_valid = has_valid

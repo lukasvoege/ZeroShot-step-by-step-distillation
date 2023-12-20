@@ -46,7 +46,7 @@ This repository contains the code to perform Zero-Shot step-by-step Distillation
 
 ---
 
- - **Querie Results**: All Teacher LLM responses for a given dataset, split and prompt template. Teacher Querrier classes will check the querie-results directory for existing query results before each query to avoid querying the same exact query twice.
+ - **Querie Results**: All Teacher LLM responses for a given dataset, split and prompt template. Teacher Querrier classes will check the query-results directory for existing query results before each query to avoid querying the same exact query twice.
 
  - **Results**: Results from T5 finetuning experiments by hyperparameter configuration. Outputs of the evaluation of the best checkpoint after training.
 
@@ -65,7 +65,7 @@ This repository contains the code to perform Zero-Shot step-by-step Distillation
 ├── prompt-metadata                     # prompt metadata files
 ├── prompt-mixes                        # prompt mix files
 ├── prompt-templates                    # prompt templates files
-├── querie-results                      # query results by dataset, split and prompt template
+├── query-results                      # query results by dataset, split and prompt template
 ├── results                             # results from T5 finetuning experiments by hyperparameter configuration
 ├── src 
 │   ├── factories.py                    # class factories

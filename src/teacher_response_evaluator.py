@@ -124,7 +124,7 @@ class TeacherResponseEvaluator:
     def evaluate_train(self, idxs: List = None, verbose: bool = False) -> int:
         evals = {}
         split = "train"
-        for prompt_template_id in os.listdir(f"./querie-results/{self.dataset_name}/{split}/"):
+        for prompt_template_id in os.listdir(f"./query-results/{self.dataset_name}/{split}/"):
             # evaluate the responses and update the metadata file
             evaluation_results = self.evaluate_responses_split(
                 split, int(prompt_template_id), idxs=idxs, verbose=verbose
